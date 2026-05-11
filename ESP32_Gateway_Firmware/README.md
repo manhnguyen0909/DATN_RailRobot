@@ -1,55 +1,55 @@
-# ESP32-C3 Gateway Firmware
+# ESP32-C3 IoT Gateway - Railway Inspection Robot Project
 
-## Mô tả dự án
+## 📝 Giới thiệu
+Đây là mã nguồn **Gateway** thuộc dự án **Robot kiểm tra khuyết tật ray đường sắt**. Gateway đóng vai trò là cầu nối truyền thông trung gian (Bridge), chuyển đổi dữ liệu từ mạng nội bộ không dây công suất thấp (**LoRa**) sang môi trường internet (**WiFi/MQTT**) để giám sát trên Web Dashboard.
 
-Đây là firmware cho cổng kết nối (Gateway) ESP32-C3 trong hệ thống robot tự động chạy trên đường ray. Thiết bị Gateway đóng vai trò trung gian giao tiếp giữa robot (STM32) và server/ứng dụng điều khiển thông qua WiFi, MQTT, và module LoRa.
+Sử dụng vi điều khiển **ESP32-C3** (RISC-V) với ưu thế về kích thước nhỏ gọn và hỗ trợ bảo mật mạnh mẽ cho các ứng dụng IoT.
 
-## Tính năng chính
+## 🚀 Chức năng chính
+* **LoRa to MQTT Bridge:** Nhận bản tin Telemetry từ Robot (qua module LoRa giao tiếp UART) và đóng gói đẩy lên HiveMQ Cloud.
+* **Command Downlink:** Lắng nghe lệnh điều khiển từ Web (MQTT Subscribe) và chuyển tiếp tức thì xuống Robot qua LoRa.
+* **Edge Processing:** Xử lý lọc nhiễu dữ liệu thô, kiểm tra tính toàn vẹn của bản tin trước khi gửi lên Server.
+* **Status Indication:** Hệ thống đèn LED báo hiệu trạng thái kết nối WiFi và trạng thái hoạt động của Broker MQTT.
+* **Auto Reconnect:** Tự động khôi phục kết nối WiFi và MQTT khi gặp sự cố đường truyền.
 
-- **Kết nối WiFi**: Hỗ trợ WiFi Manager cho quản lý kết nối
-- **MQTT**: Giao tiếp với MQTT broker để điều khiển robot từ xa
-- **LoRa**: Giao tiếp với STM32 Robot thông qua module LoRa (SX1276/SX1278)
-- **OTA (Over-The-Air)**: Cập nhật firmware từ xa thông qua server OTA
-- **NVS Flash**: Lưu trữ cấu hình WiFi và dữ liệu quan trọng
-- **LED Indicator**: Chỉ báo trạng thái hoạt động
-- **FreeRTOS**: Hỗ trợ đa nhiệm
+## 🛠 Công nghệ sử dụng
+* **Framework:** ESP-IDF (Espressif IoT Development Framework).
+* **Giao thức truyền thông:**
+    * **LoRa:** Truyền thông tầm xa giữa Robot và Gateway.
+    * **MQTT (MQTTS):** Giao thức truyền tin gọn nhẹ qua SSL/TLS (Port 8883) đảm bảo an toàn dữ liệu.
+* **Cloud Service:** HiveMQ Cloud (MQTT Broker).
 
-## Yêu cầu phần cứng
-
-- **Vi điều khiển**: ESP32-C3 (lõi đơn, tiết kiệm năng lượng)
-- **Module WiFi**: Tích hợp sẵn trong ESP32-C3
-- **Module LoRa**: SX1276 hoặc SX1278 (kết nối qua Uart)
-- **Kết nối ngoại vi**:
-  - Uart: Kết nối tới module LoRa
-  - GPIO: NSS (Chip Select), RST (Reset), DIO0-DIO4 (Interrupt pins)
-  - LED: Chỉ báo trạng thái
-  - Nguồn điện: Micro USB hoặc pin
-
-## Yêu cầu phần mềm
-
-- **ESP-IDF**: Phiên bản 4.4 trở lên
-- **Python**: 3.7 trở lên (cho idf.py)
-- **MQTT Broker**: (Mosquitto, HiveMQ, hoặc AWS IoT Core)
-
-## Cấu trúc dự án
-
-```
-ESP32_Gateway_Firmware/
-├── CMakeLists.txt              # Cấu hình CMake
+## 📂 Cấu trúc thư mục
+```text
+ESP32C3_Gateway_Firmware/
 ├── main/
-│   ├── CMakeLists.txt
-│   └── main.c                  # Hàm main
-├── my_components/              # Custom components
-│   ├── wifi_manager/           # Quản lý WiFi
-│   ├── mqtt_app/               # MQTT client
-│   ├── lora_app/               # LoRa communication
-│   ├── ota_server/             # OTA server
-│   └── led_app/                # LED control
-├── partitions.csv              # Bảng phân vùng flash
-├── sdkconfig                   # Cấu hình ESP-IDF
-└── README.md                   # Tệp này
+│   ├── main.c                 # Khởi tạo hệ thống và điều phối Task
+│   ├── mqtt_app.c             # Xử lý kết nối và logic MQTT
+│   ├── uart_app.c             # Giao tiếp với module LoRa
+│   ├── led_app.c              # Điều khiển LED trạng thái
+│   └── config_mqtt_template.h # File mẫu cấu hình mật khẩu
+├── CMakeLists.txt             # File cấu hình build project
+└── README.md                  # Tài liệu hướng dẫn
 ```
+## ⚙️ Cấu hình hệ thống
+* Để bảo mật thông tin cá nhân, các thông số kết nối đã được tách ra khỏi mã nguồn chính.
 
+* Tại thư mục main/, sao chép file config_mqtt_template.h và đổi tên thành config_mqtt.h.
+
+* Mở config_mqtt.h và điền thông số Broker MQTT, WiFi SSID và Password của bạn.
+## 🔌 Sơ đồ kết nối phần cứng
+* Module LoRa (Ebyte/v.v): 
+ 
+ TX -> ESP32-C3 RX (GPIO 20)
+
+ RX -> ESP32-C3 TX (GPIO 21)
+* LED Status: 
+
+WiFi LED -> GPIO 7
+
+MQTT LED -> GPIO 8
+
+Lora LED -> GPIO 9
 ## Cách cài đặt và build
 
 1. **Clone hoặc sao chép dự án**:
@@ -78,68 +78,10 @@ ESP32_Gateway_Firmware/
    ```bash
    idf.py -p COM3 monitor
    ```
-
-## Cấu hình
-
-### WiFi
-- Chỉnh sửa SSID và password:
-    ```bash
-    idf.py menuconfig 
-    ```
-    -> Component config -> Wifi configuratione
-
-### MQTT
-- Cấu hình broker address, username, password trong `my_components/mqtt_app/`
-- Các topic mặc định:
-  - `robot/command`: Nhận lệnh điều khiển
-  - `robot/status`: Gửi trạng thái robot
-  - `robot/sensor`: Gửi dữ liệu cảm biến
-
-### LoRa
-- Cấu hình SPI pins, frequency, bandwidth trong `my_components/lora_app/`
-- Mặc định:
-  - Frequency: 433 MHz hoặc 868 MHz (tuỳ theo vùng)
-  - Bandwidth: 125 kHz
-  - Spreading Factor: 7-12
-  - Coding Rate: 4/5 đến 4/8
-- Mapping pins SPI:
-  - MOSI: GPIO10
-  - MISO: GPIO9
-  - SCK: GPIO8
-  - NSS: GPIO7
-  - RST: GPIO6
-  - DIO0: GPIO5
-
-## Luồng hoạt động chính
-
-1. Khởi tạo LED indicator
-2. Khởi tạo NVS Flash để lưu cấu hình
-3. Khởi tạo module LoRa SPI
-4. Kết nối WiFi thông qua WiFi Manager
-5. Khởi chạy OTA Server
-6. Khởi tạo LoRa driver để giao tiếp với STM32
-7. Khởi tạo MQTT client
-8. Đợi lệnh điều khiển từ MQTT và gửi tới STM32 qua LoRa
-9. Nhận dữ liệu từ STM32 qua LoRa và phát hành lên MQTT broker
-
-## Giao tiếp giữa các thành phần
-
-```
-Internet (MQTT Broker)
-        ↓
-  ESP32-C3 Gateway
-   (WiFi + LoRa)
-        ↓
-Module LoRa SPI
-        ↓
-   STM32 Robot
-  (LoRa Module)
-```
-
 ## Xử lý sự cố
 
 - **Không kết nối WiFi**: Kiểm tra SSID/password, khoảng cách từ router
-- **Không nhận dữ liệu LoRa**: Kiểm tra kết nối SPI, frequency, RST pin, antenna
+- **Không nhận dữ liệu LoRa**: Kiểm tra kết nối UART (TX/RX), baud rate, RST pin
 - **Tín hiệu LoRa yếu**: Kiểm tra vị trí antenna, obstacles, spreading factor
 - **OTA không hoạt động**: Đảm bảo ESP32-C3 có địa chỉ IP hợp lệ, server OTA đang chạy
 
@@ -147,10 +89,7 @@ Module LoRa SPI
 
 Vui lòng tạo issue hoặc pull request cho các cải tiến.
 
-## Giấy phép
-
-Dự án này được phân phối dưới giấy phép MIT.
 
 ## Liên hệ
 
-[Thông tin liên hệ của tác giả]
+[email: manhnguyen090903@gmail.com]

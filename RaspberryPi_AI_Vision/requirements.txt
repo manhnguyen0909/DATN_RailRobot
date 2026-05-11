@@ -1,0 +1,10 @@
+# Các thư viện bắt buộc cho Rasp_Pi_fn.py
+Flask>=2.0.0
+numpy>=1.21.0
+pyserial>=3.5
+
+# Dùng bản headless cho Raspberry Pi để nhẹ và không lỗi GUI
+opencv-python-headless>=4.5.0
+
+# Dùng tflite-runtime thay vì full tensorflow để tối ưu tài nguyên trên Pi
+tflite-runtime>=2.5.0

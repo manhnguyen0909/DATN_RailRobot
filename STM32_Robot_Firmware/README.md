@@ -1,70 +1,65 @@
-# STM32 Robot Firmware
+# STM32 Railway Inspection Robot Firmware
 
-## Mô tả dự án
+## 📝 Giới thiệu
+Đây là mã nguồn điều khiển trung tâm (Firmware) cho hệ thống **Robot tự hành kiểm tra khuyết tật đường sắt**. Dự án tích hợp các công nghệ Nhúng, IoT và Thị giác máy tính để tự động hóa quá trình giám sát hạ tầng đường sắt.
 
-Đây là firmware cho robot chạy trên đường ray sử dụng vi điều khiển STM32F4. Dự án này được phát triển như một phần của đề tài nghiên cứu khoa học (ĐATN) về robot tự động.
+Hệ thống sử dụng vi điều khiển **STM32F401** làm bộ não chính, vận hành trên hệ điều hành thời gian thực (**FreeRTOS**) để đảm bảo tính chính xác và ổn định trong việc điều khiển động cơ và thu thập dữ liệu đa cảm biến.
 
-## Tính năng chính
+## 🚀 Tính năng chính
+- **Real-time Multitasking:** Sử dụng FreeRTOS để quản lý đồng thời các tác vụ: Điều khiển (Motor Control), Thu thập dữ liệu (Sensor Acquisition) và Giao tiếp (Communication).
+- **Motion Control:** Thuật toán **PID** kết hợp dữ liệu từ **Encoder** để kiểm soát chính xác tốc độ và quỹ đạo di chuyển của Robot.
+- **Multi-Sensor Fusion:**
+    - **IMU (MPU6050):** Giám sát góc nghiêng và độ ổn định của ray.
+    - **ToF (VL53L1X):** Đo khoảng cách khẩu độ ray với độ chính xác milimet.
+    - **GPS:** Định vị tọa độ thực của các vị trí phát hiện khuyết tật.
+- **Giao tiếp thông minh:**
+    - Truyền dữ liệu không dây tầm xa qua **LoRa** về Gateway.
+    - Đồng bộ hóa dữ liệu UART tốc độ cao với **Raspberry Pi (Edge AI)** để nhận diện khuyết tật bề mặt bằng mô hình CNN.
+- **Hardware Protection:** Cơ chế tự động khôi phục Bus I2C (Self-healing) và giám sát điện áp Pin (ADC) để bảo vệ hệ thống.
 
-- Điều khiển động cơ và servo
-- Đọc dữ liệu từ cảm biến IMU (MPU6050)
-- Đo khoảng cách bằng cảm biến ToF (VL53L1X)
-- Giao tiếp UART và I2C
-- Hỗ trợ FreeRTOS cho đa nhiệm
-- Cấu hình ADC và DMA cho xử lý tín hiệu
+## 🏗 Kiến trúc hệ thống
+Hệ thống được chia thành 3 Task chính:
+1. **Motor Task (Priority: High):** Xử lý PID và xuất xung PWM (100ms/chu kỳ).
+2. **Sensor Task (Priority: Low):** Đọc ADC, MPU6050, và VL53L1X.
+3. **Comm Task (Priority: Normal):** Xử lý giao thức UART (LoRa/Raspberry Pi/ GPS) và giải mã lệnh điều khiển.
 
-## Yêu cầu phần cứng
+## 🛠 Công nghệ sử dụng
+- **Ngôn ngữ:** C .
+- **Framework:** STM32 HAL Driver.
+- **RTOS:** FreeRTOS (CMSIS-RTOS V1).
+- **Công cụ cấu hình:** STM32CubeMX.
+- **IDE:** Keil MDK-ARM V5.
 
-- Vi điều khiển: STM32F401RCTx
-- Cảm biến: MPU6050 (IMU), VL53L1X (Time-of-Flight)
-- Động cơ servo và DC motor
-- Module giao tiếp (UART, I2C)
-
-## Yêu cầu phần mềm
-
-- Keil MDK-ARM (phiên bản 5.0 trở lên)
-- STM32CubeMX (cho cấu hình IOC)
-- STM32 HAL Driver
-- FreeRTOS
-
-## Cấu trúc dự án
-
-```
+## 📂 Cấu trúc dự án
+```text
 STM32_Robot_Firmware/
-├── STM32_Robot_Firmware.ioc          # Cấu hình STM32CubeMX
+├── STM32_Robot_Firmware.ioc    # File cấu hình STM32CubeMX
 ├── Core/
-│   ├── Inc/                          # Header files
-│   └── Src/                          # Source files
-├── Drivers/
-│   ├── CMSIS/                        # ARM CMSIS
-│   └── STM32F4xx_HAL_Driver/          # STM32 HAL Driver
-├── MDK-ARM/                          # Keil project files
-└── Middlewares/
-    └── Third_Party/
-        └── FreeRTOS/                  # FreeRTOS kernel
+│   ├── Inc/                    # File Header cấu hình và Drivers cảm biến
+│   └── Src/                    
+│       ├── main.c              # Khởi tạo phần cứng và entry point
+│       ├── freertos.c          # Logic chi tiết của các Task RTOS
+│       └── usart.c             # Xử lý ngắt UART/DMA cho GPS & LoRa
+├── Drivers/                    # Thư viện HAL và CMSIS từ ST
+├── MDK-ARM/                    # Project file cho Keil uVision
+└── Middlewares/                # Kernel FreeRTOS
 ```
+## ⚙️ Cài đặt và Bảo mật
+* Để bảo mật các thông tin định danh thiết bị trong mạng LoRa/IoT:
 
-## Cách build và flash
+1. Tìm file Core/Inc/secrets_template.h.
 
-1. Mở project trong Keil MDK-ARM:
-   - File: `MDK-ARM/STM32_Robot_Firmware.uvprojx`
+2. Sao chép và đổi tên thành secrets.h.
 
-2. Build project:
-   - Project > Build target
+3. Cấu hình ROBOT_TOKEN riêng biệt của bạn bên trong file này.
 
-3. Flash firmware:
-   - Flash > Download (hoặc sử dụng ST-Link)
 
-## Cách sử dụng
+## 🔨 Cách Build và Flash
+1. Mở file MDK-ARM/STM32_Robot_Firmware.uvprojx bằng Keil uVision.
 
-1. Cấu hình các chân GPIO và ngoại vi trong STM32CubeMX
-2. Khởi tạo cảm biến trong `main.c`
-3. Chạy các task FreeRTOS cho điều khiển robot
-4. Giám sát qua Uart/ Module Lora
+2. Nhấn F7 (Build) để biên dịch mã nguồn.
 
-## Cấu hình
-
-- cấu hình ROBOT_TOKEN cho LoraWan của bạn ở secret_template.h, đổi tên secret_template.h thành secret.h
+3. Kết nối mạch nạp ST-Link và nhấn F8 (Download) để nạp firmware vào vi điều khiển.
 
 ## Đóng góp
 
