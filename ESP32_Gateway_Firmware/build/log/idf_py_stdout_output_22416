@@ -1,0 +1,336 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40384cb0
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1820
+load:0x403cc710,len:0xbd0
+load:0x403ce710,len:0x2f4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.6-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 10 2026 23:14:25[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (70) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (85) boot:  3 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (93) boot:  4 ota_0            OTA app          00 10 00120000 00100000[0m
+[0;32mI (100) boot:  5 ota_1            OTA app          00 11 00220000 00100000[0m
+[0;32mI (108) boot:  6 spiffs           Unknown data     01 82 00320000 00080000[0m
+[0;32mI (115) boot: End of partition table[0m
+[0;32mI (120) boot: Defaulting to factory image[0m
+[0;32mI (124) esp_image: segment 0: paddr=00020020 vaddr=3c0c0020 size=23040h (143424) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=00043068 vaddr=3fc93e00 size=02c98h ( 11416) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00045d08 vaddr=40380000 size=0a310h ( 41744) load[0m
+[0;32mI (169) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=ba6fch (763644) map[0m
+[0;32mI (289) esp_image: segment 4: paddr=0010a724 vaddr=4038a310 size=09ab8h ( 39608) load[0m
+[0;32mI (303) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (303) boot: Disabling RNG early entropy source...[0m
+[0;32mI (314) cpu_start: Unicore app[0m
+[0;32mI (323) cpu_start: Pro cpu start user code[0m
+[0;32mI (323) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (323) cpu_start: Application information:[0m
+[0;32mI (326) cpu_start: Project name:     NCKH2026_RailRobot[0m
+[0;32mI (332) cpu_start: App version:      31923fc-dirty[0m
+[0;32mI (337) cpu_start: Compile time:     Apr 26 2026 11:03:07[0m
+[0;32mI (343) cpu_start: ELF file SHA256:  0593ef888...[0m
+[0;32mI (349) cpu_start: ESP-IDF:          v5.2.6-dirty[0m
+[0;32mI (354) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (359) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (364) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (369) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (376) heap_init: At 3FC9B1E0 len 00024E20 (147 KiB): RAM[0m
+[0;32mI (382) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (389) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (396) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (403) spi_flash: detected chip: generic[0m
+[0;32mI (407) spi_flash: flash io: dio[0m
+[0;32mI (411) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (417) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (425) main_task: Started on CPU0[0m
+[0;32mI (425) main_task: Calling app_main()[0m
+[0;32mI (425) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (435) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (445) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (465) MAIN_APP: NVS initialized successfully.[0m
+[0;32mI (465) pp: pp rom version: 9387209[0m
+[0;32mI (465) net80211: net80211 rom version: 9387209[0m
+[0;32mI (485) wifi:wifi driver task: 3fca3fd8, prio:23, stack:6656, core=0[0m
+[0;32mI (485) wifi:wifi firmware version: e851349[0m
+[0;32mI (485) wifi:wifi certification version: v7.0[0m
+[0;32mI (485) wifi:config NVS flash: enabled[0m
+[0;32mI (485) wifi:config nano formating: disabled[0m
+[0;32mI (495) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (495) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (505) wifi:Init management short buffer num: 32[0m
+[0;32mI (505) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (505) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (515) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (515) wifi:Init static rx buffer num: 10[0m
+[0;32mI (525) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (525) wifi_init: rx ba win: 6[0m
+[0;32mI (525) wifi_init: tcpip mbox: 32[0m
+[0;32mI (535) wifi_init: udp mbox: 6[0m
+[0;32mI (535) wifi_init: tcp mbox: 6[0m
+[0;32mI (545) wifi_init: tcp tx win: 5760[0m
+[0;32mI (545) wifi_init: tcp rx win: 5760[0m
+[0;32mI (545) wifi_init: tcp mss: 1440[0m
+[0;32mI (555) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (555) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (565) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (605) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (615) wifi:mode : sta (10:00:3b:cc:55:10)[0m
+[0;32mI (615) wifi:enable tsf[0m
+[0;32mI (615) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (625) WIFI_MGR: Connecting to WiFi SSID: Nguyen Manh[0m
+[0;32mI (625) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (625) wifi:state: init -> auth (b0)[0m
+[0;32mI (635) wifi:state: auth -> assoc (0)[0m
+[0;32mI (635) wifi:state: assoc -> run (10)[0m
+[0;32mI (1025) wifi:connected with Nguyen Manh, aid = 3, channel 11, BW20, bssid = c0:61:18:41:67:fa[0m
+[0;32mI (1035) wifi:security: WPA2-PSK, phy: bg, rssi: -72[0m
+[0;32mI (1035) wifi:pm start, type: 0[0m
+
+[0;32mI (1035) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1045) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1135) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1625) WIFI_MGR: Waiting for WiFi... (1/5)[0m
+[0;32mI (2055) esp_netif_handlers: sta ip: 192.168.10.104, mask: 255.255.255.0, gw: 192.168.10.1[0m
+[0;32mI (2625) WIFI_MGR: Waiting for WiFi... (2/5)[0m
+[0;32mI (2625) WIFI_MGR: Got IP: 192.168.10.104[0m
+[0;32mI (2625) MAIN_APP: WiFi initialized successfully.[0m
+[0;32mI (2725) OTA_SERVER: OTA Server started at port 81[0m
+[0;32mI (2725) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (2725) OTA_SERVER: 🚀 OTA SERVER READY![0m
+[0;32mI (2725) OTA_SERVER: 👉 Click to open: http://192.168.10.104:81/ota[0m
+[0;32mI (2735) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (2745) MAIN_APP: OTA Server started successfully.[0m
+[0;32mI (2755) uart: queue free spaces: 20[0m
+[0;32mI (2755) UART_APP: Da khoi tao UART1 LoRa o toc do 9600[0m
+[0;32mI (4225) MQTT_APP: Da ket noi thanh cong den Broker![0m
+[0;32mI (4225) MQTT_APP: Da subscribe vao topic: manh_vip/robot/command[0m
+[0;31mE (317365) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;31mE (318155) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;33mW (318415) UART_APP: [CANH BAO] Nhieu song/Sai Token: ting is finished
+Sensor LEFT address changed to 0x56![0m
+[0;33mW (318615) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+Sensor RIGHT booted at 0x52![0m
+[0;33mW (319115) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+San sang doc Encoder...
+MANH_VIP L25 R277 E0.0,0.0 P-0.19 R-32.31 V11.59![0m
+[0;32mI (319495) UART_APP: [HOP LE] Du lieu tu xe:  L22 R282 E0.0,0.0 P0.22 R-32.99 V11.58![0m
+[0;32mI (319495) MQTT_APP: Da Publish Data [ L22 R282 E0.0,0.0 P0.22 R-32.99 V11.58!], msg_id=0[0m
+[0;32mI (320055) UART_APP: [HOP LE] Du lieu tu xe:  L20 R280 E0.0,0.0 P0.18 R-32.10 V11.72![0m
+[0;32mI (320055) MQTT_APP: Da Publish Data [ L20 R280 E0.0,0.0 P0.18 R-32.10 V11.72!], msg_id=0[0m
+[0;32mI (320625) UART_APP: [HOP LE] Du lieu tu xe:  L23 R280 E0.0,0.0 P0.11 R-32.57 V11.70![0m
+[0;32mI (320625) MQTT_APP: Da Publish Data [ L23 R280 E0.0,0.0 P0.11 R-32.57 V11.70!], msg_id=0[0m
+[0;32mI (321185) UART_APP: [HOP LE] Du lieu tu xe:  L18 R280 E0.0,0.0 P0.07 R-32.82 V11.69![0m
+[0;32mI (321185) MQTT_APP: Da Publish Data [ L18 R280 E0.0,0.0 P0.07 R-32.82 V11.69!], msg_id=0[0m
+[0;32mI (321745) UART_APP: [HOP LE] Du lieu tu xe:  L18 R281 E0.0,0.0 P0.15 R-32.47 V11.72![0m
+[0;32mI (321745) MQTT_APP: Da Publish Data [ L18 R281 E0.0,0.0 P0.15 R-32.47 V11.72!], msg_id=0[0m
+[0;32mI (322315) UART_APP: [HOP LE] Du lieu tu xe:  L20 R277 E0.0,0.0 P0.00 R-32.68 V11.67![0m
+[0;32mI (322315) MQTT_APP: Da Publish Data [ L20 R277 E0.0,0.0 P0.00 R-32.68 V11.67!], msg_id=0[0m
+[0;32mI (322875) UART_APP: [HOP LE] Du lieu tu xe:  L24 R281 E0.0,0.0 P-0.16 R-32.26 V11.70![0m
+[0;32mI (322875) MQTT_APP: Da Publish Data [ L24 R281 E0.0,0.0 P-0.16 R-32.26 V11.70!], msg_id=0[0m
+[0;32mI (323435) UART_APP: [HOP LE] Du lieu tu xe:  L23 R280 E0.0,0.0 P0.03 R-32.67 V11.73![0m
+[0;32mI (323435) MQTT_APP: Da Publish Data [ L23 R280 E0.0,0.0 P0.03 R-32.67 V11.73!], msg_id=0[0m
+[0;32mI (324005) UART_APP: [HOP LE] Du lieu tu xe:  L25 R280 E0.0,0.0 P0.19 R-32.86 V11.72![0m
+[0;32mI (324005) MQTT_APP: Da Publish Data [ L25 R280 E0.0,0.0 P0.19 R-32.86 V11.72!], msg_id=0[0m
+[0;32mI (324565) UART_APP: [HOP LE] Du lieu tu xe:  L24 R281 E0.0,0.0 P-0.25 R-32.28 V11.70![0m
+[0;32mI (324565) MQTT_APP: Da Publish Data [ L24 R281 E0.0,0.0 P-0.25 R-32.28 V11.70!], msg_id=0[0m
+[0;32mI (325135) UART_APP: [HOP LE] Du lieu tu xe:  L24 R283 E0.0,0.0 P-0.03 R-32.39 V11.75![0m
+[0;32mI (325135) MQTT_APP: Da Publish Data [ L24 R283 E0.0,0.0 P-0.03 R-32.39 V11.75!], msg_id=0[0m
+[0;32mI (325695) UART_APP: [HOP LE] Du lieu tu xe:  L22 R282 E0.0,0.0 P-0.29 R-32.21 V11.70![0m
+[0;32mI (325695) MQTT_APP: Da Publish Data [ L22 R282 E0.0,0.0 P-0.29 R-32.21 V11.70!], msg_id=0[0m
+[0;32mI (326255) UART_APP: [HOP LE] Du lieu tu xe:  L26 R281 E0.0,0.0 P-0.11 R-32.90 V11.72![0m
+[0;32mI (326255) MQTT_APP: Da Publish Data [ L26 R281 E0.0,0.0 P-0.11 R-32.90 V11.72!], msg_id=0[0m
+[0;32mI (326815) UART_APP: [HOP LE] Du lieu tu xe:  L23 R278 E0.0,0.0 P0.32 R-32.68 V11.72![0m
+[0;32mI (326815) MQTT_APP: Da Publish Data [ L23 R278 E0.0,0.0 P0.32 R-32.68 V11.72!], msg_id=0[0m
+[0;32mI (327385) UART_APP: [HOP LE] Du lieu tu xe:  L25 R281 E0.0,0.0 P0.36 R-32.39 V11.69![0m
+[0;32mI (327385) MQTT_APP: Da Publish Data [ L25 R281 E0.0,0.0 P0.36 R-32.39 V11.69!], msg_id=0[0m
+[0;32mI (327945) UART_APP: [HOP LE] Du lieu tu xe:  L23 R283 E0.0,0.0 P-0.06 R-32.42 V11.72![0m
+[0;32mI (327945) MQTT_APP: Da Publish Data [ L23 R283 E0.0,0.0 P-0.06 R-32.42 V11.72!], msg_id=0[0m
+[0;32mI (328505) UART_APP: [HOP LE] Du lieu tu xe:  L24 R280 E0.0,0.0 P0.20 R-32.83 V11.72![0m
+[0;32mI (328505) MQTT_APP: Da Publish Data [ L24 R280 E0.0,0.0 P0.20 R-32.83 V11.72!], msg_id=0[0m
+[0;32mI (329075) UART_APP: [HOP LE] Du lieu tu xe:  L23 R283 E0.0,0.0 P0.10 R-32.51 V11.72![0m
+[0;32mI (329075) MQTT_APP: Da Publish Data [ L23 R283 E0.0,0.0 P0.10 R-32.51 V11.72!], msg_id=0[0m
+[0;32mI (329635) UART_APP: [HOP LE] Du lieu tu xe:  L24 R280 E0.0,0.0 P0.04 R-32.40 V11.72![0m
+[0;32mI (329635) MQTT_APP: Da Publish Data [ L24 R280 E0.0,0.0 P0.04 R-32.40 V11.72!], msg_id=0[0m
+[0;32mI (330195) UART_APP: [HOP LE] Du lieu tu xe:  L22 R285 E0.0,0.0 P0.04 R-32.85 V11.67![0m
+[0;32mI (330195) MQTT_APP: Da Publish Data [ L22 R285 E0.0,0.0 P0.04 R-32.85 V11.67!], msg_id=0[0m
+[0;32mI (330765) UART_APP: [HOP LE] Du lieu tu xe:  L22 R284 E0.0,0.0 P-0.08 R-32.58 V11.68![0m
+[0;32mI (330765) MQTT_APP: Da Publish Data [ L22 R284 E0.0,0.0 P-0.08 R-32.58 V11.68!], msg_id=0[0m
+[0;32mI (331325) UART_APP: [HOP LE] Du lieu tu xe:  L23 R285 E0.0,0.0 P-0.08 R-32.51 V11.70![0m
+[0;32mI (331325) MQTT_APP: Da Publish Data [ L23 R285 E0.0,0.0 P-0.08 R-32.51 V11.70!], msg_id=0[0m
+[0;32mI (331885) UART_APP: [HOP LE] Du lieu tu xe:  L23 R282 E0.0,0.0 P-0.16 R-32.56 V11.69![0m
+[0;32mI (331885) MQTT_APP: Da Publish Data [ L23 R282 E0.0,0.0 P-0.16 R-32.56 V11.69!], msg_id=0[0m
+[0;32mI (332455) UART_APP: [HOP LE] Du lieu tu xe:  L24 R278 E0.0,0.0 P0.14 R-32.62 V11.68![0m
+[0;32mI (332455) MQTT_APP: Da Publish Data [ L24 R278 E0.0,0.0 P0.14 R-32.62 V11.68!], msg_id=0[0m
+[0;32mI (333015) UART_APP: [HOP LE] Du lieu tu xe:  L22 R283 E0.0,0.0 P0.05 R-32.18 V11.72![0m
+[0;32mI (333015) MQTT_APP: Da Publish Data [ L22 R283 E0.0,0.0 P0.05 R-32.18 V11.72!], msg_id=0[0m
+[0;32mI (333575) UART_APP: [HOP LE] Du lieu tu xe:  L23 R278 E0.0,0.0 P-0.10 R-32.25 V11.67![0m
+[0;32mI (333575) MQTT_APP: Da Publish Data [ L23 R278 E0.0,0.0 P-0.10 R-32.25 V11.67!], msg_id=0[0m
+[0;32mI (334145) UART_APP: [HOP LE] Du lieu tu xe:  L20 R280 E0.0,0.0 P0.70 R-32.62 V11.72![0m
+[0;32mI (334145) MQTT_APP: Da Publish Data [ L20 R280 E0.0,0.0 P0.70 R-32.62 V11.72!], msg_id=0[0m
+[0;32mI (334705) UART_APP: [HOP LE] Du lieu tu xe:  L23 R282 E0.0,0.0 P-0.67 R-31.89 V11.72![0m
+[0;32mI (334705) MQTT_APP: Da Publish Data [ L23 R282 E0.0,0.0 P-0.67 R-31.89 V11.72!], msg_id=0[0m
+[0;32mI (335265) UART_APP: [HOP LE] Du lieu tu xe:  L27 R282 E0.0,0.0 P0.41 R-32.74 V11.68![0m
+[0;32mI (335265) MQTT_APP: Da Publish Data [ L27 R282 E0.0,0.0 P0.41 R-32.74 V11.68!], msg_id=0[0m
+[0;32mI (335835) UART_APP: [HOP LE] Du lieu tu xe:  L26 R283 E0.0,0.0 P0.11 R-32.22 V11.70![0m
+[0;32mI (335835) MQTT_APP: Da Publish Data [ L26 R283 E0.0,0.0 P0.11 R-32.22 V11.70!], msg_id=0[0m
+[0;32mI (336395) UART_APP: [HOP LE] Du lieu tu xe:  L24 R282 E0.0,0.0 P-0.18 R-32.55 V11.73![0m
+[0;32mI (336395) MQTT_APP: Da Publish Data [ L24 R282 E0.0,0.0 P-0.18 R-32.55 V11.73!], msg_id=0[0m
+[0;32mI (336955) UART_APP: [HOP LE] Du lieu tu xe:  L21 R282 E0.0,0.0 P0.01 R-32.48 V11.73![0m
+[0;32mI (336955) MQTT_APP: Da Publish Data [ L21 R282 E0.0,0.0 P0.01 R-32.48 V11.73!], msg_id=0[0m
+[0;32mI (337525) UART_APP: [HOP LE] Du lieu tu xe:  L23 R285 E0.0,0.0 P0.10 R-32.64 V11.72![0m
+[0;32mI (337525) MQTT_APP: Da Publish Data [ L23 R285 E0.0,0.0 P0.10 R-32.64 V11.72!], msg_id=0[0m
+[0;32mI (338085) UART_APP: [HOP LE] Du lieu tu xe:  L22 R288 E0.0,0.0 P0.15 R-32.21 V11.68![0m
+[0;32mI (338085) MQTT_APP: Da Publish Data [ L22 R288 E0.0,0.0 P0.15 R-32.21 V11.68!], msg_id=0[0m
+[0;32mI (338645) UART_APP: [HOP LE] Du lieu tu xe:  L21 R280 E0.0,0.0 P0.19 R-32.37 V11.69![0m
+[0;32mI (338645) MQTT_APP: Da Publish Data [ L21 R280 E0.0,0.0 P0.19 R-32.37 V11.69!], msg_id=0[0m
+[0;32mI (339205) UART_APP: [HOP LE] Du lieu tu xe:  L24 R283 E0.0,0.0 P0.29 R-32.44 V11.72![0m
+[0;32mI (339205) MQTT_APP: Da Publish Data [ L24 R283 E0.0,0.0 P0.29 R-32.44 V11.72!], msg_id=0[0m
+[0;32mI (339775) UART_APP: [HOP LE] Du lieu tu xe:  L24 R282 E0.0,0.0 P0.22 R-32.71 V11.72![0m
+[0;32mI (339775) MQTT_APP: Da Publish Data [ L24 R282 E0.0,0.0 P0.22 R-32.71 V11.72!], msg_id=0[0m
+[0;32mI (340335) UART_APP: [HOP LE] Du lieu tu xe:  L23 R279 E0.0,0.0 P-0.16 R-32.74 V11.72![0m
+[0;32mI (340335) MQTT_APP: Da Publish Data [ L23 R279 E0.0,0.0 P-0.16 R-32.74 V11.72!], msg_id=0[0m
+[0;32mI (340895) UART_APP: [HOP LE] Du lieu tu xe:  L23 R281 E0.0,0.0 P0.44 R-32.86 V11.72![0m
+[0;32mI (340895) MQTT_APP: Da Publish Data [ L23 R281 E0.0,0.0 P0.44 R-32.86 V11.72!], msg_id=0[0m
+[0;32mI (341465) UART_APP: [HOP LE] Du lieu tu xe:  L20 R283 E0.0,0.0 P0.23 R-32.22 V11.72![0m
+[0;32mI (341465) MQTT_APP: Da Publish Data [ L20 R283 E0.0,0.0 P0.23 R-32.22 V11.72!], msg_id=0[0m
+[0;32mI (342025) UART_APP: [HOP LE] Du lieu tu xe:  L23 R279 E0.0,0.0 P-0.01 R-32.96 V11.72![0m
+[0;32mI (342025) MQTT_APP: Da Publish Data [ L23 R279 E0.0,0.0 P-0.01 R-32.96 V11.72!], msg_id=0[0m
+[0;32mI (342585) UART_APP: [HOP LE] Du lieu tu xe:  L23 R281 E0.0,0.0 P-0.36 R-32.77 V11.68![0m
+[0;32mI (342585) MQTT_APP: Da Publish Data [ L23 R281 E0.0,0.0 P-0.36 R-32.77 V11.68!], msg_id=0[0m
+[0;32mI (343155) UART_APP: [HOP LE] Du lieu tu xe:  L22 R282 E0.0,0.0 P0.01 R-32.61 V11.72![0m
+[0;32mI (343155) MQTT_APP: Da Publish Data [ L22 R282 E0.0,0.0 P0.01 R-32.61 V11.72!], msg_id=0[0m
+[0;32mI (343715) UART_APP: [HOP LE] Du lieu tu xe:  L30 R281 E0.0,0.0 P0.16 R-32.42 V11.70![0m
+[0;32mI (343715) MQTT_APP: Da Publish Data [ L30 R281 E0.0,0.0 P0.16 R-32.42 V11.70!], msg_id=0[0m
+[0;32mI (344275) UART_APP: [HOP LE] Du lieu tu xe:  L22 R285 E0.0,0.0 P0.04 R-32.79 V11.67![0m
+[0;32mI (344275) MQTT_APP: Da Publish Data [ L22 R285 E0.0,0.0 P0.04 R-32.79 V11.67!], msg_id=0[0m
+[0;32mI (344835) UART_APP: [HOP LE] Du lieu tu xe:  L24 R282 E0.0,0.0 P0.47 R-32.70 V11.72![0m
+[0;32mI (344835) MQTT_APP: Da Publish Data [ L24 R282 E0.0,0.0 P0.47 R-32.70 V11.72!], msg_id=0[0m
+[0;32mI (345405) UART_APP: [HOP LE] Du lieu tu xe:  L28 R282 E0.0,0.0 P-0.08 R-32.95 V11.67![0m
+[0;32mI (345405) MQTT_APP: Da Publish Data [ L28 R282 E0.0,0.0 P-0.08 R-32.95 V11.67!], msg_id=0[0m
+[0;32mI (345965) UART_APP: [HOP LE] Du lieu tu xe:  L21 R281 E0.0,0.0 P0.26 R-32.77 V11.72![0m
+[0;32mI (345965) MQTT_APP: Da Publish Data [ L21 R281 E0.0,0.0 P0.26 R-32.77 V11.72!], msg_id=0[0m
+[0;32mI (346535) UART_APP: [HOP LE] Du lieu tu xe:  L21 R281 E0.0,0.0 P-0.03 R-32.59 V11.72![0m
+[0;32mI (346535) MQTT_APP: Da Publish Data [ L21 R281 E0.0,0.0 P-0.03 R-32.59 V11.72!], msg_id=0[0m
+[0;32mI (347095) UART_APP: [HOP LE] Du lieu tu xe:  L22 R283 E0.0,0.0 P-0.03 R-32.40 V11.72![0m
+[0;32mI (347095) MQTT_APP: Da Publish Data [ L22 R283 E0.0,0.0 P-0.03 R-32.40 V11.72!], msg_id=0[0m
+[0;32mI (347325) MQTT_APP: Nhan duoc tin nhan moi:[0m
+TOPIC=manh_vip/robot/command
+DATA=150,150
+[0;32mI (347325) MQTT_APP: Lenh hop le. Truyen lenh cho LoRa: L=150, R=150[0m
+[0;32mI (347325) UART_APP: Da gui lenh xuong Robot: MANH_VIP$SET:150,150![0m
+[0;32mI (348225) UART_APP: [HOP LE] Du lieu tu xe:  L20 R283 E0.0,0.0 P-0.17 R-32.79 V11.68![0m
+[0;32mI (348225) MQTT_APP: Da Publish Data [ L20 R283 E0.0,0.0 P-0.17 R-32.79 V11.68!], msg_id=0[0m
+[0;32mI (348785) UART_APP: [HOP LE] Du lieu tu xe:  L24 R283 E0.0,0.0 P-0.03 R-32.69 V11.70![0m
+[0;32mI (348785) MQTT_APP: Da Publish Data [ L24 R283 E0.0,0.0 P-0.03 R-32.69 V11.70!], msg_id=0[0m
+[0;32mI (349355) UART_APP: [HOP LE] Du lieu tu xe:  L21 R280 E0.0,0.0 P-0.14 R-32.48 V11.68![0m
+[0;32mI (349355) MQTT_APP: Da Publish Data [ L21 R280 E0.0,0.0 P-0.14 R-32.48 V11.68!], msg_id=0[0m
+[0;32mI (349915) UART_APP: [HOP LE] Du lieu tu xe:  L24 R284 E0.0,0.0 P0.11 R-32.73 V11.73![0m
+[0;32mI (349915) MQTT_APP: Da Publish Data [ L24 R284 E0.0,0.0 P0.11 R-32.73 V11.73!], msg_id=0[0m
+[0;32mI (350475) UART_APP: [HOP LE] Du lieu tu xe:  L22 R282 E0.0,0.0 P-0.22 R-32.05 V11.72![0m
+[0;32mI (350475) MQTT_APP: Da Publish Data [ L22 R282 E0.0,0.0 P-0.22 R-32.05 V11.72!], msg_id=0[0m
+[0;32mI (351035) UART_APP: [HOP LE] Du lieu tu xe:  L23 R282 E0.0,0.0 P0.16 R-32.54 V11.67![0m
+[0;32mI (351035) MQTT_APP: Da Publish Data [ L23 R282 E0.0,0.0 P0.16 R-32.54 V11.67!], msg_id=0[0m
+[0;32mI (351605) UART_APP: [HOP LE] Du lieu tu xe:  L24 R280 E0.0,0.0 P-0.01 R-32.56 V11.67![0m
+[0;32mI (351605) MQTT_APP: Da Publish Data [ L24 R280 E0.0,0.0 P-0.01 R-32.56 V11.67!], msg_id=0[0m
+[0;32mI (352165) UART_APP: [HOP LE] Du lieu tu xe:  L23 R280 E0.0,0.0 P-6.54 R-25.59 V11.68![0m
+[0;32mI (352165) MQTT_APP: Da Publish Data [ L23 R280 E0.0,0.0 P-6.54 R-25.59 V11.68!], msg_id=0[0m
+[0;32mI (352725) UART_APP: [HOP LE] Du lieu tu xe:  L22 R283 E0.0,0.0 P0.25 R-32.65 V11.69![0m
+[0;32mI (352725) MQTT_APP: Da Publish Data [ L22 R283 E0.0,0.0 P0.25 R-32.65 V11.69!], msg_id=0[0m
+[0;32mI (353295) UART_APP: [HOP LE] Du lieu tu xe:  L25 R286 E0.0,0.0 P-0.15 R-32.47 V11.69![0m
+[0;32mI (353295) MQTT_APP: Da Publish Data [ L25 R286 E0.0,0.0 P-0.15 R-32.47 V11.69!], msg_id=0[0m
+[0;32mI (353855) UART_APP: [HOP LE] Du lieu tu xe:  L24 R281 E0.0,0.0 P-0.10 R-32.42 V11.72![0m
+[0;32mI (353855) MQTT_APP: Da Publish Data [ L24 R281 E0.0,0.0 P-0.10 R-32.42 V11.72!], msg_id=0[0m
+[0;32mI (354425) UART_APP: [HOP LE] Du lieu tu xe:  L25 R287 E0.0,0.0 P0.05 R-32.74 V11.68![0m
+[0;32mI (354425) MQTT_APP: Da Publish Data [ L25 R287 E0.0,0.0 P0.05 R-32.74 V11.68!], msg_id=0[0m
+[0;32mI (354985) UART_APP: [HOP LE] Du lieu tu xe:  L19 R277 E0.0,0.0 P0.39 R-32.48 V11.72![0m
+[0;32mI (354985) MQTT_APP: Da Publish Data [ L19 R277 E0.0,0.0 P0.39 R-32.48 V11.72!], msg_id=0[0m
+[0;32mI (355545) UART_APP: [HOP LE] Du lieu tu xe:  L20 R282 E0.0,0.0 P0.01 R-32.77 V11.72![0m
+[0;32mI (355545) MQTT_APP: Da Publish Data [ L20 R282 E0.0,0.0 P0.01 R-32.77 V11.72!], msg_id=0[0m
+[0;32mI (356105) UART_APP: [HOP LE] Du lieu tu xe:  L24 R286 E0.0,0.0 P-0.03 R-32.44 V11.72![0m
+[0;32mI (356105) MQTT_APP: Da Publish Data [ L24 R286 E0.0,0.0 P-0.03 R-32.44 V11.72!], msg_id=0[0m
+[0;32mI (356675) UART_APP: [HOP LE] Du lieu tu xe:  L22 R287 E0.0,0.0 P-0.43 R-32.60 V11.70![0m
+[0;32mI (356675) MQTT_APP: Da Publish Data [ L22 R287 E0.0,0.0 P-0.43 R-32.60 V11.70!], msg_id=0[0m
+[0;32mI (357235) UART_APP: [HOP LE] Du lieu tu xe:  L22 R285 E0.0,0.0 P-0.05 R-32.35 V11.70![0m
+[0;32mI (357235) MQTT_APP: Da Publish Data [ L22 R285 E0.0,0.0 P-0.05 R-32.35 V11.70!], msg_id=0[0m
+[0;32mI (357795) UART_APP: [HOP LE] Du lieu tu xe:  L28 R283 E0.0,0.0 P-0.03 R-32.70 V11.70![0m
+[0;32mI (357795) MQTT_APP: Da Publish Data [ L28 R283 E0.0,0.0 P-0.03 R-32.70 V11.70!], msg_id=0[0m
+[0;32mI (358365) UART_APP: [HOP LE] Du lieu tu xe:  L23 R284 E0.0,0.0 P-0.01 R-32.87 V11.72![0m
+[0;32mI (358365) MQTT_APP: Da Publish Data [ L23 R284 E0.0,0.0 P-0.01 R-32.87 V11.72!], msg_id=0[0m
+[0;32mI (358925) UART_APP: [HOP LE] Du lieu tu xe:  L22 R281 E0.0,0.0 P-0.04 R-32.68 V11.72![0m
+[0;32mI (358925) MQTT_APP: Da Publish Data [ L22 R281 E0.0,0.0 P-0.04 R-32.68 V11.72!], msg_id=0[0m
+[0;32mI (359485) UART_APP: [HOP LE] Du lieu tu xe:  L23 R285 E0.0,0.0 P0.21 R-32.85 V11.70![0m
+[0;32mI (359485) MQTT_APP: Da Publish Data [ L23 R285 E0.0,0.0 P0.21 R-32.85 V11.70!], msg_id=0[0m
+[0;32mI (360055) UART_APP: [HOP LE] Du lieu tu xe:  L23 R284 E0.0,0.0 P1.01 R-33.08 V11.69![0m
+[0;32mI (360055) MQTT_APP: Da Publish Data [ L23 R284 E0.0,0.0 P1.01 R-33.08 V11.69!], msg_id=0[0m
+[0;32mI (360615) UART_APP: [HOP LE] Du lieu tu xe:  L25 R284 E0.0,0.0 P-1.26 R-32.09 V11.70![0m
+[0;32mI (360615) MQTT_APP: Da Publish Data [ L25 R284 E0.0,0.0 P-1.26 R-32.09 V11.70!], msg_id=0[0m
+[0;32mI (361175) UART_APP: [HOP LE] Du lieu tu xe:  L23 R283 E0.0,0.0 P-0.44 R-32.15 V11.72![0m
+[0;32mI (361175) MQTT_APP: Da Publish Data [ L23 R283 E0.0,0.0 P-0.44 R-32.15 V11.72!], msg_id=0[0m
+[0;32mI (361745) UART_APP: [HOP LE] Du lieu tu xe:  L23 R283 E0.0,0.0 P-0.32 R-32.39 V11.72![0m
+[0;32mI (361745) MQTT_APP: Da Publish Data [ L23 R283 E0.0,0.0 P-0.32 R-32.39 V11.72!], msg_id=0[0m
+[0;32mI (362305) UART_APP: [HOP LE] Du lieu tu xe:  L27 R284 E0.0,0.0 P0.23 R-32.36 V11.68![0m
+[0;32mI (362305) MQTT_APP: Da Publish Data [ L27 R284 E0.0,0.0 P0.23 R-32.36 V11.68!], msg_id=0[0m
+[0;32mI (362865) UART_APP: [HOP LE] Du lieu tu xe:  L24 R282 E0.0,0.0 P-0.11 R-33.05 V11.70![0m
+[0;32mI (362865) MQTT_APP: Da Publish Data [ L24 R282 E0.0,0.0 P-0.11 R-33.05 V11.70!], msg_id=0[0m
+[0;32mI (363435) UART_APP: [HOP LE] Du lieu tu xe:  L22 R282 E0.0,0.0 P-0.10 R-32.45 V11.73![0m
+[0;32mI (363435) MQTT_APP: Da Publish Data [ L22 R282 E0.0,0.0 P-0.10 R-32.45 V11.73!], msg_id=0[0m
+[0;32mI (363995) UART_APP: [HOP LE] Du lieu tu xe:  L23 R282 E0.0,0.0 P-0.03 R-32.21 V11.72![0m
+[0;32mI (363995) MQTT_APP: Da Publish Data [ L23 R282 E0.0,0.0 P-0.03 R-32.21 V11.72!], msg_id=0[0m
+[0;32mI (364565) UART_APP: [HOP LE] Du lieu tu xe:  L24 R281 E0.0,0.0 P-0.23 R-32.67 V11.72![0m
+[0;32mI (364565) MQTT_APP: Da Publish Data [ L24 R281 E0.0,0.0 P-0.23 R-32.67 V11.72!], msg_id=0[0m
+[0;32mI (365125) UART_APP: [HOP LE] Du lieu tu xe:  L25 R286 E0.0,0.0 P0.12 R-32.37 V11.72![0m
+[0;32mI (365125) MQTT_APP: Da Publish Data [ L25 R286 E0.0,0.0 P0.12 R-32.37 V11.72!], msg_id=0[0m
+[0;32mI (365685) UART_APP: [HOP LE] Du lieu tu xe:  L21 R284 E0.0,0.0 P0.15 R-32.96 V11.69![0m
+[0;32mI (365685) MQTT_APP: Da Publish Data [ L21 R284 E0.0,0.0 P0.15 R-32.96 V11.69!], msg_id=0[0m
+[0;32mI (366245) UART_APP: [HOP LE] Du lieu tu xe:  L22 R282 E0.0,0.0 P0.04 R-32.84 V11.70![0m
+[0;32mI (366245) MQTT_APP: Da Publish Data [ L22 R282 E0.0,0.0 P0.04 R-32.84 V11.70!], msg_id=0[0m
+[0;32mI (366805) UART_APP: [HOP LE] Du lieu tu xe:  L22 R284 E0.0,0.0 P0.22 R-32.50 V11.69![0m
+[0;32mI (366805) MQTT_APP: Da Publish Data [ L22 R284 E0.0,0.0 P0.22 R-32.50 V11.69!], msg_id=0[0m
+[0;32mI (367375) UART_APP: [HOP LE] Du lieu tu xe:  L23 R285 E0.0,0.0 P-5.24 R-29.23 V11.70![0m
+[0;32mI (367375) MQTT_APP: Da Publish Data [ L23 R285 E0.0,0.0 P-5.24 R-29.23 V11.70!], msg_id=0[0m
+[0;32mI (367935) UART_APP: [HOP LE] Du lieu tu xe:  L21 R283 E0.0,0.0 P0.23 R-32.69 V11.70![0m
+[0;32mI (367935) MQTT_APP: Da Publish Data [ L21 R283 E0.0,0.0 P0.23 R-32.69 V11.70!], msg_id=0[0m
+[0;32mI (368495) UART_APP: [HOP LE] Du lieu tu xe:  L26 R284 E0.0,0.0 P-0.30 R-32.39 V11.72![0m
+[0;32mI (368495) MQTT_APP: Da Publish Data [ L26 R284 E0.0,0.0 P-0.30 R-32.39 V11.72!], msg_id=0[0m
+[0;32mI (369065) UART_APP: [HOP LE] Du lieu tu xe:  L19 R284 E0.0,0.0 P-0.06 R-32.43 V11.72![0m
+[0;32mI (369065) MQTT_APP: Da Publish Data [ L19 R284 E0.0,0.0 P-0.06 R-32.43 V11.72!], msg_id=0[0m
+[0;32mI (369625) UART_APP: [HOP LE] Du lieu tu xe:  L23 R283 E0.0,0.0 P-0.16 R-32.20 V11.69![0m
+[0;32mI (369625) MQTT_APP: Da Publish Data [ L23 R283 E0.0,0.0 P-0.16 R-32.20 V11.69!], msg_id=0[0m
+[0;32mI (370185) UART_APP: [HOP LE] Du lieu tu xe:  L24 R286 E0.0,0.0 P0.48 R-32.98 V11.70![0m
+[0;32mI (370185) MQTT_APP: Da Publish Data [ L24 R286 E0.0,0.0 P0.48 R-32.98 V11.70!], msg_id=0[0m
+[0;32mI (370745) UART_APP: [HOP LE] Du lieu tu xe:  L20 R283 E0.0,0.0 P0.48 R-32.50 V11.67![0m
+[0;32mI (370745) MQTT_APP: Da Publish Data [ L20 R283 E0.0,0.0 P0.48 R-32.50 V11.67!], msg_id=0[0m
+[0;32mI (371315) UART_APP: [HOP LE] Du lieu tu xe:  L29 R282 E0.0,0.0 P-0.16 R-32.37 V11.70![0m
+[0;32mI (371315) MQTT_APP: Da Publish Data [ L29 R282 E0.0,0.0 P-0.16 R-32.37 V11.70!], msg_id=0[0m
+[0;32mI (371875) UART_APP: [HOP LE] Du lieu tu xe:  L23 R285 E0.0,0.0 P0.61 R-32.50 V11.69![0m
+[0;32mI (371875) MQTT_APP: Da Publish Data [ L23 R285 E0.0,0.0 P0.61 R-32.50 V11.69!], msg_id=0[0m
+[0;32mI (372445) UART_APP: [HOP LE] Du lieu tu xe:  L21 R284 E0.0,0.0 P-0.34 R-32.70 V11.67![0m
+[0;32mI (372445) MQTT_APP: Da Publish Data [ L21 R284 E0.0,0.0 P-0.34 R-32.70 V11.67!], msg_id=0[0m
+[0;32mI (373005) UART_APP: [HOP LE] Du lieu tu xe:  L22 R281 E0.0,0.0 P0.30 R-32.60 V11.69![0m
+[0;32mI (373005) MQTT_APP: Da Publish Data [ L22 R281 E0.0,0.0 P0.30 R-32.60 V11.69!], msg_id=0[0m
+[0;32mI (373565) UART_APP: [HOP LE] Du lieu tu xe:  L25 R284 E0.0,0.0 P0.00 R-32.76 V11.69![0m
+[0;32mI (373565) MQTT_APP: Da Publish Data [ L25 R284 E0.0,0.0 P0.00 R-32.76 V11.69!], msg_id=0[0m
+[0;32mI (374125) UART_APP: [HOP LE] Du lieu tu xe:  L23 R279 E0.0,0.0 P0.00 R-32.29 V11.70![0m
+[0;32mI (374125) MQTT_APP: Da Publish Data [ L23 R279 E0.0,0.0 P0.00 R-32.29 V11.70!], msg_id=0[0m
+[0;32mI (374695) UART_APP: [HOP LE] Du lieu tu xe:  L21 R282 E0.0,0.0 P-0.27 R-32.40 V11.72![0m
+[0;32mI (374695) MQTT_APP: Da Publish Data [ L21 R282 E0.0,0.0 P-0.27 R-32.40 V11.72!], msg_id=0[0m
+[0;32mI (375255) UART_APP: [HOP LE] Du lieu tu xe:  L27 R280 E0.0,0.0 P0.07 R-31.75 V11.67![0m
+[0;32mI (375255) MQTT_APP: Da Publish Data [ L27 R280 E0.0,0.0 P0.07 R-31.75 V11.67!], msg_id=0[0m
+[0;32mI (375815) UART_APP: [HOP LE] Du lieu tu xe:  L25 R279 E0.0,0.0 P-0.16 R-32.65 V11.69![0m
+[0;32mI (375815) MQTT_APP: Da Publish Data [ L25 R279 E0.0,0.0 P-0.16 R-32.65 V11.69!], msg_id=0[0m
+[0;31mE (1469675) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;31mE (1470465) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m

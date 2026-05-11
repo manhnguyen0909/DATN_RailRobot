@@ -1,0 +1,2806 @@
+[0;32mI (272) esp_image: segment 4: paddr=000da814 vaddr=403801ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40384c46
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1820
+load:0x403cc710,len:0xbd0
+load:0x403ce710,len:0x2f4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.6-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 10 2026 23:14:25[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (70) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (85) boot:  3 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (93) boot:  4 ota_0            OTA app          00 10 00120000 00100000[0m
+[0;32mI (100) boot:  5 ota_1            OTA app          00 11 00220000 00100000[0m
+[0;32mI (108) boot:  6 spiffs           Unknown data     01 82 00320000 00080000[0m
+[0;32mI (115) boot: End of partition table[0m
+[0;32mI (120) boot: Defaulting to factory image[0m
+[0;32mI (124) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=1d21ch (119324) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=0003d244 vaddr=3fc93e00 size=02c98h ( 11416) load[0m
+[0;32mI (154) esp_image: segment 2: paddr=0003fee4 vaddr=40380000 size=00134h (   308) load[0m
+[0;32mI (157) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9a7ech (632812) map[0m
+[0;32mI (265) esp_image: segment 4: paddr=000da814 vaddr=40380134 size=13b0ch ( 80652) load[0m
+[0;32mI (286) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (286) boot: Disabling RNG early entropy source...[0m
+[0;32mI (298) cpu_start: Unicore app[0m
+[0;32mI (306) cpu_start: Pro cpu start user code[0m
+[0;32mI (306) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (307) cpu_start: Application information:[0m
+[0;32mI (309) cpu_start: Project name:     NCKH2026_RailRobot[0m
+[0;32mI (315) cpu_start: App version:      31923fc-dirty[0m
+[0;32mI (321) cpu_start: Compile time:     Apr 10 2026 23:14:05[0m
+[0;32mI (327) cpu_start: ELF file SHA256:  becae469f...[0m
+[0;32mI (332) cpu_start: ESP-IDF:          v5.2.6-dirty[0m
+[0;32mI (338) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (342) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (347) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (359) heap_init: At 3FC9ABE0 len 00025420 (149 KiB): RAM[0m
+[0;32mI (365) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (372) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (379) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (386) spi_flash: detected chip: generic[0m
+[0;32mI (390) spi_flash: flash io: dio[0m
+[0;32mI (395) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (401) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (408) main_task: Started on CPU0[0m
+[0;32mI (408) main_task: Calling app_main()[0m
+[0;32mI (418) MAIN_APP: NVS initialized successfully.[0m
+[0;32mI (418) pp: pp rom version: 9387209[0m
+[0;32mI (418) net80211: net80211 rom version: 9387209[0m
+[0;32mI (438) wifi:wifi driver task: 3fca3980, prio:23, stack:6656, core=0[0m
+[0;32mI (438) wifi:wifi firmware version: e851349[0m
+[0;32mI (438) wifi:wifi certification version: v7.0[0m
+[0;32mI (438) wifi:config NVS flash: enabled[0m
+[0;32mI (448) wifi:config nano formating: disabled[0m
+[0;32mI (448) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (448) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (458) wifi:Init management short buffer num: 32[0m
+[0;32mI (458) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (468) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (468) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (468) wifi:Init static rx buffer num: 10[0m
+[0;32mI (478) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (478) wifi_init: rx ba win: 6[0m
+[0;32mI (488) wifi_init: tcpip mbox: 32[0m
+[0;32mI (488) wifi_init: udp mbox: 6[0m
+[0;32mI (488) wifi_init: tcp mbox: 6[0m
+[0;32mI (498) wifi_init: tcp tx win: 5760[0m
+[0;32mI (498) wifi_init: tcp rx win: 5760[0m
+[0;32mI (508) wifi_init: tcp mss: 1440[0m
+[0;32mI (508) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (508) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (518) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (558) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (568) wifi:mode : sta (10:00:3b:cc:55:10)[0m
+[0;32mI (568) wifi:enable tsf[0m
+[0;32mI (568) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (578) WIFI_MGR: Connecting to WiFi SSID: Nguyen Manh[0m
+[0;32mI (578) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (578) wifi:state: init -> auth (b0)[0m
+[0;32mI (598) wifi:state: auth -> assoc (0)[0m
+[0;32mI (608) wifi:state: assoc -> run (10)[0m
+[0;32mI (1008) wifi:connected with Nguyen Manh, aid = 2, channel 11, BW20, bssid = c0:61:18:41:67:fa[0m
+[0;32mI (1008) wifi:security: WPA2-PSK, phy: bg, rssi: -70[0m
+[0;32mI (1008) wifi:pm start, type: 0[0m
+
+[0;32mI (1008) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1018) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1028) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1578) WIFI_MGR: Waiting for WiFi... (1/5)[0m
+[0;32mI (2038) esp_netif_handlers: sta ip: 192.168.10.101, mask: 255.255.255.0, gw: 192.168.10.1[0m
+[0;32mI (2578) WIFI_MGR: Waiting for WiFi... (2/5)[0m
+[0;32mI (2578) WIFI_MGR: Got IP: 192.168.10.101[0m
+[0;32mI (2578) MAIN_APP: WiFi initialized successfully.[0m
+[0;32mI (2678) OTA_SERVER: OTA Server started at port 81[0m
+[0;32mI (2678) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (2678) OTA_SERVER: 🚀 OTA SERVER READY![0m
+[0;32mI (2678) OTA_SERVER: 👉 Click to open: http://192.168.10.101:81/ota[0m
+[0;32mI (2688) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (2698) MAIN_APP: OTA Server started successfully.[0m
+[0;32mI (2708) uart: queue free spaces: 20[0m
+[0;32mI (2708) UART_APP: Da khoi tao UART1 (TX: 20, RX: 21) o toc do 9600[0m
+[0;32mI (5018) UART_APP: Nhan duoc 59 bytes tu STM32: San sang doc Encoder...
+Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (5158) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (5298) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (5438) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (5578) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (5718) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (5858) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (5998) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (6138) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (6278) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (6418) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (6558) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (6688) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (6828) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (6968) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (7108) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (7248) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (7388) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (7528) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (7668) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (7808) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (7948) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (8088) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (8228) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (8368) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (8508) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (8638) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (8778) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (8918) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (9058) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (9198) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (9338) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (9478) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   3.8 RPM
+[0m
+[0;32mI (9618) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  23.0 RPM
+[0m
+[0;32mI (9758) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  33.9 RPM
+[0m
+[0;32mI (9898) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  22.4 RPM
+[0m
+[0;32mI (10038) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  -0.6 RPM
+[0m
+[0;32mI (10178) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (10318) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (10448) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (10588) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (10728) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (10868) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (11008) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (11148) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (11288) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (11428) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (11568) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (11708) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (11848) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (11988) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (12128) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai: -13.4 RPM
+[0m
+[0;32mI (12268) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai: -39.1 RPM
+[0m
+[0;32mI (12398) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai: -58.9 RPM
+[0m
+[0;32mI (12538) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai: -62.7 RPM
+[0m
+[0;32mI (12678) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  -9.0 RPM
+[0m
+[0;32mI (12818) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (12958) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (13098) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (13238) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (13378) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (13518) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (13658) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (13798) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (13938) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (14078) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (14208) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (14348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (14488) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (14628) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (14768) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   2.6 RPM
+[0m
+[0;32mI (14908) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  44.8 RPM
+[0m
+[0;32mI (15048) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  69.1 RPM
+[0m
+[0;32mI (15188) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  66.6 RPM
+[0m
+[0;32mI (15328) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  47.4 RPM
+[0m
+[0;32mI (15468) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   1.3 RPM
+[0m
+[0;32mI (15608) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (15748) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (15888) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (16018) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (16158) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (16298) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (16438) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (16578) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (16718) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (16858) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (16998) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (17138) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   1.9 RPM
+[0m
+[0;32mI (17278) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   1.3 RPM
+[0m
+[0;32mI (17418) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (17558) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (17698) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (17838) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (17978) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   3.2 RPM
+[0m
+[0;32mI (18108) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  48.7 RPM
+[0m
+[0;32mI (18248) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  57.6 RPM
+[0m
+[0;32mI (18388) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  57.0 RPM
+[0m
+[0;32mI (18528) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  16.0 RPM
+[0m
+[0;32mI (18668) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (18808) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (18948) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (19088) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (19228) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (19368) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (19508) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (19648) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (19788) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (19918) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (20058) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (20198) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (20338) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (20478) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (20618) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (20758) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (20898) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (21038) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (21178) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (21318) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (21458) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (21598) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (21728) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (21868) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   1.9 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (22008) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  53.8 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (22148) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  85.8 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (22288) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  61.5 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (22428) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   1.3 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (22568) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (22708) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (22848) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (22988) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (23128) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (23268) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (23408) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (23538) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (23678) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (23818) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (23958) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (24098) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (24238) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (24378) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (24518) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (24658) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (24798) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (24938) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  -0.6 RPM
+[0m
+[0;32mI (25078) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (25208) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (25348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (25488) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  -0.6 RPM
+[0m
+[0;32mI (25628) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (25768) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (25908) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (26048) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (26188) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (26328) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (26468) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (26608) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (26748) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (26888) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (27018) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (27158) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  -0.6 RPM
+[0m
+[0;32mI (27298) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  -3.2 RPM
+[0m
+[0;32mI (27438) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  -9.6 RPM
+[0m
+[0;32mI (27578) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (27718) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   1.3 RPM
+[0m
+[0;32mI (27858) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (27998) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   7.0 RPM
+[0m
+[0;32mI (28138) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  58.9 RPM
+[0m
+[0;32mI (28278) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  55.7 RPM
+[0m
+[0;32mI (28418) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (28558) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (28698) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   1.9 RPM
+[0m
+[0;32mI (28828) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  51.2 RPM
+[0m
+[0;32mI (28968) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  83.2 RPM
+[0m
+[0;32mI (29108) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  37.8 RPM
+[0m
+[0;32mI (29248) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  -0.6 RPM
+[0m
+[0;32mI (29388) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.6 RPM
+[0m
+[0;32mI (29528) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  30.1 RPM
+[0m
+[0;32mI (29668) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  78.1 RPM
+[0m
+[0;32mI (29808) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  41.0 RPM
+[0m
+[0;32mI (29948) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (30088) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (30228) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (30368) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (30498) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (30638) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (30778) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (30918) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (31058) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (31198) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (31338) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  15.4 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (31478) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  61.5 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (31618) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  73.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (31758) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  33.3 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (31898) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (32038) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (32178) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  -0.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (32308) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  -4.5 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (32448) UART_APP: Nhan duoc 35 bytes tu STM32: Trai: -53.1 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (32588) UART_APP: Nhan duoc 35 bytes tu STM32: Trai: -86.4 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (32728) UART_APP: Nhan duoc 35 bytes tu STM32: Trai: -38.4 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (32868) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (33008) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  10.9 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (33148) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  51.2 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (33288) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  80.7 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (33428) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  45.5 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (33568) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (33708) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (33848) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (33988) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (34128) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   1.3 RPM
+[0m
+[0;32mI (34258) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  37.8 RPM
+[0m
+[0;32mI (34398) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  65.3 RPM
+[0m
+[0;32mI (34538) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  62.1 RPM
+[0m
+[0;32mI (34678) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  25.0 RPM
+[0m
+[0;32mI (34818) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  -3.2 RPM
+[0m
+[0;32mI (34958) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  -3.2 RPM
+[0m
+[0;32mI (35098) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai: -18.6 RPM
+[0m
+[0;32mI (35238) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai: -70.4 RPM
+[0m
+[0;32mI (35378) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai: -59.5 RPM
+[0m
+[0;32mI (35518) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  -4.5 RPM
+[0m
+[0;32mI (35658) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (35798) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (35938) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (36068) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (36208) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (36348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (36488) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (36628) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (36768) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (36908) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (37048) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (37188) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (37328) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (37468) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  -0.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (37608) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (37748) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (37878) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (38018) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   3.2 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (38158) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  57.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (38298) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  84.5 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (38438) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  34.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (38578) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  -0.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (38718) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  -8.3 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (38858) UART_APP: Nhan duoc 35 bytes tu STM32: Trai: -57.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (38998) UART_APP: Nhan duoc 35 bytes tu STM32: Trai: -61.5 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (39138) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  -7.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (39278) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (39418) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (39558) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (39688) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (39828) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (39968) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (40108) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (40248) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.6 RPM
+[0m
+[0;32mI (40388) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  21.8 RPM
+[0m
+[0;32mI (40528) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  74.9 RPM
+[0m
+[0;32mI (40668) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  82.6 RPM
+[0m
+[0;32mI (40808) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  17.3 RPM
+[0m
+[0;32mI (40948) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (41088) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (41228) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (41368) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (41498) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (41638) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (41778) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (41918) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (42058) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (42198) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   1.9 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (42338) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (42478) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (42618) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (42758) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   6.4 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (42898) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  58.9 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (43038) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  71.7 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (43178) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  15.4 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (43308) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  -1.3 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (43448) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (43588) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (43728) UART_APP: Nhan duoc 35 bytes tu STM32: Trai: -26.2 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (43868) UART_APP: Nhan duoc 35 bytes tu STM32: Trai: -55.7 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (44008) UART_APP: Nhan duoc 35 bytes tu STM32: Trai: -62.7 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (44148) UART_APP: Nhan duoc 35 bytes tu STM32: Trai: -16.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (44288) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (44428) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (44568) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (44708) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (44848) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (44978) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (45118) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   2.6 RPM
+[0m
+[0;32mI (45258) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  43.5 RPM
+[0m
+[0;32mI (45398) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  84.5 RPM
+[0m
+[0;32mI (45538) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:  75.5 RPM
+[0m
+[0;32mI (45678) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   9.0 RPM
+[0m
+[0;32mI (45818) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (45958) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (46098) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (46238) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (46378) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (46518) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (46648) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (46788) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  10.2 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (46928) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  68.5 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (47068) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  87.7 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (47208) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:  51.9 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (47348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.6 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (47488) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (47628) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (47768) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (47908) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (48048) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (48188) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (48318) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (48458) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (48598) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (48738) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (48878) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (49018) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (49158) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (49298) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (49438) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (49578) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (49718) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (49858) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (49988) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (50128) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (50268) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (50408) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (50548) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (50688) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (50828) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (50968) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (51108) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (51248) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (51388) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (51518) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (51658) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (51798) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (51938) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (52078) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (52218) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (52358) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (52498) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (52638) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (52778) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (52918) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (53058) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (53188) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (53328) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (53468) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (53608) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (53748) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (53888) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (54028) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (54168) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (54308) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (54448) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (54588) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (54728) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (54858) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (54998) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (55138) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (55278) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (55418) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (55558) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (55698) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (55838) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (55978) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (56118) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (56258) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (56388) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (56528) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (56668) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (56808) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (56948) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (57088) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (57228) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (57368) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (57508) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (57648) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (57788) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (57928) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (58068) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (58198) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (58338) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (58478) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (58618) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (58758) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (58898) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (59038) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (59178) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (59318) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (59458) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (59598) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (59738) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (59878) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (60008) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (60148) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (60288) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (60428) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (60568) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (60708) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (60848) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (60988) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (61128) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (61268) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (61408) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (61538) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (61678) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (61818) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (61958) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (62098) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (62238) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (62378) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (62518) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (62658) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (62798) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (62938) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (63078) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (63208) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (63348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (63488) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (63628) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (63768) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (63908) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (64048) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (64188) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (64328) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (64468) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (64608) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (64748) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (64878) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (65018) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (65158) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (65298) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (65438) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (65578) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (65718) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (65858) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (65998) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (66138) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (66278) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (66408) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (66548) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (66688) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (66828) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (66968) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (67108) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (67248) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (67388) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (67528) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (67668) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (67808) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (67948) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (68078) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (68218) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (68358) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (68498) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (68638) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (68778) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (68918) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (69058) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (69198) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (69338) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (69468) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (69608) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (69748) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (69888) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (70028) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (70168) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (70308) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (70448) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (70588) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (70728) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (70868) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (70998) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (71138) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (71278) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (71418) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (71558) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (71698) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (71838) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (71978) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (72118) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (72258) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (72398) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (72538) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (72668) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (72808) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (72948) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (73088) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (73228) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (73368) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (73508) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (73648) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (73788) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (73928) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (74068) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (74208) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (74348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (74478) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (74618) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (74758) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (74898) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (75038) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (75178) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (75318) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (75458) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (75598) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (75738) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (75878) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (76018) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (76148) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (76288) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (76428) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (76568) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (76708) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (76848) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (76988) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (77128) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (77268) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (77408) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (77548) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (77688) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (77818) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (77958) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (78098) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (78238) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (78378) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (78518) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (78658) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (78798) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (78938) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (79078) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (79218) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (79348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (79488) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (79628) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (79768) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (79908) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (80048) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (80188) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (80328) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (80468) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (80608) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (80748) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (80888) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (81018) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (81158) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (81298) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (81438) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (81578) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (81718) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (81858) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (81998) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (82138) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (82278) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (82418) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (82558) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (82688) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (82828) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (82968) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (83108) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (83248) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (83388) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (83528) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (83668) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (83808) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (83948) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (84088) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (84228) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (84358) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (84498) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (84638) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (84778) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (84918) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (85058) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (85198) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (85338) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (85478) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (85618) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (85758) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (85898) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (86028) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (86168) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (86308) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (86448) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (86588) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (86728) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (86868) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (87008) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (87148) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (87288) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (87428) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (87568) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (87698) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (87838) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (87978) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (88118) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (88258) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (88398) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (88538) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (88678) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (88818) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (88958) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (89098) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (89228) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (89368) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (89508) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (89648) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (89788) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (89928) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (90068) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (90208) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (90348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (90488) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (90628) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (90758) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (90898) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (91038) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (91178) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (91318) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (91458) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (91598) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (91738) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (91878) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (92018) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (92158) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (92298) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (92428) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (92568) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (92708) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (92848) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (92988) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (93128) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (93268) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (93408) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (93548) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (93688) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (93818) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (93958) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (94098) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (94238) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (94378) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (94518) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (94658) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (94798) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (94938) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (95078) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (95218) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (95348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (95488) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (95628) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (95768) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (95908) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (96048) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (96188) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (96328) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (96468) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (96608) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (96748) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (96888) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (97018) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (97158) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (97298) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (97438) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (97578) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (97718) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (97858) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (97998) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (98138) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (98278) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (98418) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (98558) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (98688) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (98828) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (98968) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (99108) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (99248) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (99388) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (99528) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (99668) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (99808) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (99948) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (100088) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (100218) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (100358) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (100498) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (100638) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (100778) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (100918) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (101058) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (101198) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (101338) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (101478) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (101618) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (101758) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (101888) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (102028) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (102168) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (102308) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (102448) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (102588) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (102728) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (102868) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (103008) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (103148) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (103288) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (103418) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (103558) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (103698) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (103838) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (103978) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (104118) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (104258) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (104398) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (104538) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (104678) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (104818) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (104948) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (105088) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (105228) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (105368) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (105508) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (105648) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (105788) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (105928) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (106068) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (106208) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (106348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (106488) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (106618) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (106758) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (106898) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (107038) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (107178) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (107318) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (107458) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (107598) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (107738) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (107878) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (108018) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (108148) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (108288) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (108428) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (108568) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (108708) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (108848) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (108988) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (109128) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (109268) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (109408) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (109548) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (109678) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (109818) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (109958) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (110098) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (110238) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (110378) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (110518) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (110658) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (110798) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (110938) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (111078) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (111208) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (111348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (111488) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (111628) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (111768) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (111908) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (112048) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (112188) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (112328) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (112468) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (112598) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (112738) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (112878) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (113018) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (113158) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (113298) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (113438) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (113578) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (113718) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (113858) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (113998) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (114138) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (114268) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (114408) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (114548) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (114688) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (114828) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (114968) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (115108) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (115248) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (115388) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (115528) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (115668) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (115808) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (115938) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (116078) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (116218) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (116358) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (116498) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (116638) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (116778) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (116918) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (117058) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (117198) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (117338) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (117478) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (117608) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (117748) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (117888) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (118028) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (118168) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (118308) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (118448) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (118588) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (118728) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (118868) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (119008) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (119148) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (119278) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (119418) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (119558) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (119698) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (119838) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (119978) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (120118) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (120258) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (120398) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (120538) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (120678) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (120818) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (120948) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (121088) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (121228) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (121368) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (121508) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (121648) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (121788) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (121928) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (122068) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (122208) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (122348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (122478) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (122618) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (122758) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (122898) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (123038) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (123178) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (123318) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (123458) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (123598) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (123738) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (123878) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (124018) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (124148) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (124288) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (124428) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (124568) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (124708) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (124848) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (124988) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (125128) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (125268) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (125408) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (125548) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (125688) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (125818) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (125958) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (126098) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (126238) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (126378) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (126518) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (126658) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (126798) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (126938) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (127078) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (127218) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (127348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (127488) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (127628) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (127768) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (127908) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (128048) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (128188) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (128328) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (128468) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (128608) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (128748) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (128888) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (129018) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (129158) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (129298) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (129438) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (129578) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (129718) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (129858) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (129998) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (130138) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (130278) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (130418) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (130548) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (130688) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (130828) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (130968) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (131108) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (131248) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (131388) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (131528) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (131668) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (131808) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (131938) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (132078) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (132218) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (132358) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (132498) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (132638) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (132778) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (132918) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (133058) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (133198) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (133338) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (133468) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (133608) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (133748) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (133888) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (134028) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (134168) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (134308) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (134448) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (134588) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (134728) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (134858) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (134998) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (135138) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (135278) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (135418) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (135558) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (135698) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (135838) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (135978) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (136118) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (136258) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (136398) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (136528) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (136668) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (136808) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (136948) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (137088) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (137228) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (137368) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (137508) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (137648) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (137788) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (137918) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (138058) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (138198) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (138338) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (138478) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (138618) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (138758) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (138898) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (139038) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (139178) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (139318) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (139448) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (139588) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (139728) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (139868) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (140008) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (140148) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (140288) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (140428) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (140568) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (140708) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (140848) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (140988) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (141118) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (141258) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (141398) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (141538) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (141678) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (141818) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (141958) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (142098) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (142238) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (142378) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (142518) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (142648) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (142788) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (142928) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (143068) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (143208) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (143348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (143488) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (143628) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (143768) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (143908) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (144048) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (144188) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (144318) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (144458) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (144598) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (144738) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (144878) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (145018) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (145158) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (145298) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (145438) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (145578) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (145718) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (145848) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (145988) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (146128) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (146268) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (146408) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (146548) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (146688) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (146828) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (146968) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (147108) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (147248) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (147378) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (147518) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (147658) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (147798) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (147938) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (148078) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (148218) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (148358) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (148498) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (148638) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (148778) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (148908) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (149048) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (149188) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (149328) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (149468) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (149608) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (149748) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (149888) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (150028) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (150168) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (150298) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (150438) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (150578) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (150718) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (150858) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (150998) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (151138) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (151278) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (151418) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (151558) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (151698) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (151828) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (151968) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (152108) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (152248) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (152388) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (152528) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (152668) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (152808) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (152948) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (153088) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (153228) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (153358) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (153498) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (153638) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (153778) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (153918) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (154058) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (154198) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (154338) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (154478) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (154618) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (154748) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (154888) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (155028) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (155168) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (155308) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (155448) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (155588) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (155728) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (155868) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (156008) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (156148) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (156288) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (156418) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (156558) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (156698) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (156838) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (156978) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (157118) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (157258) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (157398) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (157538) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (157678) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (157818) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (157948) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (158088) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (158228) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (158368) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (158508) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (158648) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (158788) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (158928) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (159068) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (159208) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (159348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (159478) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (159618) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (159758) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (159898) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (160038) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (160178) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (160318) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (160458) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (160598) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (160738) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (160878) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (161008) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (161148) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (161288) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (161428) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (161568) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (161708) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (161848) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (161988) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (162128) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (162268) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (162408) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (162538) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (162678) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (162818) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (162958) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (163098) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (163238) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (163378) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (163518) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (163658) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (163798) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (163938) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (164078) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (164208) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (164348) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (164488) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (164628) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (164768) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (164908) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (165048) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (165188) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (165328) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (165468) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (165598) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (165738) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (165878) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (166018) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (166158) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (166298) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (166438) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (166578) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (166718) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (166858) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (166998) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (167138) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (167268) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (167408) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (167548) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (167688) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (167828) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (167968) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (168108) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (168248) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (168388) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (168528) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (168668) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (168798) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (168938) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (169078) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (169218) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (169358) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (169498) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (169638) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (169778) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (169918) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (170058) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (170198) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (170328) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (170468) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (170608) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (170748) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (170888) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (171028) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (171168) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (171308) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (171448) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (171588) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (171728) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (171858) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (171998) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (172138) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (172278) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (172418) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (172558) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (172698) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (172838) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (172978) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (173118) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (173248) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (173388) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (173528) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (173668) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (173808) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (173948) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (174088) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (174228) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (174368) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (174508) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (174648) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (174778) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (174918) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (175058) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (175198) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (175338) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (175478) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (175618) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (175758) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (175898) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (176038) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (176178) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (176308) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (176448) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (176588) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (176728) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (176868) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (177008) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai: -42.3 RPM
+[0m
+[0;32mI (177148) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -337.4 RPM
+[0m
+[0;32mI (177288) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -378.4 RPM
+[0m
+[0;32mI (177428) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -381.6 RPM
+[0m
+[0;32mI (177568) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -382.8 RPM
+[0m
+[0;32mI (177708) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -384.1 RPM
+[0m
+[0;32mI (177848) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -384.8 RPM
+[0m
+[0;32mI (177988) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -386.0 RPM
+[0m
+[0;32mI (178128) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -386.7 RPM
+[0m
+[0;32mI (178268) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -388.0 RPM
+[0m
+[0;32mI (178408) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -388.0 RPM
+[0m
+[0;32mI (178548) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -389.2 RPM
+[0m
+[0;32mI (178688) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -388.6 RPM
+[0m
+[0;32mI (178828) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -389.9 RPM
+[0m
+[0;32mI (178968) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -389.2 RPM
+[0m
+[0;32mI (179108) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -390.5 RPM
+[0m
+[0;32mI (179248) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -390.5 RPM
+[0m
+[0;32mI (179388) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -391.8 RPM
+[0m
+[0;32mI (179528) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -390.5 RPM
+[0m
+[0;32mI (179668) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -391.2 RPM
+[0m
+[0;32mI (179808) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -391.8 RPM
+[0m
+[0;32mI (179948) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -391.8 RPM
+[0m
+[0;32mI (180088) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -392.4 RPM
+[0m
+[0;32mI (180228) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -391.8 RPM
+[0m
+[0;32mI (180368) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -393.1 RPM
+[0m
+[0;32mI (180508) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -393.1 RPM
+[0m
+[0;32mI (180648) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -393.1 RPM
+[0m
+[0;32mI (180788) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -394.4 RPM
+[0m
+[0;32mI (180928) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -393.1 RPM
+[0m
+[0;32mI (181068) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -393.1 RPM
+[0m
+[0;32mI (181208) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -393.7 RPM
+[0m
+[0;32mI (181348) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -393.7 RPM
+[0m
+[0;32mI (181488) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -393.1 RPM
+[0m
+[0;32mI (181628) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -393.1 RPM
+[0m
+[0;32mI (181768) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -393.1 RPM
+[0m
+[0;32mI (181908) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -393.1 RPM
+[0m
+[0;32mI (182048) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -393.7 RPM
+[0m
+[0;32mI (182188) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -393.7 RPM
+[0m
+[0;32mI (182328) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -393.1 RPM
+[0m
+[0;32mI (182468) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -393.7 RPM
+[0m
+[0;32mI (182608) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -394.4 RPM
+[0m
+[0;32mI (182748) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -394.4 RPM
+[0m
+[0;32mI (182898) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -395.0 RPM
+[0m
+[0;32mI (183038) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -395.0 RPM
+[0m
+[0;32mI (183178) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -395.0 RPM
+[0m
+[0;32mI (183318) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -395.6 RPM
+[0m
+[0;32mI (183458) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -395.6 RPM
+[0m
+[0;32mI (183598) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -395.6 RPM
+[0m
+[0;32mI (183738) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.3 RPM
+[0m
+[0;32mI (183878) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.3 RPM
+[0m
+[0;32mI (184018) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -395.6 RPM
+[0m
+[0;32mI (184158) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.3 RPM
+[0m
+[0;32mI (184298) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -395.6 RPM
+[0m
+[0;32mI (184438) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.3 RPM
+[0m
+[0;32mI (184578) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.3 RPM
+[0m
+[0;32mI (184718) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.3 RPM
+[0m
+[0;32mI (184858) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -395.6 RPM
+[0m
+[0;32mI (184998) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.3 RPM
+[0m
+[0;32mI (185138) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.3 RPM
+[0m
+[0;32mI (185278) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.3 RPM
+[0m
+[0;32mI (185418) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -395.6 RPM
+[0m
+[0;32mI (185558) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.3 RPM
+[0m
+[0;32mI (185698) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.3 RPM
+[0m
+[0;32mI (185838) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.3 RPM
+[0m
+[0;32mI (185978) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.3 RPM
+[0m
+[0;32mI (186118) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.9 RPM
+[0m
+[0;32mI (186258) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.9 RPM
+[0m
+[0;32mI (186398) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.9 RPM
+[0m
+[0;32mI (186538) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.9 RPM
+[0m
+[0;32mI (186678) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.9 RPM
+[0m
+[0;32mI (186818) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.9 RPM
+[0m
+[0;32mI (186958) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -397.6 RPM
+[0m
+[0;32mI (187098) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.9 RPM
+[0m
+[0;32mI (187238) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -397.6 RPM
+[0m
+[0;32mI (187378) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -397.6 RPM
+[0m
+[0;32mI (187518) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.9 RPM
+[0m
+[0;32mI (187658) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -397.6 RPM
+[0m
+[0;32mI (187798) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -397.6 RPM
+[0m
+[0;32mI (187938) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -397.6 RPM
+[0m
+[0;32mI (188078) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.9 RPM
+[0m
+[0;32mI (188218) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -397.6 RPM
+[0m
+[0;32mI (188358) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.9 RPM
+[0m
+[0;32mI (188498) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -396.9 RPM
+[0m
+[0;32mI (188638) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -397.6 RPM
+[0m
+[0;32mI (188778) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -397.6 RPM
+[0m
+[0;32mI (188918) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -388.0 RPM
+[0m
+[0;32mI (189058) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -389.9 RPM
+[0m
+[0;32mI (189198) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -381.6 RPM
+[0m
+[0;32mI (189338) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -282.3 RPM
+[0m
+[0;32mI (189478) UART_APP: Nhan duoc 36 bytes tu STM32: Trai:   0.0 RPM | Phai: -172.9 RPM
+[0m
+[0;32mI (189618) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai: -80.7 RPM
+[0m
+[0;32mI (189758) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai: -10.9 RPM
+[0m
+[0;32mI (189898) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (190038) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (190178) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (190318) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (190458) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (190588) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (190728) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (190868) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (191008) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (191148) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (191288) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (191428) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (191568) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (191708) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (191848) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (191988) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m
+[0;32mI (192118) UART_APP: Nhan duoc 35 bytes tu STM32: Trai:   0.0 RPM | Phai:   0.0 RPM
+[0m

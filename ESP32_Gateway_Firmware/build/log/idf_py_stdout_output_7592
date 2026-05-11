@@ -1,0 +1,1328 @@
+[0;32mI (21739) UART_APP: Da gui len STM32: Hello STM32, tao laESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40384c46
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1820
+load:0x403cc710,len:0xbd0
+load:0x403ce710,len:0x2f4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.6-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 10 2026 23:14:25[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (70) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (85) boot:  3 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (93) boot:  4 ota_0            OTA app          00 10 00120000 00100000[0m
+[0;32mI (100) boot:  5 ota_1            OTA app          00 11 00220000 00100000[0m
+[0;32mI (108) boot:  6 spiffs           Unknown data     01 82 00320000 00080000[0m
+[0;32mI (115) boot: End of partition table[0m
+[0;32mI (120) boot: Defaulting to factory image[0m
+[0;32mI (124) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=1d31ch (119580) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=0003d344 vaddr=3fc93e00 size=02c98h ( 11416) load[0m
+[0;32mI (154) esp_image: segment 2: paddr=0003ffe4 vaddr=40380000 size=00034h (    52) load[0m
+[0;32mI (157) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9ad34h (634164) map[0m
+[0;32mI (265) esp_image: segment 4: paddr=000dad5c vaddr=40380034 size=13c38h ( 80952) load[0m
+[0;32mI (286) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (287) boot: Disabling RNG early entropy source...[0m
+[0;32mI (298) cpu_start: Unicore app[0m
+[0;32mI (307) cpu_start: Pro cpu start user code[0m
+[0;32mI (307) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (307) cpu_start: Application information:[0m
+[0;32mI (310) cpu_start: Project name:     NCKH2026_RailRobot[0m
+[0;32mI (316) cpu_start: App version:      31923fc-dirty[0m
+[0;32mI (321) cpu_start: Compile time:     Apr 10 2026 23:14:05[0m
+[0;32mI (327) cpu_start: ELF file SHA256:  6271ca256...[0m
+[0;32mI (333) cpu_start: ESP-IDF:          v5.2.6-dirty[0m
+[0;32mI (338) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (343) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (348) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (360) heap_init: At 3FC9ABE0 len 00025420 (149 KiB): RAM[0m
+[0;32mI (366) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (373) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (380) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (387) spi_flash: detected chip: generic[0m
+[0;32mI (390) spi_flash: flash io: dio[0m
+[0;32mI (395) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (401) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (409) main_task: Started on CPU0[0m
+[0;32mI (409) main_task: Calling app_main()[0m
+[0;32mI (419) MAIN_APP: NVS initialized successfully.[0m
+[0;32mI (419) pp: pp rom version: 9387209[0m
+[0;32mI (419) net80211: net80211 rom version: 9387209[0m
+[0;32mI (439) wifi:wifi driver task: 3fca38fc, prio:23, stack:6656, core=0[0m
+[0;32mI (439) wifi:wifi firmware version: e851349[0m
+[0;32mI (439) wifi:wifi certification version: v7.0[0m
+[0;32mI (439) wifi:config NVS flash: enabled[0m
+[0;32mI (449) wifi:config nano formating: disabled[0m
+[0;32mI (449) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (449) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (459) wifi:Init management short buffer num: 32[0m
+[0;32mI (459) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (469) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (469) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (469) wifi:Init static rx buffer num: 10[0m
+[0;32mI (479) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (479) wifi_init: rx ba win: 6[0m
+[0;32mI (489) wifi_init: tcpip mbox: 32[0m
+[0;32mI (489) wifi_init: udp mbox: 6[0m
+[0;32mI (489) wifi_init: tcp mbox: 6[0m
+[0;32mI (499) wifi_init: tcp tx win: 5760[0m
+[0;32mI (499) wifi_init: tcp rx win: 5760[0m
+[0;32mI (509) wifi_init: tcp mss: 1440[0m
+[0;32mI (509) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (509) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (519) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (559) wifi:mode : sta (10:00:3b:cc:55:10)[0m
+[0;32mI (559) wifi:enable tsf[0m
+[0;32mI (559) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (569) WIFI_MGR: Connecting to WiFi SSID: Nguyen Manh[0m
+[0;32mI (1569) WIFI_MGR: Waiting for WiFi... (1/5)[0m
+[0;32mI (2569) WIFI_MGR: Waiting for WiFi... (2/5)[0m
+[0;32mI (3569) WIFI_MGR: Waiting for WiFi... (3/5)[0m
+[0;32mI (4569) WIFI_MGR: Waiting for WiFi... (4/5)[0m
+[0;32mI (5569) WIFI_MGR: Waiting for WiFi... (5/5)[0m
+[0;31mE (5569) WIFI_MGR: Failed to connect to WiFi![0m
+[0;32mI (5569) MAIN_APP: WiFi initialized successfully.[0m
+[0;32mI (5669) OTA_SERVER: OTA Server started at port 81[0m
+[0;32mI (5669) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (5669) OTA_SERVER: 🚀 OTA SERVER READY![0m
+[0;32mI (5669) OTA_SERVER: 👉 Click to open: http://0.0.0.0:81/ota[0m
+[0;32mI (5679) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (5689) MAIN_APP: OTA Server started successfully.[0m
+[0;32mI (5699) uart: queue free spaces: 20[0m
+[0;32mI (5699) UART_APP: Da khoi tao UART1 (TX: 20, RX: 21) o toc do 9600[0m
+[0;32mI (5709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (7709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (9709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (11709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (13709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (15709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (17709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (19709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (21709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (23709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (25709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (27709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (28929) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (29709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (30919) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (31709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (32899) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (33709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (34879) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (35709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (36859) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (37709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (38839) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (39709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (40819) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (41709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (42809) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (43709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (44789) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (45709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (46769) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (47709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (48749) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (49709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (50729) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (51709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (52709) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (53709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (54699) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (55709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (56679) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (57709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (58659) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (59709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (60639) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (61709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (62619) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (63709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (64609) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (65709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (66589) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (67709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (68569) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (69709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (70549) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (71709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (72529) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (73709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (74509) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (75709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (77709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (79709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (81709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (83119) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (83709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (85099) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (85709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (87079) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (87709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (89059) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (89709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (91039) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (91709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (93019) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (93709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (95009) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (95709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (96989) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (97709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (98969) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (99709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (100949) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (101709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (102929) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (103709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (104909) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (105709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (106889) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (107709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (108879) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (109709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (110859) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (111709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (112839) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (113709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (114819) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (115709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (116799) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (117709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (118779) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (119709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (120759) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (121709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (122749) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (123709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (124729) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (125709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (126709) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (127709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (128689) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (129709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (130669) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (131709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (132649) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (133709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (134629) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (135709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (136609) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (137709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (138599) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (139709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (140579) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (141709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (142559) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (143709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (144539) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (145709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (146519) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (147709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (148499) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (149709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (150479) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (151709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (152459) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (153709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (154439) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (155709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (156419) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (157709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (158409) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (159709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (160389) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (161709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (162369) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (163709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (164349) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (165709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (166329) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (167709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (168309) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (169709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (170289) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (171709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (172269) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (173709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (174249) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (175709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (176229) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (177709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (178209) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (179709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (180189) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (181709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (182169) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (183709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (184149) UART_APP: Nhan duoc 6 bytes tu STM32: alooo
+[0m
+61 6C 6F 6F 6F 0A 
+[0;32mI (185709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (187709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (189709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (191709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (193709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (195709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (197709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (199709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (201709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (203709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (205709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (207709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (209709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (211709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (213709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (215709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (217709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (219709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (221709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (223709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (225709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (227709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (229709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (231709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (233709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (235709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (237709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (239709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (241709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (243709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (245709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (247709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (249709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (251709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (253709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (255709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (257709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (259709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (261709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (263709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (265709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (267709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (269709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (271709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (273709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (275709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (277709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (279709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (281709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (283709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (285709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (287709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (289709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (291709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (293709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (295709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (297709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (299709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (301709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (303709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (305709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (307709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (309709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (311709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (313709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (315709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (317709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (319709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (321709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (323709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (325709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (327709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (329709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (331709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (333709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (335709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (337709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (339709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (341709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (343709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (345709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (347709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (349709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (351709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (353709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (355709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (357709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (359709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (361709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (363709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (365709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (367709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (369709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (371709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (373709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (375709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (377709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (379709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (381709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (383709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (385709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (387709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (389709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (391709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (393709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (395709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (397709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (399709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (401709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (403709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (405709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (407709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (409709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (411709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (413709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (415709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (417709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (419709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (421709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (423709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (425709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (427709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (429709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (431709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (433709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (435709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (437709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (439709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (441709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (443709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (445709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (447709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (449709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (451709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (453709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (455709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (457709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (459709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (461709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (463709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (465709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (467709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (469709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (471709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (473709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (475709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (477709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (479709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (481709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (483709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (485709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (487709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (489709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (491709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (493709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (495709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (497709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (499709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (501709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (503709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (505709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (507709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (509709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (511709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (513709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (515709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (517709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (519709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (521709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (523709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (525709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (527709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (529709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (531709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (533709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (535709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (537709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (539709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (541709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (543709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (545709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (547709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (549709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (551709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (553709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (555709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (557709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (559709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (561709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (563709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (565709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (567709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (569709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (571709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (573709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (575709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (577709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (579709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (581709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (583709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (585709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (587709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (589709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (591709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (593709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (595709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (597709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (599709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (601709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (603709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (605709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (607709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (609709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (611709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (613709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (615709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (617709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (619709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (621709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (623709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (625709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (627709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (629709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (631709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (633709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (635709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (637709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (639709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (641709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (643709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (645709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (647709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (649709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (651709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (653709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (655709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (657709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (659709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (661709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (663709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (665709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (667709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (669709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (671709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (673709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (675709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (677709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (679709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (681709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (683709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (685709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (687709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (689709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (691709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (693709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (695709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (697709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (699709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (701709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (703709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (705709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (707709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (709709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (711709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (713709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (715709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (717709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (719709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (721709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (723709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (725709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (727709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (729709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (731709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (733709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (735709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (737709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (739709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (741709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (743709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (745709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (747709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (749709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (751709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (753709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (755709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (757709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (759709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (761709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (763709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (765709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (767709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (769709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (771709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (773709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (775709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (777709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (779709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (781709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (783709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (785709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (787709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (789709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (791709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (793709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (795709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (797709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (799709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (801709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (803709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (805709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (807709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (809709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (811709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (813709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (815709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (817709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (819709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (821709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (823709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (825709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (827709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (829709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (831709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (833709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (835709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (837709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (839709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (841709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (843709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (845709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (847709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (849709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (851709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (853709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (855709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (857709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (859709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (861709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (863709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (864989) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (865709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (866979) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (867709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (868969) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (869709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (870959) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (871709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (872949) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (873709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (874939) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (875709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (876919) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (877709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (878909) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (879709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (880899) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (881709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (882889) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (883709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (884879) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (885709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (886859) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (887709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (888849) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (889709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (890839) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (891709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (892829) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (893709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (894809) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (895709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (896799) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (897709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (898789) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (899709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (900769) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (901709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (902759) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (903709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (904749) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (905709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (906739) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (907709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (908719) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (909709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (910709) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (911709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (912699) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (913709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (914689) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (915709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (916669) UART_APP: Nhan duoc 13 bytes tu STM32: test printf
+[0m
+74 65 73 74 20 70 72 69 6E 74 66 0D 0A 
+[0;32mI (917709) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m

@@ -1,0 +1,1075 @@
+[0;32mI (298) esp_image: segment 4: paddr=0010a724 vaddr=4038a3ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40384cb0
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1820
+load:0x403cc710,len:0xbd0
+load:0x403ce710,len:0x2f4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.6-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 10 2026 23:14:25[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (70) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (85) boot:  3 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (93) boot:  4 ota_0            OTA app          00 10 00120000 00100000[0m
+[0;32mI (100) boot:  5 ota_1            OTA app          00 11 00220000 00100000[0m
+[0;32mI (108) boot:  6 spiffs           Unknown data     01 82 00320000 00080000[0m
+[0;32mI (115) boot: End of partition table[0m
+[0;32mI (120) boot: Defaulting to factory image[0m
+[0;32mI (124) esp_image: segment 0: paddr=00020020 vaddr=3c0c0020 size=23040h (143424) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=00043068 vaddr=3fc93e00 size=02c98h ( 11416) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00045d08 vaddr=40380000 size=0a310h ( 41744) load[0m
+[0;32mI (169) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=ba6fch (763644) map[0m
+[0;32mI (289) esp_image: segment 4: paddr=0010a724 vaddr=4038a310 size=09ab8h ( 39608) load[0m
+[0;32mI (303) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (303) boot: Disabling RNG early entropy source...[0m
+[0;32mI (314) cpu_start: Unicore app[0m
+[0;32mI (323) cpu_start: Pro cpu start user code[0m
+[0;32mI (323) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (323) cpu_start: Application information:[0m
+[0;32mI (326) cpu_start: Project name:     NCKH2026_RailRobot[0m
+[0;32mI (332) cpu_start: App version:      31923fc-dirty[0m
+[0;32mI (337) cpu_start: Compile time:     Apr 26 2026 11:03:07[0m
+[0;32mI (343) cpu_start: ELF file SHA256:  e886f22b3...[0m
+[0;32mI (349) cpu_start: ESP-IDF:          v5.2.6-dirty[0m
+[0;32mI (354) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (359) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (364) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (369) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (376) heap_init: At 3FC9B1E0 len 00024E20 (147 KiB): RAM[0m
+[0;32mI (382) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (389) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (396) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (403) spi_flash: detected chip: generic[0m
+[0;32mI (407) spi_flash: flash io: dio[0m
+[0;32mI (411) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (417) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (425) main_task: Started on CPU0[0m
+[0;32mI (425) main_task: Calling app_main()[0m
+[0;32mI (425) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (435) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (445) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (465) MAIN_APP: NVS initialized successfully.[0m
+[0;32mI (465) pp: pp rom version: 9387209[0m
+[0;32mI (465) net80211: net80211 rom version: 9387209[0m
+[0;32mI (485) wifi:wifi driver task: 3fca3f54, prio:23, stack:6656, core=0[0m
+[0;32mI (485) wifi:wifi firmware version: e851349[0m
+[0;32mI (485) wifi:wifi certification version: v7.0[0m
+[0;32mI (485) wifi:config NVS flash: enabled[0m
+[0;32mI (485) wifi:config nano formating: disabled[0m
+[0;32mI (495) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (495) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (505) wifi:Init management short buffer num: 32[0m
+[0;32mI (505) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (505) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (515) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (515) wifi:Init static rx buffer num: 10[0m
+[0;32mI (525) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (525) wifi_init: rx ba win: 6[0m
+[0;32mI (525) wifi_init: tcpip mbox: 32[0m
+[0;32mI (535) wifi_init: udp mbox: 6[0m
+[0;32mI (535) wifi_init: tcp mbox: 6[0m
+[0;32mI (545) wifi_init: tcp tx win: 5760[0m
+[0;32mI (545) wifi_init: tcp rx win: 5760[0m
+[0;32mI (545) wifi_init: tcp mss: 1440[0m
+[0;32mI (555) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (555) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (565) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (605) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (645) wifi:mode : sta (10:00:3b:cc:55:10)[0m
+[0;32mI (645) wifi:enable tsf[0m
+[0;32mI (645) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (645) WIFI_MGR: Connecting to WiFi SSID: Nguyen Manh[0m
+[0;32mI (655) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (655) wifi:state: init -> auth (b0)[0m
+[0;32mI (665) wifi:state: auth -> assoc (0)[0m
+[0;32mI (665) wifi:state: assoc -> run (10)[0m
+[0;32mI (1045) wifi:connected with Nguyen Manh, aid = 6, channel 11, BW20, bssid = c0:61:18:41:67:fa[0m
+[0;32mI (1045) wifi:security: WPA2-PSK, phy: bg, rssi: -61[0m
+[0;32mI (1045) wifi:pm start, type: 0[0m
+
+[0;32mI (1045) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1055) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1065) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1655) WIFI_MGR: Waiting for WiFi... (1/5)[0m
+[0;32mI (2075) esp_netif_handlers: sta ip: 192.168.10.105, mask: 255.255.255.0, gw: 192.168.10.1[0m
+[0;32mI (2655) WIFI_MGR: Waiting for WiFi... (2/5)[0m
+[0;32mI (2655) WIFI_MGR: Got IP: 192.168.10.105[0m
+[0;32mI (2655) MAIN_APP: WiFi initialized successfully.[0m
+[0;32mI (2755) OTA_SERVER: OTA Server started at port 81[0m
+[0;32mI (2755) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (2755) OTA_SERVER: 🚀 OTA SERVER READY![0m
+[0;32mI (2755) OTA_SERVER: 👉 Click to open: http://192.168.10.105:81/ota[0m
+[0;32mI (2765) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (2775) MAIN_APP: OTA Server started successfully.[0m
+[0;32mI (2785) uart: queue free spaces: 20[0m
+[0;32mI (2785) UART_APP: Da khoi tao UART1 LoRa o toc do 9600[0m
+[0;32mI (4295) MQTT_APP: Da ket noi thanh cong den Broker![0m
+[0;32mI (4295) MQTT_APP: Da subscribe vao topic: manh_vip/robot/command[0m
+[0;31mE (14755) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;31mE (16975) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;33mW (17455) UART_APP: [CANH BAO] Nhieu song/Sai Token: 00
+MPU6050 setting is finished
+Sensor LEFT address changed to 0x56![0m
+[0;33mW (18995) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+Sensor RIGHT booted at 0x52![0m
+[0;33mW (19455) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+San sang doc Encoder...
+MANH_VIP L0 R0 E0.0,0.0 P0.00 R0.00 V0.00 Pi:![0m
+[0;31mE (120485) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;31mE (121355) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;31mE (177165) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;31mE (179285) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;31mE (180335) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;33mW (180335) UART_APP: [CANH BAO] Nhieu song/Sai Token: r LEFT address changed to 0x56![0m
+[0;31mE (181515) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;31mE (184025) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;33mW (184285) UART_APP: [CANH BAO] Nhieu song/Sai Token: setting is finished
+Sensor LEFT address changed to 0x56![0m
+[0;33mW (185815) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+Sensor RIGHT booted at 0x52![0m
+[0;31mE (186735) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;31mE (188945) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;33mW (189435) UART_APP: [CANH BAO] Nhieu song/Sai Token: 0000
+MPU6050 setting is finished
+Sensor LEFT address changed to 0x56![0m
+[0;33mW (190965) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+Sensor RIGHT booted at 0x52![0m
+[0;33mW (191395) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+San sang doc Encoder...
+MANH_VIP L0 R0 E0.0,0.0 P0.00 R0.00 V0.00![0m
+[0;32mI (192235) UART_APP: [HOP LE] Du lieu tu xe:  L0 R134 E510423550381407680000000000000000000000.0,510423550381407680000000000000000000000.0 P89.55 R0.45 V12.67![0m
+[0;32mI (192235) MQTT_APP: Da Publish Data [ L0 R134 E510423550381407680000000000000000000000.0,510423550381407680000000000000000000000.0 P89.55 R0.45 V12.67!], msg_id=0[0m
+[0;32mI (193025) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,510423550381407680000000000000000000000.0 P3.31 R1.84 V12.68![0m
+[0;32mI (193025) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,510423550381407680000000000000000000000.0 P3.31 R1.84 V12.68!], msg_id=0[0m
+[0;33mW (193095) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (193555) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.38 R1.53 V12.68![0m
+[0;33mW (193675) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (193805) UART_APP: [CANH BAO] Nhieu song/Sai Token: 59![0m
+[0;32mI (194315) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,50![0m
+[0;32mI (194315) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,50!], msg_id=0[0m
+[0;33mW (194385) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;33mW (194515) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;32mI (195025) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,67![0m
+[0;32mI (195025) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,67!], msg_id=0[0m
+[0;33mW (195425) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.10 R1.56 V12.60![0m
+[0;33mW (195555) UART_APP: [CANH BAO] Nhieu song/Sai Token: 67![0m
+[0;32mI (196065) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,63![0m
+[0;32mI (196065) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,63!], msg_id=0[0m
+[0;33mW (196135) UART_APP: [CANH BAO] Nhieu song/Sai Token: 67![0m
+[0;33mW (196265) UART_APP: [CANH BAO] Nhieu song/Sai Token: 59![0m
+[0;32mI (196765) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,62![0m
+[0;32mI (196765) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,62!], msg_id=0[0m
+[0;33mW (196845) UART_APP: [CANH BAO] Nhieu song/Sai Token: 65![0m
+[0;33mW (196975) UART_APP: [CANH BAO] Nhieu song/Sai Token: 62![0m
+[0;33mW (197425) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.13 R1.76 V12.65![0m
+[0;32mI (197935) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,63![0m
+[0;32mI (197935) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,63!], msg_id=0[0m
+[0;33mW (198015) UART_APP: [CANH BAO] Nhieu song/Sai Token: 62![0m
+[0;33mW (198465) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.38 R1.83 V12.60![0m
+[0;33mW (198595) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (199055) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.41 R1.74 V12.57![0m
+[0;33mW (199175) UART_APP: [CANH BAO] Nhieu song/Sai Token: 56![0m
+[0;33mW (199305) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;33mW (199425) UART_APP: [CANH BAO] Nhieu song/Sai Token: 71![0m
+[0;32mI (199935) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,67![0m
+[0;32mI (199935) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,67!], msg_id=0[0m
+[0;32mI (200395) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,68![0m
+[0;32mI (200395) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,68!], msg_id=0[0m
+[0;33mW (200465) UART_APP: [CANH BAO] Nhieu song/Sai Token: 70![0m
+[0;33mW (200925) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.34 R1.86 V12.65![0m
+[0;33mW (201055) UART_APP: [CANH BAO] Nhieu song/Sai Token: 65![0m
+[0;32mI (201555) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,67![0m
+[0;32mI (201555) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,67!], msg_id=0[0m
+[0;33mW (201635) UART_APP: [CANH BAO] Nhieu song/Sai Token: 65![0m
+[0;33mW (201755) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (201885) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;32mI (202395) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,67![0m
+[0;32mI (202395) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,67!], msg_id=0[0m
+[0;33mW (202795) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.94 R1.87 V12.62![0m
+[0;33mW (202925) UART_APP: [CANH BAO] Nhieu song/Sai Token: 57![0m
+[0;32mI (203435) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,65![0m
+[0;32mI (203435) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,65!], msg_id=0[0m
+[0;33mW (203505) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;32mI (204015) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,63![0m
+[0;32mI (204015) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,63!], msg_id=0[0m
+[0;33mW (204085) UART_APP: [CANH BAO] Nhieu song/Sai Token: 71![0m
+[0;33mW (204215) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;33mW (204345) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;33mW (204795) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.11 R2.04 V12.58![0m
+[0;32mI (205305) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,71![0m
+[0;32mI (205305) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,71!], msg_id=0[0m
+[0;33mW (205385) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;32mI (205885) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,55![0m
+[0;32mI (205885) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,55!], msg_id=0[0m
+[0;33mW (205965) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (206425) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.36 R1.45 V12.65![0m
+[0;33mW (206545) UART_APP: [CANH BAO] Nhieu song/Sai Token: 57![0m
+[0;33mW (206675) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (206795) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;32mI (207305) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,63![0m
+[0;32mI (207305) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,63!], msg_id=0[0m
+[0;32mI (207765) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,70![0m
+[0;32mI (207765) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,70!], msg_id=0[0m
+[0;33mW (207835) UART_APP: [CANH BAO] Nhieu song/Sai Token: 72![0m
+[0;33mW (208295) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.47 R1.46 V12.61![0m
+[0;33mW (208425) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;32mI (208925) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,63![0m
+[0;32mI (208925) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,63!], msg_id=0[0m
+[0;33mW (209005) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (209125) UART_APP: [CANH BAO] Nhieu song/Sai Token: 65![0m
+[0;33mW (209255) UART_APP: [CANH BAO] Nhieu song/Sai Token: 60![0m
+[0;32mI (209765) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,63![0m
+[0;32mI (209765) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,63!], msg_id=0[0m
+[0;33mW (210165) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.13 R1.83 V12.61![0m
+[0;33mW (210295) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;32mI (210805) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,58![0m
+[0;32mI (210805) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,58!], msg_id=0[0m
+[0;33mW (210875) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;32mI (211385) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,57![0m
+[0;32mI (211385) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,57!], msg_id=0[0m
+[0;33mW (211465) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (211585) UART_APP: [CANH BAO] Nhieu song/Sai Token: 54![0m
+[0;33mW (211715) UART_APP: [CANH BAO] Nhieu song/Sai Token: 60![0m
+[0;33mW (212505) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.37 R1.85 V12.510423550381407680000000000000000000000.0 P3.25 R1.84 V12.61![0m
+[0;33mW (212625) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (212755) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;32mI (213255) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,61![0m
+[0;32mI (213255) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,61!], msg_id=0[0m
+[0;33mW (213335) UART_APP: [CANH BAO] Nhieu song/Sai Token: 67![0m
+[0;33mW (213795) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.53 R1.57 V12.68![0m
+[0;33mW (213915) UART_APP: [CANH BAO] Nhieu song/Sai Token: 59![0m
+[0;33mW (214045) UART_APP: [CANH BAO] Nhieu song/Sai Token: 71![0m
+[0;33mW (214495) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.93 R1.82 V12.58![0m
+[0;32mI (215005) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,56![0m
+[0;32mI (215005) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,56!], msg_id=0[0m
+[0;33mW (215085) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (215205) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (215665) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.52 R1.80 V12.63![0m
+[0;33mW (216125) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.15 R1.12 V12.63![0m
+[0;33mW (216245) UART_APP: [CANH BAO] Nhieu song/Sai Token: 64![0m
+[0;33mW (216375) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (216495) UART_APP: [CANH BAO] Nhieu song/Sai Token: 62![0m
+[0;32mI (217005) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,58![0m
+[0;32mI (217005) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,58!], msg_id=0[0m
+[0;33mW (217415) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.19 R1.48 V12.61![0m
+[0;33mW (217535) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (217995) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.25 R1.85 V12.62![0m
+[0;33mW (218125) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;32mI (218625) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,59![0m
+[0;32mI (218625) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,59!], msg_id=0[0m
+[0;33mW (218705) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (218835) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;33mW (218955) UART_APP: [CANH BAO] Nhieu song/Sai Token: 60![0m
+[0;33mW (219415) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.29 R1.73 V12.63![0m
+[0;33mW (219875) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.50 R1.42 V12.63![0m
+[0;33mW (219995) UART_APP: [CANH BAO] Nhieu song/Sai Token: 62![0m
+[0;32mI (220505) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,63![0m
+[0;32mI (220505) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,63!], msg_id=0[0m
+[0;33mW (220575) UART_APP: [CANH BAO] Nhieu song/Sai Token: 67![0m
+[0;33mW (221035) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.81 R2.12 V12.58![0m
+[0;33mW (221165) UART_APP: [CANH BAO] Nhieu song/Sai Token: 52![0m
+[0;33mW (221285) UART_APP: [CANH BAO] Nhieu song/Sai Token: 54![0m
+[0;33mW (221745) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.59 R1.73 V12.66![0m
+[0;33mW (221865) UART_APP: [CANH BAO] Nhieu song/Sai Token: 66![0m
+[0;32mI (222375) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,65![0m
+[0;32mI (222375) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,65!], msg_id=0[0m
+[0;33mW (222455) UART_APP: [CANH BAO] Nhieu song/Sai Token: 71![0m
+[0;33mW (222905) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P4.16 R1.61 V12.70![0m
+[0;33mW (223365) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.25 R0.96 V12.68![0m
+[0;33mW (223495) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;33mW (223615) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (223745) UART_APP: [CANH BAO] Nhieu song/Sai Token: 67![0m
+[0;32mI (224255) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,65![0m
+[0;32mI (224255) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,65!], msg_id=0[0m
+[0;33mW (224325) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (224785) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.60 R1.45 V12.63![0m
+[0;33mW (225245) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.90 R1.58 V12.61![0m
+[0;33mW (225365) UART_APP: [CANH BAO] Nhieu song/Sai Token: 56![0m
+[0;32mI (225875) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,60![0m
+[0;32mI (225875) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,60!], msg_id=0[0m
+[0;33mW (225945) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (226075) UART_APP: [CANH BAO] Nhieu song/Sai Token: 65![0m
+[0;33mW (226205) UART_APP: [CANH BAO] Nhieu song/Sai Token: 53![0m
+[0;32mI (226705) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,58![0m
+[0;32mI (226705) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,58!], msg_id=0[0m
+[0;33mW (226785) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (227245) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.04 R1.64 V12.62![0m
+[0;32mI (227745) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,68![0m
+[0;32mI (227745) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,68!], msg_id=0[0m
+[0;33mW (227825) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (228285) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.29 R1.78 V12.70![0m
+[0;33mW (228405) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (228535) UART_APP: [CANH BAO] Nhieu song/Sai Token: 62![0m
+[0;33mW (228985) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P1.93 R2.33 V12.68![0m
+[0;33mW (229115) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (229245) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;32mI (229745) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,68![0m
+[0;32mI (229745) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,68!], msg_id=0[0m
+[0;33mW (230155) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.51 R2.57 V12.62![0m
+[0;33mW (230285) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (230735) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.44 R1.75 V12.53![0m
+[0;33mW (230865) UART_APP: [CANH BAO] Nhieu song/Sai Token: 65![0m
+[0;33mW (230985) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;32mI (231495) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,63![0m
+[0;32mI (231495) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,63!], msg_id=0[0m
+[0;33mW (231575) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (231695) UART_APP: [CANH BAO] Nhieu song/Sai Token: 71![0m
+[0;32mI (232205) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,63![0m
+[0;32mI (232205) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,63!], msg_id=0[0m
+[0;33mW (232615) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.44 R2.30 V12.59![0m
+[0;33mW (232735) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;32mI (233245) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,57![0m
+[0;32mI (233245) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,57!], msg_id=0[0m
+[0;33mW (233325) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (233445) UART_APP: [CANH BAO] Nhieu song/Sai Token: 65![0m
+[0;32mI (233955) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,63![0m
+[0;32mI (233955) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,63!], msg_id=0[0m
+[0;33mW (234025) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;33mW (234155) UART_APP: [CANH BAO] Nhieu song/Sai Token: 64![0m
+[0;33mW (234615) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.13 R2.05 V12.68![0m
+[0;32mI (235115) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,63![0m
+[0;32mI (235115) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,63!], msg_id=0[0m
+[0;33mW (235195) UART_APP: [CANH BAO] Nhieu song/Sai Token: 56![0m
+[0;32mI (235705) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,59![0m
+[0;32mI (235705) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,59!], msg_id=0[0m
+[0;33mW (235775) UART_APP: [CANH BAO] Nhieu song/Sai Token: 62![0m
+[0;33mW (235905) UART_APP: [CANH BAO] Nhieu song/Sai Token: 62![0m
+[0;33mW (236355) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.24 R2.03 V12.63![0m
+[0;33mW (236485) UART_APP: [CANH BAO] Nhieu song/Sai Token: 56![0m
+[0;33mW (236615) UART_APP: [CANH BAO] Nhieu song/Sai Token: 71![0m
+[0;32mI (237115) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,63![0m
+[0;32mI (237115) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,63!], msg_id=0[0m
+[0;32mI (237575) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,62![0m
+[0;32mI (237575) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,62!], msg_id=0[0m
+[0;33mW (237655) UART_APP: [CANH BAO] Nhieu song/Sai Token: 62![0m
+[0;33mW (238105) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.12 R1.82 V12.65![0m
+[0;33mW (238235) UART_APP: [CANH BAO] Nhieu song/Sai Token: 66![0m
+[0;33mW (238355) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;32mI (238865) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,58![0m
+[0;32mI (238865) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,58!], msg_id=0[0m
+[0;33mW (238945) UART_APP: [CANH BAO] Nhieu song/Sai Token: 57![0m
+[0;33mW (239065) UART_APP: [CANH BAO] Nhieu song/Sai Token: 70![0m
+[0;32mI (239575) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,61![0m
+[0;32mI (239575) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,61!], msg_id=0[0m
+[0;33mW (239985) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.32 R1.89 V12.61![0m
+[0;33mW (240105) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;32mI (240615) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,57![0m
+[0;32mI (240615) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,57!], msg_id=0[0m
+[0;33mW (240695) UART_APP: [CANH BAO] Nhieu song/Sai Token: 67![0m
+[0;33mW (240815) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;32mI (241325) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,68![0m
+[0;32mI (241325) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,68!], msg_id=0[0m
+[0;33mW (241395) UART_APP: [CANH BAO] Nhieu song/Sai Token: 66![0m
+[0;33mW (241525) UART_APP: [CANH BAO] Nhieu song/Sai Token: 57![0m
+[0;33mW (241985) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.23 R1.61 V12.63![0m
+[0;32mI (242485) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,62![0m
+[0;32mI (242485) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,62!], msg_id=0[0m
+[0;33mW (242565) UART_APP: [CANH BAO] Nhieu song/Sai Token: 66![0m
+[0;32mI (243075) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,56![0m
+[0;32mI (243075) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,56!], msg_id=0[0m
+[0;33mW (243145) UART_APP: [CANH BAO] Nhieu song/Sai Token: 56![0m
+[0;33mW (243275) UART_APP: [CANH BAO] Nhieu song/Sai Token: 60![0m
+[0;33mW (243735) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.27 R1.90 V12..62![0m
+[0;33mW (243855) UART_APP: [CANH BAO] Nhieu song/Sai Token: 62![0m
+[0;33mW (244315) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P4.33 R0.96 V12.64![0m
+[0;32mI (244815) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,67![0m
+[0;32mI (244815) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,67!], msg_id=0[0m
+[0;33mW (244895) UART_APP: [CANH BAO] Nhieu song/Sai Token: 66![0m
+[0;33mW (245355) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P-0.80 R2.36 V1262![0m
+[0;33mW (245475) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (245935) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.45 R1.71 V12.67![0m
+[0;33mW (246065) UART_APP: [CANH BAO] Nhieu song/Sai Token: .54![0m
+[0;33mW (246185) UART_APP: [CANH BAO] Nhieu song/Sai Token: 66![0m
+[0;32mI (246695) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,74![0m
+[0;32mI (246695) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,74!], msg_id=0[0m
+[0;33mW (247105) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P0.57 R4.34 V12.63![0m
+[0;33mW (247555) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.09 R2.22 V12.56![0m
+[0;33mW (247685) UART_APP: [CANH BAO] Nhieu song/Sai Token: 65![0m
+[0;33mW (247805) UART_APP: [CANH BAO] Nhieu song/Sai Token: 72![0m
+[0;32mI (248315) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,74![0m
+[0;32mI (248315) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,74!], msg_id=0[0m
+[0;33mW (248395) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;33mW (248515) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;33mW (248975) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.91 R2.45 V12.62![0m
+[0;33mW (249435) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.69 R2.32 V12.78![0m
+[0;33mW (249555) UART_APP: [CANH BAO] Nhieu song/Sai Token: 59![0m
+[0;32mI (250065) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,74![0m
+[0;32mI (250065) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,74!], msg_id=0[0m
+[0;33mW (250145) UART_APP: [CANH BAO] Nhieu song/Sai Token: 71![0m
+[0;33mW (250265) UART_APP: [CANH BAO] Nhieu song/Sai Token: 72![0m
+[0;33mW (250725) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.90 R2.53 V12.66![0m
+[0;33mW (250845) UART_APP: [CANH BAO] Nhieu song/Sai Token: 54![0m
+[0;33mW (251305) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.08 R2.45 V12.63![0m
+[0;33mW (251435) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;32mI (251935) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,57![0m
+[0;32mI (251935) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,57!], msg_id=0[0m
+[0;33mW (252015) UART_APP: [CANH BAO] Nhieu song/Sai Token: 52![0m
+[0;33mW (252475) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.96 R2.10 V12.58![0m
+[0;33mW (252595) UART_APP: [CANH BAO] Nhieu song/Sai Token: 72![0m
+[0;33mW (253055) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.87 R2.05 V12.61![0m
+[0;33mW (253185) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (253305) UART_APP: [CANH BAO] Nhieu song/Sai Token: 57![0m
+[0;32mI (253815) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,57![0m
+[0;32mI (253815) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,57!], msg_id=0[0m
+[0;33mW (253885) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;33mW (254345) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.14 R2.50 V12.76![0m
+[0;33mW (254805) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.91 R2.34 V12.65![0m
+[0;33mW (254925) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (255055) UART_APP: [CANH BAO] Nhieu song/Sai Token: 57![0m
+[0;32mI (255565) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,78![0m
+[0;32mI (255565) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,78!], msg_id=0[0m
+[0;33mW (255635) UART_APP: [CANH BAO] Nhieu song/Sai Token: 75![0m
+[0;33mW (255765) UART_APP: [CANH BAO] Nhieu song/Sai Token: 71![0m
+[0;33mW (256215) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.77 R2.33 V12.74![0m
+[0;33mW (256675) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.83 R2.22 V12.68![0m
+[0;33mW (256805) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;32mI (257315) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,71![0m
+[0;32mI (257315) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,71!], msg_id=0[0m
+[0;33mW (257385) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (257515) UART_APP: [CANH BAO] Nhieu song/Sai Token: 79![0m
+[0;33mW (257965) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.03 R2.53 V12.56![0m
+[0;33mW (258095) UART_APP: [CANH BAO] Nhieu song/Sai Token: 66![0m
+[0;33mW (258555) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.86 R2.22 V12.71![0m
+[0;33mW (258675) UART_APP: [CANH BAO] Nhieu song/Sai Token: 66![0m
+[0;32mI (259185) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,76![0m
+[0;32mI (259185) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,76!], msg_id=0[0m
+[0;33mW (259255) UART_APP: [CANH BAO] Nhieu song/Sai Token: 66![0m
+[0;33mW (259715) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.85 R2.05 V12.62![0m
+[0;33mW (259845) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (260295) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.87 R2.43 V12.59![0m
+[0;33mW (260425) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (260555) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;32mI (261055) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,65![0m
+[0;32mI (261055) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,65!], msg_id=0[0m
+[0;33mW (261135) UART_APP: [CANH BAO] Nhieu song/Sai Token: 54![0m
+[0;33mW (261595) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.58 R2.01 V12.71![0m
+[0;33mW (262045) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.04 R2.14 V12.61![0m
+[0;33mW (262175) UART_APP: [CANH BAO] Nhieu song/Sai Token: 51![0m
+[0;33mW (262295) UART_APP: [CANH BAO] Nhieu song/Sai Token: 53![0m
+[0;32mI (262805) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,58![0m
+[0;32mI (262805) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,58!], msg_id=0[0m
+[0;33mW (262885) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (263005) UART_APP: [CANH BAO] Nhieu song/Sai Token: 64![0m
+[0;33mW (263465) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.97 R2.44 V12.70![0m
+[0;33mW (263595) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (264045) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.80 R2.20 V12.56![0m
+[0;32mI (264555) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,72![0m
+[0;32mI (264555) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,72!], msg_id=0[0m
+[0;33mW (264635) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (264755) UART_APP: [CANH BAO] Nhieu song/Sai Token: 59![0m
+[0;33mW (265215) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.76 R2.35 V12.78![0m
+[0;33mW (265335) UART_APP: [CANH BAO] Nhieu song/Sai Token: 53![0m
+[0;33mW (265795) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.61 R2.18 V12.61![0m
+[0;33mW (265925) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (266045) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;32mI (266555) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,68![0m
+[0;32mI (266555) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,68!], msg_id=0[0m
+[0;33mW (266965) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.81 R2.19 V12.58![0m
+[0;33mW (267085) UART_APP: [CANH BAO] Nhieu song/Sai Token: 70![0m
+[0;33mW (267545) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.90 R2.49 V12.58![0m
+[0;33mW (267675) UART_APP: [CANH BAO] Nhieu song/Sai Token: 75![0m
+[0;33mW (267795) UART_APP: [CANH BAO] Nhieu song/Sai Token: 54![0m
+[0;32mI (268305) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,66![0m
+[0;32mI (268305) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,66!], msg_id=0[0m
+[0;33mW (268375) UART_APP: [CANH BAO] Nhieu song/Sai Token: 71![0m
+[0;33mW (268505) UART_APP: [CANH BAO] Nhieu song/Sai Token: 65![0m
+[0;32mI (269015) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,68![0m
+[0;32mI (269015) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,68!], msg_id=0[0m
+[0;33mW (269415) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.95 R2.38 V12.70![0m
+[0;33mW (269545) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;32mI (270055) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,63![0m
+[0;32mI (270055) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,63!], msg_id=0[0m
+[0;33mW (270125) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (270255) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;32mI (270755) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,71![0m
+[0;32mI (270755) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,71!], msg_id=0[0m
+[0;33mW (270835) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (270965) UART_APP: [CANH BAO] Nhieu song/Sai Token: 76![0m
+[0;33mW (271415) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.84 R2.12 V12.76![0m
+[0;32mI (271925) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,74![0m
+[0;32mI (271925) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,74!], msg_id=0[0m
+[0;33mW (272005) UART_APP: [CANH BAO] Nhieu song/Sai Token: 67![0m
+[0;33mW (272455) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.92 R2.28 V12.73![0m
+[0;33mW (272585) UART_APP: [CANH BAO] Nhieu song/Sai Token: 71![0m
+[0;33mW (273045) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.52 R2.33 V12.75![0m
+[0;33mW (273165) UART_APP: [CANH BAO] Nhieu song/Sai Token: 73![0m
+[0;33mW (273295) UART_APP: [CANH BAO] Nhieu song/Sai Token: 74![0m
+[0;33mW (273415) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;32mI (273925) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,68![0m
+[0;32mI (273925) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,68!], msg_id=0[0m
+[0;32mI (274385) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,71![0m
+[0;32mI (274385) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,71!], msg_id=0[0m
+[0;33mW (274455) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;33mW (274915) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.75 R2.45 V12.66![0m
+[0;33mW (275045) UART_APP: [CANH BAO] Nhieu song/Sai Token: 76![0m
+[0;32mI (275545) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,63![0m
+[0;32mI (275545) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,63!], msg_id=0[0m
+[0;33mW (275625) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (275745) UART_APP: [CANH BAO] Nhieu song/Sai Token: 65![0m
+[0;33mW (275875) UART_APP: [CANH BAO] Nhieu song/Sai Token: 74![0m
+[0;32mI (276385) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,81![0m
+[0;32mI (276385) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,81!], msg_id=0[0m
+[0;33mW (276785) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.85 R2.51 V12.68![0m
+[0;33mW (276915) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;32mI (277425) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,58![0m
+[0;32mI (277425) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,58!], msg_id=0[0m
+[0;33mW (277495) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;32mI (278005) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,75![0m
+[0;32mI (278005) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,75!], msg_id=0[0m
+[0;33mW (278085) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (278205) UART_APP: [CANH BAO] Nhieu song/Sai Token: 73![0m
+[0;33mW (278335) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (278785) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.03 R2.62 V12.74![0m
+[0;32mI (279295) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,59![0m
+[0;32mI (279295) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,59!], msg_id=0[0m
+[0;33mW (279375) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;32mI (279875) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,61![0m
+[0;32mI (279875) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,61!], msg_id=0[0m
+[0;33mW (279955) UART_APP: [CANH BAO] Nhieu song/Sai Token: 70![0m
+[0;33mW (280415) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P1.84 R1.85 V12.58![0m
+[0;33mW (280535) UART_APP: [CANH BAO] Nhieu song/Sai Token: 73![0m
+[0;33mW (280665) UART_APP: [CANH BAO] Nhieu song/Sai Token: 71![0m
+[0;33mW (280785) UART_APP: [CANH BAO] Nhieu song/Sai Token: 62![0m
+[0;32mI (281295) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,58![0m
+[0;32mI (281295) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,58!], msg_id=0[0m
+[0;32mI (281755) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,66![0m
+[0;32mI (281755) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,66!], msg_id=0[0m
+[0;33mW (281825) UART_APP: [CANH BAO] Nhieu song/Sai Token: 76![0m
+[0;33mW (282285) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.61 R2.28 V12.58![0m
+[0;33mW (282415) UART_APP: [CANH BAO] Nhieu song/Sai Token: 56![0m
+[0;32mI (282915) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,63![0m
+[0;32mI (282915) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,63!], msg_id=0[0m
+[0;33mW (282995) UART_APP: [CANH BAO] Nhieu song/Sai Token: 71![0m
+[0;33mW (283115) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (283245) UART_APP: [CANH BAO] Nhieu song/Sai Token: 70![0m
+[0;32mI (283755) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,74![0m
+[0;32mI (283755) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,74!], msg_id=0[0m
+[0;33mW (284155) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.96 R2.15 V12.67![0m
+[0;33mW (284285) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;32mI (284795) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,61![0m
+[0;32mI (284795) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,61!], msg_id=0[0m
+[0;33mW (284865) UART_APP: [CANH BAO] Nhieu song/Sai Token: 70![0m
+[0;32mI (285375) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,66![0m
+[0;32mI (285375) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,66!], msg_id=0[0m
+[0;33mW (285455) UART_APP: [CANH BAO] Nhieu song/Sai Token: 70![0m
+[0;33mW (285575) UART_APP: [CANH BAO] Nhieu song/Sai Token: 74![0m
+[0;33mW (285705) UART_APP: [CANH BAO] Nhieu song/Sai Token: 66![0m
+[0;33mW (286155) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.99 R2.41 V12.58![0m
+[0;32mI (286665) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,56![0m
+[0;32mI (286665) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,56!], msg_id=0[0m
+[0;33mW (286745) UART_APP: [CANH BAO] Nhieu song/Sai Token: 65![0m
+[0;32mI (287245) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,59![0m
+[0;32mI (287245) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,59!], msg_id=0[0m
+[0;33mW (287325) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (287785) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.63 R2.40 V12.77![0m
+[0;33mW (287905) UART_APP: [CANH BAO] Nhieu song/Sai Token: 60![0m
+[0;33mW (288035) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;33mW (288495) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.48 R2.19 V12.61![0m
+[0;33mW (288615) UART_APP: [CANH BAO] Nhieu song/Sai Token: 59![0m
+[0;32mI (289125) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,59![0m
+[0;32mI (289125) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,59!], msg_id=0[0m
+[0;33mW (289195) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (289655) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.65 R2.60 V12.62![0m
+[0;33mW (289785) UART_APP: [CANH BAO] Nhieu song/Sai Token: 72![0m
+[0;32mI (290285) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,58![0m
+[0;32mI (290285) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,58!], msg_id=0[0m
+[0;33mW (290365) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (290495) UART_APP: [CANH BAO] Nhieu song/Sai Token: 60![0m
+[0;32mI (290995) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,62![0m
+[0;32mI (290995) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,62!], msg_id=0[0m
+[0;33mW (291075) UART_APP: [CANH BAO] Nhieu song/Sai Token: 68![0m
+[0;33mW (291535) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.57 R2.75 V12.76![0m
+[0;33mW (291655) UART_APP: [CANH BAO] Nhieu song/Sai Token: 57![0m
+[0;32mI (292165) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,74![0m
+[0;32mI (292165) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,74!], msg_id=0[0m
+[0;33mW (292235) UART_APP: [CANH BAO] Nhieu song/Sai Token: 74![0m
+[0;32mI (292745) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,74![0m
+[0;32mI (292745) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,74!], msg_id=0[0m
+[0;33mW (292825) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (292945) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (293405) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.60 R2.39 V12.56![0m
+[0;33mW (293865) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.83 R2.35 V12.62![0m
+[0;33mW (293985) UART_APP: [CANH BAO] Nhieu song/Sai Token: 59![0m
+[0;33mW (294115) UART_APP: [CANH BAO] Nhieu song/Sai Token: 71![0m
+[0;32mI (294625) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,74![0m
+[0;32mI (294625) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,74!], msg_id=0[0m
+[0;33mW (294695) UART_APP: [CANH BAO] Nhieu song/Sai Token: 60![0m
+[0;33mW (295155) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.95 R1.98 V12.63![0m
+[0;33mW (295275) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;33mW (295735) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.65 R2.19 V12.59![0m
+[0;33mW (295865) UART_APP: [CANH BAO] Nhieu song/Sai Token: 67![0m
+[0;32mI (296365) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,71![0m
+[0;32mI (296365) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,71!], msg_id=0[0m
+[0;33mW (296445) UART_APP: [CANH BAO] Nhieu song/Sai Token: 56![0m
+[0;33mW (296565) UART_APP: [CANH BAO] Nhieu song/Sai Token: 66![0m
+[0;33mW (297025) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.09 R2.21 V12.58![0m
+[0;33mW (297485) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.90 R2.14 V12.75![0m
+[0;33mW (297605) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (297735) UART_APP: [CANH BAO] Nhieu song/Sai Token: 70![0m
+[0;32mI (298245) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,68![0m
+[0;32mI (298245) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,68!], msg_id=0[0m
+[0;33mW (298315) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (298775) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.56 R2.30 V12.56![0m
+[0;33mW (298905) UART_APP: [CANH BAO] Nhieu song/Sai Token: 63![0m
+[0;33mW (299355) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.69 R2.33 V12.68![0m
+[0;33mW (299485) UART_APP: [CANH BAO] Nhieu song/Sai Token: 58![0m
+[0;32mI (299995) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,68![0m
+[0;32mI (299995) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,68!], msg_id=0[0m
+[0;33mW (300065) UART_APP: [CANH BAO] Nhieu song/Sai Token: 57![0m
+[0;33mW (300195) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (300645) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.55 R2.23 V12.53![0m
+[0;33mW (301105) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.60 R2.65 V12.66![0m
+[0;33mW (301235) UART_APP: [CANH BAO] Nhieu song/Sai Token: 62![0m
+[0;33mW (301355) UART_APP: [CANH BAO] Nhieu song/Sai Token: 62![0m
+[0;32mI (301865) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,58![0m
+[0;32mI (301865) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,58!], msg_id=0[0m
+[0;33mW (301945) UART_APP: [CANH BAO] Nhieu song/Sai Token: 76![0m
+[0;33mW (302395) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P3.05 R2.55 V12.66![0m
+[0;33mW (302525) UART_APP: [CANH BAO] Nhieu song/Sai Token: 61![0m
+[0;33mW (302985) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.80 R2.24 V12.59![0m
+[0;33mW (303105) UART_APP: [CANH BAO] Nhieu song/Sai Token: 74![0m
+[0;32mI (303615) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,71![0m
+[0;32mI (303615) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,71!], msg_id=0[0m
+[0;33mW (303685) UART_APP: [CANH BAO] Nhieu song/Sai Token: 57![0m
+[0;33mW (303815) UART_APP: [CANH BAO] Nhieu song/Sai Token: 62![0m
+[0;33mW (304275) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.70 R2.28 V12.68![0m
+[0;33mW (304725) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.96 R2.30 V12.71![0m
+[0;33mW (304855) UART_APP: [CANH BAO] Nhieu song/Sai Token: 67![0m
+[0;33mW (304985) UART_APP: [CANH BAO] Nhieu song/Sai Token: 52![0m
+[0;32mI (305485) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,66![0m
+[0;32mI (305485) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,66!], msg_id=0[0m
+[0;33mW (305565) UART_APP: [CANH BAO] Nhieu song/Sai Token: 65![0m
+[0;33mW (306025) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.95 R2.91 V12.73![0m
+[0;33mW (306145) UART_APP: [CANH BAO] Nhieu song/Sai Token: 65![0m
+[0;33mW (306725) UART_APP: [CANH BAO] Nhieu song/Sai Token: 510423550381407680000000000000000000000.0 P2.48 R2.70 V12.61![0m
+[0;32mI (307235) UART_APP: [HOP LE] Du lieu tu xe:  L0 R0 E510423550381407680000000000000000000000.0,67![0m
+[0;32mI (307235) MQTT_APP: Da Publish Data [ L0 R0 E510423550381407680000000000000000000000.0,67!], msg_id=0[0m
+[0;33mW (307315) UART_APP: [CANH BAO] Nhieu song/Sai Token: 72![0m
+[0;31mE (322465) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;31mE (325105) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;31mE (366795) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;31mE (369385) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;31mE (371635) UART_APP: Loi: Chuoi LoRa qua dai khong co dau cham than![0m
+[0;33mW (372225) UART_APP: [CANH BAO] Nhieu song/Sai Token: .000000, LSB_Sensitivity_ACC: 16384.000000
+MPU6050 setting is finished
+Sensor LEFT address changed to 0x56![0m
+[0;33mW (373755) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+Sensor RIGHT booted at 0x52![0m
+[0;33mW (374095) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+San sang doc Encoder...
+MANH_VIP L0 R0 P0.00 R0.00 V0.00![0m
+[0;32mI (374375) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (374375) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (374625) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (374625) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (374875) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (374875) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (375115) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (375115) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (375365) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (375365) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (375615) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (375615) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (375865) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (375865) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (376115) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (376115) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (376365) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (376365) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (376615) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (376615) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (376865) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (376865) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (377115) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (377115) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (377365) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (377365) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (377615) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (377615) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (377865) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (377865) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (378115) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (378115) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (378355) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (378355) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (378605) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (378605) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (378855) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (378855) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (379105) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (379105) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (379355) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (379355) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (379605) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (379605) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (379855) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (379855) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (380105) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (380105) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (380355) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (380355) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (380605) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (380605) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (380855) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (380855) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (381105) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (381105) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (381355) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (381355) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (381605) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (381605) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (381845) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (381845) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (382095) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (382095) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (382345) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (382345) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (382595) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (382595) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (382845) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (382845) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (383095) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (383095) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (383345) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (383345) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (383595) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (383595) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (383845) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (383845) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (384095) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (384095) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (384345) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (384345) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (384595) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (384595) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (384845) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (384845) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (385085) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (385085) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (385335) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (385335) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (385585) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (385585) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (385835) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (385835) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (386085) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (386085) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (386335) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (386335) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (386585) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (386585) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (386835) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (386835) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (387085) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (387085) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (387335) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (387335) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (387585) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (387585) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (387835) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (387835) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (388085) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (388085) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (388325) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (388325) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (388575) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (388575) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (388825) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (388825) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (389075) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (389075) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (389325) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (389325) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (389575) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (389575) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (389825) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (389825) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (390075) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (390075) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (390325) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (390325) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (390575) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (390575) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (390825) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (390825) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (391075) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (391075) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (391325) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (391325) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (391565) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (391565) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (391815) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (391815) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (392065) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (392065) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (392315) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (392315) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (392565) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (392565) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (392815) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (392815) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (393065) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (393065) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (393315) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (393315) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (393565) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (393565) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (393815) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (393815) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (394065) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (394065) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (394315) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (394315) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (394565) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (394565) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (394805) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (394805) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (395055) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (395055) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (395305) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (395305) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (395555) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (395555) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (395805) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (395805) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (396055) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (396055) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (396305) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (396305) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (396555) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (396555) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (396805) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (396805) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (397055) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (397055) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (397305) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (397305) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (397555) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (397555) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (397805) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (397805) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (398055) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (398055) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (398295) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (398295) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (398545) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (398545) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (398795) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (398795) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (399045) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (399045) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (399295) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (399295) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (399545) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (399545) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (399795) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (399795) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (400045) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (400045) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (400295) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (400295) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (400545) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (400545) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (400795) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (400795) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (401045) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (401045) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (401295) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (401295) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (401535) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (401535) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (401785) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (401785) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (402035) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (402035) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (402285) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (402285) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (402535) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (402535) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (402785) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (402785) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (403035) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (403035) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (403285) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (403285) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (403535) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (403535) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (403785) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (403785) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (404035) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (404035) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (404285) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (404285) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (404535) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (404535) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (404775) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (404775) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (405025) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (405025) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (405275) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (405275) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (405525) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (405525) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (405775) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (405775) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (406025) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (406025) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (406275) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (406275) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (406525) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (406525) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (406775) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (406775) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (407025) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (407025) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (407275) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (407275) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (407525) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (407525) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (407775) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (407775) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (408015) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (408015) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (408265) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (408265) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (408515) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (408515) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (408765) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (408765) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (409015) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (409015) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (409265) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (409265) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (409515) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (409515) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (409765) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (409765) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (410015) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (410015) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (410265) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (410265) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (410515) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (410515) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (410765) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (410765) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (411015) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (411015) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (411265) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (411265) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (411505) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (411505) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (411755) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (411755) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (412005) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (412005) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (412255) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (412255) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (412505) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (412505) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (412755) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (412755) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (413005) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (413005) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (413255) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (413255) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (413505) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (413505) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (413755) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (413755) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (414005) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (414005) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (414255) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (414255) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (414505) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (414505) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (414745) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (414745) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (414995) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (414995) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (415245) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (415245) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (415495) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (415495) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (415745) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (415745) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (415995) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (415995) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (416245) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (416245) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (416495) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (416495) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (416745) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (416745) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (416995) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (416995) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (417245) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (417245) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (417495) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (417495) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (417745) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (417745) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (417985) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (417985) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (418235) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (418235) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (418485) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (418485) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (418735) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (418735) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (418985) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (418985) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (419235) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (419235) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (419485) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (419485) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (419735) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (419735) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (419985) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (419985) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (420235) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (420235) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (420485) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (420485) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (420735) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (420735) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (420985) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (420985) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (421235) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (421235) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (421475) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (421475) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (421725) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (421725) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (421975) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (421975) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (422225) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (422225) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (422475) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (422475) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (422725) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (422725) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (422975) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (422975) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (423225) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (423225) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (423475) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (423475) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (423725) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (423725) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (423975) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (423975) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m
+[0;32mI (424225) UART_APP: [HOP LE] Du lieu tu xe:  L0 R128 P89.55 R0.45 V12.68![0m
+[0;32mI (424225) MQTT_APP: Da Publish Data [ L0 R128 P89.55 R0.45 V12.68!], msg_id=0[0m

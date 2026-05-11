@@ -1,0 +1,2 @@
+source C:/Espressif/NCKH2026_RailRobot/build/gdbinit/symbols
+source C:/Espressif/NCKH2026_RailRobot/build/gdbinit/connect

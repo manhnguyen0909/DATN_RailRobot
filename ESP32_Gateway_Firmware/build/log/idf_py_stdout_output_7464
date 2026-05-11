@@ -1,0 +1,905 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40384c46
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1820
+load:0x403cc710,len:0xbd0
+load:0x403ce710,len:0x2f4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.6-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 10 2026 23:14:25[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (70) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (85) boot:  3 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (93) boot:  4 ota_0            OTA app          00 10 00120000 00100000[0m
+[0;32mI (100) boot:  5 ota_1            OTA app          00 11 00220000 00100000[0m
+[0;32mI (108) boot:  6 spiffs           Unknown data     01 82 00320000 00080000[0m
+[0;32mI (115) boot: End of partition table[0m
+[0;32mI (120) boot: Defaulting to factory image[0m
+[0;32mI (124) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=1d31ch (119580) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=0003d344 vaddr=3fc93e00 size=02c98h ( 11416) load[0m
+[0;32mI (154) esp_image: segment 2: paddr=0003ffe4 vaddr=40380000 size=00034h (    52) load[0m
+[0;32mI (157) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9ad34h (634164) map[0m
+[0;32mI (265) esp_image: segment 4: paddr=000dad5c vaddr=40380034 size=13c38h ( 80952) load[0m
+[0;32mI (286) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (287) boot: Disabling RNG early entropy source...[0m
+[0;32mI (298) cpu_start: Unicore app[0m
+[0;32mI (307) cpu_start: Pro cpu start user code[0m
+[0;32mI (307) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (307) cpu_start: Application information:[0m
+[0;32mI (310) cpu_start: Project name:     NCKH2026_RailRobot[0m
+[0;32mI (316) cpu_start: App version:      31923fc-dirty[0m
+[0;32mI (321) cpu_start: Compile time:     Apr 10 2026 23:14:05[0m
+[0;32mI (327) cpu_start: ELF file SHA256:  1646ba42a...[0m
+[0;32mI (333) cpu_start: ESP-IDF:          v5.2.6-dirty[0m
+[0;32mI (338) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (343) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (348) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (360) heap_init: At 3FC9ABE0 len 00025420 (149 KiB): RAM[0m
+[0;32mI (366) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (373) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (380) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (387) spi_flash: detected chip: generic[0m
+[0;32mI (390) spi_flash: flash io: dio[0m
+[0;32mI (395) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (401) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (409) main_task: Started on CPU0[0m
+[0;32mI (409) main_task: Calling app_main()[0m
+[0;32mI (419) MAIN_APP: NVS initialized successfully.[0m
+[0;32mI (419) pp: pp rom version: 9387209[0m
+[0;32mI (419) net80211: net80211 rom version: 9387209[0m
+[0;32mI (439) wifi:wifi driver task: 3fca3980, prio:23, stack:6656, core=0[0m
+[0;32mI (439) wifi:wifi firmware version: e851349[0m
+[0;32mI (439) wifi:wifi certification version: v7.0[0m
+[0;32mI (439) wifi:config NVS flash: enabled[0m
+[0;32mI (449) wifi:config nano formating: disabled[0m
+[0;32mI (449) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (449) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (459) wifi:Init management short buffer num: 32[0m
+[0;32mI (459) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (469) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (469) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (469) wifi:Init static rx buffer num: 10[0m
+[0;32mI (479) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (479) wifi_init: rx ba win: 6[0m
+[0;32mI (489) wifi_init: tcpip mbox: 32[0m
+[0;32mI (489) wifi_init: udp mbox: 6[0m
+[0;32mI (489) wifi_init: tcp mbox: 6[0m
+[0;32mI (499) wifi_init: tcp tx win: 5760[0m
+[0;32mI (499) wifi_init: tcp rx win: 5760[0m
+[0;32mI (509) wifi_init: tcp mss: 1440[0m
+[0;32mI (509) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (509) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (519) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (559) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (569) wifi:mode : sta (10:00:3b:cc:55:10)[0m
+[0;32mI (569) wifi:enable tsf[0m
+[0;32mI (569) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (579) WIFI_MGR: Connecting to WiFi SSID: Nguyen Manh[0m
+[0;32mI (1579) WIFI_MGR: Waiting for WiFi... (1/5)[0m
+[0;32mI (2579) WIFI_MGR: Waiting for WiFi... (2/5)[0m
+[0;32mI (3579) WIFI_MGR: Waiting for WiFi... (3/5)[0m
+[0;32mI (4579) WIFI_MGR: Waiting for WiFi... (4/5)[0m
+[0;32mI (5579) WIFI_MGR: Waiting for WiFi... (5/5)[0m
+[0;31mE (5579) WIFI_MGR: Failed to connect to WiFi![0m
+[0;32mI (5579) MAIN_APP: WiFi initialized successfully.[0m
+[0;32mI (5679) OTA_SERVER: OTA Server started at port 81[0m
+[0;32mI (5679) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (5679) OTA_SERVER: 🚀 OTA SERVER READY![0m
+[0;32mI (5679) OTA_SERVER: 👉 Click to open: http://0.0.0.0:81/ota[0m
+[0;32mI (5689) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (5699) MAIN_APP: OTA Server started successfully.[0m
+[0;32mI (5709) uart: queue free spaces: 20[0m
+[0;32mI (5709) UART_APP: Da khoi tao UART1 (TX: 1, RX: 0) o toc do 9600[0m
+[0;32mI (5709) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (5719) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (5729) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (5769) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (5789) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (5809) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (5829) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (5849) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (5869) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (5889) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (5909) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (5929) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (5949) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (5969) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (5989) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6009) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6029) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6049) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6069) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6089) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6109) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6129) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6149) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6169) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6189) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6209) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6229) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6249) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6269) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6289) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6309) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6329) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6349) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6369) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6389) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6409) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6429) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6449) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6469) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6489) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6509) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6529) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6549) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6569) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6589) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6609) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6629) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6649) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6669) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6689) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6709) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6729) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6749) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6769) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6789) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6809) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6829) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6849) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6869) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6889) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6909) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6929) UART_APP: Nhan duoc 120 bytes tu STM32: [0m
+00 D8 6C EF 53 26 00 62 85 81 45 53 50 F3 E5 05 FE 00 FE 00 FC 00 FC 00 FE 00 FC 00 FC 00 FF 00 FC 00 FC 00 FF 00 FE 00 FE 00 FE 00 FF 00 F8 00 FE 00 FE 00 FC 00 FE 00 F8 00 FE 00 FF 00 FF 00 FE 00 FC 00 FE 00 FE 00 FE 00 FE 00 FE 00 FC 00 F4 00 FC 00 FA 00 F2 00 FE 00 F8 00 FC 00 FE 00 F4 00 FE 00 FE 00 FE 00 F8 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+[0;32mI (6959) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6959) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6969) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (6989) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7009) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7029) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7049) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7069) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7089) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7109) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7129) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7149) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7169) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7189) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7209) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7229) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7249) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7269) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7289) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7309) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7329) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7349) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7369) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7389) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7409) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7429) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7449) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7469) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7489) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7509) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7529) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7549) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7569) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7589) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7609) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7629) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7649) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7669) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7689) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7709) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7729) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (7749) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7769) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7789) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7809) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7829) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7849) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7869) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7889) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7909) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7929) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7949) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7969) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (7989) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8009) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8029) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8049) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8069) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8089) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8109) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8129) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8149) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8169) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8189) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8209) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8229) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8249) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8269) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8289) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8309) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8329) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8349) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8369) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8389) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8409) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8429) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8449) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8469) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8489) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8509) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8529) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8549) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8569) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8589) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8609) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8629) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8649) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8669) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8689) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8709) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8729) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8749) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8769) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8789) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8809) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8829) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8849) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8869) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8889) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8909) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8929) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8949) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8969) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (8989) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9009) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9029) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9049) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9069) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9089) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9109) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9129) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9139) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9159) UART_APP: Nhan duoc 120 bytes tu STM32: [0m
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FE 00 00 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 59 FD 51 00 00 00 00 00 FE 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FE 00 FC 00 FC 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+[0;32mI (9189) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9199) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9199) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9219) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9239) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9259) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9279) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9299) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9319) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9339) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9359) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9379) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9399) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9419) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9439) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9459) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9479) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9499) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9519) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9539) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9559) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9579) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9599) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9619) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9639) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9659) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9679) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9699) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9719) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9729) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (9759) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9779) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9799) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9819) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9839) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9859) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9879) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9899) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9919) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9939) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9959) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9979) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (9999) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10019) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10039) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10059) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10079) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10099) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10119) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10139) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10159) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10179) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10199) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10219) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10239) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10259) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10279) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10299) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10319) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10339) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10359) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10379) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10399) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10419) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10439) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10459) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10479) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10499) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10519) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10539) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10559) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10579) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10599) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10619) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10639) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10659) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10679) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10699) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10719) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10739) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10759) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10779) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10799) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10819) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10839) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10859) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10879) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10899) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10919) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10939) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10959) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10979) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (10999) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11019) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11039) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11059) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11079) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11099) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11119) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11139) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11159) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11179) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11199) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11219) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11239) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11259) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11279) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11299) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11319) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11339) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11359) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11379) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11399) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11409) UART_APP: Nhan duoc 120 bytes tu STM32: [0m
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 F2 81 F8 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FE 00 FE 00 FF 00 F8 00 FC 00 FC 
+[0;32mI (11439) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11439) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11459) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11479) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11499) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11519) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11539) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11559) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11579) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11599) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11619) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11639) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11659) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11679) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11699) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11719) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11729) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (11739) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11779) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11799) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11819) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11839) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11859) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11879) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11899) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11919) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11939) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11959) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11979) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (11999) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12019) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12039) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12059) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12079) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12099) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12119) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12139) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12159) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12179) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12199) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12219) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12239) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12259) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12279) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12299) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12319) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12339) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12359) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12379) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12399) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12419) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12439) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12459) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12479) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12499) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12519) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12539) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12559) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12579) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12599) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12619) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12639) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12659) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12679) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12699) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12719) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12739) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12759) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12779) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12799) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12819) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12839) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12859) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12879) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12889) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12909) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12929) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12949) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12969) UART_APP: Nhan duoc 120 bytes tu STM32: [0m
+00 F8 00 F4 00 FE 00 FC 00 FC 00 F8 00 FE 00 FC 00 FF 00 FC 00 FC 00 FE 00 FC 00 F8 00 FC 00 D8 6F F0 26 26 00 14 81 45 53 50 33 FA 85 0A 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FE 00 FE 00 FE 00 FC 00 FE 00 FC 00 FC 00 FF 00 FC 00 F8 00 F8 00 FC 00 F8 00 FC 
+[0;32mI (12989) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (12999) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13009) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13029) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13049) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13069) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13089) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13109) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13129) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13149) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13169) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13189) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13209) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13229) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13249) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13269) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13289) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13309) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13329) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13349) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13369) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13389) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13409) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13429) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13449) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13469) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13489) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13509) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13529) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13549) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13569) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13589) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13609) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13629) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13649) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13669) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13689) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13709) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13729) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (13749) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13769) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13789) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13809) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13829) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13849) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13869) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13889) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13909) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13929) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13949) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13969) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (13989) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14009) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14029) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14049) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14069) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14089) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14109) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14129) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14149) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14169) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14189) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14209) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14229) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14249) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14269) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14289) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14309) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14329) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14349) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14369) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14389) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14409) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14429) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14449) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14469) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14489) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14509) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14529) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14549) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14569) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14589) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14609) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14629) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14649) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14669) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14689) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14709) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14729) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14749) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14769) UART_APP: Nhan duoc 120 bytes tu STM32: [0m
+00 FE 00 F0 00 FE 00 FE 00 FE 00 FE 00 FE 00 FC 00 FE 00 FE 00 00 FF 00 00 00 00 00 00 00 00 00 00 FF 00 FE 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FE 13 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF 00 FC 00 FE 00 FE 00 FF 00 FE 00 FE 00 FE 00 FF 00 FE 00 FF 00 FE 00 FE 00 FF 00 
+[0;32mI (14799) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14799) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14809) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14829) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14849) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14869) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14889) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14909) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14929) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14949) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14969) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (14989) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15009) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15029) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15049) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15069) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15089) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15109) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15129) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15149) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15169) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15189) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15209) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15229) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15249) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15269) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15289) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15309) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15329) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15349) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15369) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15389) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15409) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15429) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15449) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15469) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15489) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15509) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15529) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15549) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15569) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15589) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15609) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15629) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15649) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15669) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15689) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15709) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15729) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (15769) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15789) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15809) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15829) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15849) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15859) UART_APP: Nhan duoc 120 bytes tu STM32: �
+FE 00 FC 00 FE 00 FF 00 FF 00 FF 00 FC 00 FE 00 FF 00 FE 00 FE 00 FC 00 FE 00 FF 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FF 00 FE 00 FE 00 FE 00 FE 00 FE 00 FF 00 FE 00 FE 00 FF 00 FE 00 FE 00 FF 00 FE 00 FC 00 FE 00 FE 00 FF 00 FE 00 FE 00 FF 00 FE 08 54 55 6A 92 62 02 A2 85 01 22 85 E5 85 0A 00 FE 00 FF 00 FE 00 FE 00 FE 
+[0;32mI (15879) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15889) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15909) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15929) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15949) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15969) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (15989) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16009) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16029) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16049) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16069) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16089) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16109) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16129) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16149) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16169) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16189) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16209) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16229) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16249) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16269) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16279) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16299) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16319) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16339) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16359) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16379) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16399) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16419) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16439) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16459) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16479) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16499) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16519) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16539) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16559) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16579) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16599) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16619) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16639) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16659) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16679) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16699) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16719) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16739) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16759) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16779) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16799) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16819) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16839) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16859) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16879) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16899) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16919) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16939) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16959) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16979) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (16999) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17019) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17039) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17049) UART_APP: Nhan duoc 120 bytes tu STM32: [0m
+00 FC 00 FC 00 FF 00 FE 00 FF 00 FF 00 FE 00 FC 00 FF 00 FF 00 FF 00 FF 00 FE 00 FE 00 FE 00 FF 00 FF 00 FF 00 FF 00 FE 00 FF 00 FE 00 FE 00 FF 00 FF 00 FF 00 FE 00 FF 00 FC 00 FC 00 FE 00 FE 00 FE 00 F8 00 FC 00 F4 00 FD 00 FF 00 FF 00 FE 00 FE 00 FF 00 FF 00 FF 00 FF 00 FE 00 FF 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FF 00 FE 00 FE 00 FE 00 FE 00 FF 00 FE 
+[0;32mI (17079) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17079) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17099) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17119) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17139) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17159) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17179) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17199) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17219) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17239) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17259) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17279) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17299) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17319) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17339) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17359) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17379) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17399) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17419) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17439) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17459) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17479) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17499) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17519) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17539) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17559) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17579) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17599) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17619) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17639) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17659) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17679) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17699) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17719) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17729) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (17759) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17779) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17799) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17819) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17839) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17859) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17879) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17899) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17919) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17939) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17959) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17979) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (17999) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18019) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18039) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18059) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18079) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18099) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18119) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18129) UART_APP: Nhan duoc 120 bytes tu STM32: [0m
+00 FE 00 FE 00 FC 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FF 00 FF 00 FE 00 FC 00 FF 00 FE 00 FE 00 FE 00 FF 00 FC 00 FE 00 FE 00 FE 00 FE 00 FE 00 FF 00 FE 00 FF 00 FF 00 FF 00 FE 00 FE 00 FE 00 20 EB 0B 9A D1 02 A2 2A 4D 41 CD 32 20 E4 FE 00 FE 00 FE 00 FF 00 FF 00 FE 00 FE 00 FF 00 FE 00 FC 00 FE 00 FE 00 FF 00 FE 00 FE 00 FC 00 FE 00 FF 00 FC 00 FE 
+[0;32mI (18159) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18159) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18179) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18199) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18219) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18239) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18259) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18279) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18299) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18319) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18339) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18359) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18379) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18399) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18419) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18439) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18459) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18479) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18499) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18519) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18539) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18559) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18579) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18599) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18619) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18639) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18659) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18679) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18699) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18719) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18739) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18759) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18779) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18799) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18819) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18839) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18859) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18879) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18899) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18919) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18939) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18959) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18979) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (18999) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19019) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19039) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19059) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19079) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19099) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19119) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19139) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19159) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19179) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19199) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19219) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19239) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19259) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19279) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19299) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19319) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19329) UART_APP: Nhan duoc 120 bytes tu STM32: [0m
+00 FC 00 FE 00 FE 00 FE 00 FE 00 FE 00 FC 00 FE 00 FE 00 FF 00 FE 00 FF 00 FE 00 FF 00 FE 00 FF 00 FF 00 FE 00 FE 00 FF 00 FC 00 FC 00 FE 00 FC 00 FF 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FF 00 FE 00 FE 00 FE 00 FE 00 FE 00 FC 00 FE 00 FE 00 FE 00 FF 00 FE 00 FE 00 FF 00 FE 00 FE 00 FC 00 FE 00 FF 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FF 00 FE 
+[0;32mI (19349) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19359) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19379) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19389) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19409) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19429) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19449) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19469) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19489) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19509) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19529) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19549) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19569) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19589) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19609) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19629) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19649) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19669) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19689) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19709) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19729) UART_APP: Da gui len STM32: Hello STM32, tao la ESP32 day!
+[0m
+[0;32mI (19769) UART_APP: Nhan duoc 54 bytes tu STM32: [0m
+00 FD 00 FE 00 FE 00 FC 00 FC 00 FE 00 FF 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 FF 00 FE 00 FE 00 FE 00 FC 00 FE 48 E5 9A 11 57 BD 81 6C 61 20 F5 02 22 FF 
+[0;32mI (19779) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19789) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19809) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19829) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19849) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19869) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19889) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19909) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19929) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19949) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19969) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (19989) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20009) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20029) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20049) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20069) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20089) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20109) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20129) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20149) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20169) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20189) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20209) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20229) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20249) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20269) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20289) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20309) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20329) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20349) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20369) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20389) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20409) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20429) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20449) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20469) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20489) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20509) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20529) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20549) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20569) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20589) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20609) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20629) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20649) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20669) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20689) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20709) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20729) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20749) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20769) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20789) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20809) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20829) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20849) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20869) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20889) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20909) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20929) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20949) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20959) UART_APP: Nhan duoc 120 bytes tu STM32: [0m
+00 FE 00 FE 00 FE 00 FF 00 FF 00 FE 00 FF 00 FE 00 FF 00 FF 00 FE 00 FF 00 FC 00 FE 00 FE 00 FF 00 FE 00 FC 00 FE 00 FF 00 FF 00 FC 00 FE 00 FE 00 FE 00 FC 00 FA 00 FE 00 FC 00 FF 00 FE 00 FE 00 FE 00 FF 00 FE 00 FE 00 FE 00 FF 00 FE 00 FF 00 FE 00 FF 00 FF 00 FE 00 FE 00 FF 00 FF 00 FE 00 FE 00 FE 00 FF 00 FE 00 F8 00 FC 00 FC 00 FE 00 F8 00 FD 00 FC 00 FF 
+[0;32mI (20989) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (20989) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (21009) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (21029) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (21049) UART_APP: Su kien UART khac: 1[0m
+[0;32mI (21069) UART_APP: Su kien UART khac: 1[0m

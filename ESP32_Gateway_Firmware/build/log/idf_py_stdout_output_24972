@@ -1,0 +1,4107 @@
+[0;32mI (100) boot:  5 ota_1            OTA app          00 11 ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40384c46
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1820
+load:0x403cc710,len:0xbd0
+load:0x403ce710,len:0x2f4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.6-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 10 2026 23:14:25[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (70) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (85) boot:  3 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (93) boot:  4 ota_0            OTA app          00 10 00120000 00100000[0m
+[0;32mI (100) boot:  5 ota_1            OTA app          00 11 00220000 00100000[0m
+[0;32mI (108) boot:  6 spiffs           Unknown data     01 82 00320000 00080000[0m
+[0;32mI (115) boot: End of partition table[0m
+[0;32mI (120) boot: Defaulting to factory image[0m
+[0;32mI (124) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=1d21ch (119324) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=0003d244 vaddr=3fc93e00 size=02c98h ( 11416) load[0m
+[0;32mI (154) esp_image: segment 2: paddr=0003fee4 vaddr=40380000 size=00134h (   308) load[0m
+[0;32mI (157) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9a7ech (632812) map[0m
+[0;32mI (265) esp_image: segment 4: paddr=000da814 vaddr=40380134 size=13b0ch ( 80652) load[0m
+[0;32mI (286) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (286) boot: Disabling RNG early entropy source...[0m
+[0;32mI (298) cpu_start: Unicore app[0m
+[0;32mI (306) cpu_start: Pro cpu start user code[0m
+[0;32mI (306) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (307) cpu_start: Application information:[0m
+[0;32mI (309) cpu_start: Project name:     NCKH2026_RailRobot[0m
+[0;32mI (315) cpu_start: App version:      31923fc-dirty[0m
+[0;32mI (321) cpu_start: Compile time:     Apr 10 2026 23:14:05[0m
+[0;32mI (327) cpu_start: ELF file SHA256:  becae469f...[0m
+[0;32mI (332) cpu_start: ESP-IDF:          v5.2.6-dirty[0m
+[0;32mI (338) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (342) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (347) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (359) heap_init: At 3FC9ABE0 len 00025420 (149 KiB): RAM[0m
+[0;32mI (365) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (372) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (379) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (386) spi_flash: detected chip: generic[0m
+[0;32mI (390) spi_flash: flash io: dio[0m
+[0;32mI (395) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (401) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (408) main_task: Started on CPU0[0m
+[0;32mI (408) main_task: Calling app_main()[0m
+[0;32mI (418) MAIN_APP: NVS initialized successfully.[0m
+[0;32mI (418) pp: pp rom version: 9387209[0m
+[0;32mI (418) net80211: net80211 rom version: 9387209[0m
+[0;32mI (438) wifi:wifi driver task: 3fca38fc, prio:23, stack:6656, core=0[0m
+[0;32mI (438) wifi:wifi firmware version: e851349[0m
+[0;32mI (438) wifi:wifi certification version: v7.0[0m
+[0;32mI (438) wifi:config NVS flash: enabled[0m
+[0;32mI (448) wifi:config nano formating: disabled[0m
+[0;32mI (448) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (448) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (458) wifi:Init management short buffer num: 32[0m
+[0;32mI (458) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (468) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (468) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (468) wifi:Init static rx buffer num: 10[0m
+[0;32mI (478) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (478) wifi_init: rx ba win: 6[0m
+[0;32mI (488) wifi_init: tcpip mbox: 32[0m
+[0;32mI (488) wifi_init: udp mbox: 6[0m
+[0;32mI (488) wifi_init: tcp mbox: 6[0m
+[0;32mI (498) wifi_init: tcp tx win: 5760[0m
+[0;32mI (498) wifi_init: tcp rx win: 5760[0m
+[0;32mI (508) wifi_init: tcp mss: 1440[0m
+[0;32mI (508) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (508) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (518) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (558) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (598) wifi:mode : sta (10:00:3b:cc:55:10)[0m
+[0;32mI (598) wifi:enable tsf[0m
+[0;32mI (598) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (598) WIFI_MGR: Connecting to WiFi SSID: Nguyen Manh[0m
+[0;32mI (1598) WIFI_MGR: Waiting for WiFi... (1/5)[0m
+[0;32mI (2598) WIFI_MGR: Waiting for WiFi... (2/5)[0m
+[0;32mI (3598) WIFI_MGR: Waiting for WiFi... (3/5)[0m
+[0;32mI (4598) WIFI_MGR: Waiting for WiFi... (4/5)[0m
+[0;32mI (5598) WIFI_MGR: Waiting for WiFi... (5/5)[0m
+[0;31mE (5598) WIFI_MGR: Failed to connect to WiFi![0m
+[0;32mI (5598) MAIN_APP: WiFi initialized successfully.[0m
+[0;32mI (5698) OTA_SERVER: OTA Server started at port 81[0m
+[0;32mI (5698) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (5698) OTA_SERVER: 🚀 OTA SERVER READY![0m
+[0;32mI (5698) OTA_SERVER: 👉 Click to open: http://0.0.0.0:81/ota[0m
+[0;32mI (5708) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (5718) MAIN_APP: OTA Server started successfully.[0m
+[0;32mI (5728) uart: queue free spaces: 20[0m
+[0;32mI (5728) UART_APP: Da khoi tao UART1 (TX: 20, RX: 21) o toc do 9600[0m
+[0;32mI (5858) UART_APP: Nhan duoc 120 bytes tu STM32: e��Accel X:-332, Y:-44, Z:16872
+Accel X:-272, Y:20, Z:16848
+Accel X:-192, Y:-68, Z:16840
+Accel X:-208, Y:-84, Z:16844[0m
+[0;32mI (5998) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-252, Y:16, Z:16860
+Accel X:-196, Y:-60, Z:16752
+Accel X:-216, Y:-28, Z:16716
+Accel X:-228, Y:-172, Z:16784[0m
+[0;32mI (6138) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-140, Y:-104, Z:16752
+Accel X:-268, Y:-88, Z:16852
+Accel X:-188, Y:16, Z:17032
+Accel X:-192, Y:-160, Z:1692[0m
+[0;32mI (6268) UART_APP: Nhan duoc 120 bytes tu STM32: 4
+Accel X:-332, Y:0, Z:16936
+Accel X:-188, Y:40, Z:16656
+Accel X:-56, Y:-12, Z:16812
+Accel X:-256, Y:20, Z:16936
+Ac[0m
+[0;32mI (6408) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-268, Y:-68, Z:16696
+Accel X:-200, Y:0, Z:16740
+Accel X:-220, Y:-68, Z:16920
+Accel X:-124, Y:36, Z:16872
+Accel[0m
+[0;32mI (6548) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-396, Y:-88, Z:16760
+Accel X:-208, Y:8, Z:16780
+Accel X:-148, Y:32, Z:16800
+Accel X:-220, Y:36, Z:16896
+Accel X:-[0m
+[0;32mI (6688) UART_APP: Nhan duoc 120 bytes tu STM32: 236, Y:-56, Z:16780
+Accel X:-232, Y:-24, Z:16872
+Accel X:-264, Y:-56, Z:16684
+Accel X:-224, Y:12, Z:16852
+Accel X:-2[0m
+[0;32mI (6818) UART_APP: Nhan duoc 120 bytes tu STM32: 56, Y:-48, Z:16840
+Accel X:-240, Y:-120, Z:16756
+Accel X:-276, Y:-48, Z:16984
+Accel X:-160, Y:24, Z:16832
+Accel X:-3[0m
+[0;32mI (6958) UART_APP: Nhan duoc 120 bytes tu STM32: 56, Y:-40, Z:16852
+Accel X:-196, Y:-68, Z:16676
+Accel X:-288, Y:-8, Z:16824
+Accel X:-220, Y:-84, Z:16852
+Accel X:-30[0m
+[0;32mI (7098) UART_APP: Nhan duoc 120 bytes tu STM32: 4, Y:20, Z:16864
+Accel X:-212, Y:-40, Z:16760
+Accel X:-236, Y:12, Z:16676
+Accel X:-240, Y:-52, Z:16768
+Accel X:-136,[0m
+[0;32mI (7238) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:-52, Z:16900
+Accel X:-216, Y:56, Z:16768
+Accel X:-200, Y:-36, Z:16820
+Accel X:-268, Y:20, Z:16804
+Accel X:-160, Y[0m
+[0;32mI (7368) UART_APP: Nhan duoc 120 bytes tu STM32: :-72, Z:16808
+Accel X:-248, Y:40, Z:16736
+Accel X:-232, Y:-16, Z:16760
+Accel X:-280, Y:16, Z:16652
+Accel X:-180, Y:-[0m
+[0;32mI (7508) UART_APP: Nhan duoc 120 bytes tu STM32: 64, Z:16760
+Accel X:-220, Y:20, Z:16748
+Accel X:-260, Y:-20, Z:16700
+Accel X:-316, Y:12, Z:16908
+Accel X:-248, Y:-44[0m
+[0;32mI (7648) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16796
+Accel X:-352, Y:-48, Z:16488
+Accel X:-260, Y:-88, Z:16684
+Accel X:-304, Y:-88, Z:16840
+Accel X:-228, Y:-10[0m
+[0;32mI (7788) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Z:16844
+Accel X:-176, Y:-68, Z:16836
+Accel X:-320, Y:36, Z:16812
+Accel X:-188, Y:52, Z:16896
+Accel X:-156, Y:-40,[0m
+[0;32mI (7918) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16896
+Accel X:-264, Y:-136, Z:16644
+Accel X:-240, Y:-92, Z:16684
+Accel X:-56, Y:8, Z:16872
+Accel X:-192, Y:-56, Z[0m
+[0;32mI (8058) UART_APP: Nhan duoc 120 bytes tu STM32: :16624
+Accel X:-240, Y:-84, Z:16804
+Accel X:-304, Y:-24, Z:16696
+Accel X:-228, Y:-24, Z:16672
+Accel X:-272, Y:4, Z:1[0m
+[0;32mI (8198) UART_APP: Nhan duoc 120 bytes tu STM32: 6972
+Accel X:-180, Y:-28, Z:16856
+Accel X:-280, Y:-120, Z:16648
+Accel X:-352, Y:-36, Z:16904
+Accel X:-328, Y:-44, Z:[0m
+[0;32mI (8328) UART_APP: Nhan duoc 120 bytes tu STM32: 16920
+Accel X:-180, Y:-28, Z:16656
+Accel X:-244, Y:0, Z:16832
+Accel X:-340, Y:40, Z:16852
+Accel X:-300, Y:-88, Z:167[0m
+[0;32mI (8468) UART_APP: Nhan duoc 120 bytes tu STM32: 88
+Accel X:-272, Y:-36, Z:16888
+Accel X:-272, Y:28, Z:16828
+Accel X:-224, Y:28, Z:16840
+Accel X:-204, Y:-32, Z:16948[0m
+[0;32mI (8608) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-252, Y:88, Z:16772
+Accel X:-184, Y:64, Z:16688
+Accel X:-216, Y:-8, Z:16828
+Accel X:-264, Y:-12, Z:16800
+A[0m
+[0;32mI (8748) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-192, Y:-116, Z:16716
+Accel X:-192, Y:-36, Z:16880
+Accel X:-240, Y:40, Z:16772
+Accel X:-120, Y:12, Z:16644
+Ac[0m
+[0;32mI (8878) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-224, Y:-68, Z:16684
+Accel X:-272, Y:40, Z:16792
+Accel X:-236, Y:-24, Z:16904
+Accel X:-292, Y:20, Z:16796
+Acce[0m
+[0;32mI (9018) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-172, Y:0, Z:16752
+Accel X:-212, Y:-8, Z:16744
+Accel X:-220, Y:-20, Z:16872
+Accel X:-444, Y:-84, Z:16884
+Accel X[0m
+[0;32mI (9158) UART_APP: Nhan duoc 120 bytes tu STM32: :-252, Y:-68, Z:16820
+Accel X:-216, Y:-36, Z:16776
+Accel X:-320, Y:8, Z:16820
+Accel X:-288, Y:-64, Z:16740
+Accel X:-[0m
+[0;32mI (9298) UART_APP: Nhan duoc 120 bytes tu STM32: 364, Y:36, Z:17472
+Accel X:-832, Y:344, Z:17752
+Accel X:-536, Y:-64, Z:16816
+Accel X:16, Y:-68, Z:15976
+Accel X:-164[0m
+[0;32mI (9428) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:120, Z:17104
+Accel X:-152, Y:24, Z:16804
+Accel X:-184, Y:24, Z:16840
+Accel X:-256, Y:8, Z:16712
+Accel X:-288, Y:[0m
+[0;32mI (9568) UART_APP: Nhan duoc 120 bytes tu STM32: -44, Z:16888
+Accel X:-184, Y:64, Z:16872
+Accel X:-296, Y:-68, Z:16892
+Accel X:-292, Y:8, Z:16756
+Accel X:-272, Y:-40[0m
+[0;32mI (9708) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16756
+Accel X:-240, Y:16, Z:16744
+Accel X:-336, Y:-120, Z:16892
+Accel X:-188, Y:72, Z:16668
+Accel X:-160, Y:24, [0m
+[0;32mI (9848) UART_APP: Nhan duoc 120 bytes tu STM32: Z:17016
+Accel X:-304, Y:0, Z:16796
+Accel X:-240, Y:-72, Z:16808
+Accel X:-208, Y:-80, Z:16760
+Accel X:-332, Y:-16, Z:[0m
+[0;32mI (9978) UART_APP: Nhan duoc 120 bytes tu STM32: 16804
+Accel X:-304, Y:-60, Z:16752
+Accel X:-40, Y:96, Z:16940
+Accel X:-316, Y:-116, Z:16348
+Accel X:-308, Y:40, Z:16[0m
+[0;32mI (10118) UART_APP: Nhan duoc 120 bytes tu STM32: 836
+Accel X:-176, Y:-44, Z:17044
+Accel X:-276, Y:16, Z:16864
+Accel X:-148, Y:-36, Z:16760
+Accel X:-444, Y:-44, Z:167[0m
+[0;32mI (10258) UART_APP: Nhan duoc 120 bytes tu STM32: 64
+Accel X:-124, Y:-96, Z:16808
+Accel X:-232, Y:-24, Z:16968
+Accel X:-236, Y:-52, Z:16684
+Accel X:-232, Y:40, Z:1710[0m
+[0;32mI (10398) UART_APP: Nhan duoc 120 bytes tu STM32: 4
+Accel X:-228, Y:-16, Z:16868
+Accel X:-288, Y:-96, Z:16740
+Accel X:-308, Y:-68, Z:16704
+Accel X:-176, Y:-12, Z:1696[0m
+[0;32mI (10528) UART_APP: Nhan duoc 120 bytes tu STM32: 0
+Accel X:-260, Y:-36, Z:16776
+Accel X:-256, Y:84, Z:16780
+Accel X:-204, Y:-68, Z:16836
+Accel X:-192, Y:60, Z:16736[0m
+[0;32mI (10668) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-256, Y:-20, Z:16924
+Accel X:-244, Y:32, Z:16748
+Accel X:-192, Y:8, Z:16768
+Accel X:-272, Y:32, Z:16812
+Acc[0m
+[0;32mI (10808) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-220, Y:56, Z:16864
+Accel X:-180, Y:20, Z:16932
+Accel X:-348, Y:64, Z:16892
+Accel X:-192, Y:-80, Z:16728
+Accel [0m
+[0;32mI (10948) UART_APP: Nhan duoc 120 bytes tu STM32: X:-216, Y:32, Z:16796
+Accel X:-216, Y:44, Z:16820
+Accel X:-276, Y:-68, Z:16872
+Accel X:-308, Y:-100, Z:16724
+Accel X[0m
+[0;32mI (11078) UART_APP: Nhan duoc 120 bytes tu STM32: :-152, Y:-76, Z:16952
+Accel X:-340, Y:-24, Z:16748
+Accel X:-244, Y:-56, Z:16848
+Accel X:-96, Y:24, Z:16916
+Accel X:-[0m
+[0;32mI (11218) UART_APP: Nhan duoc 120 bytes tu STM32: 284, Y:-36, Z:16936
+Accel X:-240, Y:-92, Z:16776
+Accel X:-296, Y:-24, Z:16776
+Accel X:-108, Y:-20, Z:16960
+Accel X:-[0m
+[0;32mI (11358) UART_APP: Nhan duoc 120 bytes tu STM32: 240, Y:84, Z:16752
+Accel X:-168, Y:44, Z:16856
+Accel X:-180, Y:-4, Z:16792
+Accel X:-280, Y:-40, Z:16844
+Accel X:-260[0m
+[0;32mI (11488) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:28, Z:16708
+Accel X:-260, Y:-32, Z:16788
+Accel X:-252, Y:-40, Z:16920
+Accel X:-268, Y:-96, Z:16872
+Accel X:-180,[0m
+[0;32mI (11628) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:32, Z:16824
+Accel X:-284, Y:16, Z:16928
+Accel X:-216, Y:4, Z:16812
+Accel X:-312, Y:-92, Z:16872
+Accel X:-192, Y:8[0m
+[0;32mI (11768) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16764
+Accel X:-336, Y:32, Z:16788
+Accel X:-152, Y:8, Z:16920
+Accel X:-176, Y:12, Z:16864
+Accel X:-256, Y:-44, Z:[0m
+[0;32mI (11908) UART_APP: Nhan duoc 120 bytes tu STM32: 16736
+Accel X:-220, Y:132, Z:16976
+Accel X:-180, Y:0, Z:16852
+Accel X:-220, Y:16, Z:16868
+Accel X:-248, Y:68, Z:1674[0m
+[0;32mI (12038) UART_APP: Nhan duoc 120 bytes tu STM32: 8
+Accel X:-208, Y:8, Z:16908
+Accel X:-168, Y:76, Z:16880
+Accel X:-192, Y:40, Z:16780
+Accel X:-300, Y:-4, Z:16788
+Ac[0m
+[0;32mI (12178) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-416, Y:-64, Z:16856
+Accel X:-156, Y:8, Z:16956
+Accel X:-64, Y:0, Z:17020
+Accel X:-324, Y:20, Z:16824
+Accel X:[0m
+[0;32mI (12318) UART_APP: Nhan duoc 120 bytes tu STM32: -252, Y:16, Z:16972
+Accel X:-232, Y:-60, Z:16832
+Accel X:-156, Y:80, Z:16940
+Accel X:-196, Y:-36, Z:16836
+Accel X:-3[0m
+[0;32mI (12458) UART_APP: Nhan duoc 120 bytes tu STM32: 08, Y:20, Z:16852
+Accel X:-160, Y:12, Z:16856
+Accel X:-216, Y:-92, Z:16720
+Accel X:-216, Y:-72, Z:16700
+Accel X:-248[0m
+[0;32mI (12588) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-12, Z:16744
+Accel X:-272, Y:-24, Z:16680
+Accel X:-204, Y:-12, Z:16916
+Accel X:-288, Y:-100, Z:16708
+Accel X:-28[0m
+[0;32mI (12728) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Y:-144, Z:16768
+Accel X:-280, Y:32, Z:16876
+Accel X:-204, Y:-12, Z:16616
+Accel X:-160, Y:84, Z:16812
+Accel X:-192[0m
+[0;32mI (12868) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-36, Z:16744
+Accel X:-296, Y:72, Z:16908
+Accel X:-184, Y:-80, Z:16908
+Accel X:-264, Y:-4, Z:16800
+Accel X:-148, [0m
+[0;32mI (13008) UART_APP: Nhan duoc 120 bytes tu STM32: Y:24, Z:16908
+Accel X:-264, Y:44, Z:16884
+Accel X:-228, Y:-40, Z:16976
+Accel X:-192, Y:88, Z:16912
+Accel X:-172, Y:-[0m
+[0;32mI (13138) UART_APP: Nhan duoc 120 bytes tu STM32: 48, Z:16796
+Accel X:-196, Y:36, Z:16708
+Accel X:-232, Y:-8, Z:16900
+Accel X:-216, Y:32, Z:16768
+Accel X:-176, Y:32, [0m
+[0;32mI (13278) UART_APP: Nhan duoc 120 bytes tu STM32: Z:16716
+Accel X:-284, Y:112, Z:16732
+Accel X:-116, Y:-72, Z:16792
+Accel X:-252, Y:-8, Z:16984
+Accel X:-188, Y:40, Z:[0m
+[0;32mI (13418) UART_APP: Nhan duoc 120 bytes tu STM32: 16776
+Accel X:-272, Y:-52, Z:16948
+Accel X:-284, Y:-188, Z:16780
+Accel X:-328, Y:72, Z:16684
+Accel X:-332, Y:-20, Z:[0m
+[0;32mI (13558) UART_APP: Nhan duoc 120 bytes tu STM32: 16804
+Accel X:-56, Y:36, Z:16952
+Accel X:-256, Y:20, Z:16844
+Accel X:-220, Y:40, Z:16864
+Accel X:-172, Y:-32, Z:1690[0m
+[0;32mI (13688) UART_APP: Nhan duoc 120 bytes tu STM32: 4
+Accel X:-288, Y:-16, Z:16752
+Accel X:-304, Y:8, Z:16824
+Accel X:-248, Y:-20, Z:16824
+Accel X:-188, Y:-56, Z:16728[0m
+[0;32mI (13828) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-208, Y:36, Z:16824
+Accel X:-216, Y:-72, Z:16996
+Accel X:-76, Y:108, Z:16688
+Accel X:-152, Y:-4, Z:16780
+Ac[0m
+[0;32mI (13968) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-304, Y:-44, Z:16824
+Accel X:-260, Y:48, Z:16864
+Accel X:-176, Y:-32, Z:16804
+Accel X:-272, Y:-68, Z:16736
+Acc[0m
+[0;32mI (14108) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-284, Y:-72, Z:16804
+Accel X:-240, Y:-76, Z:16900
+Accel X:-272, Y:12, Z:16860
+Accel X:-372, Y:-28, Z:16708
+Acce[0m
+[0;32mI (14238) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-68, Y:-68, Z:16632
+Accel X:-308, Y:-72, Z:16920
+Accel X:-256, Y:-12, Z:16892
+Accel X:-300, Y:-24, Z:16860
+Accel[0m
+[0;32mI (14378) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-152, Y:4, Z:16628
+Accel X:-308, Y:-96, Z:16860
+Accel X:-228, Y:104, Z:16800
+Accel X:-192, Y:-80, Z:16820
+Accel X[0m
+[0;32mI (14518) UART_APP: Nhan duoc 120 bytes tu STM32: :-388, Y:36, Z:16892
+Accel X:-236, Y:-56, Z:16728
+Accel X:-296, Y:12, Z:16760
+Accel X:-260, Y:-56, Z:16836
+Accel X:-[0m
+[0;32mI (14648) UART_APP: Nhan duoc 120 bytes tu STM32: 280, Y:-56, Z:16732
+Accel X:-264, Y:68, Z:16776
+Accel X:-260, Y:-36, Z:16832
+Accel X:-460, Y:52, Z:16836
+Accel X:-13[0m
+[0;32mI (14788) UART_APP: Nhan duoc 120 bytes tu STM32: 2, Y:-40, Z:16812
+Accel X:-304, Y:-32, Z:17072
+Accel X:-300, Y:-100, Z:16848
+Accel X:-164, Y:-60, Z:16792
+Accel X:-1[0m
+[0;32mI (14928) UART_APP: Nhan duoc 120 bytes tu STM32: 40, Y:12, Z:16788
+Accel X:-324, Y:-88, Z:16800
+Accel X:-120, Y:-40, Z:16644
+Accel X:-132, Y:-84, Z:16792
+Accel X:-23[0m
+[0;32mI (15068) UART_APP: Nhan duoc 120 bytes tu STM32: 6, Y:-52, Z:16744
+Accel X:-364, Y:-68, Z:16820
+Accel X:-264, Y:-44, Z:16804
+Accel X:-88, Y:-144, Z:16792
+Accel X:-22[0m
+[0;32mI (15198) UART_APP: Nhan duoc 120 bytes tu STM32: 8, Y:188, Z:16872
+Accel X:-400, Y:-140, Z:16852
+Accel X:-208, Y:88, Z:16824
+Accel X:-116, Y:-76, Z:16820
+Accel X:-27[0m
+[0;32mI (15338) UART_APP: Nhan duoc 120 bytes tu STM32: 6, Y:16, Z:16884
+Accel X:-124, Y:-96, Z:16788
+Accel X:-316, Y:-36, Z:16708
+Accel X:-352, Y:-16, Z:16884
+Accel X:-172[0m
+[0;32mI (15478) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-92, Z:16812
+Accel X:-248, Y:-56, Z:16760
+Accel X:-264, Y:-40, Z:16744
+Accel X:-124, Y:-84, Z:16832
+Accel X:-208[0m
+[0;32mI (15618) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-24, Z:16744
+Accel X:-232, Y:-28, Z:16552
+Accel X:-272, Y:-48, Z:16780
+Accel X:-128, Y:-56, Z:16780
+Accel X:-204[0m
+[0;32mI (15748) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-24, Z:16852
+Accel X:-128, Y:-32, Z:17016
+Accel X:-248, Y:-64, Z:16816
+Accel X:-216, Y:-88, Z:16752
+Accel X:-272[0m
+[0;32mI (15888) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-60, Z:16804
+Accel X:-216, Y:16, Z:16856
+Accel X:-132, Y:44, Z:16640
+Accel X:-220, Y:-16, Z:16860
+Accel X:-248, [0m
+[0;32mI (16028) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-32, Z:16932
+Accel X:-192, Y:12, Z:16840
+Accel X:-296, Y:-60, Z:16656
+Accel X:-184, Y:-92, Z:16920
+Accel X:-308, Y[0m
+[0;32mI (16168) UART_APP: Nhan duoc 120 bytes tu STM32: :40, Z:16712
+Accel X:-204, Y:4, Z:16776
+Accel X:-384, Y:4, Z:16932
+Accel X:-152, Y:-64, Z:16708
+Accel X:-160, Y:0, Z[0m
+[0;32mI (16298) UART_APP: Nhan duoc 120 bytes tu STM32: :16844
+Accel X:-280, Y:64, Z:16884
+Accel X:-244, Y:8, Z:16756
+Accel X:-248, Y:-12, Z:16788
+Accel X:-160, Y:-48, Z:16[0m
+[0;32mI (16438) UART_APP: Nhan duoc 120 bytes tu STM32: 808
+Accel X:-240, Y:-36, Z:16796
+Accel X:-312, Y:-44, Z:16764
+Accel X:-156, Y:-24, Z:16772
+Accel X:-320, Y:-84, Z:16[0m
+[0;32mI (16578) UART_APP: Nhan duoc 120 bytes tu STM32: 764
+Accel X:-148, Y:-36, Z:16772
+Accel X:-208, Y:-76, Z:16684
+Accel X:-192, Y:12, Z:16744
+Accel X:-316, Y:-20, Z:166[0m
+[0;32mI (16718) UART_APP: Nhan duoc 120 bytes tu STM32: 96
+Accel X:-348, Y:40, Z:16764
+Accel X:-288, Y:-100, Z:16928
+Accel X:-136, Y:44, Z:16928
+Accel X:-288, Y:-68, Z:1681[0m
+[0;32mI (16848) UART_APP: Nhan duoc 120 bytes tu STM32: 2
+Accel X:-208, Y:-112, Z:16880
+Accel X:-160, Y:104, Z:16844
+Accel X:-224, Y:16, Z:16796
+Accel X:-240, Y:-48, Z:1676[0m
+[0;32mI (16988) UART_APP: Nhan duoc 120 bytes tu STM32: 4
+Accel X:-308, Y:-116, Z:16840
+Accel X:-220, Y:60, Z:16876
+Accel X:-232, Y:48, Z:16764
+Accel X:-272, Y:68, Z:16836[0m
+[0;32mI (17128) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-200, Y:-64, Z:17072
+Accel X:-236, Y:-44, Z:16816
+Accel X:-160, Y:52, Z:16816
+Accel X:-140, Y:-128, Z:16796[0m
+[0;32mI (17258) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-292, Y:-64, Z:16824
+Accel X:-176, Y:68, Z:16856
+Accel X:-220, Y:-12, Z:16956
+Accel X:-200, Y:-16, Z:16704
+[0m
+[0;32mI (17398) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-232, Y:-92, Z:16776
+Accel X:-232, Y:-92, Z:16740
+Accel X:-320, Y:32, Z:16740
+Accel X:-80, Y:-20, Z:16708
+Ac[0m
+[0;32mI (17538) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-268, Y:40, Z:17116
+Accel X:-192, Y:-4, Z:16836
+Accel X:-152, Y:-12, Z:16776
+Accel X:-132, Y:8, Z:16788
+Accel [0m
+[0;32mI (17678) UART_APP: Nhan duoc 120 bytes tu STM32: X:-248, Y:-24, Z:16864
+Accel X:-160, Y:-56, Z:16776
+Accel X:-108, Y:-164, Z:16948
+Accel X:-244, Y:36, Z:16784
+Accel [0m
+[0;32mI (17808) UART_APP: Nhan duoc 120 bytes tu STM32: X:-208, Y:128, Z:16804
+Accel X:-324, Y:4, Z:16816
+Accel X:-192, Y:-20, Z:16824
+Accel X:-308, Y:72, Z:16892
+Accel X:-[0m
+[0;32mI (17948) UART_APP: Nhan duoc 120 bytes tu STM32: 252, Y:32, Z:16852
+Accel X:-268, Y:-72, Z:16932
+Accel X:-172, Y:8, Z:16924
+Accel X:-144, Y:8, Z:16888
+Accel X:-316, [0m
+[0;32mI (18088) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-112, Z:16804
+Accel X:-152, Y:-104, Z:16756
+Accel X:-232, Y:24, Z:16876
+Accel X:-320, Y:-84, Z:16884
+Accel X:-196,[0m
+[0;32mI (18228) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:8, Z:16920
+Accel X:-228, Y:-12, Z:16776
+Accel X:-316, Y:56, Z:16832
+Accel X:-156, Y:-24, Z:16896
+Accel X:-188, Y:[0m
+[0;32mI (18358) UART_APP: Nhan duoc 120 bytes tu STM32: -12, Z:16680
+Accel X:-316, Y:-60, Z:16740
+Accel X:-112, Y:-8, Z:16924
+Accel X:-196, Y:56, Z:16696
+Accel X:-196, Y:-4[0m
+[0;32mI (18498) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Z:16796
+Accel X:-176, Y:8, Z:16948
+Accel X:-284, Y:-44, Z:16720
+Accel X:-328, Y:28, Z:16740
+Accel X:-316, Y:-44, [0m
+[0;32mI (18638) UART_APP: Nhan duoc 120 bytes tu STM32: Z:16728
+Accel X:-260, Y:-20, Z:16880
+Accel X:-224, Y:-92, Z:16808
+Accel X:-200, Y:-36, Z:16900
+Accel X:-316, Y:8, Z:[0m
+[0;32mI (18778) UART_APP: Nhan duoc 120 bytes tu STM32: 16724
+Accel X:-264, Y:0, Z:16932
+Accel X:-284, Y:28, Z:16756
+Accel X:-52, Y:-36, Z:16692
+Accel X:-372, Y:-12, Z:1686[0m
+[0;32mI (18908) UART_APP: Nhan duoc 120 bytes tu STM32: 4
+Accel X:-200, Y:-184, Z:16796
+Accel X:-132, Y:36, Z:16960
+Accel X:-192, Y:-128, Z:16988
+Accel X:-292, Y:-60, Z:167[0m
+[0;32mI (19048) UART_APP: Nhan duoc 120 bytes tu STM32: 96
+Accel X:-220, Y:12, Z:16852
+Accel X:-288, Y:-72, Z:16812
+Accel X:-228, Y:24, Z:16904
+Accel X:-288, Y:-64, Z:16888[0m
+[0;32mI (19188) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-240, Y:-84, Z:16692
+Accel X:-252, Y:8, Z:17000
+Accel X:-244, Y:16, Z:16824
+Accel X:-256, Y:-128, Z:16940
+[0m
+[0;32mI (19328) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-204, Y:0, Z:17064
+Accel X:-176, Y:52, Z:16776
+Accel X:-232, Y:16, Z:16696
+Accel X:-180, Y:52, Z:16768
+Accel[0m
+[0;32mI (19458) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-212, Y:112, Z:16972
+Accel X:-180, Y:-44, Z:16828
+Accel X:-228, Y:-28, Z:16732
+Accel X:-240, Y:-84, Z:16752
+Accel[0m
+[0;32mI (19598) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-264, Y:-60, Z:16900
+Accel X:-308, Y:-8, Z:16940
+Accel X:-204, Y:12, Z:16988
+Accel X:-216, Y:-56, Z:16804
+Accel X[0m
+[0;32mI (19738) UART_APP: Nhan duoc 120 bytes tu STM32: :-136, Y:32, Z:16776
+Accel X:-300, Y:36, Z:16816
+Accel X:-308, Y:68, Z:16788
+Accel X:-216, Y:0, Z:16752
+Accel X:-216[0m
+[0;32mI (19868) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:56, Z:16816
+Accel X:-212, Y:-24, Z:16772
+Accel X:-312, Y:76, Z:16780
+Accel X:-208, Y:-44, Z:16888
+Accel X:-112, [0m
+[0;32mI (20008) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-52, Z:16996
+Accel X:-296, Y:64, Z:16824
+Accel X:-248, Y:12, Z:16948
+Accel X:-140, Y:-64, Z:16836
+Accel X:-308, Y:[0m
+[0;32mI (20148) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Z:16836
+Accel X:-304, Y:-44, Z:16964
+Accel X:-160, Y:8, Z:16792
+Accel X:-332, Y:-120, Z:16812
+Accel X:-212, Y:-60[0m
+[0;32mI (20288) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16900
+Accel X:-276, Y:28, Z:16668
+Accel X:-272, Y:-4, Z:16780
+Accel X:-248, Y:-68, Z:16992
+Accel X:-108, Y:84, Z[0m
+[0;32mI (20418) UART_APP: Nhan duoc 120 bytes tu STM32: :16772
+Accel X:-332, Y:76, Z:16812
+Accel X:-188, Y:-32, Z:16620
+Accel X:-344, Y:80, Z:16844
+Accel X:-280, Y:-60, Z:1[0m
+[0;32mI (20558) UART_APP: Nhan duoc 120 bytes tu STM32: 6804
+Accel X:-300, Y:-12, Z:16900
+Accel X:-172, Y:24, Z:16764
+Accel X:-232, Y:-12, Z:16988
+Accel X:-112, Y:-24, Z:16[0m
+[0;32mI (20698) UART_APP: Nhan duoc 120 bytes tu STM32: 796
+Accel X:-184, Y:76, Z:16816
+Accel X:-192, Y:96, Z:16752
+Accel X:-228, Y:24, Z:16836
+Accel X:-308, Y:-20, Z:16960[0m
+[0;32mI (20838) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-168, Y:-4, Z:16844
+Accel X:-224, Y:0, Z:16780
+Accel X:-312, Y:-12, Z:16676
+Accel X:-280, Y:60, Z:16804
+Ac[0m
+[0;32mI (20968) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-228, Y:-24, Z:16820
+Accel X:-264, Y:-8, Z:16768
+Accel X:-260, Y:-68, Z:16784
+Accel X:-356, Y:-48, Z:16676
+Acc[0m
+[0;32mI (21108) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-160, Y:8, Z:17056
+Accel X:-140, Y:-116, Z:16656
+Accel X:-152, Y:0, Z:16976
+Accel X:-280, Y:52, Z:16684
+Accel X[0m
+[0;32mI (21248) UART_APP: Nhan duoc 120 bytes tu STM32: :-288, Y:-24, Z:16956
+Accel X:-168, Y:-16, Z:16840
+Accel X:-316, Y:-76, Z:16820
+Accel X:-324, Y:-56, Z:16864
+Accel X[0m
+[0;32mI (21388) UART_APP: Nhan duoc 120 bytes tu STM32: :-292, Y:-148, Z:16572
+Accel X:-252, Y:-96, Z:16800
+Accel X:-248, Y:-88, Z:16812
+Accel X:-224, Y:20, Z:16780
+Accel X[0m
+[0;32mI (21518) UART_APP: Nhan duoc 120 bytes tu STM32: :-252, Y:24, Z:16836
+Accel X:-304, Y:-36, Z:16716
+Accel X:-268, Y:4, Z:16784
+Accel X:-272, Y:-76, Z:16776
+Accel X:-2[0m
+[0;32mI (21658) UART_APP: Nhan duoc 120 bytes tu STM32: 28, Y:16, Z:16912
+Accel X:-272, Y:64, Z:16784
+Accel X:-232, Y:-132, Z:16772
+Accel X:-252, Y:-32, Z:16872
+Accel X:-16[0m
+[0;32mI (21798) UART_APP: Nhan duoc 120 bytes tu STM32: 8, Y:0, Z:16828
+Accel X:-204, Y:8, Z:16888
+Accel X:-176, Y:-28, Z:16752
+Accel X:-160, Y:-104, Z:16892
+Accel X:-256, [0m
+[0;32mI (21938) UART_APP: Nhan duoc 120 bytes tu STM32: Y:8, Z:16880
+Accel X:-200, Y:-68, Z:16824
+Accel X:-236, Y:-4, Z:16744
+Accel X:-264, Y:-36, Z:16984
+Accel X:-248, Y:1[0m
+[0;32mI (22068) UART_APP: Nhan duoc 120 bytes tu STM32: 6, Z:16672
+Accel X:-316, Y:-28, Z:16808
+Accel X:-160, Y:48, Z:16876
+Accel X:-308, Y:-16, Z:16872
+Accel X:-268, Y:-60[0m
+[0;32mI (22208) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16788
+Accel X:-160, Y:24, Z:16916
+Accel X:-192, Y:-12, Z:16884
+Accel X:-240, Y:-36, Z:16916
+Accel X:-228, Y:-96,[0m
+[0;32mI (22348) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16796
+Accel X:-284, Y:-112, Z:16876
+Accel X:-352, Y:-32, Z:16844
+Accel X:-232, Y:48, Z:16920
+Accel X:-236, Y:-84,[0m
+[0;32mI (22478) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16732
+Accel X:-304, Y:-68, Z:16692
+Accel X:-256, Y:16, Z:16816
+Accel X:-248, Y:20, Z:16860
+Accel X:-240, Y:-40, Z[0m
+[0;32mI (22618) UART_APP: Nhan duoc 120 bytes tu STM32: :16804
+Accel X:-224, Y:72, Z:16920
+Accel X:-168, Y:52, Z:16876
+Accel X:-232, Y:-24, Z:16844
+Accel X:-164, Y:-28, Z:1[0m
+[0;32mI (22758) UART_APP: Nhan duoc 120 bytes tu STM32: 6852
+Accel X:-224, Y:0, Z:16760
+Accel X:-132, Y:-96, Z:16656
+Accel X:-252, Y:8, Z:16836
+Accel X:-272, Y:-56, Z:16868[0m
+[0;32mI (22898) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-232, Y:0, Z:16652
+Accel X:-192, Y:20, Z:16688
+Accel X:-300, Y:36, Z:16704
+Accel X:-212, Y:-32, Z:16764
+Ac[0m
+[0;32mI (23028) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-216, Y:-56, Z:16688
+Accel X:-264, Y:-8, Z:16916
+Accel X:-228, Y:-144, Z:16792
+Accel X:-196, Y:-60, Z:16868
+Ac[0m
+[0;32mI (23168) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-168, Y:56, Z:16832
+Accel X:-204, Y:-124, Z:16776
+Accel X:-192, Y:-32, Z:16776
+Accel X:-188, Y:-120, Z:16768
+A[0m
+[0;32mI (23308) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-228, Y:16, Z:16824
+Accel X:-304, Y:104, Z:16804
+Accel X:-188, Y:-32, Z:16924
+Accel X:-300, Y:-40, Z:16984
+Ac[0m
+[0;32mI (23448) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-328, Y:-44, Z:16892
+Accel X:-184, Y:-28, Z:16816
+Accel X:-288, Y:44, Z:16804
+Accel X:-124, Y:-12, Z:16812
+Acc[0m
+[0;32mI (23578) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-296, Y:32, Z:16752
+Accel X:-232, Y:-8, Z:16776
+Accel X:-236, Y:52, Z:16880
+Accel X:-220, Y:-40, Z:16952
+Accel [0m
+[0;32mI (23718) UART_APP: Nhan duoc 120 bytes tu STM32: X:-240, Y:-28, Z:16760
+Accel X:-312, Y:-92, Z:16748
+Accel X:-196, Y:20, Z:16852
+Accel X:-224, Y:-52, Z:16824
+Accel X[0m
+[0;32mI (23858) UART_APP: Nhan duoc 120 bytes tu STM32: :-252, Y:-84, Z:16668
+Accel X:-200, Y:-44, Z:16676
+Accel X:-208, Y:0, Z:16844
+Accel X:-168, Y:24, Z:16768
+Accel X:-3[0m
+[0;32mI (23998) UART_APP: Nhan duoc 120 bytes tu STM32: 2, Y:-96, Z:16744
+Accel X:-336, Y:16, Z:17028
+Accel X:-168, Y:0, Z:16824
+Accel X:-196, Y:80, Z:16872
+Accel X:-284, Y[0m
+[0;32mI (24128) UART_APP: Nhan duoc 120 bytes tu STM32: :-88, Z:16788
+Accel X:-208, Y:80, Z:16744
+Accel X:-208, Y:-16, Z:16832
+Accel X:-224, Y:60, Z:16636
+Accel X:-212, Y:-[0m
+[0;32mI (24268) UART_APP: Nhan duoc 120 bytes tu STM32: 92, Z:16696
+Accel X:-296, Y:-188, Z:16932
+Accel X:-280, Y:-36, Z:16692
+Accel X:-268, Y:-112, Z:16812
+Accel X:-272, Y[0m
+[0;32mI (24408) UART_APP: Nhan duoc 120 bytes tu STM32: :52, Z:16904
+Accel X:-192, Y:-4, Z:16784
+Accel X:-288, Y:-148, Z:16848
+Accel X:-184, Y:108, Z:16760
+Accel X:-220, Y:[0m
+[0;32mI (24548) UART_APP: Nhan duoc 120 bytes tu STM32: -48, Z:16816
+Accel X:-292, Y:-24, Z:16876
+Accel X:-256, Y:-36, Z:16800
+Accel X:-208, Y:-24, Z:16812
+Accel X:-236, Y:[0m
+[0;32mI (24678) UART_APP: Nhan duoc 120 bytes tu STM32: 36, Z:16912
+Accel X:-344, Y:-60, Z:16828
+Accel X:-168, Y:32, Z:16900
+Accel X:-292, Y:-24, Z:16680
+Accel X:-232, Y:76[0m
+[0;32mI (24818) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16952
+Accel X:-172, Y:84, Z:16768
+Accel X:-176, Y:-92, Z:16856
+Accel X:-244, Y:12, Z:16872
+Accel X:-220, Y:-48, [0m
+[0;32mI (24958) UART_APP: Nhan duoc 120 bytes tu STM32: Z:16744
+Accel X:-208, Y:-8, Z:16820
+Accel X:-240, Y:-48, Z:16940
+Accel X:-200, Y:28, Z:16892
+Accel X:-204, Y:92, Z:1[0m
+[0;32mI (25088) UART_APP: Nhan duoc 120 bytes tu STM32: 6960
+Accel X:-264, Y:72, Z:16756
+Accel X:-180, Y:-144, Z:16868
+Accel X:-264, Y:-64, Z:16832
+Accel X:-112, Y:4, Z:167[0m
+[0;32mI (25228) UART_APP: Nhan duoc 120 bytes tu STM32: 64
+Accel X:-332, Y:-28, Z:16880
+Accel X:-284, Y:0, Z:16692
+Accel X:-292, Y:20, Z:16664
+Accel X:-224, Y:-116, Z:16692[0m
+[0;32mI (25368) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-152, Y:24, Z:16848
+Accel X:-308, Y:-4, Z:16728
+Accel X:-256, Y:12, Z:16808
+Accel X:-244, Y:-40, Z:16788
+A[0m
+[0;32mI (25508) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-236, Y:-80, Z:16812
+Accel X:-200, Y:-20, Z:16852
+Accel X:-240, Y:8, Z:16928
+Accel X:-224, Y:-152, Z:16812
+Ac[0m
+[0;32mI (25638) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-304, Y:136, Z:16884
+Accel X:-112, Y:76, Z:16720
+Accel X:-348, Y:32, Z:16872
+Accel X:-120, Y:-12, Z:16836
+Acce[0m
+[0;32mI (25778) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-256, Y:-44, Z:16756
+Accel X:-340, Y:-44, Z:16916
+Accel X:-200, Y:-48, Z:17064
+Accel X:-192, Y:-84, Z:16828
+Acce[0m
+[0;32mI (25918) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-248, Y:16, Z:16908
+Accel X:-256, Y:40, Z:16772
+Accel X:-256, Y:-16, Z:16716
+Accel X:-328, Y:-68, Z:16824
+Accel [0m
+[0;32mI (26058) UART_APP: Nhan duoc 120 bytes tu STM32: X:-192, Y:-28, Z:16824
+Accel X:-292, Y:-12, Z:16976
+Accel X:-164, Y:-84, Z:16728
+Accel X:-296, Y:-72, Z:16844
+Accel [0m
+[0;32mI (26188) UART_APP: Nhan duoc 120 bytes tu STM32: X:-280, Y:112, Z:16836
+Accel X:-224, Y:-60, Z:16824
+Accel X:-316, Y:-4, Z:16960
+Accel X:-384, Y:20, Z:16888
+Accel X:[0m
+[0;32mI (26328) UART_APP: Nhan duoc 120 bytes tu STM32: -184, Y:-36, Z:16828
+Accel X:-188, Y:-28, Z:16812
+Accel X:-216, Y:-32, Z:16776
+Accel X:-304, Y:-32, Z:16968
+Accel X:[0m
+[0;32mI (26468) UART_APP: Nhan duoc 120 bytes tu STM32: -224, Y:-64, Z:16800
+Accel X:-240, Y:-36, Z:16712
+Accel X:-228, Y:-56, Z:16896
+Accel X:-324, Y:-24, Z:16832
+Accel X:[0m
+[0;32mI (26608) UART_APP: Nhan duoc 120 bytes tu STM32: -260, Y:-76, Z:16832
+Accel X:-228, Y:40, Z:16800
+Accel X:-112, Y:8, Z:16792
+Accel X:-260, Y:-12, Z:16820
+Accel X:-26[0m
+[0;32mI (26738) UART_APP: Nhan duoc 120 bytes tu STM32: 4, Y:40, Z:16828
+Accel X:-240, Y:48, Z:16996
+Accel X:-268, Y:-80, Z:16720
+Accel X:-276, Y:-32, Z:16816
+Accel X:-204,[0m
+[0;32mI (26878) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:44, Z:16976
+Accel X:-324, Y:20, Z:16844
+Accel X:-80, Y:-36, Z:16872
+Accel X:-240, Y:-72, Z:16788
+Accel X:-252, Y:[0m
+[0;32mI (27018) UART_APP: Nhan duoc 120 bytes tu STM32: -76, Z:16816
+Accel X:-304, Y:-12, Z:16792
+Accel X:-160, Y:-144, Z:16740
+Accel X:-304, Y:84, Z:16856
+Accel X:-104, Y:[0m
+[0;32mI (27158) UART_APP: Nhan duoc 120 bytes tu STM32: -4, Z:16940
+Accel X:-232, Y:8, Z:16884
+Accel X:-280, Y:-36, Z:16820
+Accel X:-220, Y:-28, Z:16648
+Accel X:-196, Y:-10[0m
+[0;32mI (27288) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Z:16900
+Accel X:-208, Y:-48, Z:16712
+Accel X:-220, Y:20, Z:16848
+Accel X:-244, Y:32, Z:16648
+Accel X:-140, Y:24, [0m
+[0;32mI (27428) UART_APP: Nhan duoc 120 bytes tu STM32: Z:16736
+Accel X:-220, Y:0, Z:16904
+Accel X:-356, Y:-12, Z:16828
+Accel X:-188, Y:4, Z:16728
+Accel X:-200, Y:-76, Z:16[0m
+[0;32mI (27568) UART_APP: Nhan duoc 120 bytes tu STM32: 756
+Accel X:-192, Y:20, Z:16964
+Accel X:-312, Y:-32, Z:16720
+Accel X:-232, Y:12, Z:16732
+Accel X:-372, Y:4, Z:16912[0m
+[0;32mI (27698) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-204, Y:-108, Z:16720
+Accel X:-240, Y:32, Z:16800
+Accel X:-284, Y:-84, Z:16744
+Accel X:-204, Y:28, Z:16692
+[0m
+[0;32mI (27838) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-216, Y:-12, Z:16948
+Accel X:-240, Y:-16, Z:16940
+Accel X:-208, Y:-8, Z:16888
+Accel X:-272, Y:32, Z:16808
+Ac[0m
+[0;32mI (27978) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-228, Y:-68, Z:16908
+Accel X:-148, Y:28, Z:16768
+Accel X:-272, Y:60, Z:16728
+Accel X:-272, Y:40, Z:16896
+Accel[0m
+[0;32mI (28118) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-188, Y:-56, Z:16872
+Accel X:-244, Y:-84, Z:16760
+Accel X:-248, Y:16, Z:16764
+Accel X:-228, Y:-76, Z:16676
+Accel [0m
+[0;32mI (28248) UART_APP: Nhan duoc 120 bytes tu STM32: X:-216, Y:-132, Z:16784
+Accel X:-292, Y:-48, Z:16828
+Accel X:-196, Y:-48, Z:16816
+Accel X:-276, Y:-64, Z:16688
+Accel[0m
+[0;32mI (28388) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-180, Y:56, Z:16888
+Accel X:-140, Y:60, Z:16844
+Accel X:-332, Y:8, Z:16908
+Accel X:160, Y:-72, Z:16872
+Accel X:-3[0m
+[0;32mI (28528) UART_APP: Nhan duoc 120 bytes tu STM32: 48, Y:72, Z:16760
+Accel X:-568, Y:20, Z:17176
+Accel X:-492, Y:-48, Z:17216
+Accel X:-124, Y:-96, Z:16872
+Accel X:-196[0m
+[0;32mI (28668) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-12, Z:16828
+Accel X:-364, Y:-112, Z:16972
+Accel X:-696, Y:-192, Z:17612
+Accel X:-68, Y:112, Z:17688
+Accel X:56,[0m
+[0;32mI (28798) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:32, Z:17940
+Accel X:668, Y:100, Z:17212
+Accel X:1260, Y:200, Z:16732
+Accel X:2028, Y:48, Z:16148
+Accel X:2436, Y:[0m
+[0;32mI (28938) UART_APP: Nhan duoc 120 bytes tu STM32: 148, Z:15944
+Accel X:2416, Y:188, Z:16756
+Accel X:2780, Y:-112, Z:16872
+Accel X:2636, Y:-192, Z:17248
+Accel X:3044, [0m
+[0;32mI (29078) UART_APP: Nhan duoc 120 bytes tu STM32: Y:88, Z:15996
+Accel X:2796, Y:-32, Z:16860
+Accel X:2816, Y:-196, Z:17376
+Accel X:3556, Y:100, Z:16180
+Accel X:3648, [0m
+[0;32mI (29218) UART_APP: Nhan duoc 120 bytes tu STM32: Y:96, Z:15916
+Accel X:3520, Y:-76, Z:16032
+Accel X:3644, Y:80, Z:16636
+Accel X:3612, Y:-60, Z:16312
+Accel X:3532, Y:[0m
+[0;32mI (29348) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Z:16364
+Accel X:3328, Y:-68, Z:16728
+Accel X:3696, Y:-88, Z:15892
+Accel X:2780, Y:-316, Z:16676
+Accel X:2912, Y:-[0m
+[0;32mI (29488) UART_APP: Nhan duoc 120 bytes tu STM32: 240, Z:16500
+Accel X:2092, Y:76, Z:16064
+Accel X:1632, Y:4, Z:18068
+Accel X:1516, Y:-124, Z:15888
+Accel X:528, Y:-58[0m
+[0;32mI (29628) UART_APP: Nhan duoc 120 bytes tu STM32: 4, Z:17756
+Accel X:496, Y:-944, Z:16276
+Accel X:-964, Y:-1604, Z:19596
+Accel X:76, Y:-568, Z:16660
+Accel X:-668, Y:-[0m
+[0;32mI (29758) UART_APP: Nhan duoc 120 bytes tu STM32: 296, Z:17384
+Accel X:-792, Y:-536, Z:16432
+Accel X:-1252, Y:-556, Z:17192
+Accel X:-1440, Y:-488, Z:16184
+Accel X:-20[0m
+[0;32mI (29898) UART_APP: Nhan duoc 120 bytes tu STM32: 60, Y:-308, Z:17060
+Accel X:-2024, Y:-352, Z:16868
+Accel X:-2512, Y:-220, Z:16536
+Accel X:-2792, Y:-396, Z:16444
+Acc[0m
+[0;32mI (30038) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-2868, Y:-340, Z:16464
+Accel X:-3024, Y:-392, Z:16396
+Accel X:-3260, Y:-160, Z:16308
+Accel X:-3096, Y:-416, Z:16[0m
+[0;32mI (30178) UART_APP: Nhan duoc 120 bytes tu STM32: 292
+Accel X:-3320, Y:-200, Z:16228
+Accel X:-3704, Y:-304, Z:16124
+Accel X:-3804, Y:-252, Z:16244
+Accel X:-3664, Y:-2[0m
+[0;32mI (30308) UART_APP: Nhan duoc 120 bytes tu STM32: 40, Z:16264
+Accel X:-3424, Y:-280, Z:15452
+Accel X:-3644, Y:-164, Z:16508
+Accel X:-3444, Y:-236, Z:16004
+Accel X:-32[0m
+[0;32mI (30448) UART_APP: Nhan duoc 120 bytes tu STM32: 44, Y:-300, Z:16364
+Accel X:-3576, Y:-372, Z:16124
+Accel X:-3368, Y:-260, Z:16612
+Accel X:-2980, Y:-428, Z:16400
+Acc[0m
+[0;32mI (30588) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-3124, Y:-248, Z:16728
+Accel X:-2300, Y:-200, Z:15944
+Accel X:-2184, Y:-376, Z:16840
+Accel X:-1624, Y:-380, Z:16[0m
+[0;32mI (30718) UART_APP: Nhan duoc 120 bytes tu STM32: 308
+Accel X:-844, Y:-420, Z:16492
+Accel X:-1080, Y:-276, Z:17208
+Accel X:-360, Y:-720, Z:17912
+Accel X:-272, Y:-540,[0m
+[0;32mI (30858) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16912
+Accel X:36, Y:-380, Z:17368
+Accel X:-184, Y:-576, Z:17228
+Accel X:512, Y:-44, Z:16624
+Accel X:424, Y:-368, [0m
+[0;32mI (30998) UART_APP: Nhan duoc 120 bytes tu STM32: Z:17028
+Accel X:888, Y:-292, Z:17132
+Accel X:1036, Y:-328, Z:16988
+Accel X:2108, Y:-344, Z:16000
+Accel X:2116, Y:-40[0m
+[0;32mI (31138) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Z:16932
+Accel X:2588, Y:-316, Z:16204
+Accel X:2728, Y:-92, Z:16260
+Accel X:3108, Y:-340, Z:16288
+Accel X:3308, Y:[0m
+[0;32mI (31268) UART_APP: Nhan duoc 120 bytes tu STM32: -268, Z:16828
+Accel X:3296, Y:-240, Z:16604
+Accel X:3664, Y:-264, Z:16516
+Accel X:3676, Y:-212, Z:17252
+Accel X:4508[0m
+[0;32mI (31408) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-268, Z:15796
+Accel X:4772, Y:-352, Z:15328
+Accel X:4692, Y:-352, Z:16148
+Accel X:4716, Y:-288, Z:17080
+Accel X:[0m
+[0;32mI (31548) UART_APP: Nhan duoc 120 bytes tu STM32: 5304, Y:-256, Z:15796
+Accel X:5492, Y:-324, Z:15904
+Accel X:5936, Y:-304, Z:15732
+Accel X:5876, Y:-216, Z:15784
+Acce[0m
+[0;32mI (31688) UART_APP: Nhan duoc 120 bytes tu STM32: l X:6292, Y:-240, Z:14604
+Accel X:5792, Y:-372, Z:15808
+Accel X:5888, Y:-20, Z:14772
+Accel X:5336, Y:-196, Z:14500
+A[0m
+[0;32mI (31818) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:3188, Y:-992, Z:18864
+Accel X:3384, Y:-432, Z:17344
+Accel X:3704, Y:-356, Z:15180
+Accel X:2968, Y:-460, Z:1638[0m
+[0;32mI (31958) UART_APP: Nhan duoc 120 bytes tu STM32: 4
+Accel X:1996, Y:-584, Z:16320
+Accel X:868, Y:-684, Z:16164
+Accel X:856, Y:36, Z:18892
+Accel X:-336, Y:-784, Z:1763[0m
+[0;32mI (32098) UART_APP: Nhan duoc 120 bytes tu STM32: 2
+Accel X:-704, Y:-544, Z:16656
+Accel X:-28, Y:-572, Z:16712
+Accel X:-404, Y:-600, Z:16880
+Accel X:-600, Y:-600, Z:1[0m
+[0;32mI (32238) UART_APP: Nhan duoc 120 bytes tu STM32: 6824
+Accel X:-896, Y:-496, Z:16736
+Accel X:-1132, Y:-456, Z:16508
+Accel X:-1032, Y:-420, Z:16904
+Accel X:-1900, Y:-4[0m
+[0;32mI (32368) UART_APP: Nhan duoc 120 bytes tu STM32: 28, Z:16072
+Accel X:-2420, Y:-320, Z:17000
+Accel X:-3004, Y:-316, Z:16988
+Accel X:-3312, Y:-328, Z:16340
+Accel X:-32[0m
+[0;32mI (32508) UART_APP: Nhan duoc 120 bytes tu STM32: 88, Y:-296, Z:16212
+Accel X:-3876, Y:-304, Z:16228
+Accel X:-3508, Y:-412, Z:15772
+Accel X:-3616, Y:-280, Z:16304
+Acc[0m
+[0;32mI (32648) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-4440, Y:-292, Z:16188
+Accel X:-4652, Y:-272, Z:16108
+Accel X:-4928, Y:-304, Z:15908
+Accel X:-4824, Y:-188, Z:16[0m
+[0;32mI (32778) UART_APP: Nhan duoc 120 bytes tu STM32: 160
+Accel X:-4340, Y:-296, Z:16296
+Accel X:-3936, Y:-300, Z:16248
+Accel X:-3624, Y:-356, Z:16152
+Accel X:-3836, Y:-2[0m
+[0;32mI (32918) UART_APP: Nhan duoc 120 bytes tu STM32: 32, Z:16472
+Accel X:-2852, Y:-432, Z:16196
+Accel X:-3096, Y:0, Z:16480
+Accel X:-2828, Y:-396, Z:16944
+Accel X:-2080,[0m
+[0;32mI (33058) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:-348, Z:16688
+Accel X:-2236, Y:-584, Z:17060
+Accel X:-1312, Y:-728, Z:17456
+Accel X:616, Y:-1448, Z:15956
+Accel X[0m
+[0;32mI (33198) UART_APP: Nhan duoc 120 bytes tu STM32: :-452, Y:-324, Z:16960
+Accel X:24, Y:-632, Z:16788
+Accel X:316, Y:-680, Z:17756
+Accel X:552, Y:-668, Z:17044
+Accel X[0m
+[0;32mI (33328) UART_APP: Nhan duoc 120 bytes tu STM32: :160, Y:-976, Z:17576
+Accel X:1880, Y:-688, Z:16760
+Accel X:1728, Y:-600, Z:16384
+Accel X:2528, Y:-648, Z:17116
+Acce[0m
+[0;32mI (33468) UART_APP: Nhan duoc 120 bytes tu STM32: l X:4924, Y:-380, Z:18920
+Accel X:3748, Y:-264, Z:15388
+Accel X:4220, Y:-444, Z:16984
+Accel X:5092, Y:-404, Z:15084
+[0m
+[0;32mI (33608) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:4504, Y:-444, Z:17028
+Accel X:4972, Y:-388, Z:16524
+Accel X:5240, Y:-476, Z:16488
+Accel X:5596, Y:-484, Z:156[0m
+[0;32mI (33738) UART_APP: Nhan duoc 120 bytes tu STM32: 80
+Accel X:6116, Y:-428, Z:15264
+Accel X:6372, Y:-340, Z:15708
+Accel X:6540, Y:-204, Z:16312
+Accel X:6696, Y:-444, Z[0m
+[0;32mI (33878) UART_APP: Nhan duoc 120 bytes tu STM32: :15408
+Accel X:7352, Y:-212, Z:15112
+Accel X:7236, Y:-544, Z:15464
+Accel X:7712, Y:-312, Z:14808
+Accel X:7680, Y:-25[0m
+[0;32mI (34018) UART_APP: Nhan duoc 120 bytes tu STM32: 2, Z:15748
+Accel X:7688, Y:-456, Z:14480
+Accel X:7928, Y:-228, Z:14708
+Accel X:8172, Y:-296, Z:14764
+Accel X:8188, Y[0m
+[0;32mI (34158) UART_APP: Nhan duoc 120 bytes tu STM32: :-352, Z:15236
+Accel X:8252, Y:-432, Z:15236
+Accel X:8708, Y:-552, Z:13204
+Accel X:8672, Y:-456, Z:14188
+Accel X:864[0m
+[0;32mI (34288) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Y:-360, Z:15004
+Accel X:8800, Y:-236, Z:14052
+Accel X:8092, Y:-208, Z:13084
+Accel X:7916, Y:-180, Z:13632
+Accel X[0m
+[0;32mI (34428) UART_APP: Nhan duoc 120 bytes tu STM32: :6656, Y:-632, Z:13620
+Accel X:5404, Y:-792, Z:17400
+Accel X:3388, Y:-640, Z:18344
+Accel X:3244, Y:-192, Z:14992
+Acc[0m
+[0;32mI (34568) UART_APP: Nhan duoc 120 bytes tu STM32: el X:2692, Y:-664, Z:17204
+Accel X:2552, Y:-760, Z:16344
+Accel X:1488, Y:-764, Z:16744
+Accel X:956, Y:-352, Z:15824
+[0m
+[0;32mI (34708) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:1028, Y:-960, Z:16104
+Accel X:6280, Y:1012, Z:11544
+Accel X:-88, Y:28, Z:16820
+Accel X:-364, Y:-220, Z:17040[0m
+[0;32mI (34838) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-5644, Y:1952, Z:32767
+Accel X:1716, Y:-1436, Z:13320
+Accel X:-284, Y:-40, Z:16784
+Accel X:-96, Y:-36, Z:168[0m
+[0;32mI (34978) UART_APP: Nhan duoc 120 bytes tu STM32: 40
+Accel X:-72, Y:-80, Z:16692
+Accel X:-152, Y:-148, Z:16876
+Accel X:-112, Y:12, Z:16928
+Accel X:-20, Y:-68, Z:16804[0m
+[0;32mI (35118) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-240, Y:-52, Z:16844
+Accel X:-284, Y:12, Z:16772
+Accel X:-144, Y:-76, Z:16836
+Accel X:-148, Y:-100, Z:16684[0m
+[0;32mI (35258) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-152, Y:84, Z:16880
+Accel X:-136, Y:-96, Z:16764
+Accel X:-144, Y:128, Z:16896
+Accel X:-140, Y:-32, Z:16924[0m
+[0;32mI (35388) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-112, Y:52, Z:16820
+Accel X:-120, Y:-104, Z:16588
+Accel X:-168, Y:-48, Z:17116
+Accel X:-140, Y:-144, Z:16768[0m
+[0;32mI (35528) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-188, Y:-68, Z:16768
+Accel X:-136, Y:-120, Z:16728
+Accel X:-272, Y:-48, Z:16824
+Accel X:-288, Y:-8, Z:16908[0m
+[0;32mI (35668) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-136, Y:-16, Z:16808
+Accel X:-88, Y:-120, Z:16972
+Accel X:-136, Y:-44, Z:16828
+Accel X:-228, Y:60, Z:16668[0m
+[0;32mI (35798) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-84, Y:-28, Z:16828
+Accel X:-108, Y:-56, Z:16752
+Accel X:-180, Y:32, Z:16860
+Accel X:-136, Y:56, Z:16732
+Ac[0m
+[0;32mI (35938) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-40, Y:20, Z:16840
+Accel X:-128, Y:-48, Z:16896
+Accel X:-244, Y:-24, Z:16892
+Accel X:-188, Y:-80, Z:16600
+Acce[0m
+[0;32mI (36078) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-112, Y:20, Z:16800
+Accel X:-176, Y:-56, Z:16700
+Accel X:-36, Y:-84, Z:16716
+Accel X:-172, Y:8, Z:16784
+Accel X:[0m
+[0;32mI (36218) UART_APP: Nhan duoc 120 bytes tu STM32: -96, Y:100, Z:16932
+Accel X:-132, Y:-88, Z:16840
+Accel X:-36, Y:24, Z:16844
+Accel X:-164, Y:32, Z:16772
+Accel X:-184[0m
+[0;32mI (36348) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-16, Z:16768
+Accel X:-136, Y:-88, Z:16876
+Accel X:-108, Y:76, Z:16664
+Accel X:-216, Y:-60, Z:16980
+Accel X:-84, [0m
+[0;32mI (36488) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-76, Z:17020
+Accel X:-140, Y:-60, Z:16948
+Accel X:-132, Y:80, Z:16856
+Accel X:-172, Y:-20, Z:16580
+Accel X:-144, Y[0m
+[0;32mI (36628) UART_APP: Nhan duoc 120 bytes tu STM32: :-4, Z:16864
+Accel X:-96, Y:-36, Z:16816
+Accel X:-152, Y:-80, Z:16836
+Accel X:-204, Y:-36, Z:16780
+Accel X:-168, Y:-[0m
+[0;32mI (36768) UART_APP: Nhan duoc 120 bytes tu STM32: 56, Z:16772
+Accel X:-84, Y:-12, Z:16760
+Accel X:-164, Y:-52, Z:16884
+Accel X:-172, Y:-56, Z:16912
+Accel X:-200, Y:-1[0m
+[0;32mI (36898) UART_APP: Nhan duoc 120 bytes tu STM32: 2, Z:16924
+Accel X:-140, Y:-8, Z:16876
+Accel X:-156, Y:-12, Z:16744
+Accel X:-160, Y:56, Z:16936
+Accel X:-132, Y:0, Z[0m
+[0;32mI (37038) UART_APP: Nhan duoc 120 bytes tu STM32: :16780
+Accel X:-168, Y:-36, Z:16860
+Accel X:-232, Y:-8, Z:16872
+Accel X:-108, Y:-20, Z:16648
+Accel X:-172, Y:24, Z:1[0m
+[0;32mI (37178) UART_APP: Nhan duoc 120 bytes tu STM32: 6820
+Accel X:-184, Y:-44, Z:16848
+Accel X:-228, Y:12, Z:16680
+Accel X:-52, Y:-12, Z:16688
+Accel X:-208, Y:-32, Z:168[0m
+[0;32mI (37308) UART_APP: Nhan duoc 120 bytes tu STM32: 48
+Accel X:-152, Y:-76, Z:16848
+Accel X:-152, Y:28, Z:16844
+Accel X:-100, Y:-16, Z:16800
+Accel X:-188, Y:-20, Z:1687[0m
+[0;32mI (37448) UART_APP: Nhan duoc 120 bytes tu STM32: 6
+Accel X:-108, Y:-8, Z:16800
+Accel X:-176, Y:-8, Z:16844
+Accel X:-88, Y:-8, Z:16916
+Accel X:-140, Y:20, Z:16944
+Ac[0m
+[0;32mI (37588) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-232, Y:-68, Z:16888
+Accel X:-128, Y:-56, Z:16776
+Accel X:-232, Y:-44, Z:16764
+Accel X:-156, Y:-120, Z:16884
+A[0m
+[0;32mI (37728) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-184, Y:-80, Z:16812
+Accel X:-232, Y:-20, Z:16876
+Accel X:-308, Y:-48, Z:16796
+Accel X:-136, Y:-80, Z:16672
+A[0m
+[0;32mI (37858) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-124, Y:-40, Z:16764
+Accel X:-72, Y:-112, Z:16732
+Accel X:-184, Y:20, Z:16476
+Accel X:-68, Y:-48, Z:16760
+Acc[0m
+[0;32mI (37998) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-292, Y:-32, Z:16896
+Accel X:-188, Y:8, Z:17020
+Accel X:-80, Y:-88, Z:16816
+Accel X:-60, Y:-24, Z:16360
+Accel X[0m
+[0;32mI (38138) UART_APP: Nhan duoc 120 bytes tu STM32: :-12, Y:-56, Z:16808
+Accel X:16, Y:64, Z:16600
+Accel X:-280, Y:-160, Z:16784
+Accel X:-56, Y:68, Z:16808
+Accel X:-108[0m
+[0;32mI (38278) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:0, Z:16904
+Accel X:-216, Y:16, Z:16744
+Accel X:-224, Y:-60, Z:16840
+Accel X:-180, Y:76, Z:16988
+Accel X:-216, Y:[0m
+[0;32mI (38408) UART_APP: Nhan duoc 120 bytes tu STM32: -68, Z:16672
+Accel X:-120, Y:24, Z:17240
+Accel X:-208, Y:4, Z:16788
+Accel X:-192, Y:36, Z:16832
+Accel X:-140, Y:-76,[0m
+[0;32mI (38548) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16940
+Accel X:-120, Y:20, Z:16728
+Accel X:-164, Y:-4, Z:16916
+Accel X:-92, Y:-28, Z:16844
+Accel X:-164, Y:-56, Z:[0m
+[0;32mI (38688) UART_APP: Nhan duoc 120 bytes tu STM32: 16784
+Accel X:-232, Y:92, Z:16784
+Accel X:-128, Y:40, Z:16804
+Accel X:-196, Y:-88, Z:16712
+Accel X:-260, Y:-48, Z:16[0m
+[0;32mI (38828) UART_APP: Nhan duoc 120 bytes tu STM32: 772
+Accel X:-212, Y:16, Z:16840
+Accel X:-144, Y:-48, Z:16744
+Accel X:-116, Y:-56, Z:16868
+Accel X:-168, Y:-92, Z:168[0m
+[0;32mI (38958) UART_APP: Nhan duoc 120 bytes tu STM32: 96
+Accel X:-200, Y:-92, Z:16500
+Accel X:-196, Y:-64, Z:16844
+Accel X:-200, Y:-76, Z:16952
+Accel X:-108, Y:-24, Z:169[0m
+[0;32mI (39098) UART_APP: Nhan duoc 120 bytes tu STM32: 40
+Accel X:-140, Y:-8, Z:16912
+Accel X:-124, Y:-12, Z:16996
+Accel X:-108, Y:-92, Z:16824
+Accel X:-256, Y:-92, Z:1676[0m
+[0;32mI (39238) UART_APP: Nhan duoc 120 bytes tu STM32: 4
+Accel X:-144, Y:-148, Z:16928
+Accel X:-176, Y:-120, Z:16916
+Accel X:-208, Y:-36, Z:16888
+Accel X:-80, Y:-172, Z:16[0m
+[0;32mI (39368) UART_APP: Nhan duoc 120 bytes tu STM32: 696
+Accel X:-244, Y:-96, Z:16880
+Accel X:-248, Y:-20, Z:16512
+Accel X:-140, Y:-64, Z:16532
+Accel X:-228, Y:-68, Z:16[0m
+[0;32mI (39508) UART_APP: Nhan duoc 120 bytes tu STM32: 744
+Accel X:-152, Y:20, Z:17344
+Accel X:-120, Y:-60, Z:16820
+Accel X:-112, Y:0, Z:16776
+Accel X:-308, Y:12, Z:16764[0m
+[0;32mI (39648) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-52, Y:-52, Z:16556
+Accel X:-168, Y:-168, Z:16608
+Accel X:-72, Y:-8, Z:16728
+Accel X:-148, Y:8, Z:16688
+Acc[0m
+[0;32mI (39788) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-216, Y:-28, Z:16952
+Accel X:-148, Y:-76, Z:16904
+Accel X:-160, Y:-84, Z:16856
+Accel X:-224, Y:52, Z:16912
+Acce[0m
+[0;32mI (39918) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-240, Y:8, Z:16648
+Accel X:-200, Y:-68, Z:16864
+Accel X:-92, Y:4, Z:16672
+Accel X:-276, Y:44, Z:16572
+Accel X:-2[0m
+[0;32mI (40058) UART_APP: Nhan duoc 120 bytes tu STM32: 12, Y:-80, Z:16684
+Accel X:-108, Y:-24, Z:16820
+Accel X:-208, Y:-80, Z:16872
+Accel X:-176, Y:-180, Z:16660
+Accel X:-[0m
+[0;32mI (40198) UART_APP: Nhan duoc 120 bytes tu STM32: 124, Y:76, Z:16860
+Accel X:-200, Y:-44, Z:16848
+Accel X:-260, Y:-28, Z:16460
+Accel X:-132, Y:12, Z:16956
+Accel X:-92[0m
+[0;32mI (40338) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-36, Z:16848
+Accel X:-288, Y:-4, Z:16976
+Accel X:-56, Y:-112, Z:16552
+Accel X:-360, Y:-68, Z:16900
+Accel X:-96, [0m
+[0;32mI (40468) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-80, Z:16744
+Accel X:-52, Y:68, Z:16892
+Accel X:-136, Y:-56, Z:16672
+Accel X:-216, Y:8, Z:16908
+Accel X:-24, Y:-12[0m
+[0;32mI (40608) UART_APP: Nhan duoc 120 bytes tu STM32: 4, Z:16688
+Accel X:-232, Y:112, Z:16812
+Accel X:-248, Y:-104, Z:16684
+Accel X:-120, Y:-12, Z:16612
+Accel X:-164, Y:-[0m
+[0;32mI (40748) UART_APP: Nhan duoc 120 bytes tu STM32: 16, Z:17036
+Accel X:-192, Y:-36, Z:16872
+Accel X:-208, Y:-16, Z:16780
+Accel X:-240, Y:-36, Z:16784
+Accel X:-24, Y:8,[0m
+[0;32mI (40888) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16796
+Accel X:-212, Y:8, Z:16944
+Accel X:-236, Y:-68, Z:16840
+Accel X:-84, Y:-48, Z:16760
+Accel X:-232, Y:40, Z:1[0m
+[0;32mI (41018) UART_APP: Nhan duoc 120 bytes tu STM32: 6828
+Accel X:-260, Y:-172, Z:16904
+Accel X:-24, Y:-16, Z:16744
+Accel X:-176, Y:-24, Z:16720
+Accel X:-140, Y:-68, Z:1[0m
+[0;32mI (41158) UART_APP: Nhan duoc 120 bytes tu STM32: 6960
+Accel X:-144, Y:12, Z:16792
+Accel X:-176, Y:52, Z:17064
+Accel X:-160, Y:-92, Z:16996
+Accel X:-328, Y:-112, Z:16[0m
+[0;32mI (41298) UART_APP: Nhan duoc 120 bytes tu STM32: 704
+Accel X:-128, Y:-12, Z:16816
+Accel X:-156, Y:-64, Z:16820
+Accel X:-164, Y:-36, Z:16352
+Accel X:-64, Y:-16, Z:169[0m
+[0;32mI (41438) UART_APP: Nhan duoc 120 bytes tu STM32: 64
+Accel X:-224, Y:-96, Z:16928
+Accel X:-112, Y:-56, Z:16568
+Accel X:-200, Y:-128, Z:16840
+Accel X:-192, Y:-80, Z:16[0m
+[0;32mI (41568) UART_APP: Nhan duoc 120 bytes tu STM32: 884
+Accel X:-256, Y:-24, Z:16788
+Accel X:-188, Y:-24, Z:16760
+Accel X:-148, Y:28, Z:16872
+Accel X:-128, Y:16, Z:1690[0m
+[0;32mI (41708) UART_APP: Nhan duoc 120 bytes tu STM32: 0
+Accel X:-136, Y:-96, Z:15948
+Accel X:-136, Y:-108, Z:16824
+Accel X:-56, Y:-120, Z:16944
+Accel X:-52, Y:-104, Z:169[0m
+[0;32mI (41848) UART_APP: Nhan duoc 120 bytes tu STM32: 20
+Accel X:-8, Y:20, Z:16680
+Accel X:-300, Y:-112, Z:16840
+Accel X:-28, Y:-72, Z:16772
+Accel X:-104, Y:-84, Z:16808[0m
+[0;32mI (41988) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-220, Y:-68, Z:16728
+Accel X:-316, Y:0, Z:16756
+Accel X:-92, Y:-64, Z:16684
+Accel X:-80, Y:48, Z:16788
+Acce[0m
+[0;32mI (42118) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-168, Y:-172, Z:16960
+Accel X:-232, Y:-36, Z:16496
+Accel X:-12, Y:-20, Z:17144
+Accel X:-152, Y:-72, Z:16672
+Acce[0m
+[0;32mI (42258) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-228, Y:-76, Z:16804
+Accel X:-120, Y:32, Z:16832
+Accel X:-240, Y:-4, Z:16768
+Accel X:-120, Y:-96, Z:16652
+Accel [0m
+[0;32mI (42398) UART_APP: Nhan duoc 120 bytes tu STM32: X:-80, Y:-104, Z:16800
+Accel X:-88, Y:16, Z:16892
+Accel X:-208, Y:-108, Z:17116
+Accel X:-32, Y:-76, Z:16616
+Accel X:[0m
+[0;32mI (42528) UART_APP: Nhan duoc 120 bytes tu STM32: -180, Y:32, Z:16740
+Accel X:-156, Y:-48, Z:16888
+Accel X:-100, Y:20, Z:16944
+Accel X:-224, Y:-24, Z:16772
+Accel X:-1[0m
+[0;32mI (42668) UART_APP: Nhan duoc 120 bytes tu STM32: 60, Y:-44, Z:16688
+Accel X:-196, Y:24, Z:17140
+Accel X:-128, Y:76, Z:16492
+Accel X:-172, Y:-28, Z:16896
+Accel X:60, [0m
+[0;32mI (42808) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-16, Z:16984
+Accel X:-280, Y:-156, Z:16952
+Accel X:-220, Y:-144, Z:16824
+Accel X:-44, Y:-88, Z:16712
+Accel X:-96, [0m
+[0;32mI (42948) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-8, Z:16928
+Accel X:-24, Y:56, Z:17064
+Accel X:-208, Y:-92, Z:16672
+Accel X:-156, Y:-8, Z:16824
+Accel X:-152, Y:-8[0m
+[0;32mI (43078) UART_APP: Nhan duoc 120 bytes tu STM32: 8, Z:16708
+Accel X:-132, Y:-56, Z:16684
+Accel X:-48, Y:-196, Z:16940
+Accel X:-156, Y:-64, Z:16728
+Accel X:-60, Y:-10[0m
+[0;32mI (43218) UART_APP: Nhan duoc 120 bytes tu STM32: 8, Z:16720
+Accel X:-280, Y:-32, Z:16892
+Accel X:-212, Y:-52, Z:16868
+Accel X:-124, Y:-8, Z:16948
+Accel X:-132, Y:56,[0m
+[0;32mI (43358) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16728
+Accel X:-96, Y:-52, Z:16804
+Accel X:-228, Y:-44, Z:16644
+Accel X:-148, Y:40, Z:16868
+Accel X:-148, Y:-28, Z[0m
+[0;32mI (43498) UART_APP: Nhan duoc 120 bytes tu STM32: :16852
+Accel X:-144, Y:-132, Z:16688
+Accel X:-112, Y:-44, Z:16752
+Accel X:-224, Y:-96, Z:16856
+Accel X:-120, Y:-24, [0m
+[0;32mI (43628) UART_APP: Nhan duoc 120 bytes tu STM32: Z:16700
+Accel X:-96, Y:80, Z:17016
+Accel X:-200, Y:-224, Z:16676
+Accel X:-28, Y:28, Z:16748
+Accel X:-72, Y:-96, Z:16[0m
+[0;32mI (43768) UART_APP: Nhan duoc 120 bytes tu STM32: 800
+Accel X:-236, Y:-8, Z:16584
+Accel X:-88, Y:24, Z:16824
+Accel X:-36, Y:-64, Z:16780
+Accel X:-136, Y:44, Z:16772
+[0m
+[0;32mI (43908) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-176, Y:-56, Z:16880
+Accel X:-172, Y:-60, Z:16736
+Accel X:-180, Y:-148, Z:16756
+Accel X:-168, Y:-16, Z:16820[0m
+[0;32mI (44048) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-220, Y:-24, Z:16828
+Accel X:-152, Y:32, Z:16740
+Accel X:-244, Y:-24, Z:16716
+Accel X:-120, Y:-152, Z:16604[0m
+[0;32mI (44178) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-196, Y:-128, Z:17092
+Accel X:-124, Y:-172, Z:16800
+Accel X:-124, Y:4, Z:16736
+Accel X:-160, Y:60, Z:16808
+[0m
+[0;32mI (44318) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-232, Y:56, Z:17056
+Accel X:-148, Y:36, Z:16740
+Accel X:-108, Y:-36, Z:16960
+Accel X:-108, Y:-52, Z:16656
+Ac[0m
+[0;32mI (44458) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-220, Y:-96, Z:16928
+Accel X:-136, Y:-128, Z:16860
+Accel X:-112, Y:-88, Z:16796
+Accel X:-244, Y:-100, Z:16740
+[0m
+[0;32mI (44588) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-224, Y:-20, Z:16684
+Accel X:-40, Y:-120, Z:16812
+Accel X:-248, Y:-20, Z:16864
+Accel X:-264, Y:-36, Z:16668
+[0m
+[0;32mI (44728) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-136, Y:76, Z:17072
+Accel X:-104, Y:-84, Z:16856
+Accel X:-232, Y:24, Z:16712
+Accel X:-224, Y:-68, Z:16760
+Ac[0m
+[0;32mI (44868) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-60, Y:-140, Z:16808
+Accel X:-192, Y:108, Z:16936
+Accel X:-164, Y:32, Z:17020
+Accel X:-180, Y:12, Z:16640
+Acce[0m
+[0;32mI (45008) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-180, Y:80, Z:17144
+Accel X:-228, Y:-116, Z:16696
+Accel X:-36, Y:-76, Z:16900
+Accel X:-308, Y:-164, Z:16808
+Acce[0m
+[0;32mI (45138) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-228, Y:-36, Z:16888
+Accel X:-128, Y:-52, Z:16696
+Accel X:-200, Y:-128, Z:16984
+Accel X:-272, Y:-36, Z:17040
+Acc[0m
+[0;32mI (45278) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-200, Y:-72, Z:16852
+Accel X:-172, Y:-120, Z:16884
+Accel X:-112, Y:-108, Z:16956
+Accel X:-112, Y:-32, Z:16692
+A[0m
+[0;32mI (45418) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-132, Y:-72, Z:16904
+Accel X:-80, Y:-36, Z:16944
+Accel X:-112, Y:4, Z:16756
+Accel X:-128, Y:-44, Z:16768
+Acce[0m
+[0;32mI (45558) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-220, Y:-56, Z:16584
+Accel X:-124, Y:-16, Z:16780
+Accel X:-176, Y:0, Z:17176
+Accel X:-176, Y:-12, Z:16508
+Accel [0m
+[0;32mI (45688) UART_APP: Nhan duoc 120 bytes tu STM32: X:-68, Y:28, Z:16912
+Accel X:-124, Y:-52, Z:16768
+Accel X:-200, Y:32, Z:16916
+Accel X:-216, Y:-52, Z:16856
+Accel X:-[0m
+[0;32mI (45828) UART_APP: Nhan duoc 120 bytes tu STM32: 152, Y:-72, Z:16684
+Accel X:-228, Y:0, Z:16760
+Accel X:-164, Y:-128, Z:16824
+Accel X:-144, Y:-156, Z:16772
+Accel X:-[0m
+[0;32mI (45968) UART_APP: Nhan duoc 120 bytes tu STM32: 196, Y:0, Z:16912
+Accel X:-180, Y:-88, Z:16936
+Accel X:-260, Y:-44, Z:16788
+Accel X:-128, Y:32, Z:16640
+Accel X:-144[0m
+[0;32mI (46108) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-16, Z:16976
+Accel X:-144, Y:0, Z:16880
+Accel X:-184, Y:-64, Z:16800
+Accel X:-104, Y:8, Z:16928
+Accel X:-220, Y:[0m
+[0;32mI (46238) UART_APP: Nhan duoc 120 bytes tu STM32: -68, Z:16468
+Accel X:-152, Y:-172, Z:16988
+Accel X:-184, Y:-68, Z:16820
+Accel X:-196, Y:-68, Z:16736
+Accel X:-152, Y[0m
+[0;32mI (46378) UART_APP: Nhan duoc 120 bytes tu STM32: :-76, Z:16548
+Accel X:-100, Y:12, Z:16896
+Accel X:-256, Y:-36, Z:16924
+Accel X:-140, Y:-60, Z:16688
+Accel X:-248, Y:[0m
+[0;32mI (46518) UART_APP: Nhan duoc 120 bytes tu STM32: -52, Z:16556
+Accel X:-268, Y:20, Z:16868
+Accel X:-200, Y:-52, Z:16784
+Accel X:-184, Y:-140, Z:16840
+Accel X:-168, Y:[0m
+[0;32mI (46658) UART_APP: Nhan duoc 120 bytes tu STM32: -40, Z:16724
+Accel X:-148, Y:-128, Z:16780
+Accel X:-40, Y:-28, Z:16848
+Accel X:-128, Y:-24, Z:16756
+Accel X:-124, Y:[0m
+[0;32mI (46788) UART_APP: Nhan duoc 120 bytes tu STM32: -112, Z:16908
+Accel X:-168, Y:-12, Z:16944
+Accel X:-4, Y:-28, Z:16708
+Accel X:-152, Y:-56, Z:16652
+Accel X:-236, Y:-[0m
+[0;32mI (46928) UART_APP: Nhan duoc 120 bytes tu STM32: 72, Z:17096
+Accel X:-128, Y:-32, Z:16708
+Accel X:-120, Y:-88, Z:16788
+Accel X:-188, Y:-88, Z:16624
+Accel X:-228, Y:-[0m
+[0;32mI (47068) UART_APP: Nhan duoc 120 bytes tu STM32: 68, Z:16936
+Accel X:-128, Y:16, Z:16868
+Accel X:-96, Y:-12, Z:16980
+Accel X:-56, Y:-12, Z:16792
+Accel X:-148, Y:-12,[0m
+[0;32mI (47198) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16780
+Accel X:-200, Y:-40, Z:16820
+Accel X:-176, Y:156, Z:16740
+Accel X:-164, Y:-44, Z:17112
+Accel X:-176, Y:-68,[0m
+[0;32mI (47338) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16780
+Accel X:-36, Y:-144, Z:16660
+Accel X:-176, Y:12, Z:16872
+Accel X:-184, Y:-56, Z:16892
+Accel X:-184, Y:-20, [0m
+[0;32mI (47478) UART_APP: Nhan duoc 120 bytes tu STM32: Z:16968
+Accel X:-232, Y:-108, Z:16660
+Accel X:-232, Y:-56, Z:16872
+Accel X:-252, Y:-84, Z:16652
+Accel X:-116, Y:64, [0m
+[0;32mI (47618) UART_APP: Nhan duoc 120 bytes tu STM32: Z:17024
+Accel X:-144, Y:-52, Z:16716
+Accel X:-76, Y:80, Z:16888
+Accel X:-240, Y:-68, Z:16860
+Accel X:-100, Y:-144, Z[0m
+[0;32mI (47748) UART_APP: Nhan duoc 120 bytes tu STM32: :16852
+Accel X:-264, Y:-36, Z:16752
+Accel X:-40, Y:-44, Z:16728
+Accel X:-260, Y:-88, Z:17176
+Accel X:-88, Y:-64, Z:1[0m
+[0;32mI (47888) UART_APP: Nhan duoc 120 bytes tu STM32: 6712
+Accel X:-12, Y:-108, Z:16404
+Accel X:-104, Y:-72, Z:16804
+Accel X:-168, Y:-12, Z:16508
+Accel X:-108, Y:-68, Z:1[0m
+[0;32mI (48028) UART_APP: Nhan duoc 120 bytes tu STM32: 7008
+Accel X:-244, Y:24, Z:16828
+Accel X:-144, Y:-136, Z:16736
+Accel X:-152, Y:-120, Z:16704
+Accel X:-132, Y:-116, Z[0m
+[0;32mI (48168) UART_APP: Nhan duoc 120 bytes tu STM32: :16628
+Accel X:-180, Y:8, Z:16604
+Accel X:-128, Y:-68, Z:16872
+Accel X:-132, Y:-72, Z:16708
+Accel X:-128, Y:-4, Z:16[0m
+[0;32mI (48298) UART_APP: Nhan duoc 120 bytes tu STM32: 856
+Accel X:-116, Y:-24, Z:16796
+Accel X:-224, Y:-92, Z:16636
+Accel X:-32, Y:-68, Z:16756
+Accel X:-268, Y:-144, Z:16[0m
+[0;32mI (48438) UART_APP: Nhan duoc 120 bytes tu STM32: 968
+Accel X:-184, Y:-8, Z:16884
+Accel X:-52, Y:-40, Z:16864
+Accel X:-208, Y:12, Z:16888
+Accel X:-120, Y:20, Z:16960[0m
+[0;32mI (48578) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-16, Y:28, Z:16768
+Accel X:-184, Y:-104, Z:16920
+Accel X:244, Y:284, Z:17260
+Accel X:-220, Y:-188, Z:16944
+[0m
+[0;32mI (48718) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-100, Y:120, Z:16708
+Accel X:-388, Y:-164, Z:16808
+Accel X:104, Y:76, Z:16896
+Accel X:-380, Y:-164, Z:16916
+[0m
+[0;32mI (48848) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-72, Y:8, Z:16632
+Accel X:-100, Y:-116, Z:16792
+Accel X:-120, Y:-20, Z:16932
+Accel X:-252, Y:-28, Z:16812
+Ac[0m
+[0;32mI (48988) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-88, Y:-112, Z:16924
+Accel X:292, Y:-676, Z:14280
+Accel X:-376, Y:76, Z:16848
+Accel X:-208, Y:4, Z:16864
+Accel[0m
+[0;32mI (49128) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-204, Y:-20, Z:16920
+Accel X:-168, Y:-88, Z:16760
+Accel X:-100, Y:-8, Z:16728
+Accel X:-140, Y:40, Z:16736
+Accel X[0m
+[0;32mI (49268) UART_APP: Nhan duoc 120 bytes tu STM32: :-100, Y:-128, Z:16736
+Accel X:-272, Y:-24, Z:17056
+Accel X:-88, Y:32, Z:16688
+Accel X:-96, Y:40, Z:16832
+Accel X:-2[0m
+[0;32mI (49398) UART_APP: Nhan duoc 120 bytes tu STM32: 60, Y:-60, Z:16660
+Accel X:-120, Y:-12, Z:16948
+Accel X:-136, Y:-64, Z:16636
+Accel X:-168, Y:-112, Z:16804
+Accel X:-[0m
+[0;32mI (49538) UART_APP: Nhan duoc 120 bytes tu STM32: 108, Y:-32, Z:16796
+Accel X:-140, Y:-84, Z:16788
+Accel X:-32, Y:-68, Z:16676
+Accel X:-272, Y:108, Z:16952
+Accel X:-2[0m
+[0;32mI (49678) UART_APP: Nhan duoc 120 bytes tu STM32: 20, Y:36, Z:16804
+Accel X:-136, Y:-72, Z:16700
+Accel X:-56, Y:0, Z:17004
+Accel X:-224, Y:128, Z:16820
+Accel X:-152, [0m
+[0;32mI (49818) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-68, Z:16768
+Accel X:-128, Y:-88, Z:16796
+Accel X:-136, Y:-80, Z:16824
+Accel X:-44, Y:-76, Z:16760
+Accel X:-72, Y:[0m
+[0;32mI (49948) UART_APP: Nhan duoc 120 bytes tu STM32: 60, Z:16904
+Accel X:-168, Y:-4, Z:16632
+Accel X:-204, Y:-72, Z:16724
+Accel X:-140, Y:28, Z:16832
+Accel X:-264, Y:12,[0m
+[0;32mI (50088) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16892
+Accel X:-160, Y:-20, Z:16712
+Accel X:-192, Y:0, Z:16948
+Accel X:-96, Y:8, Z:16760
+Accel X:-168, Y:-76, Z:16[0m
+[0;32mI (50228) UART_APP: Nhan duoc 120 bytes tu STM32: 708
+Accel X:-208, Y:40, Z:16828
+Accel X:-304, Y:16, Z:16840
+Accel X:-140, Y:28, Z:16912
+Accel X:-104, Y:-120, Z:1682[0m
+[0;32mI (50358) UART_APP: Nhan duoc 120 bytes tu STM32: 0
+Accel X:-244, Y:-28, Z:16892
+Accel X:-160, Y:-12, Z:16796
+Accel X:-228, Y:68, Z:16920
+Accel X:-136, Y:-44, Z:17000[0m
+[0;32mI (50498) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-88, Y:-68, Z:16636
+Accel X:-200, Y:-112, Z:16836
+Accel X:-252, Y:-48, Z:16668
+Accel X:-64, Y:-104, Z:16664[0m
+[0;32mI (50638) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-140, Y:-64, Z:16952
+Accel X:-96, Y:-108, Z:16684
+Accel X:-68, Y:-28, Z:16756
+Accel X:-260, Y:-92, Z:16844[0m
+[0;32mI (50778) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-64, Y:80, Z:16968
+Accel X:-160, Y:56, Z:16708
+Accel X:-32, Y:16, Z:16772
+Accel X:-332, Y:-88, Z:16836
+Acce[0m
+[0;32mI (50908) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-132, Y:-88, Z:16876
+Accel X:100, Y:-4, Z:16224
+Accel X:-144, Y:-36, Z:16732
+Accel X:-180, Y:-124, Z:16624
+Accel[0m
+[0;32mI (51048) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-224, Y:-28, Z:17180
+Accel X:-96, Y:-100, Z:16712
+Accel X:-192, Y:4, Z:16712
+Accel X:-152, Y:8, Z:16796
+Accel X:-[0m
+[0;32mI (51188) UART_APP: Nhan duoc 120 bytes tu STM32: 136, Y:-68, Z:16708
+Accel X:-204, Y:24, Z:16872
+Accel X:-176, Y:-68, Z:16700
+Accel X:-180, Y:-44, Z:16692
+Accel X:-1[0m
+[0;32mI (51328) UART_APP: Nhan duoc 120 bytes tu STM32: 04, Y:-52, Z:16852
+Accel X:-160, Y:32, Z:16808
+Accel X:-248, Y:-52, Z:17048
+Accel X:-196, Y:-28, Z:16748
+Accel X:-28[0m
+[0;32mI (51458) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Y:-4, Z:16916
+Accel X:-196, Y:72, Z:16820
+Accel X:-288, Y:8, Z:16784
+Accel X:-204, Y:-136, Z:16896
+Accel X:-296, [0m
+[0;32mI (51598) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-28, Z:16916
+Accel X:-140, Y:4, Z:16832
+Accel X:-88, Y:-64, Z:16784
+Accel X:-124, Y:-60, Z:16784
+Accel X:-88, Y:-6[0m
+[0;32mI (51738) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Z:16856
+Accel X:-128, Y:8, Z:16832
+Accel X:-152, Y:-64, Z:16960
+Accel X:-192, Y:-12, Z:16812
+Accel X:-112, Y:-108[0m
+[0;32mI (51878) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16792
+Accel X:-272, Y:-96, Z:16824
+Accel X:-96, Y:0, Z:16756
+Accel X:-112, Y:-56, Z:16656
+Accel X:-228, Y:-120, [0m
+[0;32mI (52008) UART_APP: Nhan duoc 120 bytes tu STM32: Z:16908
+Accel X:-228, Y:-100, Z:16572
+Accel X:-236, Y:48, Z:16852
+Accel X:-160, Y:-96, Z:16788
+Accel X:-228, Y:-44, [0m
+[0;32mI (52148) UART_APP: Nhan duoc 120 bytes tu STM32: Z:16824
+Accel X:-228, Y:-16, Z:16648
+Accel X:-248, Y:-36, Z:16816
+Accel X:-184, Y:28, Z:16700
+Accel X:-120, Y:-28, Z[0m
+[0;32mI (52288) UART_APP: Nhan duoc 120 bytes tu STM32: :16748
+Accel X:-136, Y:44, Z:16960
+Accel X:-156, Y:40, Z:16756
+Accel X:-124, Y:-96, Z:16820
+Accel X:-184, Y:-80, Z:1[0m
+[0;32mI (52428) UART_APP: Nhan duoc 120 bytes tu STM32: 6864
+Accel X:-232, Y:-44, Z:16848
+Accel X:-168, Y:-40, Z:16824
+Accel X:-172, Y:-32, Z:16752
+Accel X:-196, Y:52, Z:16[0m
+[0;32mI (52558) UART_APP: Nhan duoc 120 bytes tu STM32: 868
+Accel X:-140, Y:72, Z:16892
+Accel X:-204, Y:-36, Z:16712
+Accel X:-252, Y:-84, Z:16900
+Accel X:-132, Y:-64, Z:167[0m
+[0;32mI (52698) UART_APP: Nhan duoc 120 bytes tu STM32: 40
+Accel X:-168, Y:-72, Z:16864
+Accel X:-188, Y:4, Z:16872
+Accel X:-136, Y:-40, Z:16764
+Accel X:-220, Y:16, Z:16720[0m
+[0;32mI (52838) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-156, Y:-92, Z:16876
+Accel X:-224, Y:12, Z:16836
+Accel X:-80, Y:-88, Z:16820
+Accel X:-204, Y:-32, Z:16784
+A[0m
+[0;32mI (52978) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-160, Y:-52, Z:16944
+Accel X:-236, Y:-36, Z:16720
+Accel X:-216, Y:0, Z:16708
+Accel X:-168, Y:4, Z:16768
+Accel[0m
+[0;32mI (53108) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-72, Y:-100, Z:16796
+Accel X:-208, Y:-68, Z:16748
+Accel X:-184, Y:16, Z:16884
+Accel X:-268, Y:-128, Z:16924
+Accel[0m
+[0;32mI (53248) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-196, Y:-60, Z:16916
+Accel X:-92, Y:52, Z:16668
+Accel X:-200, Y:-72, Z:16824
+Accel X:-184, Y:0, Z:16752
+Accel X:-[0m
+[0;32mI (53388) UART_APP: Nhan duoc 120 bytes tu STM32: 80, Y:-52, Z:16852
+Accel X:-164, Y:8, Z:16692
+Accel X:-136, Y:96, Z:16820
+Accel X:-120, Y:-8, Z:16744
+Accel X:-84, Y[0m
+[0;32mI (53518) UART_APP: Nhan duoc 120 bytes tu STM32: :-28, Z:16776
+Accel X:-264, Y:-120, Z:16728
+Accel X:-60, Y:-72, Z:16876
+Accel X:-92, Y:-108, Z:16852
+Accel X:-208, Y[0m
+[0;32mI (53658) UART_APP: Nhan duoc 120 bytes tu STM32: :-120, Z:16884
+Accel X:-136, Y:60, Z:16872
+Accel X:-128, Y:-100, Z:16900
+Accel X:-260, Y:-96, Z:16804
+Accel X:-96, Y[0m
+[0;32mI (53798) UART_APP: Nhan duoc 120 bytes tu STM32: :-72, Z:16864
+Accel X:-172, Y:-24, Z:16892
+Accel X:-212, Y:-36, Z:16868
+Accel X:-104, Y:8, Z:16748
+Accel X:-184, Y:-[0m
+[0;32mI (53938) UART_APP: Nhan duoc 120 bytes tu STM32: 128, Z:16708
+Accel X:-188, Y:36, Z:17100
+Accel X:-144, Y:-16, Z:16740
+Accel X:-248, Y:-32, Z:16916
+Accel X:-256, Y:-[0m
+[0;32mI (54068) UART_APP: Nhan duoc 120 bytes tu STM32: 48, Z:17112
+Accel X:-192, Y:-140, Z:16668
+Accel X:-144, Y:-88, Z:16880
+Accel X:-200, Y:-164, Z:16832
+Accel X:-80, Y:[0m
+[0;32mI (54208) UART_APP: Nhan duoc 120 bytes tu STM32: -100, Z:16980
+Accel X:-184, Y:16, Z:16800
+Accel X:-48, Y:8, Z:16700
+Accel X:-96, Y:12, Z:16660
+Accel X:-272, Y:-8, Z[0m
+[0;32mI (54348) UART_APP: Nhan duoc 120 bytes tu STM32: :16796
+Accel X:-284, Y:-36, Z:16948
+Accel X:-176, Y:36, Z:16812
+Accel X:-260, Y:-128, Z:16608
+Accel X:-188, Y:-4, Z:[0m
+[0;32mI (54478) UART_APP: Nhan duoc 120 bytes tu STM32: 16776
+Accel X:-268, Y:-76, Z:16944
+Accel X:-176, Y:-56, Z:16856
+Accel X:-152, Y:-80, Z:16764
+Accel X:-136, Y:32, Z:1[0m
+[0;32mI (54618) UART_APP: Nhan duoc 120 bytes tu STM32: 6676
+Accel X:-248, Y:-80, Z:16964
+Accel X:-164, Y:-76, Z:16556
+Accel X:-112, Y:8, Z:16832
+Accel X:-112, Y:-16, Z:169[0m
+[0;32mI (54758) UART_APP: Nhan duoc 120 bytes tu STM32: 48
+Accel X:-252, Y:-68, Z:16752
+Accel X:-52, Y:-44, Z:16884
+Accel X:-44, Y:20, Z:16756
+Accel X:-172, Y:-16, Z:16800[0m
+[0;32mI (54898) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-136, Y:40, Z:16912
+Accel X:-128, Y:-48, Z:16696
+Accel X:-124, Y:-68, Z:16804
+Accel X:-232, Y:-68, Z:16664
+[0m
+[0;32mI (55028) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-100, Y:-36, Z:16760
+Accel X:-56, Y:16, Z:16632
+Accel X:-132, Y:-52, Z:16896
+Accel X:-228, Y:-88, Z:16800
+Ac[0m
+[0;32mI (55168) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-164, Y:-28, Z:16736
+Accel X:-220, Y:-12, Z:16808
+Accel X:-84, Y:48, Z:16688
+Accel X:-136, Y:-36, Z:16880
+Acce[0m
+[0;32mI (55308) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-112, Y:-116, Z:16780
+Accel X:-184, Y:-100, Z:16648
+Accel X:-152, Y:8, Z:16960
+Accel X:-144, Y:-76, Z:16868
+Acce[0m
+[0;32mI (55448) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-148, Y:-4, Z:17056
+Accel X:-92, Y:40, Z:16888
+Accel X:-152, Y:48, Z:16956
+Accel X:-292, Y:76, Z:16948
+Accel X:-[0m
+[0;32mI (55578) UART_APP: Nhan duoc 120 bytes tu STM32: 72, Y:-40, Z:16860
+Accel X:-152, Y:-12, Z:16884
+Accel X:-180, Y:-120, Z:16896
+Accel X:-224, Y:-92, Z:16856
+Accel X:-[0m
+[0;32mI (55718) UART_APP: Nhan duoc 120 bytes tu STM32: 164, Y:-44, Z:16848
+Accel X:-244, Y:-8, Z:16548
+Accel X:-148, Y:-4, Z:16824
+Accel X:-80, Y:-44, Z:16944
+Accel X:-32,[0m
+[0;32mI (55858) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:-32, Z:16876
+Accel X:-92, Y:-16, Z:16832
+Accel X:-68, Y:-56, Z:17028
+Accel X:-256, Y:-88, Z:16724
+Accel X:-152, Y[0m
+[0;32mI (55998) UART_APP: Nhan duoc 120 bytes tu STM32: :48, Z:16992
+Accel X:-64, Y:-88, Z:16808
+Accel X:-168, Y:-116, Z:16792
+Accel X:-100, Y:0, Z:16708
+Accel X:-168, Y:-9[0m
+[0;32mI (56128) UART_APP: Nhan duoc 120 bytes tu STM32: 2, Z:16764
+Accel X:-156, Y:-60, Z:16692
+Accel X:-196, Y:44, Z:16812
+Accel X:-140, Y:-20, Z:16620
+Accel X:-224, Y:-14[0m
+[0;32mI (56268) UART_APP: Nhan duoc 120 bytes tu STM32: 8, Z:16612
+Accel X:-164, Y:8, Z:16752
+Accel X:-156, Y:16, Z:16796
+Accel X:-172, Y:-196, Z:16736
+Accel X:-164, Y:48, [0m
+[0;32mI (56408) UART_APP: Nhan duoc 120 bytes tu STM32: Z:16860
+Accel X:-216, Y:-56, Z:16720
+Accel X:-176, Y:56, Z:16780
+Accel X:-84, Y:-120, Z:16844
+Accel X:-164, Y:-12, Z[0m
+[0;32mI (56548) UART_APP: Nhan duoc 120 bytes tu STM32: :16948
+Accel X:-160, Y:-36, Z:16952
+Accel X:-252, Y:64, Z:16800
+Accel X:-168, Y:-60, Z:16832
+Accel X:-212, Y:-52, Z:[0m
+[0;32mI (56678) UART_APP: Nhan duoc 120 bytes tu STM32: 16632
+Accel X:-108, Y:-52, Z:16756
+Accel X:-236, Y:-52, Z:16652
+Accel X:-136, Y:56, Z:17124
+Accel X:-172, Y:-96, Z:1[0m
+[0;32mI (56818) UART_APP: Nhan duoc 120 bytes tu STM32: 6800
+Accel X:-192, Y:-60, Z:17024
+Accel X:-136, Y:-56, Z:16896
+Accel X:-60, Y:-108, Z:16796
+Accel X:-212, Y:96, Z:16[0m
+[0;32mI (56958) UART_APP: Nhan duoc 120 bytes tu STM32: 640
+Accel X:-208, Y:-56, Z:16892
+Accel X:-92, Y:-16, Z:16812
+Accel X:-104, Y:-44, Z:16796
+Accel X:-240, Y:-116, Z:16[0m
+[0;32mI (57088) UART_APP: Nhan duoc 120 bytes tu STM32: 396
+Accel X:-324, Y:-24, Z:17060
+Accel X:-8, Y:-44, Z:16704
+Accel X:-184, Y:36, Z:16840
+Accel X:-260, Y:-56, Z:16904[0m
+[0;32mI (57228) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-200, Y:-96, Z:16876
+Accel X:-240, Y:0, Z:16764
+Accel X:-188, Y:-48, Z:16820
+Accel X:-132, Y:-4, Z:16752
+A[0m
+[0;32mI (57368) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-88, Y:28, Z:16820
+Accel X:-152, Y:-8, Z:16952
+Accel X:-248, Y:-48, Z:16932
+Accel X:-184, Y:-20, Z:16908
+Acce[0m
+[0;32mI (57508) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-172, Y:-128, Z:16836
+Accel X:-264, Y:-56, Z:16916
+Accel X:-228, Y:-196, Z:16940
+Accel X:-136, Y:-44, Z:17044
+Ac[0m
+[0;32mI (57638) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-220, Y:-92, Z:16704
+Accel X:-104, Y:-104, Z:16756
+Accel X:-32, Y:-76, Z:16840
+Accel X:-84, Y:-168, Z:16864
+Ac[0m
+[0;32mI (57778) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-140, Y:-104, Z:16812
+Accel X:-136, Y:-64, Z:16732
+Accel X:-256, Y:-88, Z:16644
+Accel X:-124, Y:-40, Z:16848
+A[0m
+[0;32mI (57918) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-140, Y:-44, Z:16836
+Accel X:-116, Y:-84, Z:16880
+Accel X:-180, Y:-16, Z:16732
+Accel X:-120, Y:-32, Z:16904
+A[0m
+[0;32mI (58058) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-288, Y:52, Z:16640
+Accel X:-248, Y:28, Z:16720
+Accel X:-136, Y:-56, Z:16920
+Accel X:-168, Y:-16, Z:16968
+Acc[0m
+[0;32mI (58188) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-272, Y:-140, Z:16532
+Accel X:-64, Y:-24, Z:16884
+Accel X:-184, Y:32, Z:16876
+Accel X:-52, Y:8, Z:16996
+Accel X[0m
+[0;32mI (58328) UART_APP: Nhan duoc 120 bytes tu STM32: :-212, Y:-64, Z:16764
+Accel X:-228, Y:-4, Z:16812
+Accel X:-120, Y:0, Z:16776
+Accel X:-112, Y:-60, Z:16696
+Accel X:-1[0m
+[0;32mI (58468) UART_APP: Nhan duoc 120 bytes tu STM32: 28, Y:-72, Z:16632
+Accel X:-28, Y:-76, Z:16628
+Accel X:-200, Y:-172, Z:16820
+Accel X:-116, Y:-120, Z:16804
+Accel X:-[0m
+[0;32mI (58608) UART_APP: Nhan duoc 120 bytes tu STM32: 220, Y:52, Z:16808
+Accel X:-148, Y:-48, Z:16940
+Accel X:-208, Y:-100, Z:16584
+Accel X:-184, Y:-32, Z:16784
+Accel X:-[0m
+[0;32mI (58738) UART_APP: Nhan duoc 120 bytes tu STM32: 224, Y:-48, Z:16740
+Accel X:-136, Y:28, Z:16768
+Accel X:-244, Y:-140, Z:16780
+Accel X:-156, Y:-72, Z:16700
+Accel X:-[0m
+[0;32mI (58878) UART_APP: Nhan duoc 120 bytes tu STM32: 100, Y:-32, Z:16832
+Accel X:-240, Y:0, Z:16636
+Accel X:-232, Y:-40, Z:16960
+Accel X:-88, Y:-128, Z:16704
+Accel X:-96[0m
+[0;32mI (59018) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-112, Z:16628
+Accel X:-120, Y:-12, Z:16764
+Accel X:-204, Y:-44, Z:16876
+Accel X:-148, Y:-68, Z:16952
+Accel X:-18[0m
+[0;32mI (59158) UART_APP: Nhan duoc 120 bytes tu STM32: 4, Y:-36, Z:16832
+Accel X:-156, Y:-72, Z:16852
+Accel X:-180, Y:88, Z:16804
+Accel X:-144, Y:-20, Z:16976
+Accel X:-172[0m
+[0;32mI (59288) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-24, Z:16668
+Accel X:-196, Y:0, Z:17044
+Accel X:-40, Y:-116, Z:16776
+Accel X:-192, Y:16, Z:16884
+Accel X:-40, Y:[0m
+[0;32mI (59428) UART_APP: Nhan duoc 120 bytes tu STM32: -68, Z:16720
+Accel X:-240, Y:8, Z:16856
+Accel X:-216, Y:-56, Z:16812
+Accel X:-208, Y:56, Z:16820
+Accel X:-120, Y:-14[0m
+[0;32mI (59568) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Z:16768
+Accel X:-100, Y:-88, Z:16824
+Accel X:-32, Y:-84, Z:16736
+Accel X:-84, Y:-116, Z:16648
+Accel X:-232, Y:-68[0m
+[0;32mI (59698) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16716
+Accel X:-248, Y:-16, Z:16948
+Accel X:-108, Y:-108, Z:16660
+Accel X:-156, Y:-72, Z:16812
+Accel X:-204, Y:72[0m
+[0;32mI (59838) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16936
+Accel X:-144, Y:-184, Z:16980
+Accel X:-256, Y:-24, Z:16784
+Accel X:-224, Y:-40, Z:16736
+Accel X:-124, Y:-2[0m
+[0;32mI (59978) UART_APP: Nhan duoc 120 bytes tu STM32: 8, Z:17040
+Accel X:-168, Y:-12, Z:16920
+Accel X:-120, Y:-84, Z:16552
+Accel X:-96, Y:60, Z:17120
+Accel X:-200, Y:-64,[0m
+[0;32mI (60118) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16740
+Accel X:-176, Y:-116, Z:16832
+Accel X:-76, Y:-100, Z:16596
+Accel X:-244, Y:56, Z:17036
+Accel X:-264, Y:8, Z[0m
+[0;32mI (60248) UART_APP: Nhan duoc 120 bytes tu STM32: :16740
+Accel X:-200, Y:-88, Z:16728
+Accel X:-236, Y:124, Z:16676
+Accel X:-160, Y:-32, Z:16952
+Accel X:-128, Y:0, Z:1[0m
+[0;32mI (60388) UART_APP: Nhan duoc 120 bytes tu STM32: 6728
+Accel X:-164, Y:-32, Z:16680
+Accel X:-176, Y:-32, Z:16948
+Accel X:-216, Y:-32, Z:16868
+Accel X:-116, Y:-84, Z:1[0m
+[0;32mI (60528) UART_APP: Nhan duoc 120 bytes tu STM32: 6596
+Accel X:-184, Y:-52, Z:16968
+Accel X:-192, Y:-12, Z:16868
+Accel X:-192, Y:0, Z:16944
+Accel X:-176, Y:4, Z:16996[0m
+[0;32mI (60668) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-128, Y:-72, Z:16788
+Accel X:-140, Y:-24, Z:17044
+Accel X:-188, Y:-80, Z:16720
+Accel X:-256, Y:-96, Z:16796[0m
+[0;32mI (60798) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-252, Y:-80, Z:16812
+Accel X:-208, Y:-112, Z:16776
+Accel X:-284, Y:16, Z:16996
+Accel X:-260, Y:-204, Z:1646[0m
+[0;32mI (60938) UART_APP: Nhan duoc 120 bytes tu STM32: 4
+Accel X:-112, Y:120, Z:16984
+Accel X:-124, Y:-176, Z:16664
+Accel X:-92, Y:64, Z:16900
+Accel X:-40, Y:-96, Z:16844[0m
+[0;32mI (61078) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-164, Y:-16, Z:16824
+Accel X:-136, Y:-104, Z:16940
+Accel X:-176, Y:-32, Z:16812
+Accel X:-168, Y:-68, Z:17000[0m
+[0;32mI (61218) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-200, Y:-108, Z:16680
+Accel X:-152, Y:-64, Z:16780
+Accel X:-164, Y:-12, Z:17056
+Accel X:-92, Y:-12, Z:16736[0m
+[0;32mI (61348) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-380, Y:-108, Z:16856
+Accel X:-40, Y:-12, Z:16844
+Accel X:-188, Y:48, Z:16756
+Accel X:-216, Y:-52, Z:16828[0m
+[0;32mI (61488) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:216, Y:104, Z:16816
+Accel X:-116, Y:-20, Z:16752
+Accel X:-468, Y:-72, Z:16908
+Accel X:-156, Y:-100, Z:16780[0m
+[0;32mI (61628) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-184, Y:24, Z:16844
+Accel X:-352, Y:-112, Z:16824
+Accel X:-28, Y:112, Z:16848
+Accel X:68, Y:-116, Z:16692
+A[0m
+[0;32mI (61768) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-268, Y:56, Z:16932
+Accel X:0, Y:-92, Z:16692
+Accel X:-540, Y:-88, Z:16792
+Accel X:128, Y:-28, Z:16956
+Accel [0m
+[0;32mI (61898) UART_APP: Nhan duoc 120 bytes tu STM32: X:-320, Y:-60, Z:16952
+Accel X:-116, Y:-12, Z:16588
+Accel X:-212, Y:364, Z:18092
+Accel X:232, Y:-48, Z:17800
+Accel X[0m
+[0;32mI (62038) UART_APP: Nhan duoc 120 bytes tu STM32: :-472, Y:20, Z:16980
+Accel X:-76, Y:-48, Z:17628
+Accel X:-448, Y:120, Z:17188
+Accel X:84, Y:-220, Z:16544
+Accel X:-2[0m
+[0;32mI (62178) UART_APP: Nhan duoc 120 bytes tu STM32: 88, Y:4, Z:16712
+Accel X:-152, Y:12, Z:16924
+Accel X:-264, Y:32, Z:16952
+Accel X:-28, Y:-56, Z:16732
+Accel X:-308, Y[0m
+[0;32mI (62308) UART_APP: Nhan duoc 120 bytes tu STM32: :-32, Z:17004
+Accel X:-60, Y:-68, Z:16912
+Accel X:-108, Y:24, Z:17048
+Accel X:-220, Y:-32, Z:16944
+Accel X:-348, Y:-[0m
+[0;32mI (62448) UART_APP: Nhan duoc 120 bytes tu STM32: 8, Z:16784
+Accel X:8, Y:68, Z:17032
+Accel X:-156, Y:-72, Z:16624
+Accel X:-184, Y:0, Z:16900
+Accel X:-116, Y:-24, Z:1[0m
+[0;32mI (62588) UART_APP: Nhan duoc 120 bytes tu STM32: 6804
+Accel X:-120, Y:-28, Z:16792
+Accel X:-132, Y:-104, Z:16896
+Accel X:-284, Y:4, Z:16556
+Accel X:-100, Y:-52, Z:16[0m
+[0;32mI (62728) UART_APP: Nhan duoc 120 bytes tu STM32: 844
+Accel X:-132, Y:-48, Z:17012
+Accel X:-196, Y:-88, Z:16716
+Accel X:-80, Y:-44, Z:16732
+Accel X:-136, Y:-64, Z:170[0m
+[0;32mI (62858) UART_APP: Nhan duoc 120 bytes tu STM32: 28
+Accel X:-220, Y:-32, Z:16744
+Accel X:-128, Y:-36, Z:16768
+Accel X:-180, Y:-108, Z:16860
+Accel X:-40, Y:-56, Z:167[0m
+[0;32mI (62998) UART_APP: Nhan duoc 120 bytes tu STM32: 16
+Accel X:-144, Y:-28, Z:16808
+Accel X:-120, Y:4, Z:16812
+Accel X:-292, Y:-24, Z:17052
+Accel X:-224, Y:24, Z:16844[0m
+[0;32mI (63138) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-44, Y:-48, Z:16828
+Accel X:-204, Y:20, Z:16772
+Accel X:-120, Y:-28, Z:16860
+Accel X:-192, Y:108, Z:16796
+A[0m
+[0;32mI (63278) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-96, Y:0, Z:16880
+Accel X:-188, Y:-16, Z:16736
+Accel X:-108, Y:-48, Z:16588
+Accel X:-120, Y:-80, Z:16812
+Acce[0m
+[0;32mI (63408) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-204, Y:-24, Z:16840
+Accel X:-192, Y:0, Z:17012
+Accel X:-156, Y:-132, Z:16736
+Accel X:-152, Y:44, Z:16840
+Accel [0m
+[0;32mI (63548) UART_APP: Nhan duoc 120 bytes tu STM32: X:-92, Y:-40, Z:16876
+Accel X:-148, Y:88, Z:16776
+Accel X:-72, Y:-4, Z:16768
+Accel X:-124, Y:-28, Z:16912
+Accel X:-1[0m
+[0;32mI (63688) UART_APP: Nhan duoc 120 bytes tu STM32: 32, Y:32, Z:16888
+Accel X:-192, Y:32, Z:16824
+Accel X:-168, Y:-44, Z:16872
+Accel X:-212, Y:-16, Z:16804
+Accel X:-96,[0m
+[0;32mI (63828) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:64, Z:16764
+Accel X:-144, Y:-112, Z:16896
+Accel X:-204, Y:-84, Z:16748
+Accel X:-120, Y:-24, Z:16760
+Accel X:-228,[0m
+[0;32mI (63958) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:-180, Z:16932
+Accel X:-128, Y:-48, Z:16776
+Accel X:44, Y:-64, Z:16880
+Accel X:-84, Y:-28, Z:17068
+Accel X:-144, Y[0m
+[0;32mI (64098) UART_APP: Nhan duoc 120 bytes tu STM32: :-32, Z:16884
+Accel X:-160, Y:-52, Z:16812
+Accel X:-164, Y:-84, Z:16868
+Accel X:-248, Y:-20, Z:16820
+Accel X:-132, Y[0m
+[0;32mI (64238) UART_APP: Nhan duoc 120 bytes tu STM32: :-24, Z:16712
+Accel X:-124, Y:-56, Z:16708
+Accel X:-160, Y:-84, Z:16816
+Accel X:-224, Y:-68, Z:17096
+Accel X:-56, Y:[0m
+[0;32mI (64378) UART_APP: Nhan duoc 120 bytes tu STM32: -52, Z:16796
+Accel X:-4, Y:-68, Z:16680
+Accel X:-188, Y:-12, Z:16764
+Accel X:-188, Y:12, Z:16876
+Accel X:-152, Y:-72[0m
+[0;32mI (64508) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16752
+Accel X:-8, Y:8, Z:16752
+Accel X:-84, Y:-80, Z:16936
+Accel X:-196, Y:32, Z:16856
+Accel X:-232, Y:20, Z:168[0m
+[0;32mI (64648) UART_APP: Nhan duoc 120 bytes tu STM32: 36
+Accel X:-208, Y:-36, Z:16968
+Accel X:-136, Y:-20, Z:16864
+Accel X:-164, Y:44, Z:16764
+Accel X:-204, Y:-16, Z:1686[0m
+[0;32mI (64788) UART_APP: Nhan duoc 120 bytes tu STM32: 8
+Accel X:-156, Y:-20, Z:16748
+Accel X:-80, Y:32, Z:16768
+Accel X:-176, Y:-24, Z:16880
+Accel X:-180, Y:20, Z:16792
+[0m
+[0;32mI (64928) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-116, Y:-76, Z:16856
+Accel X:-104, Y:28, Z:16812
+Accel X:-264, Y:12, Z:16744
+Accel X:-192, Y:-104, Z:16940
+A[0m
+[0;32mI (65058) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-136, Y:-32, Z:16756
+Accel X:-160, Y:-64, Z:16812
+Accel X:-140, Y:12, Z:16884
+Accel X:-88, Y:-84, Z:16844
+Acc[0m
+[0;32mI (65198) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-244, Y:-68, Z:16780
+Accel X:-160, Y:12, Z:16704
+Accel X:-68, Y:-48, Z:16876
+Accel X:-132, Y:20, Z:16876
+Accel [0m
+[0;32mI (65338) UART_APP: Nhan duoc 120 bytes tu STM32: X:-88, Y:-84, Z:16808
+Accel X:-236, Y:16, Z:16968
+Accel X:-40, Y:-4, Z:16852
+Accel X:-152, Y:4, Z:16820
+Accel X:-232[0m
+[0;32mI (65478) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-36, Z:16924
+Accel X:-224, Y:-48, Z:16820
+Accel X:-76, Y:24, Z:16884
+Accel X:-156, Y:-60, Z:16856
+Accel X:-160, [0m
+[0;32mI (65608) UART_APP: Nhan duoc 120 bytes tu STM32: Y:0, Z:16820
+Accel X:-268, Y:-152, Z:16992
+Accel X:-140, Y:-52, Z:16736
+Accel X:-176, Y:-12, Z:16984
+Accel X:-164, Y[0m
+[0;32mI (65748) UART_APP: Nhan duoc 120 bytes tu STM32: :-84, Z:16864
+Accel X:-120, Y:-176, Z:16872
+Accel X:-160, Y:48, Z:16788
+Accel X:-80, Y:-100, Z:16436
+Accel X:-88, Y:[0m
+[0;32mI (65888) UART_APP: Nhan duoc 120 bytes tu STM32: -40, Z:16820
+Accel X:-124, Y:-124, Z:16912
+Accel X:-208, Y:8, Z:16776
+Accel X:-108, Y:8, Z:16884
+Accel X:-144, Y:0, [0m
+[0;32mI (66028) UART_APP: Nhan duoc 120 bytes tu STM32: Z:16656
+Accel X:-160, Y:-60, Z:16804
+Accel X:-136, Y:-4, Z:17108
+Accel X:-228, Y:0, Z:16620
+Accel X:-144, Y:-108, Z:[0m
+[0;32mI (66158) UART_APP: Nhan duoc 120 bytes tu STM32: 16912
+Accel X:-148, Y:-56, Z:16788
+Accel X:-284, Y:12, Z:16844
+Accel X:-152, Y:-116, Z:16964
+Accel X:-64, Y:-148, Z:[0m
+[0;32mI (66298) UART_APP: Nhan duoc 120 bytes tu STM32: 16808
+Accel X:-40, Y:-40, Z:16724
+Accel X:-204, Y:-24, Z:16876
+Accel X:-112, Y:-16, Z:16892
+Accel X:-216, Y:20, Z:16[0m
+[0;32mI (66438) UART_APP: Nhan duoc 120 bytes tu STM32: 884
+Accel X:-232, Y:36, Z:16676
+Accel X:-128, Y:-56, Z:16832
+Accel X:-160, Y:4, Z:16824
+Accel X:-56, Y:12, Z:16856
+[0m
+[0;32mI (66578) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-160, Y:8, Z:16828
+Accel X:-144, Y:-88, Z:16860
+Accel X:-112, Y:-40, Z:16796
+Accel X:-124, Y:-60, Z:16968
+Ac[0m
+[0;32mI (66708) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-236, Y:-80, Z:16704
+Accel X:-136, Y:-24, Z:16824
+Accel X:-168, Y:-8, Z:16860
+Accel X:-192, Y:-8, Z:16764
+Acce[0m
+[0;32mI (66848) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-156, Y:-52, Z:16804
+Accel X:-224, Y:-56, Z:16820
+Accel X:-184, Y:-28, Z:16716
+Accel X:-192, Y:-80, Z:16952
+Acce[0m
+[0;32mI (66988) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-192, Y:4, Z:16736
+Accel X:-184, Y:-12, Z:16856
+Accel X:-160, Y:40, Z:16840
+Accel X:-36, Y:-44, Z:16740
+Accel X:[0m
+[0;32mI (67118) UART_APP: Nhan duoc 120 bytes tu STM32: -304, Y:-56, Z:16932
+Accel X:-4, Y:-4, Z:16788
+Accel X:-276, Y:24, Z:16856
+Accel X:-28, Y:-40, Z:16828
+Accel X:-124,[0m
+[0;32mI (67258) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:64, Z:16900
+Accel X:-72, Y:4, Z:16780
+Accel X:-212, Y:-104, Z:16732
+Accel X:-92, Y:-36, Z:16804
+Accel X:-160, Y:4[0m
+[0;32mI (67398) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16736
+Accel X:-228, Y:-72, Z:16784
+Accel X:-144, Y:-24, Z:16872
+Accel X:-124, Y:-32, Z:16708
+Accel X:-192, Y:-12[0m
+[0;32mI (67538) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16912
+Accel X:-88, Y:-96, Z:16832
+Accel X:-148, Y:-48, Z:16856
+Accel X:-152, Y:8, Z:16732
+Accel X:-144, Y:4, Z:1[0m
+[0;32mI (67668) UART_APP: Nhan duoc 120 bytes tu STM32: 6728
+Accel X:-108, Y:-48, Z:16844
+Accel X:-124, Y:-44, Z:16804
+Accel X:-72, Y:-64, Z:16780
+Accel X:-136, Y:32, Z:168[0m
+[0;32mI (67808) UART_APP: Nhan duoc 120 bytes tu STM32: 48
+Accel X:-124, Y:72, Z:16700
+Accel X:-144, Y:20, Z:16868
+Accel X:-136, Y:28, Z:16792
+Accel X:-156, Y:28, Z:16752
+[0m
+[0;32mI (67948) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-236, Y:-164, Z:16744
+Accel X:-72, Y:-64, Z:17008
+Accel X:-124, Y:-72, Z:16960
+Accel X:-152, Y:-28, Z:16840
+[0m
+[0;32mI (68088) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-100, Y:-92, Z:16664
+Accel X:-172, Y:-20, Z:16872
+Accel X:-172, Y:20, Z:16916
+Accel X:-208, Y:32, Z:16848
+Ac[0m
+[0;32mI (68218) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-92, Y:32, Z:16908
+Accel X:-156, Y:-36, Z:16792
+Accel X:-200, Y:-16, Z:16796
+Accel X:-160, Y:-160, Z:16880
+Acc[0m
+[0;32mI (68358) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-192, Y:0, Z:16740
+Accel X:-200, Y:80, Z:16924
+Accel X:-192, Y:36, Z:16980
+Accel X:-208, Y:-76, Z:16884
+Accel X[0m
+[0;32mI (68498) UART_APP: Nhan duoc 120 bytes tu STM32: :-108, Y:-24, Z:16928
+Accel X:-200, Y:-8, Z:16768
+Accel X:-128, Y:-196, Z:16840
+Accel X:-252, Y:-48, Z:16704
+Accel X[0m
+[0;32mI (68638) UART_APP: Nhan duoc 120 bytes tu STM32: :-220, Y:44, Z:16892
+Accel X:-156, Y:-52, Z:16836
+Accel X:-184, Y:-92, Z:16712
+Accel X:-228, Y:-52, Z:16772
+Accel X:[0m
+[0;32mI (68768) UART_APP: Nhan duoc 120 bytes tu STM32: -112, Y:-48, Z:16804
+Accel X:-216, Y:-120, Z:16736
+Accel X:-168, Y:32, Z:16868
+Accel X:-196, Y:-68, Z:16640
+Accel X:[0m
+[0;32mI (68908) UART_APP: Nhan duoc 120 bytes tu STM32: -148, Y:-28, Z:16644
+Accel X:-184, Y:-80, Z:16828
+Accel X:-192, Y:-92, Z:16704
+Accel X:-176, Y:-68, Z:16788
+Accel X:[0m
+[0;32mI (69048) UART_APP: Nhan duoc 120 bytes tu STM32: -208, Y:-12, Z:16824
+Accel X:-148, Y:24, Z:16840
+Accel X:-128, Y:32, Z:16724
+Accel X:-148, Y:-16, Z:16832
+Accel X:-1[0m
+[0;32mI (69188) UART_APP: Nhan duoc 120 bytes tu STM32: 84, Y:-104, Z:16856
+Accel X:-92, Y:-40, Z:17056
+Accel X:-208, Y:20, Z:16848
+Accel X:-160, Y:-152, Z:16848
+Accel X:-4[0m
+[0;32mI (69318) UART_APP: Nhan duoc 120 bytes tu STM32: 4, Y:-144, Z:16852
+Accel X:-228, Y:-204, Z:16804
+Accel X:-96, Y:-56, Z:16692
+Accel X:-208, Y:-20, Z:16884
+Accel X:-1[0m
+[0;32mI (69458) UART_APP: Nhan duoc 120 bytes tu STM32: 60, Y:36, Z:16872
+Accel X:-232, Y:-168, Z:16956
+Accel X:-120, Y:80, Z:16940
+Accel X:-260, Y:-68, Z:16752
+Accel X:-10[0m
+[0;32mI (69598) UART_APP: Nhan duoc 120 bytes tu STM32: 4, Y:-76, Z:16708
+Accel X:-68, Y:-148, Z:16664
+Accel X:-184, Y:-48, Z:16824
+Accel X:-168, Y:-92, Z:16764
+Accel X:-48[0m
+[0;32mI (69738) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-24, Z:17032
+Accel X:-124, Y:56, Z:16800
+Accel X:-116, Y:-44, Z:16848
+Accel X:-124, Y:-108, Z:16664
+Accel X:-116[0m
+[0;32mI (69868) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:32, Z:16728
+Accel X:-212, Y:-108, Z:16856
+Accel X:-92, Y:24, Z:16692
+Accel X:-188, Y:-100, Z:16760
+Accel X:-112,[0m
+[0;32mI (70008) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:-192, Z:16824
+Accel X:-144, Y:-80, Z:16800
+Accel X:-156, Y:-12, Z:16640
+Accel X:-240, Y:20, Z:16956
+Accel X:-164,[0m
+[0;32mI (70148) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:-48, Z:16812
+Accel X:-128, Y:-116, Z:16976
+Accel X:-120, Y:-52, Z:16920
+Accel X:-92, Y:-20, Z:16788
+Accel X:-148,[0m
+[0;32mI (70278) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:-132, Z:16996
+Accel X:-140, Y:48, Z:16912
+Accel X:-120, Y:4, Z:16732
+Accel X:-152, Y:-56, Z:16880
+Accel X:-240, Y[0m
+[0;32mI (70418) UART_APP: Nhan duoc 120 bytes tu STM32: :-108, Z:16884
+Accel X:-172, Y:-140, Z:16768
+Accel X:-112, Y:-44, Z:16920
+Accel X:-200, Y:-60, Z:16796
+Accel X:-112,[0m
+[0;32mI (70558) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:-76, Z:16760
+Accel X:-240, Y:0, Z:16756
+Accel X:-236, Y:40, Z:16940
+Accel X:-136, Y:-96, Z:16796
+Accel X:-112, Y:[0m
+[0;32mI (70698) UART_APP: Nhan duoc 120 bytes tu STM32: -16, Z:16660
+Accel X:-88, Y:12, Z:16840
+Accel X:-116, Y:16, Z:16816
+Accel X:-256, Y:-56, Z:16844
+Accel X:-136, Y:-14[0m
+[0;32mI (70828) UART_APP: Nhan duoc 120 bytes tu STM32: 4, Z:16904
+Accel X:-156, Y:8, Z:17024
+Accel X:-184, Y:-16, Z:16692
+Accel X:-112, Y:4, Z:16860
+Accel X:-196, Y:12, Z:[0m
+[0;32mI (70968) UART_APP: Nhan duoc 120 bytes tu STM32: 16840
+Accel X:-128, Y:16, Z:16936
+Accel X:-188, Y:-64, Z:16720
+Accel X:-156, Y:0, Z:16996
+Accel X:-228, Y:-24, Z:168[0m
+[0;32mI (71108) UART_APP: Nhan duoc 120 bytes tu STM32: 52
+Accel X:-148, Y:0, Z:16676
+Accel X:-28, Y:-108, Z:17020
+Accel X:-236, Y:-120, Z:16816
+Accel X:-124, Y:8, Z:16740[0m
+[0;32mI (71248) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-160, Y:8, Z:16876
+Accel X:-96, Y:-144, Z:16732
+Accel X:-84, Y:-112, Z:16788
+Accel X:-148, Y:40, Z:16900
+Ac[0m
+[0;32mI (71378) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-160, Y:-20, Z:16648
+Accel X:-180, Y:44, Z:16828
+Accel X:-128, Y:40, Z:16768
+Accel X:-16, Y:-12, Z:16740
+Accel[0m
+[0;32mI (71518) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-140, Y:-4, Z:16812
+Accel X:-260, Y:-84, Z:16876
+Accel X:-132, Y:-8, Z:16788
+Accel X:-200, Y:-72, Z:16768
+Accel X[0m
+[0;32mI (71658) UART_APP: Nhan duoc 120 bytes tu STM32: :-184, Y:-20, Z:16812
+Accel X:-152, Y:-28, Z:16900
+Accel X:-96, Y:-24, Z:16744
+Accel X:-156, Y:-4, Z:16944
+Accel X:-[0m
+[0;32mI (71798) UART_APP: Nhan duoc 120 bytes tu STM32: 296, Y:-24, Z:16752
+Accel X:-168, Y:-128, Z:16692
+Accel X:-240, Y:-68, Z:16952
+Accel X:-136, Y:0, Z:16876
+Accel X:-1[0m
+[0;32mI (71928) UART_APP: Nhan duoc 120 bytes tu STM32: 56, Y:-72, Z:16796
+Accel X:-40, Y:40, Z:16848
+Accel X:-236, Y:-12, Z:16724
+Accel X:-108, Y:-116, Z:16788
+Accel X:-12[0m
+[0;32mI (72068) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Y:0, Z:16632
+Accel X:-256, Y:12, Z:16768
+Accel X:-232, Y:-32, Z:16852
+Accel X:-156, Y:64, Z:16824
+Accel X:-256, Y[0m
+[0;32mI (72208) UART_APP: Nhan duoc 120 bytes tu STM32: :-24, Z:16984
+Accel X:-204, Y:-72, Z:16832
+Accel X:-208, Y:-36, Z:16724
+Accel X:-208, Y:-80, Z:16720
+Accel X:-80, Y:[0m
+[0;32mI (72348) UART_APP: Nhan duoc 120 bytes tu STM32: 40, Z:16920
+Accel X:-236, Y:-40, Z:16852
+Accel X:-156, Y:116, Z:16852
+Accel X:-216, Y:-76, Z:16636
+Accel X:-144, Y:-[0m
+[0;32mI (72478) UART_APP: Nhan duoc 120 bytes tu STM32: 132, Z:16728
+Accel X:-160, Y:0, Z:16756
+Accel X:-148, Y:-84, Z:16800
+Accel X:-168, Y:-28, Z:16892
+Accel X:-256, Y:-1[0m
+[0;32mI (72618) UART_APP: Nhan duoc 120 bytes tu STM32: 00, Z:16672
+Accel X:-92, Y:-36, Z:16764
+Accel X:-144, Y:-36, Z:17016
+Accel X:-176, Y:-76, Z:16816
+Accel X:-120, Y:-1[0m
+[0;32mI (72758) UART_APP: Nhan duoc 120 bytes tu STM32: 00, Z:16892
+Accel X:-224, Y:-68, Z:17028
+Accel X:-116, Y:-56, Z:16824
+Accel X:-200, Y:12, Z:16752
+Accel X:-112, Y:32[0m
+[0;32mI (72888) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16752
+Accel X:-76, Y:-112, Z:16832
+Accel X:-228, Y:0, Z:16844
+Accel X:-192, Y:-76, Z:16824
+Accel X:-116, Y:-80, [0m
+[0;32mI (73028) UART_APP: Nhan duoc 120 bytes tu STM32: Z:16760
+Accel X:-48, Y:-16, Z:16864
+Accel X:-240, Y:28, Z:16872
+Accel X:-152, Y:8, Z:16848
+Accel X:-88, Y:-176, Z:16[0m
+[0;32mI (73168) UART_APP: Nhan duoc 120 bytes tu STM32: 804
+Accel X:-300, Y:24, Z:16616
+Accel X:-232, Y:8, Z:16904
+Accel X:-60, Y:76, Z:16960
+Accel X:-260, Y:-124, Z:16736[0m
+[0;32mI (73308) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-120, Y:-24, Z:16820
+Accel X:-88, Y:-40, Z:16744
+Accel X:-64, Y:16, Z:16840
+Accel X:-312, Y:28, Z:16916
+Acc[0m
+[0;32mI (73438) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-224, Y:-76, Z:16908
+Accel X:-88, Y:0, Z:16728
+Accel X:-220, Y:-32, Z:16640
+Accel X:-104, Y:-8, Z:16784
+Accel X[0m
+[0;32mI (73578) UART_APP: Nhan duoc 120 bytes tu STM32: :-164, Y:24, Z:16772
+Accel X:-224, Y:112, Z:16724
+Accel X:-232, Y:-140, Z:17032
+Accel X:-180, Y:-4, Z:16664
+Accel X:[0m
+[0;32mI (73718) UART_APP: Nhan duoc 120 bytes tu STM32: -188, Y:-76, Z:16776
+Accel X:-252, Y:72, Z:16768
+Accel X:-100, Y:16, Z:16768
+Accel X:-212, Y:-60, Z:16804
+Accel X:-1[0m
+[0;32mI (73858) UART_APP: Nhan duoc 120 bytes tu STM32: 76, Y:-76, Z:16868
+Accel X:-148, Y:36, Z:16956
+Accel X:-80, Y:8, Z:16776
+Accel X:-356, Y:-128, Z:15728
+Accel X:-232,[0m
+[0;32mI (73988) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:-56, Z:17192
+Accel X:-120, Y:8, Z:16940
+Accel X:36, Y:-88, Z:16636
+Accel X:-200, Y:-48, Z:16968
+Accel X:-100, Y:-[0m
+[0;32mI (74128) UART_APP: Nhan duoc 120 bytes tu STM32: 100, Z:16624
+Accel X:-208, Y:-100, Z:16740
+Accel X:-176, Y:-12, Z:16888
+Accel X:-224, Y:-156, Z:16772
+Accel X:-96, Y[0m
+[0;32mI (74268) UART_APP: Nhan duoc 120 bytes tu STM32: :-36, Z:16852
+Accel X:-152, Y:20, Z:16720
+Accel X:-140, Y:-72, Z:16836
+Accel X:-164, Y:20, Z:16956
+Accel X:-252, Y:-[0m
+[0;32mI (74408) UART_APP: Nhan duoc 120 bytes tu STM32: 116, Z:16800
+Accel X:-276, Y:-68, Z:16768
+Accel X:-92, Y:0, Z:16916
+Accel X:-144, Y:16, Z:16700
+Accel X:-252, Y:-56,[0m
+[0;32mI (74538) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16808
+Accel X:-188, Y:-8, Z:16836
+Accel X:-204, Y:-80, Z:16868
+Accel X:-200, Y:64, Z:16868
+Accel X:-268, Y:48, Z:[0m
+[0;32mI (74678) UART_APP: Nhan duoc 120 bytes tu STM32: 16928
+Accel X:-56, Y:-20, Z:16848
+Accel X:-188, Y:36, Z:16756
+Accel X:-156, Y:-12, Z:16888
+Accel X:-168, Y:-20, Z:16[0m
+[0;32mI (74818) UART_APP: Nhan duoc 120 bytes tu STM32: 732
+Accel X:-156, Y:64, Z:16736
+Accel X:-208, Y:-20, Z:16820
+Accel X:-208, Y:-48, Z:16852
+Accel X:-192, Y:16, Z:1695[0m
+[0;32mI (74958) UART_APP: Nhan duoc 120 bytes tu STM32: 6
+Accel X:-108, Y:48, Z:16904
+Accel X:-128, Y:-112, Z:16952
+Accel X:-212, Y:-76, Z:16860
+Accel X:-152, Y:-128, Z:168[0m
+[0;32mI (75088) UART_APP: Nhan duoc 120 bytes tu STM32: 64
+Accel X:-184, Y:40, Z:16692
+Accel X:-292, Y:-128, Z:16856
+Accel X:-156, Y:-44, Z:16768
+Accel X:-140, Y:16, Z:1678[0m
+[0;32mI (75228) UART_APP: Nhan duoc 120 bytes tu STM32: 8
+Accel X:-236, Y:40, Z:16904
+Accel X:-220, Y:40, Z:16824
+Accel X:-92, Y:-84, Z:16824
+Accel X:-256, Y:-120, Z:16868[0m
+[0;32mI (75368) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-168, Y:16, Z:16816
+Accel X:-72, Y:-12, Z:16884
+Accel X:-172, Y:4, Z:16860
+Accel X:-184, Y:-24, Z:16856
+Acc[0m
+[0;32mI (75508) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-128, Y:-100, Z:16884
+Accel X:-84, Y:0, Z:16636
+Accel X:-244, Y:-124, Z:16920
+Accel X:-220, Y:-44, Z:16912
+Acce[0m
+[0;32mI (75638) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-40, Y:-140, Z:16716
+Accel X:-196, Y:-144, Z:16956
+Accel X:-180, Y:-28, Z:16780
+Accel X:-264, Y:-52, Z:16828
+Acc[0m
+[0;32mI (75778) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-40, Y:72, Z:16940
+Accel X:-128, Y:-40, Z:16748
+Accel X:-160, Y:-112, Z:16932
+Accel X:244, Y:56, Z:16696
+Accel [0m
+[0;32mI (75918) UART_APP: Nhan duoc 120 bytes tu STM32: X:1856, Y:668, Z:15308
+Accel X:-2292, Y:-820, Z:16356
+Accel X:-188, Y:416, Z:17492
+Accel X:-652, Y:-812, Z:18524
+Acc[0m
+[0;32mI (76058) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-656, Y:-156, Z:17040
+Accel X:1568, Y:136, Z:18712
+Accel X:648, Y:-448, Z:17936
+Accel X:3604, Y:32, Z:14132
+Acc[0m
+[0;32mI (76188) UART_APP: Nhan duoc 120 bytes tu STM32: el X:5532, Y:-1728, Z:15436
+Accel X:5684, Y:-160, Z:14932
+Accel X:6048, Y:692, Z:16248
+Accel X:4452, Y:-84, Z:14680
+[0m
+[0;32mI (76328) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:5044, Y:400, Z:16216
+Accel X:6984, Y:204, Z:17404
+Accel X:7456, Y:-628, Z:15992
+Accel X:8120, Y:-636, Z:14108[0m
+[0;32mI (76468) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:8852, Y:-792, Z:12964
+Accel X:10416, Y:-488, Z:12388
+Accel X:10144, Y:-396, Z:14692
+Accel X:10416, Y:-436, [0m
+[0;32mI (76608) UART_APP: Nhan duoc 120 bytes tu STM32: Z:13492
+Accel X:10788, Y:-384, Z:13624
+Accel X:11388, Y:-684, Z:11132
+Accel X:11376, Y:-628, Z:13408
+Accel X:11648, [0m
+[0;32mI (76738) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-600, Z:12108
+Accel X:11876, Y:-632, Z:12296
+Accel X:12140, Y:-792, Z:11640
+Accel X:12288, Y:-768, Z:10576
+Accel X[0m
+[0;32mI (76878) UART_APP: Nhan duoc 120 bytes tu STM32: :12368, Y:-728, Z:11780
+Accel X:12668, Y:-620, Z:11804
+Accel X:12508, Y:-828, Z:11608
+Accel X:12796, Y:-808, Z:11060[0m
+[0;32mI (77018) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:12800, Y:-924, Z:11584
+Accel X:12772, Y:-1108, Z:10116
+Accel X:12840, Y:-1080, Z:10572
+Accel X:12768, Y:-820[0m
+[0;32mI (77158) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:11412
+Accel X:12488, Y:-1236, Z:11204
+Accel X:13136, Y:-1504, Z:11084
+Accel X:11756, Y:-1304, Z:11964
+Accel X:11[0m
+[0;32mI (77288) UART_APP: Nhan duoc 120 bytes tu STM32: 220, Y:-1608, Z:12336
+Accel X:11328, Y:-1924, Z:12164
+Accel X:10980, Y:-2196, Z:12796
+Accel X:10296, Y:-1772, Z:12792[0m
+[0;32mI (77428) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:9492, Y:-2476, Z:14112
+Accel X:8876, Y:-2072, Z:14276
+Accel X:7940, Y:-2236, Z:14780
+Accel X:7296, Y:-1768,[0m
+[0;32mI (77568) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:13984
+Accel X:6968, Y:-2652, Z:14940
+Accel X:7036, Y:-2820, Z:15172
+Accel X:6312, Y:-2928, Z:15436
+Accel X:6556, [0m
+[0;32mI (77708) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-3012, Z:15588
+Accel X:5564, Y:-3076, Z:15608
+Accel X:5440, Y:-2916, Z:15016
+Accel X:5388, Y:-3156, Z:15768
+Accel [0m
+[0;32mI (77838) UART_APP: Nhan duoc 120 bytes tu STM32: X:3984, Y:-3240, Z:15420
+Accel X:3576, Y:-3248, Z:16564
+Accel X:2696, Y:-3024, Z:16540
+Accel X:2580, Y:-3268, Z:16388[0m
+[0;32mI (77978) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:1816, Y:-3660, Z:17068
+Accel X:1704, Y:-3140, Z:16440
+Accel X:1540, Y:-3712, Z:16352
+Accel X:1272, Y:-3532,[0m
+[0;32mI (78118) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16400
+Accel X:896, Y:-3356, Z:16624
+Accel X:784, Y:-3628, Z:16260
+Accel X:376, Y:-3428, Z:16324
+Accel X:204, Y:-3[0m
+[0;32mI (78248) UART_APP: Nhan duoc 120 bytes tu STM32: 356, Z:16148
+Accel X:-1508, Y:-3780, Z:20204
+Accel X:-124, Y:-3792, Z:16980
+Accel X:-328, Y:-2916, Z:16232
+Accel X:1[0m
+[0;32mI (78388) UART_APP: Nhan duoc 120 bytes tu STM32: 68, Y:-3596, Z:16520
+Accel X:-268, Y:-3404, Z:15976
+Accel X:-572, Y:-3368, Z:16832
+Accel X:-596, Y:-3340, Z:16064
+Ac[0m
+[0;32mI (78528) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-392, Y:-3356, Z:16508
+Accel X:-892, Y:-3280, Z:16048
+Accel X:-1188, Y:-3176, Z:16788
+Accel X:-1204, Y:-2576, Z[0m
+[0;32mI (78668) UART_APP: Nhan duoc 120 bytes tu STM32: :15824
+Accel X:-1600, Y:-3444, Z:16388
+Accel X:-1716, Y:-3228, Z:16228
+Accel X:-2348, Y:-3196, Z:16380
+Accel X:-2588[0m
+[0;32mI (78798) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-2768, Z:15904
+Accel X:-2804, Y:-3164, Z:16448
+Accel X:-3348, Y:-2640, Z:15540
+Accel X:-3504, Y:-3292, Z:16152
+A[0m
+[0;32mI (78938) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-3616, Y:-2968, Z:15480
+Accel X:-4428, Y:-2912, Z:16716
+Accel X:-4440, Y:-2864, Z:16020
+Accel X:-4320, Y:-2824[0m
+[0;32mI (79078) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:15740
+Accel X:-4728, Y:-2588, Z:15784
+Accel X:-4756, Y:-2708, Z:15824
+Accel X:-5020, Y:-2608, Z:15448
+Accel X:-5[0m
+[0;32mI (79208) UART_APP: Nhan duoc 120 bytes tu STM32: 044, Y:-2556, Z:15584
+Accel X:-5084, Y:-2640, Z:15316
+Accel X:-5576, Y:-2552, Z:15628
+Accel X:-6484, Y:-2440, Z:14412[0m
+[0;32mI (79348) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-6380, Y:-2392, Z:15036
+Accel X:-6548, Y:-2228, Z:15716
+Accel X:-6664, Y:-2240, Z:15100
+Accel X:-6696, Y:-2[0m
+[0;32mI (79488) UART_APP: Nhan duoc 120 bytes tu STM32: 292, Z:14880
+Accel X:-6600, Y:-2088, Z:14568
+Accel X:-6820, Y:-2300, Z:15364
+Accel X:-6996, Y:-2200, Z:15016
+Accel X[0m
+[0;32mI (79628) UART_APP: Nhan duoc 120 bytes tu STM32: :-6700, Y:-2092, Z:15164
+Accel X:-6924, Y:-2124, Z:14968
+Accel X:-6784, Y:-2172, Z:14884
+Accel X:-6648, Y:-2176, Z:14[0m
+[0;32mI (79758) UART_APP: Nhan duoc 120 bytes tu STM32: 956
+Accel X:-7016, Y:-1996, Z:15040
+Accel X:-6688, Y:-2112, Z:14932
+Accel X:-6876, Y:-2192, Z:14920
+Accel X:-6804, Y[0m
+[0;32mI (79898) UART_APP: Nhan duoc 120 bytes tu STM32: :-2056, Z:14864
+Accel X:-7148, Y:-1948, Z:14948
+Accel X:-6700, Y:-1956, Z:14876
+Accel X:-6600, Y:-1984, Z:14916
+Acce[0m
+[0;32mI (80038) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-7084, Y:-2072, Z:14520
+Accel X:-7092, Y:-1836, Z:15052
+Accel X:-6844, Y:-2156, Z:14952
+Accel X:-6808, Y:-1860, Z[0m
+[0;32mI (80178) UART_APP: Nhan duoc 120 bytes tu STM32: :14876
+Accel X:-6904, Y:-2000, Z:14564
+Accel X:-6784, Y:-2008, Z:15016
+Accel X:-6796, Y:-2016, Z:14744
+Accel X:-6784[0m
+[0;32mI (80308) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-1952, Z:15060
+Accel X:-6736, Y:-1948, Z:14916
+Accel X:-6628, Y:-1976, Z:15172
+Accel X:-6824, Y:-1980, Z:15084
+A[0m
+[0;32mI (80448) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-6552, Y:-1928, Z:15104
+Accel X:-6516, Y:-1900, Z:15020
+Accel X:-6540, Y:-1932, Z:15124
+Accel X:-6248, Y:-1936[0m
+[0;32mI (80588) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:15228
+Accel X:-6420, Y:-2028, Z:15212
+Accel X:-6424, Y:-2056, Z:15152
+Accel X:-6076, Y:-2076, Z:15232
+Accel X:-6[0m
+[0;32mI (80718) UART_APP: Nhan duoc 120 bytes tu STM32: 292, Y:-1952, Z:15364
+Accel X:-5636, Y:-1876, Z:15576
+Accel X:-5748, Y:-1892, Z:15288
+Accel X:-5588, Y:-1840, Z:15456[0m
+[0;32mI (80858) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-5388, Y:-2060, Z:15572
+Accel X:-5456, Y:-2020, Z:15572
+Accel X:-5288, Y:-1936, Z:15584
+Accel X:-4952, Y:-2[0m
+[0;32mI (80998) UART_APP: Nhan duoc 120 bytes tu STM32: 164, Z:15440
+Accel X:-5144, Y:-2028, Z:15884
+Accel X:-4860, Y:-1956, Z:15820
+Accel X:-4652, Y:-2172, Z:16104
+Accel X[0m
+[0;32mI (81138) UART_APP: Nhan duoc 120 bytes tu STM32: :-4892, Y:-2232, Z:15964
+Accel X:-4376, Y:-2272, Z:15800
+Accel X:-4192, Y:-2192, Z:16092
+Accel X:-4200, Y:-2272, Z:16[0m
+[0;32mI (81268) UART_APP: Nhan duoc 120 bytes tu STM32: 208
+Accel X:-4252, Y:-2212, Z:15720
+Accel X:-3320, Y:-2332, Z:15976
+Accel X:-3324, Y:-2284, Z:16508
+Accel X:-2776, Y[0m
+[0;32mI (81408) UART_APP: Nhan duoc 120 bytes tu STM32: :-2440, Z:16204
+Accel X:-2984, Y:-2360, Z:16960
+Accel X:-2060, Y:-2316, Z:16924
+Accel X:-1816, Y:-2488, Z:16732
+Acce[0m
+[0;32mI (81548) UART_APP: Nhan duoc 120 bytes tu STM32: l X:1704, Y:4156, Z:13028
+Accel X:1028, Y:-3084, Z:18460
+Accel X:-164, Y:-3012, Z:16108
+Accel X:4, Y:-2836, Z:15972
+[0m
+[0;32mI (81678) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:620, Y:-2620, Z:17100
+Accel X:2036, Y:-2656, Z:16072
+Accel X:1752, Y:-2732, Z:16764
+Accel X:2572, Y:-2704, Z:[0m
+[0;32mI (81818) UART_APP: Nhan duoc 120 bytes tu STM32: 16120
+Accel X:3236, Y:-2664, Z:16600
+Accel X:3928, Y:-2720, Z:15992
+Accel X:3976, Y:-2596, Z:15900
+Accel X:4384, Y:-[0m
+[0;32mI (81958) UART_APP: Nhan duoc 120 bytes tu STM32: 2568, Z:15852
+Accel X:5068, Y:-2448, Z:15604
+Accel X:5208, Y:-2408, Z:15888
+Accel X:5084, Y:-2416, Z:16180
+Accel X:5[0m
+[0;32mI (82098) UART_APP: Nhan duoc 120 bytes tu STM32: 708, Y:-2320, Z:15412
+Accel X:5496, Y:-2444, Z:15340
+Accel X:5748, Y:-2304, Z:16036
+Accel X:5812, Y:-2220, Z:15404
+A[0m
+[0;32mI (82228) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:5916, Y:-2412, Z:15392
+Accel X:5936, Y:-2336, Z:15124
+Accel X:5740, Y:-2144, Z:16236
+Accel X:5228, Y:-2152, Z:[0m
+[0;32mI (82368) UART_APP: Nhan duoc 120 bytes tu STM32: 16728
+Accel X:5548, Y:-2156, Z:15836
+Accel X:5304, Y:-2088, Z:15356
+Accel X:5464, Y:-2132, Z:15028
+Accel X:5268, Y:-[0m
+[0;32mI (82508) UART_APP: Nhan duoc 120 bytes tu STM32: 1916, Z:15792
+Accel X:5036, Y:-1908, Z:15752
+Accel X:4740, Y:-1800, Z:15664
+Accel X:4072, Y:-1748, Z:16496
+Accel X:4[0m
+[0;32mI (82648) UART_APP: Nhan duoc 120 bytes tu STM32: 040, Y:-1552, Z:16192
+Accel X:3628, Y:-1456, Z:15872
+Accel X:3084, Y:-1564, Z:16620
+Accel X:2524, Y:-1360, Z:16864
+A[0m
+[0;32mI (82778) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:1712, Y:-1260, Z:18148
+Accel X:1880, Y:-1180, Z:16932
+Accel X:1852, Y:-1336, Z:16640
+Accel X:1960, Y:-1228, Z:[0m
+[0;32mI (82918) UART_APP: Nhan duoc 120 bytes tu STM32: 16500
+Accel X:2248, Y:-932, Z:12736
+Accel X:852, Y:-1724, Z:14332
+Accel X:-264, Y:-1392, Z:18664
+Accel X:116, Y:-772[0m
+[0;32mI (83058) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16880
+Accel X:-356, Y:-932, Z:17136
+Accel X:-280, Y:-432, Z:16352
+Accel X:-124, Y:-944, Z:16512
+Accel X:-64, Y:-[0m
+[0;32mI (83198) UART_APP: Nhan duoc 120 bytes tu STM32: 612, Z:16904
+Accel X:-348, Y:-624, Z:16336
+Accel X:-540, Y:-428, Z:17224
+Accel X:-88, Y:-528, Z:16928
+Accel X:-836, [0m
+[0;32mI (83328) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-252, Z:16872
+Accel X:-148, Y:-364, Z:16608
+Accel X:-280, Y:-260, Z:16900
+Accel X:-20, Y:-140, Z:16852
+Accel X:-32[0m
+[0;32mI (83468) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-172, Z:16948
+Accel X:-1588, Y:208, Z:19916
+Accel X:-200, Y:-48, Z:16908
+Accel X:-260, Y:-20, Z:17108
+Accel X:-2[0m
+[0;32mI (83608) UART_APP: Nhan duoc 120 bytes tu STM32: 00, Y:-40, Z:16888
+Accel X:-136, Y:-100, Z:16912
+Accel X:84, Y:60, Z:16812
+Accel X:-148, Y:-132, Z:16716
+Accel X:-10[0m
+[0;32mI (83738) UART_APP: Nhan duoc 120 bytes tu STM32: 4, Y:56, Z:16864
+Accel X:-120, Y:16, Z:16916
+Accel X:-428, Y:-164, Z:16844
+Accel X:248, Y:280, Z:16704
+Accel X:-208,[0m
+[0;32mI (83878) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:132, Z:16864
+Accel X:-248, Y:-228, Z:16472
+Accel X:-116, Y:36, Z:16900
+Accel X:52, Y:144, Z:17416
+Accel X:-16, Y:[0m
+[0;32mI (84018) UART_APP: Nhan duoc 120 bytes tu STM32: -128, Z:17108
+Accel X:528, Y:-72, Z:16792
+Accel X:340, Y:-172, Z:16476
+Accel X:892, Y:52, Z:16688
+Accel X:756, Y:-12[0m
+[0;32mI (84158) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Z:16804
+Accel X:1044, Y:-36, Z:17248
+Accel X:560, Y:-8, Z:18308
+Accel X:1660, Y:-172, Z:16648
+Accel X:1832, Y:-21[0m
+[0;32mI (84288) UART_APP: Nhan duoc 120 bytes tu STM32: 6, Z:16488
+Accel X:1920, Y:-240, Z:16664
+Accel X:2452, Y:-288, Z:15724
+Accel X:2436, Y:-208, Z:16900
+Accel X:2484, Y[0m
+[0;32mI (84428) UART_APP: Nhan duoc 120 bytes tu STM32: :-48, Z:17356
+Accel X:2412, Y:-220, Z:16496
+Accel X:2716, Y:-232, Z:16812
+Accel X:2856, Y:-188, Z:16736
+Accel X:3124[0m
+[0;32mI (84568) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-232, Z:16284
+Accel X:3192, Y:-336, Z:15972
+Accel X:3036, Y:-140, Z:17832
+Accel X:3352, Y:-344, Z:16168
+Accel X:[0m
+[0;32mI (84708) UART_APP: Nhan duoc 120 bytes tu STM32: 3888, Y:-308, Z:15488
+Accel X:4100, Y:-200, Z:16584
+Accel X:3660, Y:-288, Z:16924
+Accel X:4272, Y:-320, Z:15988
+Acce[0m
+[0;32mI (84838) UART_APP: Nhan duoc 120 bytes tu STM32: l X:4364, Y:-348, Z:15324
+Accel X:3948, Y:-404, Z:15548
+Accel X:3252, Y:-248, Z:17052
+Accel X:2708, Y:-236, Z:17008
+[0m
+[0;32mI (84978) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:2568, Y:-832, Z:16408
+Accel X:2048, Y:-924, Z:16992
+Accel X:1340, Y:-816, Z:16416
+Accel X:1136, Y:-732, Z:171[0m
+[0;32mI (85118) UART_APP: Nhan duoc 120 bytes tu STM32: 00
+Accel X:660, Y:-904, Z:16744
+Accel X:-80, Y:-764, Z:16752
+Accel X:-228, Y:-788, Z:17976
+Accel X:-284, Y:-772, Z:1[0m
+[0;32mI (85258) UART_APP: Nhan duoc 120 bytes tu STM32: 6484
+Accel X:-236, Y:-656, Z:16864
+Accel X:-760, Y:-732, Z:16820
+Accel X:-696, Y:-604, Z:16712
+Accel X:-1180, Y:-712[0m
+[0;32mI (85388) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:17068
+Accel X:-1548, Y:-640, Z:17084
+Accel X:-1932, Y:-1060, Z:16384
+Accel X:-2112, Y:-556, Z:16624
+Accel X:-224[0m
+[0;32mI (85528) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Y:-444, Z:16720
+Accel X:-2620, Y:-496, Z:16720
+Accel X:-2468, Y:-480, Z:16756
+Accel X:-2424, Y:-592, Z:16468
+Acce[0m
+[0;32mI (85668) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-2716, Y:-440, Z:16456
+Accel X:-2652, Y:-396, Z:16508
+Accel X:-2548, Y:-504, Z:16160
+Accel X:-3504, Y:-368, Z:163[0m
+[0;32mI (85808) UART_APP: Nhan duoc 120 bytes tu STM32: 60
+Accel X:-4028, Y:-444, Z:16436
+Accel X:-3924, Y:-404, Z:16596
+Accel X:-3544, Y:-468, Z:16204
+Accel X:-3656, Y:-36[0m
+[0;32mI (85938) UART_APP: Nhan duoc 120 bytes tu STM32: 8, Z:16432
+Accel X:-3252, Y:-448, Z:16428
+Accel X:-3044, Y:-400, Z:16724
+Accel X:-2716, Y:-580, Z:16480
+Accel X:-263[0m
+[0;32mI (86078) UART_APP: Nhan duoc 120 bytes tu STM32: 6, Y:-484, Z:16780
+Accel X:-2288, Y:-532, Z:16564
+Accel X:-1960, Y:-412, Z:16704
+Accel X:-960, Y:-552, Z:17616
+Accel[0m
+[0;32mI (86218) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-1728, Y:-424, Z:16348
+Accel X:-696, Y:-416, Z:16416
+Accel X:-284, Y:-360, Z:16656
+Accel X:1880, Y:3828, Z:11480
+[0m
+[0;32mI (86348) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-300, Y:-504, Z:16740
+Accel X:-384, Y:-404, Z:17300
+Accel X:-248, Y:-636, Z:16608
+Accel X:-120, Y:-488, Z:172[0m
+[0;32mI (86488) UART_APP: Nhan duoc 120 bytes tu STM32: 32
+Accel X:-484, Y:-296, Z:17672
+Accel X:588, Y:-188, Z:16892
+Accel X:552, Y:-72, Z:17000
+Accel X:972, Y:-204, Z:167[0m
+[0;32mI (86628) UART_APP: Nhan duoc 120 bytes tu STM32: 36
+Accel X:1016, Y:-136, Z:17620
+Accel X:1348, Y:-132, Z:16384
+Accel X:1536, Y:-88, Z:16864
+Accel X:1644, Y:-200, Z:[0m
+[0;32mI (86768) UART_APP: Nhan duoc 120 bytes tu STM32: 16608
+Accel X:1964, Y:-100, Z:15608
+Accel X:1468, Y:-60, Z:17000
+Accel X:1500, Y:-32, Z:15488
+Accel X:16, Y:-620, Z:[0m
+[0;32mI (86898) UART_APP: Nhan duoc 120 bytes tu STM32: 16836
+Accel X:1032, Y:-688, Z:15912
+Accel X:-232, Y:-464, Z:16932
+Accel X:-412, Y:-748, Z:16976
+Accel X:-128, Y:-364[0m
+[0;32mI (87038) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16984
+Accel X:-892, Y:-356, Z:16696
+Accel X:-1068, Y:-396, Z:16964
+Accel X:-1192, Y:-392, Z:16644
+Accel X:-1508,[0m
+[0;32mI (87178) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:-384, Z:16592
+Accel X:-1432, Y:-352, Z:16664
+Accel X:-1856, Y:-292, Z:16664
+Accel X:-2040, Y:-356, Z:16300
+Accel [0m
+[0;32mI (87318) UART_APP: Nhan duoc 120 bytes tu STM32: X:-3096, Y:-320, Z:16800
+Accel X:-3040, Y:-284, Z:16712
+Accel X:-2932, Y:-200, Z:16776
+Accel X:-2228, Y:-464, Z:16820[0m
+[0;32mI (87448) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-924, Y:-540, Z:16896
+Accel X:96, Y:-468, Z:16168
+Accel X:-288, Y:-496, Z:17032
+Accel X:-404, Y:-544, Z:168[0m
+[0;32mI (87588) UART_APP: Nhan duoc 120 bytes tu STM32: 72
+Accel X:-104, Y:-388, Z:16596
+Accel X:-136, Y:-324, Z:17304
+Accel X:280, Y:-372, Z:16848
+Accel X:852, Y:-176, Z:1[0m
+[0;32mI (87728) UART_APP: Nhan duoc 120 bytes tu STM32: 6756
+Accel X:1048, Y:-216, Z:16764
+Accel X:1376, Y:-316, Z:17008
+Accel X:1924, Y:-252, Z:16324
+Accel X:2172, Y:-144,[0m
+[0;32mI (87858) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16672
+Accel X:2448, Y:-132, Z:16276
+Accel X:2564, Y:-208, Z:16064
+Accel X:2788, Y:-140, Z:15080
+Accel X:1984, Y:3[0m
+[0;32mI (87998) UART_APP: Nhan duoc 120 bytes tu STM32: 44, Z:15096
+Accel X:812, Y:-680, Z:17788
+Accel X:184, Y:-948, Z:17992
+Accel X:-636, Y:-564, Z:16848
+Accel X:-208, Y:[0m
+[0;32mI (88138) UART_APP: Nhan duoc 120 bytes tu STM32: -504, Z:16764
+Accel X:-208, Y:-508, Z:16912
+Accel X:-108, Y:-464, Z:16904
+Accel X:-460, Y:-516, Z:16680
+Accel X:-516[0m
+[0;32mI (88278) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-456, Z:16920
+Accel X:-624, Y:-468, Z:17052
+Accel X:-468, Y:-536, Z:16580
+Accel X:-328, Y:-384, Z:17160
+Accel X:[0m
+[0;32mI (88408) UART_APP: Nhan duoc 120 bytes tu STM32: -380, Y:-412, Z:16248
+Accel X:-1376, Y:-400, Z:17124
+Accel X:-948, Y:-544, Z:17476
+Accel X:-276, Y:-804, Z:15216
+Acc[0m
+[0;32mI (88548) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-600, Y:-596, Z:16592
+Accel X:-1000, Y:-592, Z:16220
+Accel X:-176, Y:-432, Z:17332
+Accel X:-292, Y:-512, Z:16600[0m
+[0;32mI (88688) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-452, Y:-284, Z:16900
+Accel X:-332, Y:-76, Z:17660
+Accel X:-28, Y:-176, Z:16532
+Accel X:-852, Y:-484, Z:166[0m
+[0;32mI (88828) UART_APP: Nhan duoc 120 bytes tu STM32: 72
+Accel X:-1264, Y:-376, Z:16804
+Accel X:-2872, Y:-340, Z:17240
+Accel X:-2372, Y:-288, Z:18896
+Accel X:3232, Y:-254[0m
+[0;32mI (88958) UART_APP: Nhan duoc 120 bytes tu STM32: 8, Z:6488
+Accel X:472, Y:-492, Z:16876
+Accel X:600, Y:-176, Z:15464
+Accel X:-344, Y:-496, Z:12560
+Accel X:1632, Y:-9[0m
+[0;32mI (89098) UART_APP: Nhan duoc 120 bytes tu STM32: 60, Z:15688
+Accel X:-2272, Y:-456, Z:15644
+Accel X:-3044, Y:-208, Z:17456
+Accel X:-1584, Y:-856, Z:19524
+Accel X:-13[0m
+[0;32mI (89238) UART_APP: Nhan duoc 120 bytes tu STM32: 16, Y:-2020, Z:18896
+Accel X:496, Y:-924, Z:15156
+Accel X:-272, Y:-296, Z:11756
+Accel X:-2312, Y:5564, Z:23288
+Accel[0m
+[0;32mI (89368) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-1408, Y:140, Z:19400
+Accel X:-3660, Y:-256, Z:16996
+Accel X:-2976, Y:-260, Z:20376
+Accel X:-2448, Y:-2844, Z:2082[0m
+[0;32mI (89508) UART_APP: Nhan duoc 120 bytes tu STM32: 0
+Accel X:576, Y:-744, Z:14692
+Accel X:1056, Y:-848, Z:13296
+Accel X:188, Y:-420, Z:14496
+Accel X:2304, Y:-172, Z:17[0m
+[0;32mI (89648) UART_APP: Nhan duoc 120 bytes tu STM32: 452
+Accel X:-2416, Y:-292, Z:14212
+Accel X:-2268, Y:1104, Z:1948
+Accel X:23404, Y:40, Z:-29308
+Accel X:-876, Y:-476,[0m
+[0;32mI (89788) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:11788
+Accel X:-444, Y:-92, Z:16768
+Accel X:-116, Y:-64, Z:16828
+Accel X:-200, Y:-76, Z:16640
+Accel X:-364, Y:8, Z[0m
+[0;32mI (89918) UART_APP: Nhan duoc 120 bytes tu STM32: :16796
+Accel X:-148, Y:-28, Z:16868
+Accel X:-152, Y:32, Z:16776
+Accel X:-240, Y:-16, Z:16808
+Accel X:-172, Y:4, Z:16[0m
+[0;32mI (90058) UART_APP: Nhan duoc 120 bytes tu STM32: 804
+Accel X:-240, Y:-68, Z:16812
+Accel X:-220, Y:-36, Z:16864
+Accel X:-224, Y:-44, Z:16788
+Accel X:-212, Y:-64, Z:16[0m
+[0;32mI (90198) UART_APP: Nhan duoc 120 bytes tu STM32: 828
+Accel X:-220, Y:-136, Z:16800
+Accel X:-164, Y:-80, Z:16788
+Accel X:-280, Y:-68, Z:16968
+Accel X:-196, Y:-72, Z:1[0m
+[0;32mI (90338) UART_APP: Nhan duoc 120 bytes tu STM32: 7036
+Accel X:-248, Y:-12, Z:16804
+Accel X:-272, Y:-96, Z:16784
+Accel X:-180, Y:20, Z:16968
+Accel X:-224, Y:-108, Z:1[0m
+[0;32mI (90468) UART_APP: Nhan duoc 120 bytes tu STM32: 6856
+Accel X:-216, Y:-108, Z:16832
+Accel X:-128, Y:-88, Z:16760
+Accel X:-260, Y:0, Z:17048
+Accel X:-208, Y:-60, Z:16[0m
+[0;32mI (90608) UART_APP: Nhan duoc 120 bytes tu STM32: 780
+Accel X:-268, Y:-44, Z:16956
+Accel X:-216, Y:-36, Z:17068
+Accel X:-340, Y:60, Z:16828
+Accel X:-276, Y:-128, Z:16[0m
+[0;32mI (90748) UART_APP: Nhan duoc 120 bytes tu STM32: 736
+Accel X:-288, Y:16, Z:16832
+Accel X:-256, Y:16, Z:16912
+Accel X:-200, Y:28, Z:16760
+Accel X:-164, Y:-88, Z:16856[0m
+[0;32mI (90888) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-272, Y:-64, Z:16820
+Accel X:-224, Y:-152, Z:16912
+Accel X:-220, Y:-92, Z:16564
+Accel X:-172, Y:60, Z:16768[0m
+[0;32mI (91018) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-220, Y:-124, Z:16928
+Accel X:-176, Y:-4, Z:16844
+Accel X:-260, Y:-128, Z:16728
+Accel X:-260, Y:128, Z:1677[0m
+[0;32mI (91158) UART_APP: Nhan duoc 120 bytes tu STM32: 6
+Accel X:-260, Y:-108, Z:16944
+Accel X:-136, Y:-20, Z:16944
+Accel X:-276, Y:-88, Z:16988
+Accel X:-260, Y:-84, Z:169[0m
+[0;32mI (91298) UART_APP: Nhan duoc 120 bytes tu STM32: 20
+Accel X:-228, Y:-40, Z:16932
+Accel X:-248, Y:-92, Z:16744
+Accel X:-232, Y:-32, Z:16828
+Accel X:-208, Y:-68, Z:167[0m
+[0;32mI (91438) UART_APP: Nhan duoc 120 bytes tu STM32: 40
+Accel X:-300, Y:16, Z:16744
+Accel X:-236, Y:-104, Z:16808
+Accel X:-192, Y:-52, Z:16640
+Accel X:-308, Y:-44, Z:169[0m
+[0;32mI (91568) UART_APP: Nhan duoc 120 bytes tu STM32: 04
+Accel X:-188, Y:-52, Z:16764
+Accel X:-272, Y:-40, Z:16712
+Accel X:-188, Y:12, Z:16768
+Accel X:-184, Y:-108, Z:168[0m
+[0;32mI (91708) UART_APP: Nhan duoc 120 bytes tu STM32: 28
+Accel X:-216, Y:-84, Z:16848
+Accel X:-272, Y:-88, Z:16864
+Accel X:-124, Y:-48, Z:16760
+Accel X:-184, Y:24, Z:1670[0m
+[0;32mI (91848) UART_APP: Nhan duoc 120 bytes tu STM32: 0
+Accel X:-256, Y:24, Z:16628
+Accel X:-216, Y:8, Z:16944
+Accel X:-160, Y:-36, Z:16884
+Accel X:-116, Y:48, Z:16848
+A[0m
+[0;32mI (91978) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-252, Y:4, Z:16740
+Accel X:-176, Y:-44, Z:16848
+Accel X:-260, Y:-48, Z:16820
+Accel X:-284, Y:12, Z:17092
+Acce[0m
+[0;32mI (92118) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-272, Y:-56, Z:16844
+Accel X:-268, Y:-48, Z:16740
+Accel X:-104, Y:20, Z:16956
+Accel X:-232, Y:-132, Z:16776
+Acce[0m
+[0;32mI (92258) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-208, Y:36, Z:16944
+Accel X:-188, Y:-44, Z:16852
+Accel X:-352, Y:-80, Z:16892
+Accel X:-216, Y:-116, Z:16812
+Acce[0m
+[0;32mI (92398) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-288, Y:-44, Z:16772
+Accel X:-264, Y:-112, Z:16732
+Accel X:-160, Y:-80, Z:16780
+Accel X:-176, Y:-56, Z:16732
+Acc[0m
+[0;32mI (92528) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-184, Y:-4, Z:16760
+Accel X:-200, Y:8, Z:17244
+Accel X:-228, Y:-164, Z:16680
+Accel X:-200, Y:-24, Z:16720
+Accel[0m
+[0;32mI (92668) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-288, Y:-28, Z:16820
+Accel X:-260, Y:-36, Z:16816
+Accel X:-280, Y:-76, Z:17024
+Accel X:-264, Y:-76, Z:16740
+Accel[0m
+[0;32mI (92808) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-228, Y:-124, Z:16860
+Accel X:-196, Y:4, Z:16768
+Accel X:-240, Y:-68, Z:16844
+Accel X:-288, Y:-88, Z:16940
+Accel [0m
+[0;32mI (92948) UART_APP: Nhan duoc 120 bytes tu STM32: X:-204, Y:-92, Z:16736
+Accel X:-136, Y:-144, Z:16804
+Accel X:-284, Y:-56, Z:16684
+Accel X:-320, Y:-48, Z:16796
+Accel[0m
+[0;32mI (93078) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-244, Y:-152, Z:16872
+Accel X:-184, Y:-64, Z:16904
+Accel X:-208, Y:-160, Z:16712
+Accel X:-96, Y:-116, Z:16896
+Acc[0m
+[0;32mI (93218) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-172, Y:-144, Z:16540
+Accel X:-212, Y:-12, Z:16948
+Accel X:-224, Y:0, Z:16924
+Accel X:-204, Y:-44, Z:16700
+Acce[0m
+[0;32mI (93358) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-260, Y:44, Z:16900
+Accel X:-124, Y:-16, Z:16764
+Accel X:-160, Y:-32, Z:16832
+Accel X:-176, Y:-52, Z:16836
+Accel[0m
+[0;32mI (93498) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-208, Y:-120, Z:16744
+Accel X:-240, Y:56, Z:16816
+Accel X:-196, Y:-76, Z:16832
+Accel X:-264, Y:12, Z:16664
+Accel [0m
+[0;32mI (93628) UART_APP: Nhan duoc 120 bytes tu STM32: X:-296, Y:-76, Z:16796
+Accel X:-168, Y:-144, Z:16824
+Accel X:-200, Y:-116, Z:16672
+Accel X:-232, Y:-36, Z:16708
+Acce[0m
+[0;32mI (93768) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-288, Y:-148, Z:16828
+Accel X:-264, Y:52, Z:16844
+Accel X:-216, Y:-84, Z:16808
+Accel X:-152, Y:-108, Z:16764
+Acc[0m
+[0;32mI (93908) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-208, Y:-16, Z:16728
+Accel X:-256, Y:4, Z:16772
+Accel X:-144, Y:-20, Z:16824
+Accel X:-292, Y:-160, Z:16788
+Acce[0m
+[0;32mI (94048) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-100, Y:-48, Z:16544
+Accel X:-256, Y:-68, Z:16780
+Accel X:-236, Y:-52, Z:16744
+Accel X:-212, Y:68, Z:16736
+Accel[0m
+[0;32mI (94178) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-276, Y:-76, Z:16832
+Accel X:-264, Y:-64, Z:16892
+Accel X:-324, Y:-112, Z:16828
+Accel X:-244, Y:-144, Z:16752
+Acc[0m
+[0;32mI (94318) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-232, Y:4, Z:16872
+Accel X:-216, Y:-56, Z:16804
+Accel X:-280, Y:16, Z:16824
+Accel X:-292, Y:-152, Z:16596
+Accel[0m
+[0;32mI (94458) UART_APP: Nhan duoc 120 bytes tu STM32:  X:-88, Y:-76, Z:16844
+Accel X:-144, Y:-36, Z:16808
+Accel X:-252, Y:-44, Z:16824
+Accel X:-264, Y:-20, Z:17004
+Accel [0m
+[0;32mI (94588) UART_APP: Nhan duoc 120 bytes tu STM32: X:-184, Y:0, Z:16768
+Accel X:-276, Y:40, Z:16808
+Accel X:-132, Y:-164, Z:16564
+Accel X:-300, Y:-84, Z:16596
+Accel X:[0m
+[0;32mI (94728) UART_APP: Nhan duoc 120 bytes tu STM32: -300, Y:-116, Z:16956
+Accel X:-192, Y:-72, Z:16816
+Accel X:-264, Y:80, Z:16880
+Accel X:-196, Y:-92, Z:16572
+Accel X:[0m
+[0;32mI (94868) UART_APP: Nhan duoc 120 bytes tu STM32: -116, Y:44, Z:16876
+Accel X:-264, Y:-56, Z:16820
+Accel X:-272, Y:-52, Z:16848
+Accel X:-248, Y:-44, Z:16824
+Accel X:-[0m
+[0;32mI (95008) UART_APP: Nhan duoc 120 bytes tu STM32: 188, Y:-52, Z:16872
+Accel X:-240, Y:-144, Z:16540
+Accel X:-252, Y:52, Z:17028
+Accel X:-184, Y:-40, Z:16856
+Accel X:-[0m
+[0;32mI (95138) UART_APP: Nhan duoc 120 bytes tu STM32: 188, Y:12, Z:16700
+Accel X:-212, Y:12, Z:16820
+Accel X:-300, Y:32, Z:16724
+Accel X:-288, Y:-120, Z:16840
+Accel X:-16[0m
+[0;32mI (95278) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Y:-104, Z:16824
+Accel X:-128, Y:-92, Z:16808
+Accel X:-344, Y:-68, Z:16852
+Accel X:-152, Y:-76, Z:16912
+Accel X:-1[0m
+[0;32mI (95418) UART_APP: Nhan duoc 120 bytes tu STM32: 76, Y:-92, Z:16824
+Accel X:-152, Y:4, Z:16752
+Accel X:-280, Y:-164, Z:16836
+Accel X:-204, Y:-112, Z:16716
+Accel X:-2[0m
+[0;32mI (95548) UART_APP: Nhan duoc 120 bytes tu STM32: 72, Y:-32, Z:16868
+Accel X:-212, Y:-52, Z:16772
+Accel X:-196, Y:-16, Z:16788
+Accel X:-272, Y:-104, Z:16824
+Accel X:-[0m
+[0;32mI (95688) UART_APP: Nhan duoc 120 bytes tu STM32: 124, Y:-132, Z:16808
+Accel X:-200, Y:-104, Z:16732
+Accel X:-256, Y:-56, Z:16916
+Accel X:-220, Y:20, Z:16916
+Accel X:[0m
+[0;32mI (95828) UART_APP: Nhan duoc 120 bytes tu STM32: -244, Y:-84, Z:16796
+Accel X:-264, Y:-104, Z:16692
+Accel X:-216, Y:-4, Z:16780
+Accel X:-296, Y:-64, Z:16840
+Accel X:[0m
+[0;32mI (95968) UART_APP: Nhan duoc 120 bytes tu STM32: -132, Y:44, Z:16884
+Accel X:-140, Y:-76, Z:16848
+Accel X:-92, Y:-68, Z:16788
+Accel X:-360, Y:-72, Z:16768
+Accel X:-3[0m
+[0;32mI (96098) UART_APP: Nhan duoc 120 bytes tu STM32: 52, Y:-64, Z:16720
+Accel X:-76, Y:36, Z:16724
+Accel X:-328, Y:-44, Z:16768
+Accel X:-308, Y:-36, Z:16804
+Accel X:-96,[0m
+[0;32mI (96238) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:-16, Z:16680
+Accel X:-208, Y:-16, Z:16704
+Accel X:-128, Y:-104, Z:16900
+Accel X:-184, Y:-80, Z:16900
+Accel X:-156[0m
+[0;32mI (96378) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-116, Z:16668
+Accel X:-256, Y:-44, Z:16860
+Accel X:-212, Y:-8, Z:16932
+Accel X:-220, Y:-84, Z:16760
+Accel X:-176[0m
+[0;32mI (96518) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-72, Z:16896
+Accel X:-192, Y:-104, Z:16684
+Accel X:-244, Y:-172, Z:16428
+Accel X:-224, Y:44, Z:16640
+Accel X:-24[0m
+[0;32mI (96648) UART_APP: Nhan duoc 120 bytes tu STM32: 8, Y:-132, Z:16852
+Accel X:-208, Y:24, Z:16772
+Accel X:-156, Y:-84, Z:16864
+Accel X:-300, Y:-24, Z:16760
+Accel X:-26[0m
+[0;32mI (96788) UART_APP: Nhan duoc 120 bytes tu STM32: 4, Y:60, Z:16864
+Accel X:-324, Y:84, Z:16840
+Accel X:-328, Y:-24, Z:16756
+Accel X:-228, Y:-60, Z:16744
+Accel X:-232,[0m
+[0;32mI (96928) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:-60, Z:17008
+Accel X:-228, Y:-20, Z:16896
+Accel X:-68, Y:24, Z:16748
+Accel X:-360, Y:-140, Z:16824
+Accel X:-236, [0m
+[0;32mI (97068) UART_APP: Nhan duoc 120 bytes tu STM32: Y:28, Z:16704
+Accel X:-88, Y:-16, Z:16792
+Accel X:-160, Y:12, Z:16720
+Accel X:-96, Y:36, Z:16736
+Accel X:-176, Y:40,[0m
+[0;32mI (97198) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16792
+Accel X:-212, Y:-68, Z:16936
+Accel X:-204, Y:-100, Z:16704
+Accel X:-192, Y:12, Z:16788
+Accel X:-196, Y:16, [0m
+[0;32mI (97338) UART_APP: Nhan duoc 120 bytes tu STM32: Z:16652
+Accel X:-312, Y:-8, Z:16812
+Accel X:-284, Y:76, Z:16692
+Accel X:-144, Y:-60, Z:16840
+Accel X:-204, Y:-128, Z[0m
+[0;32mI (97478) UART_APP: Nhan duoc 120 bytes tu STM32: :16764
+Accel X:-280, Y:28, Z:16832
+Accel X:-328, Y:-100, Z:16848
+Accel X:-232, Y:-56, Z:16944
+Accel X:-256, Y:12, Z:[0m
+[0;32mI (97608) UART_APP: Nhan duoc 120 bytes tu STM32: 16876
+Accel X:-264, Y:-4, Z:16968
+Accel X:-252, Y:-60, Z:16880
+Accel X:-156, Y:-80, Z:16736
+Accel X:-236, Y:-100, Z:[0m
+[0;32mI (97748) UART_APP: Nhan duoc 120 bytes tu STM32: 17036
+Accel X:-172, Y:-12, Z:16812
+Accel X:-124, Y:-24, Z:16668
+Accel X:-184, Y:-64, Z:16828
+Accel X:-180, Y:32, Z:1[0m
+[0;32mI (97888) UART_APP: Nhan duoc 120 bytes tu STM32: 6708
+Accel X:-260, Y:-40, Z:16840
+Accel X:-264, Y:0, Z:16628
+Accel X:-256, Y:-44, Z:16820
+Accel X:-180, Y:-4, Z:1672[0m
+[0;32mI (98028) UART_APP: Nhan duoc 120 bytes tu STM32: 0
+Accel X:-276, Y:108, Z:16900
+Accel X:-136, Y:8, Z:16932
+Accel X:-248, Y:-72, Z:16712
+Accel X:-72, Y:-8, Z:16828
+A[0m
+[0;32mI (98158) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-296, Y:-124, Z:16776
+Accel X:-120, Y:-64, Z:16764
+Accel X:-316, Y:36, Z:16964
+Accel X:-136, Y:20, Z:16584
+Ac[0m
+[0;32mI (98298) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-72, Y:-72, Z:16764
+Accel X:-268, Y:-4, Z:16848
+Accel X:-180, Y:-84, Z:16900
+Accel X:-224, Y:-40, Z:16708
+Acce[0m
+[0;32mI (98438) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-300, Y:-76, Z:16956
+Accel X:-100, Y:-96, Z:16704
+Accel X:-232, Y:-152, Z:16992
+Accel X:-160, Y:32, Z:16800
+Acce[0m
+[0;32mI (98578) UART_APP: Nhan duoc 120 bytes tu STM32: l X:-176, Y:4, Z:16684
+Accel X:-136, Y:-68, Z:16812
+Accel X:-264, Y:-100, Z:16720
+Accel X:-256, Y:8, Z:16976
+Accel X[0m
+[0;32mI (98708) UART_APP: Nhan duoc 120 bytes tu STM32: :-168, Y:-136, Z:16792
+Accel X:-192, Y:88, Z:16748
+Accel X:-140, Y:-128, Z:16760
+Accel X:-236, Y:0, Z:16832
+Accel X:[0m
+[0;32mI (98848) UART_APP: Nhan duoc 120 bytes tu STM32: -244, Y:-100, Z:16748
+Accel X:-216, Y:56, Z:16852
+Accel X:-136, Y:0, Z:16864
+Accel X:-176, Y:-92, Z:16804
+Accel X:-2[0m
+[0;32mI (98988) UART_APP: Nhan duoc 120 bytes tu STM32: 00, Y:100, Z:16908
+Accel X:-212, Y:-132, Z:16724
+Accel X:44, Y:-40, Z:16884
+Accel X:-188, Y:-20, Z:16824
+Accel X:-21[0m
+[0;32mI (99128) UART_APP: Nhan duoc 120 bytes tu STM32: 6, Y:-28, Z:16732
+Accel X:-88, Y:-36, Z:16652
+Accel X:-228, Y:-112, Z:16684
+Accel X:-304, Y:-16, Z:16648
+Accel X:-14[0m
+[0;32mI (99258) UART_APP: Nhan duoc 120 bytes tu STM32: 8, Y:-32, Z:16836
+Accel X:-260, Y:-20, Z:16832
+Accel X:-112, Y:-116, Z:16748
+Accel X:-204, Y:-44, Z:16644
+Accel X:-1[0m
+[0;32mI (99398) UART_APP: Nhan duoc 120 bytes tu STM32: 60, Y:-36, Z:16840
+Accel X:-168, Y:8, Z:16948
+Accel X:-232, Y:-44, Z:16676
+Accel X:-288, Y:-16, Z:16876
+Accel X:-184[0m
+[0;32mI (99538) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-36, Z:16888
+Accel X:-300, Y:-100, Z:16792
+Accel X:-156, Y:0, Z:16892
+Accel X:-132, Y:84, Z:16884
+Accel X:-236, [0m
+[0;32mI (99678) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-8, Z:16748
+Accel X:-228, Y:4, Z:16748
+Accel X:-192, Y:-48, Z:16804
+Accel X:-136, Y:24, Z:16888
+Accel X:-192, Y:-2[0m
+[0;32mI (99808) UART_APP: Nhan duoc 120 bytes tu STM32: 0, Z:16784
+Accel X:-272, Y:-16, Z:16728
+Accel X:-264, Y:-80, Z:16640
+Accel X:-112, Y:-44, Z:16792
+Accel X:-256, Y:76[0m
+[0;32mI (99948) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:16928
+Accel X:-228, Y:-8, Z:16776
+Accel X:-200, Y:-36, Z:16796
+Accel X:-196, Y:8, Z:16708
+Accel X:-308, Y:-68, Z[0m
+[0;32mI (100088) UART_APP: Nhan duoc 120 bytes tu STM32: :16596
+Accel X:-104, Y:68, Z:16936
+Accel X:-176, Y:-92, Z:16988
+Accel X:-192, Y:-72, Z:16844
+Accel X:-224, Y:-56, Z:[0m
+[0;32mI (100228) UART_APP: Nhan duoc 120 bytes tu STM32: 16852
+Accel X:-196, Y:-28, Z:16512
+Accel X:-296, Y:-32, Z:16800
+Accel X:-248, Y:0, Z:16988
+Accel X:-256, Y:56, Z:167[0m
+[0;32mI (100358) UART_APP: Nhan duoc 120 bytes tu STM32: 32
+Accel X:-240, Y:20, Z:16868
+Accel X:-244, Y:-112, Z:17084
+Accel X:-204, Y:-88, Z:16708
+Accel X:-208, Y:-76, Z:168[0m
+[0;32mI (100498) UART_APP: Nhan duoc 120 bytes tu STM32: 08
+Accel X:-320, Y:-32, Z:16944
+Accel X:-160, Y:0, Z:16840
+Accel X:-204, Y:-44, Z:16852
+Accel X:-220, Y:32, Z:16892[0m
+[0;32mI (100638) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-248, Y:92, Z:16784
+Accel X:-284, Y:-32, Z:16872
+Accel X:-348, Y:-68, Z:16800
+Accel X:160, Y:88, Z:17056
+Ac[0m
+[0;32mI (100768) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-112, Y:-164, Z:16832
+Accel X:-304, Y:-72, Z:16940
+Accel X:-164, Y:0, Z:16740
+Accel X:-60, Y:-120, Z:16644
+Acc[0m
+[0;32mI (100908) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-192, Y:56, Z:16772
+Accel X:-484, Y:-164, Z:16980
+Accel X:-196, Y:-48, Z:16964
+Accel X:-140, Y:-128, Z:16748
+Ac[0m
+[0;32mI (101048) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-216, Y:-68, Z:16768
+Accel X:-256, Y:-28, Z:16796
+Accel X:-204, Y:-8, Z:16708
+Accel X:224, Y:28, Z:17012
+Accel[0m
+[0;32mI (101188) UART_APP: Nhan duoc 120 bytes tu STM32:  X:128, Y:408, Z:16520
+Accel X:-176, Y:-88, Z:16648
+Accel X:-212, Y:-48, Z:16724
+Accel X:-152, Y:8, Z:16800
+Accel X:[0m
+[0;32mI (101318) UART_APP: Nhan duoc 120 bytes tu STM32: -308, Y:-4, Z:16992
+Accel X:-156, Y:-36, Z:16956
+Accel X:-164, Y:4, Z:16960
+Accel X:232, Y:60, Z:16216
+Accel X:-12, [0m
+[0;32mI (101458) UART_APP: Nhan duoc 120 bytes tu STM32: Y:44, Z:17012
+Accel X:-28, Y:-32, Z:17536
+Accel X:564, Y:196, Z:17004
+Accel X:1040, Y:44, Z:16036
+Accel X:872, Y:52,[0m
+[0;32mI (101598) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16756
+Accel X:1380, Y:-104, Z:15944
+Accel X:1360, Y:68, Z:16340
+Accel X:992, Y:-72, Z:16492
+Accel X:296, Y:-32, Z[0m
+[0;32mI (101738) UART_APP: Nhan duoc 120 bytes tu STM32: :14964
+Accel X:-20556, Y:2336, Z:32767
+Accel X:108, Y:-44, Z:16676
+Accel X:-424, Y:-176, Z:16852
+Accel X:-184, Y:-12[0m
+[0;32mI (101868) UART_APP: Nhan duoc 120 bytes tu STM32: 4, Z:16744
+Accel X:-168, Y:16, Z:16864
+Accel X:-112, Y:-88, Z:16796
+Accel X:-152, Y:20, Z:16868
+Accel X:-216, Y:-36,[0m
+[0;32mI (102008) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16840
+Accel X:-264, Y:-92, Z:16816
+Accel X:-248, Y:-32, Z:16860
+Accel X:-244, Y:16, Z:16940
+Accel X:-416, Y:40, Z[0m
+[0;32mI (102148) UART_APP: Nhan duoc 120 bytes tu STM32: :16852
+Accel X:-140, Y:32, Z:16848
+Accel X:-704, Y:-676, Z:15708
+Accel X:588, Y:-232, Z:16512
+Accel X:-236, Y:-20, Z[0m
+[0;32mI (102288) UART_APP: Nhan duoc 120 bytes tu STM32: :16844
+Accel X:-308, Y:-28, Z:16808
+Accel X:-216, Y:-76, Z:16752
+Accel X:-268, Y:-88, Z:16852
+Accel X:-300, Y:-28, Z[0m
+[0;32mI (102418) UART_APP: Nhan duoc 120 bytes tu STM32: :16752
+Accel X:-208, Y:-124, Z:16904
+Accel X:-396, Y:-80, Z:16920
+Accel X:-312, Y:-36, Z:16996
+Accel X:-116, Y:8, Z:[0m
+[0;32mI (102558) UART_APP: Nhan duoc 120 bytes tu STM32: 16704
+Accel X:36, Y:-40, Z:16792
+Accel X:-292, Y:-68, Z:16936
+Accel X:-164, Y:48, Z:17088
+Accel X:-376, Y:-180, Z:16[0m
+[0;32mI (102698) UART_APP: Nhan duoc 120 bytes tu STM32: 872
+Accel X:56, Y:8, Z:17180
+Accel X:-388, Y:-240, Z:17044
+Accel X:232, Y:92, Z:18308
+Accel X:344, Y:92, Z:18324
+Ac[0m
+[0;32mI (102838) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:1528, Y:-32, Z:15880
+Accel X:2208, Y:4, Z:15920
+Accel X:2572, Y:96, Z:16468
+Accel X:2452, Y:112, Z:16516
+Accel[0m
+[0;32mI (102968) UART_APP: Nhan duoc 120 bytes tu STM32:  X:2264, Y:-144, Z:16976
+Accel X:2868, Y:44, Z:16580
+Accel X:2492, Y:0, Z:17248
+Accel X:2736, Y:12, Z:16572
+Accel X:[0m
+[0;32mI (103108) UART_APP: Nhan duoc 120 bytes tu STM32: 3204, Y:-40, Z:16644
+Accel X:3456, Y:-64, Z:16660
+Accel X:3660, Y:116, Z:16560
+Accel X:3824, Y:72, Z:16440
+Accel X:4[0m
+[0;32mI (103248) UART_APP: Nhan duoc 120 bytes tu STM32: 020, Y:716, Z:16664
+Accel X:4412, Y:20, Z:16508
+Accel X:4524, Y:-120, Z:15904
+Accel X:4636, Y:40, Z:16024
+Accel X:45[0m
+[0;32mI (103388) UART_APP: Nhan duoc 120 bytes tu STM32: 56, Y:32, Z:16540
+Accel X:4828, Y:-56, Z:15916
+Accel X:4748, Y:-112, Z:16636
+Accel X:4936, Y:-224, Z:15632
+Accel X:4[0m
+[0;32mI (103518) UART_APP: Nhan duoc 120 bytes tu STM32: 844, Y:0, Z:16520
+Accel X:4984, Y:-12, Z:15880
+Accel X:4956, Y:-24, Z:15892
+Accel X:4656, Y:-196, Z:16460
+Accel X:49[0m
+[0;32mI (103658) UART_APP: Nhan duoc 120 bytes tu STM32: 12, Y:-84, Z:15996
+Accel X:4992, Y:0, Z:16300
+Accel X:4932, Y:32, Z:16380
+Accel X:5040, Y:-96, Z:16012
+Accel X:4900,[0m
+[0;32mI (103798) UART_APP: Nhan duoc 120 bytes tu STM32:  Y:-100, Z:16324
+Accel X:5136, Y:-56, Z:16204
+Accel X:4884, Y:-116, Z:16524
+Accel X:5080, Y:-152, Z:16196
+Accel X:50[0m
+[0;32mI (103928) UART_APP: Nhan duoc 120 bytes tu STM32: 56, Y:-92, Z:16144
+Accel X:4916, Y:-68, Z:16664
+Accel X:5368, Y:-112, Z:16360
+Accel X:5404, Y:-136, Z:15848
+Accel X:[0m
+[0;32mI (104068) UART_APP: Nhan duoc 120 bytes tu STM32: 5552, Y:-100, Z:15824
+Accel X:5448, Y:-24, Z:16204
+Accel X:5656, Y:-120, Z:16076
+Accel X:6104, Y:-180, Z:16152
+Accel[0m
+[0;32mI (104208) UART_APP: Nhan duoc 120 bytes tu STM32:  X:6288, Y:-200, Z:15228
+Accel X:6344, Y:-120, Z:15264
+Accel X:6988, Y:-128, Z:16132
+Accel X:6164, Y:-140, Z:15908
+A[0m
+[0;32mI (104348) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:7044, Y:-132, Z:15696
+Accel X:7164, Y:-236, Z:15000
+Accel X:7152, Y:-220, Z:15916
+Accel X:7608, Y:-292, Z:1473[0m
+[0;32mI (104478) UART_APP: Nhan duoc 120 bytes tu STM32: 2
+Accel X:7432, Y:-148, Z:15540
+Accel X:8900, Y:1592, Z:17164
+Accel X:8040, Y:-156, Z:15300
+Accel X:8204, Y:-256, Z:[0m
+[0;32mI (104618) UART_APP: Nhan duoc 120 bytes tu STM32: 14348
+Accel X:8648, Y:-436, Z:13892
+Accel X:8548, Y:-216, Z:15484
+Accel X:8876, Y:-276, Z:14776
+Accel X:9248, Y:-244[0m
+[0;32mI (104758) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:14472
+Accel X:9612, Y:-412, Z:13996
+Accel X:9912, Y:-464, Z:13668
+Accel X:10128, Y:-456, Z:13020
+Accel X:10500, [0m
+[0;32mI (104898) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-280, Z:13208
+Accel X:11672, Y:-696, Z:11072
+Accel X:10076, Y:-608, Z:13312
+Accel X:9568, Y:-672, Z:13476
+Accel X:[0m
+[0;32mI (105028) UART_APP: Nhan duoc 120 bytes tu STM32: 10320, Y:-344, Z:13424
+Accel X:10008, Y:-508, Z:13992
+Accel X:10528, Y:-340, Z:13412
+Accel X:10804, Y:-408, Z:12932
+[0m
+[0;32mI (105168) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:10468, Y:-380, Z:13272
+Accel X:10380, Y:-376, Z:13924
+Accel X:10236, Y:-468, Z:13512
+Accel X:10520, Y:-376, Z[0m
+[0;32mI (105308) UART_APP: Nhan duoc 120 bytes tu STM32: :13516
+Accel X:10400, Y:-472, Z:13564
+Accel X:10328, Y:-456, Z:13536
+Accel X:10536, Y:-504, Z:13872
+Accel X:10604, Y[0m
+[0;32mI (105448) UART_APP: Nhan duoc 120 bytes tu STM32: :-696, Z:13260
+Accel X:10784, Y:-436, Z:12628
+Accel X:11308, Y:-316, Z:12280
+Accel X:11252, Y:-772, Z:12172
+Accel X:[0m
+[0;32mI (105578) UART_APP: Nhan duoc 120 bytes tu STM32: 11308, Y:-376, Z:13020
+Accel X:11488, Y:-500, Z:13068
+Accel X:11300, Y:-568, Z:11996
+Accel X:11336, Y:-580, Z:12500
+[0m
+[0;32mI (105718) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:11468, Y:-544, Z:12568
+Accel X:11524, Y:-464, Z:12412
+Accel X:11160, Y:-632, Z:12452
+Accel X:11252, Y:-572, Z[0m
+[0;32mI (105858) UART_APP: Nhan duoc 120 bytes tu STM32: :12724
+Accel X:11300, Y:-584, Z:12284
+Accel X:11436, Y:-428, Z:12444
+Accel X:11212, Y:-472, Z:12492
+Accel X:10884, Y[0m
+[0;32mI (105998) UART_APP: Nhan duoc 120 bytes tu STM32: :-528, Z:13020
+Accel X:11012, Y:-584, Z:12384
+Accel X:11436, Y:-348, Z:12180
+Accel X:10596, Y:-484, Z:13416
+Accel X:[0m
+[0;32mI (106138) UART_APP: Nhan duoc 120 bytes tu STM32: 10272, Y:-360, Z:14796
+Accel X:10292, Y:-424, Z:13524
+Accel X:10592, Y:-440, Z:13076
+Accel X:10364, Y:-564, Z:13036
+[0m
+[0;32mI (106268) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:10204, Y:-364, Z:14352
+Accel X:10196, Y:-524, Z:13376
+Accel X:10264, Y:-368, Z:13060
+Accel X:10036, Y:-384, Z[0m
+[0;32mI (106408) UART_APP: Nhan duoc 120 bytes tu STM32: :13448
+Accel X:9948, Y:-560, Z:13580
+Accel X:10048, Y:-260, Z:13184
+Accel X:9292, Y:-452, Z:14616
+Accel X:9236, Y:-5[0m
+[0;32mI (106548) UART_APP: Nhan duoc 120 bytes tu STM32: 16, Z:13952
+Accel X:8736, Y:-500, Z:14304
+Accel X:8680, Y:-436, Z:13960
+Accel X:8736, Y:-432, Z:14108
+Accel X:8180, [0m
+[0;32mI (106678) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-508, Z:14056
+Accel X:7456, Y:-340, Z:15188
+Accel X:7056, Y:-440, Z:15692
+Accel X:6220, Y:-384, Z:15848
+Accel X:59[0m
+[0;32mI (106818) UART_APP: Nhan duoc 120 bytes tu STM32: 16, Y:-640, Z:16200
+Accel X:4984, Y:-496, Z:15008
+Accel X:4976, Y:-136, Z:14396
+Accel X:3060, Y:-584, Z:17104
+Accel [0m
+[0;32mI (106958) UART_APP: Nhan duoc 120 bytes tu STM32: X:2308, Y:-408, Z:18052
+Accel X:2684, Y:-548, Z:17656
+Accel X:604, Y:-900, Z:18536
+Accel X:908, Y:-984, Z:15596
+Acce[0m
+[0;32mI (107098) UART_APP: Nhan duoc 120 bytes tu STM32: l X:140, Y:-1008, Z:15680
+Accel X:-1328, Y:-784, Z:23760
+Accel X:-120, Y:-900, Z:16172
+Accel X:-604, Y:-1348, Z:16588[0m
+[0;32mI (107228) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:352, Y:-1064, Z:16660
+Accel X:-1072, Y:-1092, Z:17236
+Accel X:-496, Y:-1184, Z:16884
+Accel X:-1672, Y:-932,[0m
+[0;32mI (107368) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:16960
+Accel X:-1904, Y:-1212, Z:16548
+Accel X:-1424, Y:-1372, Z:16892
+Accel X:-2364, Y:-1044, Z:16584
+Accel X:-28[0m
+[0;32mI (107508) UART_APP: Nhan duoc 120 bytes tu STM32: 28, Y:-1196, Z:16488
+Accel X:-3112, Y:-1200, Z:16420
+Accel X:-3340, Y:-1060, Z:16496
+Accel X:-3388, Y:-1172, Z:16392[0m
+[0;32mI (107648) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-4108, Y:-1048, Z:16160
+Accel X:-3604, Y:-1040, Z:16140
+Accel X:-4252, Y:-1200, Z:15996
+Accel X:-4196, Y:-10[0m
+[0;32mI (107778) UART_APP: Nhan duoc 120 bytes tu STM32: 68, Z:16032
+Accel X:-4212, Y:-1260, Z:15788
+Accel X:-4872, Y:-1008, Z:15988
+Accel X:-5076, Y:-1100, Z:15876
+Accel X:[0m
+[0;32mI (107918) UART_APP: Nhan duoc 120 bytes tu STM32: -5032, Y:-1136, Z:15956
+Accel X:-5220, Y:-1068, Z:15788
+Accel X:-5088, Y:-1112, Z:15768
+Accel X:-5352, Y:-1096, Z:157[0m
+[0;32mI (108058) UART_APP: Nhan duoc 120 bytes tu STM32: 12
+Accel X:-5648, Y:-820, Z:16404
+Accel X:-5724, Y:-888, Z:15672
+Accel X:-5888, Y:-1172, Z:15272
+Accel X:-6180, Y:-1[0m
+[0;32mI (108198) UART_APP: Nhan duoc 120 bytes tu STM32: 176, Z:15008
+Accel X:-6268, Y:-984, Z:15484
+Accel X:-6476, Y:-936, Z:15668
+Accel X:-6668, Y:-1088, Z:15048
+Accel X:-[0m
+[0;32mI (108328) UART_APP: Nhan duoc 120 bytes tu STM32: 7064, Y:-1152, Z:15068
+Accel X:-6668, Y:-1684, Z:15720
+Accel X:-7280, Y:-1180, Z:14460
+Accel X:-7868, Y:-1248, Z:1209[0m
+[0;32mI (108468) UART_APP: Nhan duoc 120 bytes tu STM32: 6
+Accel X:-9092, Y:-384, Z:14356
+Accel X:-8840, Y:-884, Z:13924
+Accel X:-9276, Y:-1088, Z:13512
+Accel X:-9260, Y:-15[0m
+[0;32mI (108608) UART_APP: Nhan duoc 120 bytes tu STM32: 80, Z:13448
+Accel X:-9732, Y:-868, Z:13208
+Accel X:-9348, Y:-1224, Z:13160
+Accel X:-9536, Y:-1212, Z:13168
+Accel X:-[0m
+[0;32mI (108738) UART_APP: Nhan duoc 120 bytes tu STM32: 9824, Y:-868, Z:12932
+Accel X:-9904, Y:-1228, Z:12812
+Accel X:-9952, Y:-1068, Z:12864
+Accel X:-10032, Y:-1116, Z:1257[0m
+[0;32mI (108878) UART_APP: Nhan duoc 120 bytes tu STM32: 6
+Accel X:-10168, Y:-1004, Z:12648
+Accel X:-10348, Y:-912, Z:12596
+Accel X:-10544, Y:-1224, Z:12312
+Accel X:-10908, [0m
+[0;32mI (109018) UART_APP: Nhan duoc 120 bytes tu STM32: Y:-1120, Z:12792
+Accel X:-9916, Y:-1324, Z:11148
+Accel X:-11024, Y:-544, Z:12612
+Accel X:-10908, Y:-984, Z:11976
+Acc[0m
+[0;32mI (109158) UART_APP: Nhan duoc 120 bytes tu STM32: el X:-10784, Y:-996, Z:12064
+Accel X:-10816, Y:-960, Z:12196
+Accel X:-10816, Y:-808, Z:12272
+Accel X:-10168, Y:-796, [0m
+[0;32mI (109288) UART_APP: Nhan duoc 120 bytes tu STM32: Z:12452
+Accel X:-9748, Y:-1196, Z:12892
+Accel X:-9748, Y:-1292, Z:13428
+Accel X:-9832, Y:-488, Z:14080
+Accel X:-8840[0m
+[0;32mI (109428) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-624, Z:13956
+Accel X:-7892, Y:-1552, Z:14792
+Accel X:-7220, Y:-1152, Z:15128
+Accel X:-6324, Y:-1376, Z:14724
+Ac[0m
+[0;32mI (109568) UART_APP: Nhan duoc 120 bytes tu STM32: cel X:-6048, Y:-836, Z:15368
+Accel X:-5120, Y:-1192, Z:15840
+Accel X:-5120, Y:-1056, Z:16424
+Accel X:-3996, Y:-1232, [0m
+[0;32mI (109708) UART_APP: Nhan duoc 120 bytes tu STM32: Z:15992
+Accel X:-2844, Y:-1280, Z:16696
+Accel X:-1704, Y:-1480, Z:16164
+Accel X:-1468, Y:-1180, Z:16644
+Accel X:1960[0m
+[0;32mI (109838) UART_APP: Nhan duoc 120 bytes tu STM32: , Y:-3596, Z:13220
+Accel X:-548, Y:-1440, Z:17612
+Accel X:-288, Y:-1360, Z:16768
+Accel X:-64, Y:-1180, Z:17592
+Accel[0m
+[0;32mI (109978) UART_APP: Nhan duoc 120 bytes tu STM32:  X:244, Y:-1248, Z:17212
+Accel X:932, Y:-1364, Z:15980
+Accel X:1388, Y:-1116, Z:16480
+Accel X:2224, Y:-1116, Z:16584[0m
+[0;32mI (110118) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:2152, Y:-896, Z:16432
+Accel X:3572, Y:-724, Z:17104
+Accel X:3972, Y:-724, Z:17144
+Accel X:4060, Y:-888, Z:16[0m
+[0;32mI (110258) UART_APP: Nhan duoc 120 bytes tu STM32: 180
+Accel X:5132, Y:-524, Z:15848
+Accel X:5040, Y:-448, Z:16776
+Accel X:5860, Y:-300, Z:16140
+Accel X:6560, Y:-752, [0m
+[0;32mI (110388) UART_APP: Nhan duoc 120 bytes tu STM32: Z:15800
+Accel X:7436, Y:-68, Z:13900
+Accel X:7840, Y:-428, Z:14564
+Accel X:8188, Y:-440, Z:14816
+Accel X:8152, Y:-42[0m
+[0;32mI (110528) UART_APP: Nhan duoc 120 bytes tu STM32: 4, Z:15436
+Accel X:8652, Y:-380, Z:13956
+Accel X:8720, Y:-452, Z:15036
+Accel X:9304, Y:-528, Z:14244
+Accel X:9420, Y[0m
+[0;32mI (110668) UART_APP: Nhan duoc 120 bytes tu STM32: :-588, Z:13872
+Accel X:9560, Y:-600, Z:13696
+Accel X:9632, Y:-424, Z:14100
+Accel X:10772, Y:-544, Z:14024
+Accel X:10[0m
+[0;32mI (110808) UART_APP: Nhan duoc 120 bytes tu STM32: 172, Y:-80, Z:14020
+Accel X:9708, Y:-864, Z:13512
+Accel X:10068, Y:-480, Z:13076
+Accel X:10812, Y:-428, Z:13192
+Acce[0m
+[0;32mI (110938) UART_APP: Nhan duoc 120 bytes tu STM32: l X:10588, Y:-316, Z:12208
+Accel X:9936, Y:-536, Z:13132
+Accel X:9264, Y:-244, Z:16068
+Accel X:8344, Y:-644, Z:15016[0m
+[0;32mI (111078) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:7868, Y:-816, Z:14380
+Accel X:7964, Y:-644, Z:14256
+Accel X:6556, Y:-420, Z:14392
+Accel X:5072, Y:-928, Z:14[0m
+[0;32mI (111218) UART_APP: Nhan duoc 120 bytes tu STM32: 728
+Accel X:4336, Y:-444, Z:16532
+Accel X:1772, Y:-948, Z:16964
+Accel X:2124, Y:-1792, Z:18000
+Accel X:608, Y:-1252,[0m
+[0;32mI (111348) UART_APP: Nhan duoc 120 bytes tu STM32:  Z:17748
+Accel X:664, Y:-1044, Z:15320
+Accel X:-664, Y:-436, Z:20428
+Accel X:-312, Y:-1184, Z:16184
+Accel X:-1172, Y[0m
+[0;32mI (111488) UART_APP: Nhan duoc 120 bytes tu STM32: :-1268, Z:15736
+Accel X:-2268, Y:-1092, Z:16220
+Accel X:-3416, Y:-896, Z:16864
+Accel X:-3108, Y:-892, Z:16632
+Accel [0m
+[0;32mI (111628) UART_APP: Nhan duoc 120 bytes tu STM32: X:-4080, Y:-752, Z:16028
+Accel X:-4624, Y:-948, Z:16452
+Accel X:-4580, Y:-680, Z:15788
+Accel X:-6016, Y:-816, Z:14956[0m
+[0;32mI (111768) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-6748, Y:-1152, Z:14216
+Accel X:-7308, Y:-1464, Z:15052
+Accel X:-7152, Y:-1424, Z:14392
+Accel X:-8912, Y:-2[0m
+[0;32mI (111898) UART_APP: Nhan duoc 120 bytes tu STM32: 72, Z:14028
+Accel X:-10312, Y:-1172, Z:15564
+Accel X:-9396, Y:-364, Z:12864
+Accel X:-9848, Y:-848, Z:13120
+Accel X:-[0m
+[0;32mI (112038) UART_APP: Nhan duoc 120 bytes tu STM32: 10236, Y:-744, Z:13072
+Accel X:-10160, Y:-876, Z:12708
+Accel X:-10048, Y:-856, Z:12948
+Accel X:-9824, Y:-648, Z:13240[0m
+[0;32mI (112178) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-9772, Y:-756, Z:13472
+Accel X:-8776, Y:-424, Z:14124
+Accel X:-8272, Y:-412, Z:15228
+Accel X:-6396, Y:-2232[0m
+[0;32mI (112318) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:13280
+Accel X:-5308, Y:-1388, Z:16300
+Accel X:-2844, Y:-1644, Z:15524
+Accel X:-2112, Y:-1268, Z:18036
+Accel X:14[0m
+[0;32mI (112448) UART_APP: Nhan duoc 120 bytes tu STM32: 4, Y:-2140, Z:12792
+Accel X:-584, Y:-2148, Z:15812
+Accel X:-1108, Y:-1528, Z:16152
+Accel X:-4276, Y:-1160, Z:15908
+A[0m
+[0;32mI (112588) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-5972, Y:-900, Z:19456
+Accel X:-7152, Y:-588, Z:16512
+Accel X:-6760, Y:-392, Z:19188
+Accel X:-3944, Y:-1304, Z[0m
+[0;32mI (112728) UART_APP: Nhan duoc 120 bytes tu STM32: :16960
+Accel X:1732, Y:-144, Z:10524
+Accel X:-1128, Y:-1532, Z:15028
+Accel X:1392, Y:-1712, Z:14520
+Accel X:-4412, Y[0m
+[0;32mI (112858) UART_APP: Nhan duoc 120 bytes tu STM32: :-1596, Z:15152
+Accel X:-5108, Y:-972, Z:17872
+Accel X:-7696, Y:-628, Z:16772
+Accel X:-7812, Y:-144, Z:17760
+Accel X[0m
+[0;32mI (112998) UART_APP: Nhan duoc 120 bytes tu STM32: :-5528, Y:-516, Z:18676
+Accel X:-2316, Y:-2140, Z:14056
+Accel X:-256, Y:-1848, Z:13920
+Accel X:-2472, Y:-1632, Z:1674[0m
+[0;32mI (113138) UART_APP: Nhan duoc 120 bytes tu STM32: 8
+Accel X:-5236, Y:-988, Z:16416
+Accel X:-5520, Y:-1132, Z:17796
+Accel X:-6820, Y:-436, Z:17836
+Accel X:-5436, Y:-75[0m
+[0;32mI (113278) UART_APP: Nhan duoc 120 bytes tu STM32: 2, Z:17908
+Accel X:-1968, Y:-2244, Z:12220
+Accel X:-404, Y:-2304, Z:13512
+Accel X:-3584, Y:-1232, Z:17472
+Accel X:-5[0m
+[0;32mI (113408) UART_APP: Nhan duoc 120 bytes tu STM32: 432, Y:-1116, Z:17016
+Accel X:-5360, Y:-776, Z:17208
+Accel X:-4952, Y:-1064, Z:18064
+Accel X:-2472, Y:-1852, Z:12868[0m
+[0;32mI (113548) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-1768, Y:-2180, Z:13200
+Accel X:-2688, Y:-1328, Z:16976
+Accel X:-5524, Y:-432, Z:17748
+Accel X:-4952, Y:-264[0m
+[0;32mI (113688) UART_APP: Nhan duoc 120 bytes tu STM32: , Z:17044
+Accel X:-4696, Y:-1556, Z:16636
+Accel X:-2904, Y:-1352, Z:16072
+Accel X:-2424, Y:-1440, Z:15468
+Accel X:-2[0m
+[0;32mI (113818) UART_APP: Nhan duoc 120 bytes tu STM32: 008, Y:-1176, Z:15816
+Accel X:-1880, Y:-980, Z:16776
+Accel X:-2604, Y:-540, Z:19716
+Accel X:-2844, Y:-1524, Z:15620
+[0m
+[0;32mI (113958) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:5024, Y:-1260, Z:-1672
+Accel X:2848, Y:-540, Z:-332
+Accel X:-412, Y:-112, Z:16308
+Accel X:-288, Y:-132, Z:166[0m
+[0;32mI (114098) UART_APP: Nhan duoc 120 bytes tu STM32: 80
+Accel X:-124, Y:28, Z:16792
+Accel X:-200, Y:-16, Z:16892
+Accel X:-196, Y:24, Z:16868
+Accel X:-320, Y:-72, Z:16824[0m
+[0;32mI (114238) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-244, Y:-44, Z:16876
+Accel X:-176, Y:48, Z:16828
+Accel X:-176, Y:-52, Z:16664
+Accel X:-172, Y:-32, Z:16848[0m
+[0;32mI (114368) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-292, Y:-36, Z:16800
+Accel X:-112, Y:-12, Z:16940
+Accel X:-196, Y:-64, Z:16728
+Accel X:-172, Y:-120, Z:16824[0m
+[0;32mI (114508) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-232, Y:-104, Z:16768
+Accel X:-136, Y:-144, Z:16788
+Accel X:-296, Y:-36, Z:16780
+Accel X:-164, Y:-72, Z:167[0m
+[0;32mI (114648) UART_APP: Nhan duoc 120 bytes tu STM32: 00
+Accel X:-144, Y:56, Z:16844
+Accel X:-160, Y:-56, Z:16824
+Accel X:-188, Y:40, Z:16716
+Accel X:-400, Y:-148, Z:1680[0m
+[0;32mI (114788) UART_APP: Nhan duoc 120 bytes tu STM32: 8
+Accel X:-300, Y:0, Z:16808
+Accel X:-172, Y:-84, Z:16948
+Accel X:-284, Y:-136, Z:17148
+Accel X:-184, Y:-80, Z:16736[0m
+[0;32mI (114918) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-128, Y:-84, Z:16792
+Accel X:-240, Y:-24, Z:16848
+Accel X:-196, Y:-32, Z:16684
+Accel X:-240, Y:-32, Z:16932[0m
+[0;32mI (115058) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-276, Y:-20, Z:16916
+Accel X:-292, Y:-44, Z:16808
+Accel X:-220, Y:24, Z:16900
+Accel X:-344, Y:-64, Z:16848[0m
+[0;32mI (115198) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-400, Y:40, Z:16908
+Accel X:-328, Y:-120, Z:16916
+Accel X:-188, Y:-8, Z:16848
+Accel X:-192, Y:-56, Z:16756
+[0m
+[0;32mI (115338) UART_APP: Nhan duoc 120 bytes tu STM32: Accel X:-216, Y:-40, Z:16864
+Accel X:-232, Y:-52, Z:16772
+Accel X:-292, Y:-16, Z:16804
+Accel X:-192, Y:88, Z:16764
+A[0m
+[0;32mI (115468) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-148, Y:-52, Z:16712
+Accel X:-380, Y:-52, Z:16872
+Accel X:-296, Y:-196, Z:16740
+Accel X:-224, Y:60, Z:16836
+A[0m
+[0;32mI (115608) UART_APP: Nhan duoc 120 bytes tu STM32: ccel X:-204, Y:-128, Z:16840
+Accel X:-220, Y:-104, Z:16692
+Accel X:-188, Y:-120, Z:16644
+Accel X:-212, Y:-52, Z:16796[0m
+[0;32mI (115748) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-296, Y:40, Z:16876
+Accel X:-232, Y:-92, Z:16916
+Accel X:-248, Y:-76, Z:16856
+Accel X:-236, Y:-44, Z:16820[0m
+[0;32mI (115878) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-256, Y:-112, Z:16972
+Accel X:-304, Y:-56, Z:16956
+Accel X:-252, Y:-36, Z:16820
+Accel X:-256, Y:16, Z:16900[0m
+[0;32mI (116018) UART_APP: Nhan duoc 120 bytes tu STM32: 
+Accel X:-276, Y:-144, Z:16820
+Accel X:-236, Y:-68, Z:16800
+Accel X:-152, Y:-28, Z:16904
+Accel X:-240, Y:-16, Z:16724[0m

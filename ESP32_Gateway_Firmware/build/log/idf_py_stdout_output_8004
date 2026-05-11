@@ -1,0 +1,1102 @@
+[0;32mI (298) esp_image: segment 4: paddr=0010a7f0 vaddr=4038a2ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40384cb0
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1820
+load:0x403cc710,len:0xbd0
+load:0x403ce710,len:0x2f4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.6-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 10 2026 23:14:25[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (70) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (85) boot:  3 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (93) boot:  4 ota_0            OTA app          00 10 00120000 00100000[0m
+[0;32mI (100) boot:  5 ota_1            OTA app          00 11 00220000 00100000[0m
+[0;32mI (108) boot:  6 spiffs           Unknown data     01 82 00320000 00080000[0m
+[0;32mI (115) boot: End of partition table[0m
+[0;32mI (120) boot: Defaulting to factory image[0m
+[0;32mI (124) esp_image: segment 0: paddr=00020020 vaddr=3c0c0020 size=230e8h (143592) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=00043110 vaddr=3fc93e00 size=02c98h ( 11416) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00045db0 vaddr=40380000 size=0a268h ( 41576) load[0m
+[0;32mI (169) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=ba7c8h (763848) map[0m
+[0;32mI (289) esp_image: segment 4: paddr=0010a7f0 vaddr=4038a268 size=09b60h ( 39776) load[0m
+[0;32mI (303) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (303) boot: Disabling RNG early entropy source...[0m
+[0;32mI (314) cpu_start: Unicore app[0m
+[0;32mI (323) cpu_start: Pro cpu start user code[0m
+[0;32mI (323) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (323) cpu_start: Application information:[0m
+[0;32mI (326) cpu_start: Project name:     NCKH2026_RailRobot[0m
+[0;32mI (332) cpu_start: App version:      31923fc-dirty[0m
+[0;32mI (337) cpu_start: Compile time:     May  2 2026 22:56:10[0m
+[0;32mI (344) cpu_start: ELF file SHA256:  5e82e85c5...[0m
+[0;32mI (349) cpu_start: ESP-IDF:          v5.2.6-dirty[0m
+[0;32mI (354) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (359) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (364) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (369) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (376) heap_init: At 3FC9B1E0 len 00024E20 (147 KiB): RAM[0m
+[0;32mI (382) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (389) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (396) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (403) spi_flash: detected chip: generic[0m
+[0;32mI (407) spi_flash: flash io: dio[0m
+[0;32mI (411) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (418) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (425) main_task: Started on CPU0[0m
+[0;32mI (425) main_task: Calling app_main()[0m
+[0;32mI (425) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (435) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (445) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (465) MAIN_APP: NVS initialized successfully.[0m
+[0;32mI (465) pp: pp rom version: 9387209[0m
+[0;32mI (465) net80211: net80211 rom version: 9387209[0m
+[0;32mI (485) wifi:wifi driver task: 3fca3fd8, prio:23, stack:6656, core=0[0m
+[0;32mI (485) wifi:wifi firmware version: e851349[0m
+[0;32mI (485) wifi:wifi certification version: v7.0[0m
+[0;32mI (485) wifi:config NVS flash: enabled[0m
+[0;32mI (485) wifi:config nano formating: disabled[0m
+[0;32mI (495) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (495) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (505) wifi:Init management short buffer num: 32[0m
+[0;32mI (505) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (505) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (515) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (515) wifi:Init static rx buffer num: 10[0m
+[0;32mI (525) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (525) wifi_init: rx ba win: 6[0m
+[0;32mI (525) wifi_init: tcpip mbox: 32[0m
+[0;32mI (535) wifi_init: udp mbox: 6[0m
+[0;32mI (535) wifi_init: tcp mbox: 6[0m
+[0;32mI (545) wifi_init: tcp tx win: 5760[0m
+[0;32mI (545) wifi_init: tcp rx win: 5760[0m
+[0;32mI (545) wifi_init: tcp mss: 1440[0m
+[0;32mI (555) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (555) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (565) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (605) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (645) wifi:mode : sta (10:00:3b:cc:55:10)[0m
+[0;32mI (645) wifi:enable tsf[0m
+[0;32mI (645) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (645) WIFI_MGR: Connecting to WiFi SSID: iPhone Manh[0m
+[0;32mI (655) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (655) wifi:state: init -> auth (b0)[0m
+[0;32mI (675) wifi:state: auth -> assoc (0)[0m
+[0;32mI (685) wifi:state: assoc -> run (10)[0m
+[0;32mI (725) wifi:connected with iPhone Manh, aid = 1, channel 6, BW20, bssid = 1e:72:e7:b6:35:b5[0m
+[0;32mI (725) wifi:security: WPA2-PSK, phy: bg, rssi: -64[0m
+[0;32mI (735) wifi:pm start, type: 0[0m
+
+[0;32mI (735) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (745) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (785) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1645) WIFI_MGR: Waiting for WiFi... (1/5)[0m
+[0;32mI (1755) esp_netif_handlers: sta ip: 172.20.10.7, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2645) WIFI_MGR: Waiting for WiFi... (2/5)[0m
+[0;32mI (2645) WIFI_MGR: Got IP: 172.20.10.7[0m
+[0;32mI (2645) MAIN_APP: WiFi initialized successfully.[0m
+[0;32mI (2745) OTA_SERVER: OTA Server started at port 81[0m
+[0;32mI (2745) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (2745) OTA_SERVER: 🚀 OTA SERVER READY![0m
+[0;32mI (2745) OTA_SERVER: 👉 Click to open: http://172.20.10.7:81/ota[0m
+[0;32mI (2755) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (2765) MAIN_APP: OTA Server started successfully.[0m
+[0;32mI (2775) uart: queue free spaces: 20[0m
+[0;32mI (2775) UART_APP: Da khoi tao UART1 LoRa o toc do 9600[0m
+[0;32mI (3235) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-19.62 Ro9.32 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (4895) MQTT_APP: Da ket noi thanh cong den Broker![0m
+[0;32mI (4895) MQTT_APP: Da subscribe vao topic: manh_vip/robot/command[0m
+[0;32mI (4895) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-19.62 Ro9.32 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (4955) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-19.62 Ro9.32 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (4955) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-19.62 Ro9.32 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (5215) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-19.62 Ro9.32 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (5215) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-19.62 Ro9.32 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (6205) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-19.62 Ro9.32 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (6205) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-19.62 Ro9.32 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (19735) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-19.62 Ro9.32 V11.07 PI:NON![0m
+[0;32mI (19735) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-19.62 Ro9.32 V11.07 PI:NON!], msg_id=0[0m
+[0;33mW (19735) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (21145) UART_APP: [CANH BAO] Nhieu song/Sai Token: ![0m
+[0;33mW (21145) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (22475) UART_APP: [CANH BAO] Nhieu song/Sai Token: ![0m
+[0;33mW (22475) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (22845) UART_APP: [CANH BAO] Nhieu song/Sai Token: >> TIM THAY THIET BI TAI DIA CHI: 0x68 (8-bit: 0xD0)![0m
+[0;33mW (25105) UART_APP: [CANH BAO] Nhieu song/Sai Token: => To![0m
+[0;33mW (25115) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (25475) UART_APP: [CANH BAO] Nhieu song/Sai Token: >> TIM THAY THIET BI TAI DIA CHI: 0x68 (8-bit: 0xD0)![0m
+[0;33mW (26515) UART_APP: [CANH BAO] Nhieu song/Sai Token: => To![0m
+[0;33mW (26515) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (27365) UART_APP: [CANH BAO] Nhieu song/Sai Token: ![0m
+[0;33mW (27365) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (27735) UART_APP: [CANH BAO] Nhieu song/Sai Token: >> TIM THAY THIET BI TAI DIA CHI: 0x68 (8-bit: 0xD0)![0m
+[0;33mW (28035) UART_APP: [CANH BAO] Nhieu song/Sai Token: => Tong cong tim thay: 1 thiet bi.![0m
+[0;33mW (28035) UART_APP: [CANH BAO] Nhieu song/Sai Token: ------------------------![0m
+[0;33mW (29415) UART_APP: [CANH BAO] Nhieu song/Sai Token: ![0m
+[0;33mW (29415) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (29775) UART_APP: [CANH BAO] Nhieu song/Sai Token: >> TIM THAY THIET BI TAI DIA CHI: 0x68 (8-bit: 0xD0)![0m
+[0;33mW (34575) UART_APP: [CANH BAO] Nhieu song/Sai Token: => To![0m
+[0;33mW (34575) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (34945) UART_APP: [CANH BAO] Nhieu song/Sai Token: >> TIM THAY THIET BI TAI DIA CHI: 0x68 (8-bit: 0xD0)![0m
+[0;33mW (35245) UART_APP: [CANH BAO] Nhieu song/Sai Token: => Tong cong tim thay: 1 thiet bi.![0m
+[0;33mW (35245) UART_APP: [CANH BAO] Nhieu song/Sai Token: ------------------------![0m
+[0;33mW (36915) UART_APP: [CANH BAO] Nhieu song/Sai Token: Checking MPU6050...![0m
+[0;33mW (36915) UART_APP: [CANH BAO] Nhieu song/Sai Token: MPU6050 who_am_i = 0x68...OK![0m
+[0;33mW (37475) UART_APP: [CANH BAO] Nhieu song/Sai Token: LSB_Sensitivity_GYRO: 131.000000, LSB_Sensitivity_ACC: 16384.000000![0m
+[0;33mW (37705) UART_APP: [CANH BAO] Nhieu song/Sai Token: MPU6050 setting is finished![0m
+[0;33mW (37955) UART_APP: [CANH BAO] Nhieu song/Sai Token: Sensor LEFT address changed to 0x56![0m
+[0;33mW (38155) UART_APP: [CANH BAO] Nhieu song/Sai Token: Sensor RIGHT booted at 0x52![0m
+[0;33mW (38345) UART_APP: [CANH BAO] Nhieu song/Sai Token: San sang doc Encoder...![0m
+[0;32mI (39155) UART_APP: [HOP LE] Du lieu tu xe:  L224 R954 E0.0,0.0 P-26.97 Ro3.43 V10.63 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (39155) MQTT_APP: Da Publish Data [ L224 R954 E0.0,0.0 P-26.97 Ro3.43 V10.63 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (40165) UART_APP: [HOP LE] Du lieu tu xe:  L1842 R1001 E0.0,0.0 P-28.34 Ro4.91 V10.43 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (40165) MQTT_APP: Da Publish Data [ L1842 R1001 E0.0,0.0 P-28.34 Ro4.91 V10.43 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (41135) UART_APP: [HOP LE] Du lieu tu xe:  L222 R1048 E0.0,0.0 P-29.05 Ro5.57 V10.44 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (41135) MQTT_APP: Da Publish Data [ L222 R1048 E0.0,0.0 P-29.05 Ro5.57 V10.44 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (42125) UART_APP: [HOP LE] Du lieu tu xe:  L133 R1046 E0.0,0.0 P-26.88 Ro4.29 V10.44 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (42125) MQTT_APP: Da Publish Data [ L133 R1046 E0.0,0.0 P-26.88 Ro4.29 V10.44 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (43115) UART_APP: [HOP LE] Du lieu tu xe:  L364 R1052 E0.0,0.0 P-26.09 Ro2.95 V10.49 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (43115) MQTT_APP: Da Publish Data [ L364 R1052 E0.0,0.0 P-26.09 Ro2.95 V10.49 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (44105) UART_APP: [HOP LE] Du lieu tu xe:  L504 R1057 E0.0,0.0 P-25.63 Ro2.05 V10.43 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (44105) MQTT_APP: Da Publish Data [ L504 R1057 E0.0,0.0 P-25.63 Ro2.05 V10.43 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (45115) UART_APP: [HOP LE] Du lieu tu xe:  L1618 R1062 E0.0,0.0 P-25.44 Ro1.49 V10.44 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (45115) MQTT_APP: Da Publish Data [ L1618 R1062 E0.0,0.0 P-25.44 Ro1.49 V10.44 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (46085) UART_APP: [HOP LE] Du lieu tu xe:  L1670 R65 E0.0,0.0 P-25.30 Ro1.14 V10.45 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (46085) MQTT_APP: Da Publish Data [ L1670 R65 E0.0,0.0 P-25.30 Ro1.14 V10.45 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (47075) UART_APP: [HOP LE] Du lieu tu xe:  L751 R1066 E0.0,0.0 P-25.27 Ro0.89 V10.58 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (47075) MQTT_APP: Da Publish Data [ L751 R1066 E0.0,0.0 P-25.27 Ro0.89 V10.58 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (48065) UART_APP: [HOP LE] Du lieu tu xe:  L1508 R939 E0.0,0.0 P-25.16 Ro0.77 V10.43 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (48065) MQTT_APP: Da Publish Data [ L1508 R939 E0.0,0.0 P-25.16 Ro0.77 V10.43 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (49055) UART_APP: [HOP LE] Du lieu tu xe:  L1661 R923 E0.0,0.0 P-25.15 Ro0.70 V10.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (49055) MQTT_APP: Da Publish Data [ L1661 R923 E0.0,0.0 P-25.15 Ro0.70 V10.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;33mW (49275) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (49475) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (49995) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L1663 R1033 E0.0,0.0 P-25.14 Ro0.63 V11.35 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;33mW (50265) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (50465) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (50725) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (50925) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (51435) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L1662 R9999 E0.0,0.0 P-25.15 Ro0.61 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;33mW (51695) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (51895) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (52155) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (52355) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (52865) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L1655 R9999 E0.0,0.0 P-25.15 Ro0.59 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;33mW (53135) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (53335) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (53585) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (53785) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (54305) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L1660 R9999 E0.0,0.0 P-25.13 Ro0.58 V11.19 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;33mW (54565) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (54915) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right crashed![0m
+[0;33mW (55295) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L1656 R9999 E0.0,0.0 P-25.18 Ro0.54 V10.97 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;33mW (55585) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (55785) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (56035) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (56615) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L1657 R9999 E0.0,0.0 P-25.25 Ro0.53 V11.27 PI:NONVL53L1X Right crashed![0m
+[0;33mW (56825) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (57185) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (57225) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L1659 R9999 E![0m
+[0;33mW (57515) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (57715) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (58225) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L1658 R9999 E0.0,0.0 P-25.22 Ro0.52 V11.31 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;33mW (58495) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (58695) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (58945) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (59525) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L1661 R9999 E0.0,0.0 P-25.22 Ro0.50 V11.27 PI:NONVL53L1X Right crashed![0m
+[0;33mW (59725) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (59985) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (60155) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+E debug0,0 GPS:0,0 S:0![0m
+[0;33mW (60425) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (60625) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (60875) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (61385) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L1655 R9999 E0.0,0.0 P-25.23 Ro0.49 V11.22 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;33mW (61645) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (61845) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (62105) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (62275) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+E debug0,0 GPS:0,0 S:0![0m
+[0;33mW (62495) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right reset complete![0m
+[0;33mW (62755) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (62955) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (63205) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (63385) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+E debug0,0 GPS:0,0 S:0![0m
+[0;33mW (63645) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (63845) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (64355) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L1665 R9999 E0.0,0.0 P-25.21 Ro0.52 V11.22 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;33mW (64625) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (64865) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right crashed![0m
+[0;33mW (65075) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (65255) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+E debug0,0 GPS:0,0 S:0![0m
+[0;33mW (65515) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (65715) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (66225) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L706 R9999 E0.0,0.0 P-25.24 Ro0.45 V11.52 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;33mW (66495) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (66735) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right crashed![0m
+[0;33mW (66945) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (67525) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L490 R9999 E0.0,0.0 P-25.24 Ro0.46 V11.04 PI:NONEVL53L1X Right crashed![0m
+[0;33mW (67735) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (68245) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L1664 R9999 E0.0,0.0 P-25.23 Ro0.44 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;33mW (68505) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (68705) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (69215) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L691 R9999 E0.0,0.0 P-25.22 Ro0.45 V11.21 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;33mW (69435) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right reset complete![0m
+[0;33mW (69685) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (70195) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L1641 R9999 E0.0,0.0 P-25.23 Ro0.46 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;33mW (70455) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (70655) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (70915) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (71495) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L1637 R9999 E0.0,0.0 P-25.23 Ro0.42 V11.07 PI:NONVL53L1X Right crashed![0m
+[0;33mW (71695) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (71955) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (72205) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right crashed![0m
+[0;33mW (72405) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (72655) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (72865) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (73445) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L1662 R9999 E0.0,0.0 P-25.22 Ro0.45 V10.97 PI:NONVL53L1X Right crashed![0m
+[0;33mW (73655) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (73905) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+VL53L1X Right crashed![0m
+[0;33mW (74105) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+VL53L1X Right reset complete![0m
+[0;33mW (74615) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L1660 R662 E0.0,0.0 P-25.17 Ro0.40 V11.57 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (75185) UART_APP: [HOP LE] Du lieu tu xe:  L1663 R659 E0.0,0.0 P-25.21 Ro0.43 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (75185) MQTT_APP: Da Publish Data [ L1663 R659 E0.0,0.0 P-25.21 Ro0.43 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;33mW (100905) UART_APP: [CANH BAO] Nhieu song/Sai Token: ![0m
+[0;33mW (100905) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (101745) UART_APP: [CANH BAO] Nhieu song/Sai Token: ![0m
+[0;33mW (101745) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (102115) UART_APP: [CANH BAO] Nhieu song/Sai Token: >> TIM THAY THIET BI TAI DIA CHI: 0x68 (8-bit: 0xD0)![0m
+[0;33mW (104405) UART_APP: [CANH BAO] Nhieu song/Sai Token: => To![0m
+[0;33mW (104405) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (105725) UART_APP: [CANH BAO] Nhieu song/Sai Token: ![0m
+[0;33mW (105725) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (117225) UART_APP: [CANH BAO] Nhieu song/Sai Token: ![0m
+[0;33mW (117225) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (117595) UART_APP: [CANH BAO] Nhieu song/Sai Token: >> TIM THAY THIET BI TAI DIA CHI: 0x68 (8-bit: 0xD0)![0m
+[0;33mW (117895) UART_APP: [CANH BAO] Nhieu song/Sai Token: => Tong cong tim thay: 1 thiet bi.![0m
+[0;33mW (117895) UART_APP: [CANH BAO] Nhieu song/Sai Token: ------------------------![0m
+[0;33mW (119565) UART_APP: [CANH BAO] Nhieu song/Sai Token: Checking MPU6050...![0m
+[0;33mW (119565) UART_APP: [CANH BAO] Nhieu song/Sai Token: MPU6050 who_am_i = 0x68...OK![0m
+[0;33mW (120125) UART_APP: [CANH BAO] Nhieu song/Sai Token: LSB_Sensitivity_GYRO: 131.000000, LSB_Sensitivity_ACC: 16384.000000![0m
+[0;33mW (120355) UART_APP: [CANH BAO] Nhieu song/Sai Token: MPU6050 setting is finished![0m
+[0;33mW (120605) UART_APP: [CANH BAO] Nhieu song/Sai Token: Sensor LEFT address changed to 0x56![0m
+[0;33mW (120805) UART_APP: [CANH BAO] Nhieu song/Sai Token: Sensor RIGHT booted at 0x52![0m
+[0;33mW (120995) UART_APP: [CANH BAO] Nhieu song/Sai Token: San sang doc Encoder...![0m
+[0;32mI (121805) UART_APP: [HOP LE] Du lieu tu xe:  L478 R658 E0.0,0.0 P-25.58 Ro0.25 V10.43 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (121805) MQTT_APP: Da Publish Data [ L478 R658 E0.0,0.0 P-25.58 Ro0.25 V10.43 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (122795) UART_APP: [HOP LE] Du lieu tu xe:  L1664 R653 E0.0,0.0 P-25.61 Ro0.35 V10.43 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (122795) MQTT_APP: Da Publish Data [ L1664 R653 E0.0,0.0 P-25.61 Ro0.35 V10.43 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (123785) UART_APP: [HOP LE] Du lieu tu xe:  L1661 R653 E0.0,0.0 P-25.61 Ro0.38 V10.43 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (123785) MQTT_APP: Da Publish Data [ L1661 R653 E0.0,0.0 P-25.61 Ro0.38 V10.43 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (124775) UART_APP: [HOP LE] Du lieu tu xe:  L1662 R652 E0.0,0.0 P-25.65 Ro0.45 V10.44 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (124775) MQTT_APP: Da Publish Data [ L1662 R652 E0.0,0.0 P-25.65 Ro0.45 V10.44 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (125765) UART_APP: [HOP LE] Du lieu tu xe:  L1665 R655 E0.0,0.0 P-25.67 Ro0.46 V10.45 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (125765) MQTT_APP: Da Publish Data [ L1665 R655 E0.0,0.0 P-25.67 Ro0.46 V10.45 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (126755) UART_APP: [HOP LE] Du lieu tu xe:  L1659 R652 E0.0,0.0 P-25.70 Ro0.50 V10.66 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (126755) MQTT_APP: Da Publish Data [ L1659 R652 E0.0,0.0 P-25.70 Ro0.50 V10.66 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (127745) UART_APP: [HOP LE] Du lieu tu xe:  L1660 R658 E0.0,0.0 P-25.69 Ro0.48 V10.52 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (127745) MQTT_APP: Da Publish Data [ L1660 R658 E0.0,0.0 P-25.69 Ro0.48 V10.52 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (128735) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R658 E0.0,0.0 P-25.67 Ro0.47 V10.68 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (128735) MQTT_APP: Da Publish Data [ L1656 R658 E0.0,0.0 P-25.67 Ro0.47 V10.68 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (129725) UART_APP: [HOP LE] Du lieu tu xe:  L1662 R656 E0.0,0.0 P-25.77 Ro0.54 V10.44 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (129725) MQTT_APP: Da Publish Data [ L1662 R656 E0.0,0.0 P-25.77 Ro0.54 V10.44 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (130715) UART_APP: [HOP LE] Du lieu tu xe:  L1658 R658 E0.0,0.0 P-28.06 Ro0.50 V10.63 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (130715) MQTT_APP: Da Publish Data [ L1658 R658 E0.0,0.0 P-28.06 Ro0.50 V10.63 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (131705) UART_APP: [HOP LE] Du lieu tu xe:  L1662 R652 E0.0,0.0 P-27.10 Ro0.51 V10.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (131705) MQTT_APP: Da Publish Data [ L1662 R652 E0.0,0.0 P-27.10 Ro0.51 V10.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (132695) UART_APP: [HOP LE] Du lieu tu xe:  L1663 R652 E0.0,0.0 P-26.52 Ro0.51 V10.65 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (132695) MQTT_APP: Da Publish Data [ L1663 R652 E0.0,0.0 P-26.52 Ro0.51 V10.65 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (133685) UART_APP: [HOP LE] Du lieu tu xe:  L1665 R653 E0.0,0.0 P-26.20 Ro0.48 V10.45 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (133685) MQTT_APP: Da Publish Data [ L1665 R653 E0.0,0.0 P-26.20 Ro0.48 V10.45 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (134675) UART_APP: [HOP LE] Du lieu tu xe:  L1660 R657 E0.0,0.0 P-25.98 Ro0.47 V10.43 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (134675) MQTT_APP: Da Publish Data [ L1660 R657 E0.0,0.0 P-25.98 Ro0.47 V10.43 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (135665) UART_APP: [HOP LE] Du lieu tu xe:  L1667 R654 E0.0,0.0 P-25.89 Ro0.47 V10.45 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (135665) MQTT_APP: Da Publish Data [ L1667 R654 E0.0,0.0 P-25.89 Ro0.47 V10.45 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (136655) UART_APP: [HOP LE] Du lieu tu xe:  L1668 R657 E0.0,0.0 P-25.78 Ro0.48 V10.71 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (136655) MQTT_APP: Da Publish Data [ L1668 R657 E0.0,0.0 P-25.78 Ro0.48 V10.71 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (137645) UART_APP: [HOP LE] Du lieu tu xe:  L1664 R652 E0.0,0.0 P-25.70 Ro0.48 V10.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (137645) MQTT_APP: Da Publish Data [ L1664 R652 E0.0,0.0 P-25.70 Ro0.48 V10.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (138635) UART_APP: [HOP LE] Du lieu tu xe:  L1668 R654 E0.0,0.0 P-25.65 Ro0.44 V10.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (138635) MQTT_APP: Da Publish Data [ L1668 R654 E0.0,0.0 P-25.65 Ro0.44 V10.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (139625) UART_APP: [HOP LE] Du lieu tu xe:  L1664 R656 E0.0,0.0 P-25.66 Ro0.44 V10.43 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (139625) MQTT_APP: Da Publish Data [ L1664 R656 E0.0,0.0 P-25.66 Ro0.44 V10.43 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (140615) UART_APP: [HOP LE] Du lieu tu xe:  L1662 R656 E0.0,0.0 P-25.66 Ro0.46 V10.64 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (140615) MQTT_APP: Da Publish Data [ L1662 R656 E0.0,0.0 P-25.66 Ro0.46 V10.64 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (141605) UART_APP: [HOP LE] Du lieu tu xe:  L1663 R654 E0.0,0.0 P-25.68 Ro0.45 V10.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (141605) MQTT_APP: Da Publish Data [ L1663 R654 E0.0,0.0 P-25.68 Ro0.45 V10.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (142605) UART_APP: [HOP LE] Du lieu tu xe:  L1662 R654 E0.0,0.0 P-25.70 Ro0.50 V10.51 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (142605) MQTT_APP: Da Publish Data [ L1662 R654 E0.0,0.0 P-25.70 Ro0.50 V10.51 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (143595) UART_APP: [HOP LE] Du lieu tu xe:  L1662 R653 E0.0,0.0 P-25.68 Ro0.50 V10.43 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (143595) MQTT_APP: Da Publish Data [ L1662 R653 E0.0,0.0 P-25.68 Ro0.50 V10.43 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (144585) UART_APP: [HOP LE] Du lieu tu xe:  L1665 R658 E0.0,0.0 P-24.78 Ro2.91 V10.49 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (144585) MQTT_APP: Da Publish Data [ L1665 R658 E0.0,0.0 P-24.78 Ro2.91 V10.49 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (145575) UART_APP: [HOP LE] Du lieu tu xe:  L1665 R657 E0.0,0.0 P-25.18 Ro1.89 V10.45 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (145575) MQTT_APP: Da Publish Data [ L1665 R657 E0.0,0.0 P-25.18 Ro1.89 V10.45 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (146565) UART_APP: [HOP LE] Du lieu tu xe:  L1667 R656 E0.0,0.0 P-25.36 Ro1.31 V10.57 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (146565) MQTT_APP: Da Publish Data [ L1667 R656 E0.0,0.0 P-25.36 Ro1.31 V10.57 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (147555) UART_APP: [HOP LE] Du lieu tu xe:  L1666 R655 E0.0,0.0 P-25.40 Ro1.01 V10.66 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (147555) MQTT_APP: Da Publish Data [ L1666 R655 E0.0,0.0 P-25.40 Ro1.01 V10.66 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (148545) UART_APP: [HOP LE] Du lieu tu xe:  L1661 R660 E0.0,0.0 P-25.48 Ro0.78 V10.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (148545) MQTT_APP: Da Publish Data [ L1661 R660 E0.0,0.0 P-25.48 Ro0.78 V10.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (149535) UART_APP: [HOP LE] Du lieu tu xe:  L1664 R657 E0.0,0.0 P-25.57 Ro0.66 V10.65 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (149535) MQTT_APP: Da Publish Data [ L1664 R657 E0.0,0.0 P-25.57 Ro0.66 V10.65 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (150525) UART_APP: [HOP LE] Du lieu tu xe:  L1659 R657 E0.0,0.0 P-25.63 Ro0.58 V10.67 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (150525) MQTT_APP: Da Publish Data [ L1659 R657 E0.0,0.0 P-25.63 Ro0.58 V10.67 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (151515) UART_APP: [HOP LE] Du lieu tu xe:  L1659 R660 E0.0,0.0 P-25.65 Ro0.55 V10.43 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (151515) MQTT_APP: Da Publish Data [ L1659 R660 E0.0,0.0 P-25.65 Ro0.55 V10.43 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (152505) UART_APP: [HOP LE] Du lieu tu xe:  L1663 R657 E0.0,0.0 P-25.71 Ro0.55 V10.43 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (152505) MQTT_APP: Da Publish Data [ L1663 R657 E0.0,0.0 P-25.71 Ro0.55 V10.43 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (153495) UART_APP: [HOP LE] Du lieu tu xe:  L1662 R658 E0.0,0.0 P-25.70 Ro0.51 V10.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (153495) MQTT_APP: Da Publish Data [ L1662 R658 E0.0,0.0 P-25.70 Ro0.51 V10.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (154485) UART_APP: [HOP LE] Du lieu tu xe:  L1663 R649 E0.0,0.0 P-24.80 Ro2.64 V10.43 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (154485) MQTT_APP: Da Publish Data [ L1663 R649 E0.0,0.0 P-24.80 Ro2.64 V10.43 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (155475) UART_APP: [HOP LE] Du lieu tu xe:  L1667 R654 E0.0,0.0 P-25.14 Ro1.75 V10.71 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (155475) MQTT_APP: Da Publish Data [ L1667 R654 E0.0,0.0 P-25.14 Ro1.75 V10.71 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (156465) UART_APP: [HOP LE] Du lieu tu xe:  L1667 R654 E0.0,0.0 P-25.39 Ro1.26 V10.64 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (156465) MQTT_APP: Da Publish Data [ L1667 R654 E0.0,0.0 P-25.39 Ro1.26 V10.64 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (157455) UART_APP: [HOP LE] Du lieu tu xe:  L1664 R660 E0.0,0.0 P-25.55 Ro0.97 V10.73 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (157455) MQTT_APP: Da Publish Data [ L1664 R660 E0.0,0.0 P-25.55 Ro0.97 V10.73 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (158445) UART_APP: [HOP LE] Du lieu tu xe:  L1668 R654 E0.0,0.0 P-25.59 Ro0.77 V10.66 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (158445) MQTT_APP: Da Publish Data [ L1668 R654 E0.0,0.0 P-25.59 Ro0.77 V10.66 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (159435) UART_APP: [HOP LE] Du lieu tu xe:  L1660 R656 E0.0,0.0 P-25.62 Ro0.67 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (159435) MQTT_APP: Da Publish Data [ L1660 R656 E0.0,0.0 P-25.62 Ro0.67 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (160435) UART_APP: [HOP LE] Du lieu tu xe:  L1666 R653 E0.0,0.0 P-25.62 Ro0.55 V10.60 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (160435) MQTT_APP: Da Publish Data [ L1666 R653 E0.0,0.0 P-25.62 Ro0.55 V10.60 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (161425) UART_APP: [HOP LE] Du lieu tu xe:  L1666 R657 E0.0,0.0 P-25.63 Ro0.53 V10.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (161425) MQTT_APP: Da Publish Data [ L1666 R657 E0.0,0.0 P-25.63 Ro0.53 V10.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (162415) UART_APP: [HOP LE] Du lieu tu xe:  L1661 R653 E0.0,0.0 P-25.56 Ro0.46 V10.52 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (162415) MQTT_APP: Da Publish Data [ L1661 R653 E0.0,0.0 P-25.56 Ro0.46 V10.52 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (163405) UART_APP: [HOP LE] Du lieu tu xe:  L1661 R651 E0.0,0.0 P-25.67 Ro0.51 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (163405) MQTT_APP: Da Publish Data [ L1661 R651 E0.0,0.0 P-25.67 Ro0.51 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (164395) UART_APP: [HOP LE] Du lieu tu xe:  L1662 R655 E0.0,0.0 P-25.56 Ro0.39 V10.73 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (164395) MQTT_APP: Da Publish Data [ L1662 R655 E0.0,0.0 P-25.56 Ro0.39 V10.73 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (165385) UART_APP: [HOP LE] Du lieu tu xe:  L1665 R656 E0.0,0.0 P-25.60 Ro0.34 V10.60 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (165385) MQTT_APP: Da Publish Data [ L1665 R656 E0.0,0.0 P-25.60 Ro0.34 V10.60 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (166375) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (166375) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (167365) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (167365) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (168355) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (168355) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (169345) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (169345) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (170335) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (170335) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (171325) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (171325) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (172315) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (172315) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (173305) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (173305) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (174295) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (174295) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (175285) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (175285) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (176275) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (176275) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (177265) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (177265) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (178255) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (178255) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (179245) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (179245) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (180235) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (180235) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (181225) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (181225) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (182225) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (182225) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (183215) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (183215) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (184205) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (184205) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (185195) UART_APP: [HOP LE] Du lieu tu xe:  L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (185195) MQTT_APP: Da Publish Data [ L1656 R653 E0.0,0.0 P-25.60 Ro0.35 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (186185) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (186185) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (187175) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (187175) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (188165) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (188165) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (189165) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (189165) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (190155) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (190155) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (191145) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (191145) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (192135) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (192135) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (193125) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (193125) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (194115) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (194115) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (195105) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (195105) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (196095) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (196095) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (197085) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (197085) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (198075) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (198075) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (199065) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (199065) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (200055) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (200055) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (201055) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (201055) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (202045) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (202045) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (203035) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (203035) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (204025) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (204025) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (205015) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (205015) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (206005) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (206005) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.31 Ro3.59 V11.07 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (206995) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (206995) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (207985) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (207985) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (208975) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (208975) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (209965) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (209965) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (210955) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (210955) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (211945) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (211945) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (212935) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (212935) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (213935) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (213935) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (214925) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (214925) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (215915) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (215915) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (216905) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (216905) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (217895) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (217895) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (218885) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (218885) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (219875) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (219875) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (220865) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (220865) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (221855) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (221855) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (222845) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (222845) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (223845) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (223845) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (224835) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (224835) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (225825) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (225825) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (226815) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (226815) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;33mW (227225) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Left crashed![0m
+[0;33mW (227755) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (228795) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (228795) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;33mW (229005) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (229735) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L9999 R9999 E0.0,0.0 P-23.09 Ro6.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (230775) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (230775) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (231765) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (231765) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (232755) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (232755) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (233745) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (233745) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (234735) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (234735) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (235725) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (235725) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (236715) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (236715) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (237715) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (237715) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (238705) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (238705) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (239695) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (239695) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (240685) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (240685) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (241675) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (241675) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (242665) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (242665) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (243655) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (243655) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (244655) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (244655) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (245645) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (245645) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (246635) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (246635) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (247625) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (247625) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (248615) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (248615) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (249605) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (249605) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (250595) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (250595) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;33mW (250815) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Left crashed![0m
+[0;33mW (251535) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;33mW (252375) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (252755) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (253605) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (253605) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.93 Ro9.60 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;33mW (253765) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right hardware dead![0m
+[0;33mW (254545) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (255585) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (255585) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (256585) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (256585) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (257575) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (257575) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (258565) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (258565) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (259555) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (259555) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (260545) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (260545) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (261535) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (261535) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (262525) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (262525) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (263525) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (263525) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (264515) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (264515) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (265505) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (265505) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (267485) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NOMANH_VIP L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (267485) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NOMANH_VIP L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (268485) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (268485) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (269475) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (269475) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (270465) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (270465) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (271455) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (271455) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (272445) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (272445) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (273435) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (273435) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (274435) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (274435) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;33mW (274625) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Left crashed![0m
+[0;33mW (275375) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;33mW (275855) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (276365) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (277405) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (277405) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-20.83 Ro12.38 V11.17 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;33mW (277575) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right hardware dead![0m
+[0;33mW (278345) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L9999 R9999 E0.0,0.0 P-19.78 Ro15.02 V11.42 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;33mW (282505) UART_APP: [CANH BAO] Nhieu song/Sai Token: ![0m
+[0;33mW (282505) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (283605) UART_APP: [CANH BAO] Nhieu song/Sai Token: ![0m
+[0;33mW (283605) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (285375) UART_APP: [CANH BAO] Nhieu song/Sai Token: ![0m
+[0;33mW (285375) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (294955) UART_APP: [CANH BAO] Nhieu song/Sai Token: ![0m
+[0;33mW (294955) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (295765) UART_APP: [CANH BAO] Nhieu song/Sai Token: ![0m
+[0;33mW (295765) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (296485) UART_APP: [CANH BAO] Nhieu song/Sai Token: ![0m
+[0;33mW (296485) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (297135) UART_APP: [CANH BAO] Nhieu song/Sai Token: ![0m
+[0;33mW (297135) UART_APP: [CANH BAO] Nhieu song/Sai Token: --- BAT DAU QUET I2C ---![0m
+[0;33mW (297505) UART_APP: [CANH BAO] Nhieu song/Sai Token: >> TIM THAY THIET BI TAI DIA CHI: 0x68 (8-bit: 0xD0)![0m
+[0;33mW (297805) UART_APP: [CANH BAO] Nhieu song/Sai Token: => Tong cong tim thay: 1 thiet bi.![0m
+[0;33mW (297815) UART_APP: [CANH BAO] Nhieu song/Sai Token: ------------------------![0m
+[0;33mW (299475) UART_APP: [CANH BAO] Nhieu song/Sai Token: Checking MPU6050...![0m
+[0;33mW (299475) UART_APP: [CANH BAO] Nhieu song/Sai Token: MPU6050 who_am_i = 0x68...OK![0m
+[0;33mW (300035) UART_APP: [CANH BAO] Nhieu song/Sai Token: LSB_Sensitivity_GYRO: 131.000000, LSB_Sensitivity_ACC: 16384.000000![0m
+[0;33mW (300265) UART_APP: [CANH BAO] Nhieu song/Sai Token: MPU6050 setting is finished![0m
+[0;33mW (300525) UART_APP: [CANH BAO] Nhieu song/Sai Token: Sensor LEFT address changed to 0x56![0m
+[0;33mW (300725) UART_APP: [CANH BAO] Nhieu song/Sai Token: Sensor RIGHT booted at 0x52![0m
+[0;33mW (300905) UART_APP: [CANH BAO] Nhieu song/Sai Token: San sang doc Encoder...![0m
+[0;32mI (301745) UART_APP: [HOP LE] Du lieu tu xe:  L1630 R134 E0.0,0.0 P-27.18 Ro-1.85 V10.65 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (301745) MQTT_APP: Da Publish Data [ L1630 R134 E0.0,0.0 P-27.18 Ro-1.85 V10.65 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (302735) UART_APP: [HOP LE] Du lieu tu xe:  L1629 R134 E0.0,0.0 P-26.97 Ro-1.38 V10.42 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (302735) MQTT_APP: Da Publish Data [ L1629 R134 E0.0,0.0 P-26.97 Ro-1.38 V10.42 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (303725) UART_APP: [HOP LE] Du lieu tu xe:  L1626 R135 E0.0,0.0 P-26.79 Ro-1.15 V10.40 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (303725) MQTT_APP: Da Publish Data [ L1626 R135 E0.0,0.0 P-26.79 Ro-1.15 V10.40 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (304715) UART_APP: [HOP LE] Du lieu tu xe:  L1632 R132 E0.0,0.0 P-26.84 Ro-0.85 V10.51 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (304715) MQTT_APP: Da Publish Data [ L1632 R132 E0.0,0.0 P-26.84 Ro-0.85 V10.51 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (305705) UART_APP: [HOP LE] Du lieu tu xe:  L1637 R138 E0.0,0.0 P-27.02 Ro-0.52 V10.42 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (305705) MQTT_APP: Da Publish Data [ L1637 R138 E0.0,0.0 P-27.02 Ro-0.52 V10.42 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (306695) UART_APP: [HOP LE] Du lieu tu xe:  L1622 R132 E0.0,0.0 P-26.83 Ro-0.52 V10.63 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (306695) MQTT_APP: Da Publish Data [ L1622 R132 E0.0,0.0 P-26.83 Ro-0.52 V10.63 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (307695) UART_APP: [HOP LE] Du lieu tu xe:  L1630 R135 E0.0,0.0 P-26.76 Ro-0.59 V10.48 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (307695) MQTT_APP: Da Publish Data [ L1630 R135 E0.0,0.0 P-26.76 Ro-0.59 V10.48 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (308685) UART_APP: [HOP LE] Du lieu tu xe:  L1626 R134 E0.0,0.0 P-26.77 Ro-0.57 V10.40 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (308685) MQTT_APP: Da Publish Data [ L1626 R134 E0.0,0.0 P-26.77 Ro-0.57 V10.40 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (309675) UART_APP: [HOP LE] Du lieu tu xe:  L1637 R133 E0.0,0.0 P-26.71 Ro-0.62 V10.46 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (309675) MQTT_APP: Da Publish Data [ L1637 R133 E0.0,0.0 P-26.71 Ro-0.62 V10.46 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (310665) UART_APP: [HOP LE] Du lieu tu xe:  L1634 R135 E0.0,0.0 P-26.69 Ro-0.68 V10.54 PI:NORMAL debug0,0 GPS:0,0 S:0![0m
+[0;32mI (310665) MQTT_APP: Da Publish Data [ L1634 R135 E0.0,0.0 P-26.69 Ro-0.68 V10.54 PI:NORMAL debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (311635) UART_APP: [HOP LE] Du lieu tu xe:  L1633 R136 E0.0,0.0 P-26.72 Ro-0.68 V10.43 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (311635) MQTT_APP: Da Publish Data [ L1633 R136 E0.0,0.0 P-26.72 Ro-0.68 V10.43 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (312625) UART_APP: [HOP LE] Du lieu tu xe:  L1629 R132 E0.0,0.0 P-26.67 Ro-0.62 V10.41 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (312625) MQTT_APP: Da Publish Data [ L1629 R132 E0.0,0.0 P-26.67 Ro-0.62 V10.41 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (313615) UART_APP: [HOP LE] Du lieu tu xe:  L1635 R132 E0.0,0.0 P-26.70 Ro-0.65 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (313615) MQTT_APP: Da Publish Data [ L1635 R132 E0.0,0.0 P-26.70 Ro-0.65 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (314605) UART_APP: [HOP LE] Du lieu tu xe:  L1630 R135 E0.0,0.0 P-26.69 Ro-0.67 V10.61 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (314605) MQTT_APP: Da Publish Data [ L1630 R135 E0.0,0.0 P-26.69 Ro-0.67 V10.61 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (315595) UART_APP: [HOP LE] Du lieu tu xe:  L70 R131 E0.0,0.0 P-26.74 Ro-0.64 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (315595) MQTT_APP: Da Publish Data [ L70 R131 E0.0,0.0 P-26.74 Ro-0.64 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (316585) UART_APP: [HOP LE] Du lieu tu xe:  L77 R136 E0.0,0.0 P-26.78 Ro-0.62 V10.48 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (316585) MQTT_APP: Da Publish Data [ L77 R136 E0.0,0.0 P-26.78 Ro-0.62 V10.48 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (317575) UART_APP: [HOP LE] Du lieu tu xe:  L1635 R133 E0.0,0.0 P-26.78 Ro-0.66 V10.36 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (317575) MQTT_APP: Da Publish Data [ L1635 R133 E0.0,0.0 P-26.78 Ro-0.66 V10.36 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (318565) UART_APP: [HOP LE] Du lieu tu xe:  L1639 R134 E0.0,0.0 P-26.81 Ro-0.63 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (318565) MQTT_APP: Da Publish Data [ L1639 R134 E0.0,0.0 P-26.81 Ro-0.63 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (319555) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R131 E0.0,0.0 P-26.85 Ro-0.64 V10.53 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (319555) MQTT_APP: Da Publish Data [ L1631 R131 E0.0,0.0 P-26.85 Ro-0.64 V10.53 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (320545) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R132 E0.0,0.0 P-26.80 Ro-0.68 V10.60 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (320545) MQTT_APP: Da Publish Data [ L1631 R132 E0.0,0.0 P-26.80 Ro-0.68 V10.60 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (321535) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R132 E0.0,0.0 P-26.78 Ro-0.68 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (321535) MQTT_APP: Da Publish Data [ L1631 R132 E0.0,0.0 P-26.78 Ro-0.68 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (322525) UART_APP: [HOP LE] Du lieu tu xe:  L1639 R135 E0.0,0.0 P-26.75 Ro-0.72 V10.60 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (322525) MQTT_APP: Da Publish Data [ L1639 R135 E0.0,0.0 P-26.75 Ro-0.72 V10.60 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (323515) UART_APP: [HOP LE] Du lieu tu xe:  L1636 R132 E0.0,0.0 P-26.74 Ro-0.70 V10.53 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (323515) MQTT_APP: Da Publish Data [ L1636 R132 E0.0,0.0 P-26.74 Ro-0.70 V10.53 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (324505) UART_APP: [HOP LE] Du lieu tu xe:  L1634 R132 E0.0,0.0 P-26.79 Ro-0.64 V10.59 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (324505) MQTT_APP: Da Publish Data [ L1634 R132 E0.0,0.0 P-26.79 Ro-0.64 V10.59 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (325495) UART_APP: [HOP LE] Du lieu tu xe:  L1634 R136 E0.0,0.0 P-26.74 Ro-0.81 V10.35 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (325495) MQTT_APP: Da Publish Data [ L1634 R136 E0.0,0.0 P-26.74 Ro-0.81 V10.35 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (326485) UART_APP: [HOP LE] Du lieu tu xe:  L1633 R133 E0.0,0.0 P-26.76 Ro-0.74 V10.57 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (326485) MQTT_APP: Da Publish Data [ L1633 R133 E0.0,0.0 P-26.76 Ro-0.74 V10.57 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (327485) UART_APP: [HOP LE] Du lieu tu xe:  L1627 R135 E0.0,0.0 P-26.80 Ro-0.83 V10.38 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (327485) MQTT_APP: Da Publish Data [ L1627 R135 E0.0,0.0 P-26.80 Ro-0.83 V10.38 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (328475) UART_APP: [HOP LE] Du lieu tu xe:  L1630 R137 E0.0,0.0 P-26.79 Ro-0.79 V10.53 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (328475) MQTT_APP: Da Publish Data [ L1630 R137 E0.0,0.0 P-26.79 Ro-0.79 V10.53 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (329465) UART_APP: [HOP LE] Du lieu tu xe:  L1634 R137 E0.0,0.0 P-26.81 Ro-0.73 V10.56 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (329465) MQTT_APP: Da Publish Data [ L1634 R137 E0.0,0.0 P-26.81 Ro-0.73 V10.56 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (330455) UART_APP: [HOP LE] Du lieu tu xe:  L1638 R135 E0.0,0.0 P-26.82 Ro-0.69 V10.41 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (330455) MQTT_APP: Da Publish Data [ L1638 R135 E0.0,0.0 P-26.82 Ro-0.69 V10.41 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (331445) UART_APP: [HOP LE] Du lieu tu xe:  L1633 R136 E0.0,0.0 P-26.82 Ro-0.67 V10.35 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (331445) MQTT_APP: Da Publish Data [ L1633 R136 E0.0,0.0 P-26.82 Ro-0.67 V10.35 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (332435) UART_APP: [HOP LE] Du lieu tu xe:  L1640 R131 E0.0,0.0 P-26.81 Ro-0.67 V10.56 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (332435) MQTT_APP: Da Publish Data [ L1640 R131 E0.0,0.0 P-26.81 Ro-0.67 V10.56 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (333425) UART_APP: [HOP LE] Du lieu tu xe:  L1626 R133 E0.0,0.0 P-26.83 Ro-0.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (333425) MQTT_APP: Da Publish Data [ L1626 R133 E0.0,0.0 P-26.83 Ro-0.67 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (334415) UART_APP: [HOP LE] Du lieu tu xe:  L1634 R136 E0.0,0.0 P-26.80 Ro-0.71 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (334415) MQTT_APP: Da Publish Data [ L1634 R136 E0.0,0.0 P-26.80 Ro-0.71 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (335405) UART_APP: [HOP LE] Du lieu tu xe:  L1636 R136 E0.0,0.0 P-26.83 Ro-0.67 V10.53 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (335405) MQTT_APP: Da Publish Data [ L1636 R136 E0.0,0.0 P-26.83 Ro-0.67 V10.53 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (336395) UART_APP: [HOP LE] Du lieu tu xe:  L1637 R135 E0.0,0.0 P-26.78 Ro-0.68 V10.56 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (336395) MQTT_APP: Da Publish Data [ L1637 R135 E0.0,0.0 P-26.78 Ro-0.68 V10.56 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (337395) UART_APP: [HOP LE] Du lieu tu xe:  L1642 R135 E0.0,0.0 P-26.76 Ro-0.71 V10.38 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (337395) MQTT_APP: Da Publish Data [ L1642 R135 E0.0,0.0 P-26.76 Ro-0.71 V10.38 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (338385) UART_APP: [HOP LE] Du lieu tu xe:  L1633 R132 E0.0,0.0 P-26.85 Ro-0.67 V10.68 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (338385) MQTT_APP: Da Publish Data [ L1633 R132 E0.0,0.0 P-26.85 Ro-0.67 V10.68 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (339375) UART_APP: [HOP LE] Du lieu tu xe:  L1639 R135 E0.0,0.0 P-26.85 Ro-0.70 V10.49 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (339375) MQTT_APP: Da Publish Data [ L1639 R135 E0.0,0.0 P-26.85 Ro-0.70 V10.49 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (340365) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R134 E0.0,0.0 P-26.88 Ro-0.67 V10.48 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (340365) MQTT_APP: Da Publish Data [ L1631 R134 E0.0,0.0 P-26.88 Ro-0.67 V10.48 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (341355) UART_APP: [HOP LE] Du lieu tu xe:  L1639 R134 E0.0,0.0 P-26.79 Ro-0.63 V10.61 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (341355) MQTT_APP: Da Publish Data [ L1639 R134 E0.0,0.0 P-26.79 Ro-0.63 V10.61 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (342345) UART_APP: [HOP LE] Du lieu tu xe:  L1635 R133 E0.0,0.0 P-26.84 Ro-0.67 V10.48 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (342345) MQTT_APP: Da Publish Data [ L1635 R133 E0.0,0.0 P-26.84 Ro-0.67 V10.48 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (343335) UART_APP: [HOP LE] Du lieu tu xe:  L1629 R137 E0.0,0.0 P-26.81 Ro-0.72 V10.56 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (343335) MQTT_APP: Da Publish Data [ L1629 R137 E0.0,0.0 P-26.81 Ro-0.72 V10.56 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (344325) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.83 Ro-0.75 V10.56 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (344325) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.83 Ro-0.75 V10.56 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (345315) UART_APP: [HOP LE] Du lieu tu xe:  L1640 R140 E0.0,0.0 P-26.80 Ro-0.74 V10.48 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (345315) MQTT_APP: Da Publish Data [ L1640 R140 E0.0,0.0 P-26.80 Ro-0.74 V10.48 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (346305) UART_APP: [HOP LE] Du lieu tu xe:  L1645 R136 E0.0,0.0 P-26.79 Ro-0.76 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (346305) MQTT_APP: Da Publish Data [ L1645 R136 E0.0,0.0 P-26.79 Ro-0.76 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (347295) UART_APP: [HOP LE] Du lieu tu xe:  L1635 R136 E0.0,0.0 P-26.81 Ro-0.77 V10.57 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (347295) MQTT_APP: Da Publish Data [ L1635 R136 E0.0,0.0 P-26.81 Ro-0.77 V10.57 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (348295) UART_APP: [HOP LE] Du lieu tu xe:  L1628 R133 E0.0,0.0 P-26.79 Ro-0.78 V10.65 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (348295) MQTT_APP: Da Publish Data [ L1628 R133 E0.0,0.0 P-26.79 Ro-0.78 V10.65 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (349285) UART_APP: [HOP LE] Du lieu tu xe:  L1635 R138 E0.0,0.0 P-26.79 Ro-0.78 V10.51 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (349285) MQTT_APP: Da Publish Data [ L1635 R138 E0.0,0.0 P-26.79 Ro-0.78 V10.51 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (350275) UART_APP: [HOP LE] Du lieu tu xe:  L1632 R136 E0.0,0.0 P-26.76 Ro-0.74 V10.52 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (350275) MQTT_APP: Da Publish Data [ L1632 R136 E0.0,0.0 P-26.76 Ro-0.74 V10.52 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (351265) UART_APP: [HOP LE] Du lieu tu xe:  L1628 R134 E0.0,0.0 P-26.75 Ro-0.77 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (351265) MQTT_APP: Da Publish Data [ L1628 R134 E0.0,0.0 P-26.75 Ro-0.77 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (352255) UART_APP: [HOP LE] Du lieu tu xe:  L1635 R133 E0.0,0.0 P-26.81 Ro-0.78 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (352255) MQTT_APP: Da Publish Data [ L1635 R133 E0.0,0.0 P-26.81 Ro-0.78 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (353245) UART_APP: [HOP LE] Du lieu tu xe:  L1630 R130 E0.0,0.0 P-26.79 Ro-0.71 V10.51 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (353245) MQTT_APP: Da Publish Data [ L1630 R130 E0.0,0.0 P-26.79 Ro-0.71 V10.51 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (354235) UART_APP: [HOP LE] Du lieu tu xe:  L1630 R135 E0.0,0.0 P-26.84 Ro-0.76 V10.35 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (354235) MQTT_APP: Da Publish Data [ L1630 R135 E0.0,0.0 P-26.84 Ro-0.76 V10.35 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (355225) UART_APP: [HOP LE] Du lieu tu xe:  L1638 R133 E0.0,0.0 P-26.85 Ro-0.74 V10.43 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (355225) MQTT_APP: Da Publish Data [ L1638 R133 E0.0,0.0 P-26.85 Ro-0.74 V10.43 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (356215) UART_APP: [HOP LE] Du lieu tu xe:  L1633 R133 E0.0,0.0 P-26.84 Ro-0.76 V10.65 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (356215) MQTT_APP: Da Publish Data [ L1633 R133 E0.0,0.0 P-26.84 Ro-0.76 V10.65 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (357205) UART_APP: [HOP LE] Du lieu tu xe:  L1635 R130 E0.0,0.0 P-26.81 Ro-0.73 V10.49 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (357205) MQTT_APP: Da Publish Data [ L1635 R130 E0.0,0.0 P-26.81 Ro-0.73 V10.49 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (358195) UART_APP: [HOP LE] Du lieu tu xe:  L1632 R132 E0.0,0.0 P-26.85 Ro-0.74 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (358195) MQTT_APP: Da Publish Data [ L1632 R132 E0.0,0.0 P-26.85 Ro-0.74 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (359185) UART_APP: [HOP LE] Du lieu tu xe:  L1638 R135 E0.0,0.0 P-26.84 Ro-0.70 V10.63 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (359185) MQTT_APP: Da Publish Data [ L1638 R135 E0.0,0.0 P-26.84 Ro-0.70 V10.63 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (360175) UART_APP: [HOP LE] Du lieu tu xe:  L1590 R135 E0.0,0.0 P-26.89 Ro-0.68 V10.65 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (360175) MQTT_APP: Da Publish Data [ L1590 R135 E0.0,0.0 P-26.89 Ro-0.68 V10.65 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (361165) UART_APP: [HOP LE] Du lieu tu xe:  L1571 R132 E0.0,0.0 P-26.94 Ro-0.68 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (361165) MQTT_APP: Da Publish Data [ L1571 R132 E0.0,0.0 P-26.94 Ro-0.68 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (362155) UART_APP: [HOP LE] Du lieu tu xe:  L1580 R132 E0.0,0.0 P-26.88 Ro-0.73 V10.45 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (362155) MQTT_APP: Da Publish Data [ L1580 R132 E0.0,0.0 P-26.88 Ro-0.73 V10.45 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (363145) UART_APP: [HOP LE] Du lieu tu xe:  L1572 R133 E0.0,0.0 P-26.87 Ro-0.72 V10.48 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (363145) MQTT_APP: Da Publish Data [ L1572 R133 E0.0,0.0 P-26.87 Ro-0.72 V10.48 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (364135) UART_APP: [HOP LE] Du lieu tu xe:  L1578 R133 E0.0,0.0 P-26.87 Ro-0.71 V10.41 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (364135) MQTT_APP: Da Publish Data [ L1578 R133 E0.0,0.0 P-26.87 Ro-0.71 V10.41 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (365135) UART_APP: [HOP LE] Du lieu tu xe:  L1583 R135 E0.0,0.0 P-26.87 Ro-0.70 V10.47 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (365135) MQTT_APP: Da Publish Data [ L1583 R135 E0.0,0.0 P-26.87 Ro-0.70 V10.47 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (366125) UART_APP: [HOP LE] Du lieu tu xe:  L1572 R135 E0.0,0.0 P-26.88 Ro-0.66 V10.49 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (366125) MQTT_APP: Da Publish Data [ L1572 R135 E0.0,0.0 P-26.88 Ro-0.66 V10.49 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (367115) UART_APP: [HOP LE] Du lieu tu xe:  L1572 R136 E0.0,0.0 P-26.85 Ro-0.62 V10.52 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (367115) MQTT_APP: Da Publish Data [ L1572 R136 E0.0,0.0 P-26.85 Ro-0.62 V10.52 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (368105) UART_APP: [HOP LE] Du lieu tu xe:  L1580 R137 E0.0,0.0 P-26.80 Ro-0.73 V10.38 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (368105) MQTT_APP: Da Publish Data [ L1580 R137 E0.0,0.0 P-26.80 Ro-0.73 V10.38 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (369095) UART_APP: [HOP LE] Du lieu tu xe:  L1586 R137 E0.0,0.0 P-26.84 Ro-0.77 V10.61 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (369095) MQTT_APP: Da Publish Data [ L1586 R137 E0.0,0.0 P-26.84 Ro-0.77 V10.61 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (370085) UART_APP: [HOP LE] Du lieu tu xe:  L1588 R134 E0.0,0.0 P-26.83 Ro-0.78 V10.50 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (370085) MQTT_APP: Da Publish Data [ L1588 R134 E0.0,0.0 P-26.83 Ro-0.78 V10.50 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (371075) UART_APP: [HOP LE] Du lieu tu xe:  L1580 R137 E0.0,0.0 P-26.82 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (371075) MQTT_APP: Da Publish Data [ L1580 R137 E0.0,0.0 P-26.82 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (372065) UART_APP: [HOP LE] Du lieu tu xe:  L1577 R135 E0.0,0.0 P-26.86 Ro-0.75 V10.40 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (372065) MQTT_APP: Da Publish Data [ L1577 R135 E0.0,0.0 P-26.86 Ro-0.75 V10.40 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (373055) UART_APP: [HOP LE] Du lieu tu xe:  L1635 R135 E0.0,0.0 P-26.87 Ro-0.70 V10.41 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (373055) MQTT_APP: Da Publish Data [ L1635 R135 E0.0,0.0 P-26.87 Ro-0.70 V10.41 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (375045) UART_APP: [HOP LE] Du lieu tu xe:  L1597 R136 E0.0,0.0 P-26.87 Ro-0.73 V10.50 PI:NONMANH_VIP L1627 R135 E0.0,0.0 P-26.88 Ro-0.72 V10.53 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (375045) MQTT_APP: Da Publish Data [ L1597 R136 E0.0,0.0 P-26.87 Ro-0.73 V10.50 PI:NONMANH_VIP L1627 R135 E0.0,0.0 P-26.88 Ro-0.72 V10.53 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (376025) UART_APP: [HOP LE] Du lieu tu xe:  L1639 R136 E0.0,0.0 P-25.95 Ro1.58 V10.41 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (376025) MQTT_APP: Da Publish Data [ L1639 R136 E0.0,0.0 P-25.95 Ro1.58 V10.41 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (377025) UART_APP: [HOP LE] Du lieu tu xe:  L1629 R136 E0.0,0.0 P-26.37 Ro0.68 V10.48 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (377025) MQTT_APP: Da Publish Data [ L1629 R136 E0.0,0.0 P-26.37 Ro0.68 V10.48 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (378015) UART_APP: [HOP LE] Du lieu tu xe:  L1624 R134 E0.0,0.0 P-26.59 Ro0.13 V10.53 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (378015) MQTT_APP: Da Publish Data [ L1624 R134 E0.0,0.0 P-26.59 Ro0.13 V10.53 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (379005) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R138 E0.0,0.0 P-26.75 Ro-0.16 V10.55 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (379005) MQTT_APP: Da Publish Data [ L1631 R138 E0.0,0.0 P-26.75 Ro-0.16 V10.55 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (379995) UART_APP: [HOP LE] Du lieu tu xe:  L1617 R137 E0.0,0.0 P-26.83 Ro-0.38 V10.48 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (379995) MQTT_APP: Da Publish Data [ L1617 R137 E0.0,0.0 P-26.83 Ro-0.38 V10.48 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (380985) UART_APP: [HOP LE] Du lieu tu xe:  L1605 R138 E0.0,0.0 P-26.81 Ro-0.53 V10.68 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (380985) MQTT_APP: Da Publish Data [ L1605 R138 E0.0,0.0 P-26.81 Ro-0.53 V10.68 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (381975) UART_APP: [HOP LE] Du lieu tu xe:  L1629 R134 E0.0,0.0 P-26.82 Ro-0.62 V10.61 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (381975) MQTT_APP: Da Publish Data [ L1629 R134 E0.0,0.0 P-26.82 Ro-0.62 V10.61 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (382965) UART_APP: [HOP LE] Du lieu tu xe:  L1634 R134 E0.0,0.0 P-26.86 Ro-0.68 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (382965) MQTT_APP: Da Publish Data [ L1634 R134 E0.0,0.0 P-26.86 Ro-0.68 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (383955) UART_APP: [HOP LE] Du lieu tu xe:  L1628 R133 E0.0,0.0 P-26.90 Ro-0.71 V10.48 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (383955) MQTT_APP: Da Publish Data [ L1628 R133 E0.0,0.0 P-26.90 Ro-0.71 V10.48 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (384945) UART_APP: [HOP LE] Du lieu tu xe:  L1635 R135 E0.0,0.0 P-26.90 Ro-0.72 V10.66 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (384945) MQTT_APP: Da Publish Data [ L1635 R135 E0.0,0.0 P-26.90 Ro-0.72 V10.66 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (385935) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (385935) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (386925) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (386925) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (387925) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (387925) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (388915) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (388915) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (390895) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONMANH_VIP L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (390895) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONMANH_VIP L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (391885) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (391885) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (392875) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (392875) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (393865) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (393865) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (394855) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (394855) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (395845) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (395845) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (396835) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (396835) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (397835) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (397835) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (398825) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (398825) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (399815) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (399815) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (400805) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (400805) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (401795) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (401795) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (402785) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (402785) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (403775) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (403775) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (404765) UART_APP: [HOP LE] Du lieu tu xe:  L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (404765) MQTT_APP: Da Publish Data [ L1631 R136 E0.0,0.0 P-26.89 Ro-0.74 V10.58 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (405755) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (405755) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (406745) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (406745) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (407735) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (407735) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (408725) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (408725) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (409725) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (409725) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (410715) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (410715) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (411705) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (411705) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (412695) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (412695) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (413685) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (413685) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (414675) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (414675) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (415665) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (415665) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (416655) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (416655) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (417645) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (417645) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (418635) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (418635) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (419625) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (419625) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (420615) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (420615) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (421615) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (421615) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (422605) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (422605) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (423595) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (423595) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (424585) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (424585) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (425575) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (425575) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-25.54 Ro2.56 V11.44 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (426565) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (426565) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (427555) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (427555) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (428545) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (428545) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (429545) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (429545) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (430535) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (430535) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (431525) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (431525) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (432515) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (432515) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (433505) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (433505) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (434495) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (434495) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (435485) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0![0m
+[0;32mI (435485) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NONE debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (436525) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.1% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (436525) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.1% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (437525) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.1% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (437525) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.1% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (438515) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.1% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (438515) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.1% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (439505) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.1% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (439505) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.1% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (440495) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.1% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (440495) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.1% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (441485) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.1% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (441485) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.1% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (442475) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (442475) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (443465) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (443465) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (444455) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (444455) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (445445) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (445445) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (446435) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (446435) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;33mW (446855) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Left crashed![0m
+[0;33mW (447405) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (448425) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (448425) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;33mW (448625) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right crashed![0m
+[0;33mW (449365) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L9999 R9999 E0.0,0.0 P-24.25 Ro5.70 V11.21 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0![0m
+[0;33mW (449635) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right hardware dead![0m
+[0;33mW (450355) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (451395) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (451395) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.5% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (452385) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (452385) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (453375) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (453375) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (454365) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.2% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (454365) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.2% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (455355) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.2% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (455355) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.2% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (456345) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.2% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (456345) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.2% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (457335) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.2% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (457335) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.2% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (458325) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.5% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (458325) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.5% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (459325) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.5% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (459325) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.5% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (460315) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.5% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (460315) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.5% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (461305) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 97.2% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (461305) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 97.2% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (462295) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 97.2% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (462295) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 97.2% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (463285) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.6% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (463285) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.6% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (464275) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.6% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (464275) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.6% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (465265) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.6% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (465265) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.6% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (466255) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (466255) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (467245) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (467245) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (468235) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (468235) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (469235) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.6% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (469235) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.6% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (470225) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.6% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (470225) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.6% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;33mW (470435) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Left crashed![0m
+[0;33mW (471165) UART_APP: [CANH BAO] Nhieu song/Sai Token:  Resetting...
+MANH_VIP L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.6% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (472205) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.6% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (472205) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 95.6% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (473195) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (473195) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-23.04 Ro8.67 V10.39 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;33mW (473355) UART_APP: [CANH BAO] Nhieu song/Sai Token: VL53L1X Right hardware dead![0m
+[0;33mW (474135) UART_APP: [CANH BAO] Nhieu song/Sai Token: 
+MANH_VIP L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (475185) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (475185) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (476175) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (476175) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (477165) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (477165) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (478155) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (478155) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.8% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (479145) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 95.8% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (479145) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 95.8% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (480135) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 95.8% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (480135) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 95.8% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (481125) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 95.8% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (481125) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 95.8% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (482125) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.5% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (482125) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.5% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (483115) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.5% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (483115) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.5% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (484105) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.5% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (484105) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.5% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (485095) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.2% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (485095) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.2% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (486085) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.2% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (486085) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.2% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (487075) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.2% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (487075) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.2% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (488065) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.9% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (488065) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.9% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (489055) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.9% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (489055) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.9% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (490045) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.9% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (490045) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.9% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (491045) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.9% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (491045) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.9% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (492035) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 97.0% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (492035) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 97.0% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (493025) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 97.0% debug0,0 GPS:0,0 S:0![0m
+[0;32mI (493025) MQTT_APP: Da Publish Data [ L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 97.0% debug0,0 GPS:0,0 S:0!], msg_id=0[0m
+[0;32mI (494015) UART_APP: [HOP LE] Du lieu tu xe:  L9999 R9999 E0.0,0.0 P-21.88 Ro11.50 V11.17 PI:NORMAL 96.1% d

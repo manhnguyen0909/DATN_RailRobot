@@ -1,0 +1,1607 @@
+[0;32mI (12098) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.3ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40384c46
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1820
+load:0x403cc710,len:0xbd0
+load:0x403ce710,len:0x2f4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.6-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 10 2026 23:14:25[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (70) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (85) boot:  3 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (93) boot:  4 ota_0            OTA app          00 10 00120000 00100000[0m
+[0;32mI (100) boot:  5 ota_1            OTA app          00 11 00220000 00100000[0m
+[0;32mI (108) boot:  6 spiffs           Unknown data     01 82 00320000 00080000[0m
+[0;32mI (115) boot: End of partition table[0m
+[0;32mI (120) boot: Defaulting to factory image[0m
+[0;32mI (124) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=1d21ch (119324) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=0003d244 vaddr=3fc93e00 size=02c98h ( 11416) load[0m
+[0;32mI (154) esp_image: segment 2: paddr=0003fee4 vaddr=40380000 size=00134h (   308) load[0m
+[0;32mI (157) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9a7ech (632812) map[0m
+[0;32mI (265) esp_image: segment 4: paddr=000da814 vaddr=40380134 size=13b0ch ( 80652) load[0m
+[0;32mI (286) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (286) boot: Disabling RNG early entropy source...[0m
+[0;32mI (298) cpu_start: Unicore app[0m
+[0;32mI (306) cpu_start: Pro cpu start user code[0m
+[0;32mI (306) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (307) cpu_start: Application information:[0m
+[0;32mI (309) cpu_start: Project name:     NCKH2026_RailRobot[0m
+[0;32mI (315) cpu_start: App version:      31923fc-dirty[0m
+[0;32mI (321) cpu_start: Compile time:     Apr 10 2026 23:14:05[0m
+[0;32mI (327) cpu_start: ELF file SHA256:  becae469f...[0m
+[0;32mI (332) cpu_start: ESP-IDF:          v5.2.6-dirty[0m
+[0;32mI (338) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (342) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (347) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (359) heap_init: At 3FC9ABE0 len 00025420 (149 KiB): RAM[0m
+[0;32mI (365) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (372) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (379) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (386) spi_flash: detected chip: generic[0m
+[0;32mI (390) spi_flash: flash io: dio[0m
+[0;32mI (395) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (401) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (408) main_task: Started on CPU0[0m
+[0;32mI (408) main_task: Calling app_main()[0m
+[0;32mI (418) MAIN_APP: NVS initialized successfully.[0m
+[0;32mI (418) pp: pp rom version: 9387209[0m
+[0;32mI (418) net80211: net80211 rom version: 9387209[0m
+[0;32mI (438) wifi:wifi driver task: 3fca3980, prio:23, stack:6656, core=0[0m
+[0;32mI (438) wifi:wifi firmware version: e851349[0m
+[0;32mI (438) wifi:wifi certification version: v7.0[0m
+[0;32mI (438) wifi:config NVS flash: enabled[0m
+[0;32mI (448) wifi:config nano formating: disabled[0m
+[0;32mI (448) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (448) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (458) wifi:Init management short buffer num: 32[0m
+[0;32mI (458) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (468) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (468) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (468) wifi:Init static rx buffer num: 10[0m
+[0;32mI (478) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (478) wifi_init: rx ba win: 6[0m
+[0;32mI (488) wifi_init: tcpip mbox: 32[0m
+[0;32mI (488) wifi_init: udp mbox: 6[0m
+[0;32mI (488) wifi_init: tcp mbox: 6[0m
+[0;32mI (498) wifi_init: tcp tx win: 5760[0m
+[0;32mI (498) wifi_init: tcp rx win: 5760[0m
+[0;32mI (508) wifi_init: tcp mss: 1440[0m
+[0;32mI (508) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (508) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (518) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (558) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (568) wifi:mode : sta (10:00:3b:cc:55:10)[0m
+[0;32mI (568) wifi:enable tsf[0m
+[0;32mI (568) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (578) WIFI_MGR: Connecting to WiFi SSID: Nguyen Manh[0m
+[0;32mI (1578) WIFI_MGR: Waiting for WiFi... (1/5)[0m
+[0;32mI (2578) WIFI_MGR: Waiting for WiFi... (2/5)[0m
+[0;32mI (3578) WIFI_MGR: Waiting for WiFi... (3/5)[0m
+[0;32mI (4578) WIFI_MGR: Waiting for WiFi... (4/5)[0m
+[0;32mI (5578) WIFI_MGR: Waiting for WiFi... (5/5)[0m
+[0;31mE (5578) WIFI_MGR: Failed to connect to WiFi![0m
+[0;32mI (5578) MAIN_APP: WiFi initialized successfully.[0m
+[0;32mI (5678) OTA_SERVER: OTA Server started at port 81[0m
+[0;32mI (5678) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (5678) OTA_SERVER: 🚀 OTA SERVER READY![0m
+[0;32mI (5678) OTA_SERVER: 👉 Click to open: http://0.0.0.0:81/ota[0m
+[0;32mI (5688) OTA_SERVER: -------------------------------------------------------------[0m
+[0;32mI (5698) MAIN_APP: OTA Server started successfully.[0m
+[0;32mI (5708) uart: queue free spaces: 20[0m
+[0;32mI (5708) UART_APP: Da khoi tao UART1 (TX: 20, RX: 21) o toc do 9600[0m
+[0;32mI (5728) UART_APP: Nhan duoc 14 bytes tu STM32: ��&�Cӆ����[0m
+[0;32mI (5818) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (5918) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (6008) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.2|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (6098) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (6188) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (6278) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (6378) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (6468) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (6558) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (6648) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.2|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (6738) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (6828) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.7|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (6918) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (7018) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (7108) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.3|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (7198) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (7288) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (7378) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.5|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (7468) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.0|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (7558) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.2|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (7648) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (7748) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.8|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (7838) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (7928) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (8018) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (8108) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (8208) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (8298) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (8388) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (8478) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (8578) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (8668) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (8758) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.1|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (8848) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (8948) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (9038) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (9128) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (9228) UART_APP: Nhan duoc 31 bytes tu STM32: Doc:-12.3|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (9318) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.1|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (9408) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (9498) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.7|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (9588) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.9|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (9678) UART_APP: Nhan duoc 31 bytes tu STM32: Doc:-21.5|Ngang:-6.6|Cach:8888
+[0m
+[0;32mI (9768) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-8.8|Ngang:0.4|Cach:8888
+[0m
+[0;32mI (9858) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.5|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (9948) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.0|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (10038) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (10128) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.3|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (10218) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (10318) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.9|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (10408) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-1.9|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (10498) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.8|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (10588) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.7|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (10678) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-4.9|Ngang:0.5|Cach:8888
+[0m
+[0;32mI (10768) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (10858) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.7|Ngang:-1.2|Cach:8888
+[0m
+[0;32mI (10948) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:8.4|Ngang:-6.2|Cach:8888
+[0m
+[0;32mI (11038) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.9|Ngang:-1.0|Cach:8888
+[0m
+[0;32mI (11128) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-4.6|Ngang:1.7|Cach:8888
+[0m
+[0;32mI (11218) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.2|Ngang:-1.3|Cach:8888
+[0m
+[0;32mI (11318) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.6|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (11408) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (11498) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.8|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (11588) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.0|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (11678) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.2|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (11778) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.4|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (11868) UART_APP: Nhan duoc 31 bytes tu STM32: Doc:-11.2|Ngang:-2.6|Cach:8888
+[0m
+[0;32mI (11948) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-2.3|Ngang:1.2|Cach:8888
+[0m
+[0;32mI (12038) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.9|Ngang:-1.6|Cach:8888
+[0m
+[0;32mI (12138) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (12228) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.2|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (12318) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (12408) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (12498) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (12598) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (12688) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (12778) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (12878) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-1.8|Ngang:-3.8|Cach:8888
+[0m
+[0;32mI (12968) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-9.0|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (13058) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.6|Ngang:0.6|Cach:8888
+[0m
+[0;32mI (13148) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-9.5|Ngang:1.2|Cach:8888
+[0m
+[0;32mI (13238) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.9|Ngang:-1.1|Cach:8888
+[0m
+[0;32mI (13328) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.3|Ngang:-1.1|Cach:8888
+[0m
+[0;32mI (13418) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.8|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (13518) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.9|Ngang:-1.2|Cach:8888
+[0m
+[0;32mI (13608) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.7|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (13698) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.7|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (13788) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.6|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (13868) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-11.7|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (13968) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.3|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (14058) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.3|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (14148) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.1|Ngang:1.1|Cach:8888
+[0m
+[0;32mI (14238) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.9|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (14328) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.2|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (14418) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.9|Ngang:0.6|Cach:8888
+[0m
+[0;32mI (14508) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-4.2|Ngang:0.6|Cach:8888
+[0m
+[0;32mI (14598) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.9|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (14688) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.0|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (14778) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.3|Ngang:-1.7|Cach:8888
+[0m
+[0;32mI (14868) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.5|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (14958) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.6|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (15048) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (15138) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.4|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (15228) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-4.1|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (15318) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.9|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (15408) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.8|Ngang:0.5|Cach:8888
+[0m
+[0;32mI (15498) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.8|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (15588) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.7|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (15678) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-4.8|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (15768) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.3|Ngang:0.6|Cach:8888
+[0m
+[0;32mI (15848) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.4|Ngang:1.8|Cach:8888
+[0m
+[0;32mI (15938) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.9|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (16028) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.9|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (16128) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (16218) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.7|Ngang:-1.6|Cach:8888
+[0m
+[0;32mI (16308) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.9|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (16398) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (16488) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.1|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (16578) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (16678) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.9|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (16768) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (16858) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (16958) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (17048) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.5|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (17138) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (17228) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.8|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (17318) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.8|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (17408) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (17498) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (17588) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (17688) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (17778) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (17868) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (17958) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (18058) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (18148) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (18238) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.4|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (18328) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (18418) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (18518) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.1|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (18608) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (18698) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (18788) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.0|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (18888) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (18978) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.0|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (19068) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (19158) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.1|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (19248) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.0|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (19348) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (19438) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (19528) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-1.1|Ngang:1.3|Cach:8888
+[0m
+[0;32mI (19618) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-8.1|Ngang:1.7|Cach:8888
+[0m
+[0;32mI (19708) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.4|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (19798) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.0|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (19888) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.2|Ngang:12.4|Cach:8888
+[0m
+[0;32mI (19978) UART_APP: Nhan duoc 31 bytes tu STM32: Doc:-16.4|Ngang:-7.2|Cach:8888
+[0m
+[0;32mI (20068) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.2|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (20158) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.5|Ngang:-1.2|Cach:8888
+[0m
+[0;32mI (20248) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.4|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (20348) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.2|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (20438) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.7|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (20528) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (20618) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.1|Ngang:2.2|Cach:8888
+[0m
+[0;32mI (20708) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.0|Ngang:0.4|Cach:8888
+[0m
+[0;32mI (20798) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (20898) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (20988) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (21078) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (21168) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (21268) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (21358) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (21448) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.2|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (21538) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (21638) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (21728) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (21818) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (21908) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (22008) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (22098) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (22188) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (22288) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (22378) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (22468) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.8|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (22558) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (22648) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (22738) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (22838) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.3|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (22928) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (23018) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (23108) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.6|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (23198) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (23288) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (23388) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (23478) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.5|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (23568) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (23658) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (23748) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (23838) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (23938) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (24028) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (24118) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (24208) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (24308) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (24398) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (24488) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.0|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (24588) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (24678) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (24768) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (24858) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (24948) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.6|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (25038) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.1|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (25138) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (25228) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.9|Ngang:0.4|Cach:8888
+[0m
+[0;32mI (25318) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (25408) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (25498) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (25598) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.8|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (25678) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.5|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (25768) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.7|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (25868) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.3|Ngang:0.4|Cach:8888
+[0m
+[0;32mI (25958) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (26048) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (26138) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (26228) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (26318) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.1|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (26408) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (26508) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (26598) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (26688) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.5|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (26778) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.4|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (26868) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (26958) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (27058) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (27148) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (27238) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (27328) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (27428) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (27518) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (27608) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (27698) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.2|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (27788) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (27888) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (27978) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (28068) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-1.9|Ngang:1.1|Cach:8888
+[0m
+[0;32mI (28158) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (28248) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-10.1|Ngang:3.6|Cach:8888
+[0m
+[0;32mI (28338) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.1|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (28438) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.8|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (28528) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-9.0|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (28618) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-3.1|Cach:8888
+[0m
+[0;32mI (28708) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.7|Ngang:0.6|Cach:8888
+[0m
+[0;32mI (28798) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.2|Ngang:-2.3|Cach:8888
+[0m
+[0;32mI (28898) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.5|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (28988) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.4|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (29078) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (29168) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.6|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (29258) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.3|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (29358) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.1|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (29448) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.2|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (29538) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (29628) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.3|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (29728) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.4|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (29818) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (29908) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-9.5|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (29998) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.4|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (30088) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.2|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (30188) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (30278) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (30368) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-9.5|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (30458) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.6|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (30558) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (30648) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.9|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (30738) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.4|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (30838) UART_APP: Nhan duoc 31 bytes tu STM32: Doc:-11.1|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (30928) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (31018) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.7|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (31108) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.8|Ngang:-1.0|Cach:8888
+[0m
+[0;32mI (31198) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-9.9|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (31288) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-9.8|Ngang:-1.1|Cach:8888
+[0m
+[0;32mI (31378) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.5|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (31478) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (31568) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.1|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (31658) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (31748) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.1|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (31838) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (31928) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (32028) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (32118) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.8|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (32208) UART_APP: Nhan duoc 31 bytes tu STM32: Doc:-10.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (32298) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.4|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (32388) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.8|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (32488) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.3|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (32568) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.5|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (32658) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-8.0|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (32748) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (32848) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (32938) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (33028) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.2|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (33118) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.0|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (33218) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (33308) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.3|Ngang:-1.4|Cach:8888
+[0m
+[0;32mI (33398) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (33488) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.6|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (33588) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (33678) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.4|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (33768) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.8|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (33868) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.7|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (33958) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.7|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (34048) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-9.3|Ngang:-1.3|Cach:8888
+[0m
+[0;32mI (34138) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.6|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (34238) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.3|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (34328) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (34418) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.2|Ngang:-1.2|Cach:8888
+[0m
+[0;32mI (34508) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.6|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (34608) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (34698) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-1.1|Cach:8888
+[0m
+[0;32mI (34788) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.7|Ngang:-1.3|Cach:8888
+[0m
+[0;32mI (34888) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (34978) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (35068) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (35158) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.3|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (35258) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (35348) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.2|Ngang:-1.1|Cach:8888
+[0m
+[0;32mI (35438) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (35528) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.9|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (35628) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.8|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (35718) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.8|Ngang:-1.1|Cach:8888
+[0m
+[0;32mI (35808) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-9.8|Ngang:0.5|Cach:8888
+[0m
+[0;32mI (35898) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (35988) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.0|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (36088) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.9|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (36178) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.8|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (36268) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.3|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (36358) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (36448) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.5|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (36548) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.0|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (36638) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (36728) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (36818) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-1.0|Cach:8888
+[0m
+[0;32mI (36918) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.9|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (36998) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-4.8|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (37088) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.8|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (37188) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.6|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (37278) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-1.4|Ngang:-2.1|Cach:8888
+[0m
+[0;32mI (37368) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (37458) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (37558) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.1|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (37648) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.3|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (37738) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.5|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (37828) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.0|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (37928) UART_APP: Nhan duoc 31 bytes tu STM32: Doc:-14.9|Ngang:-1.6|Cach:8888
+[0m
+[0;32mI (38018) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.4|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (38108) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.1|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (38198) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-12.6|Ngang:1.3|Cach:8888
+[0m
+[0;32mI (38298) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-9.4|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (38388) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (38478) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.7|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (38568) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-4.5|Ngang:0.4|Cach:8888
+[0m
+[0;32mI (38658) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.2|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (38748) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (38838) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (38938) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.3|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (39028) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (39118) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (39218) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.7|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (39308) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (39398) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (39488) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (39588) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (39678) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (39768) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (39858) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (39958) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (40048) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (40138) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.4|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (40228) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (40328) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.3|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (40418) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-9.3|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (40498) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (40598) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.0|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (40688) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (40778) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.8|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (40868) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.5|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (40958) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.0|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (41048) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.5|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (41138) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (41228) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.7|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (41318) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (41418) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (41508) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (41598) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (41688) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.5|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (41778) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (41878) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (41968) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.7|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (42058) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (42148) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.7|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (42238) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (42328) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.3|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (42428) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (42518) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.1|Ngang:0.5|Cach:8888
+[0m
+[0;32mI (42608) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (42698) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.0|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (42788) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (42888) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (42978) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (43068) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.7|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (43158) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.7|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (43248) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (43338) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.6|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (43428) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-8.6|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (43518) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (43608) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.3|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (43698) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.5|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (43788) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (43878) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (43978) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.4|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (44068) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (44158) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.5|Ngang:-1.2|Cach:8888
+[0m
+[0;32mI (44248) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (44348) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (44438) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.0|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (44528) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-1.1|Cach:8888
+[0m
+[0;32mI (44618) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (44708) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.9|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (44808) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.0|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (44898) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (44988) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.3|Ngang:0.5|Cach:8888
+[0m
+[0;32mI (45078) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.6|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (45168) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (45258) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.7|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (45348) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.4|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (45448) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-1.4|Cach:8888
+[0m
+[0;32mI (45538) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (45628) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (45718) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (45818) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.8|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (45908) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.2|Ngang:-1.4|Cach:8888
+[0m
+[0;32mI (45998) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.0|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (46088) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (46178) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (46278) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (46368) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (46458) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.8|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (46558) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.0|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (46648) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (46738) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.9|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (46828) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-4.6|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (46918) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.8|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (47008) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (47098) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (47198) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (47288) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (47378) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (47468) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (47568) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (47658) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.0|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (47748) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (47838) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.1|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (47938) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (48028) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (48118) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (48218) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (48308) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.8|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (48398) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.9|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (48488) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (48588) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.6|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (48668) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-4.8|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (48758) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (48858) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (48948) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (49038) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.0|Ngang:0.5|Cach:8888
+[0m
+[0;32mI (49128) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.1|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (49218) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.3|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (49318) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-1.7|Cach:8888
+[0m
+[0;32mI (49408) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.8|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (49498) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.0|Ngang:0.5|Cach:8888
+[0m
+[0;32mI (49588) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (49678) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (49778) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.8|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (49868) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (49958) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.7|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (50048) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (50148) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (50238) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.6|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (50328) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (50418) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.3|Ngang:-1.1|Cach:8888
+[0m
+[0;32mI (50518) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-9.1|Ngang:-1.0|Cach:8888
+[0m
+[0;32mI (50608) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.5|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (50698) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.0|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (50788) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.0|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (50878) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.2|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (50968) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.3|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (51058) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (51148) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.9|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (51238) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-8.0|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (51328) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-4.8|Ngang:0.9|Cach:8888
+[0m
+[0;32mI (51418) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.2|Ngang:-1.6|Cach:8888
+[0m
+[0;32mI (51508) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.7|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (51608) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.4|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (51698) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.6|Ngang:-1.4|Cach:8888
+[0m
+[0;32mI (51788) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-4.1|Ngang:0.5|Cach:8888
+[0m
+[0;32mI (51878) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.2|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (51968) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.8|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (52058) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.2|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (52148) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (52248) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (52338) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.8|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (52428) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (52518) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.0|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (52608) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (52698) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.9|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (52788) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.4|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (52878) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.9|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (52968) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (53058) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-4.8|Ngang:0.6|Cach:8888
+[0m
+[0;32mI (53148) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.9|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (53248) UART_APP: Nhan duoc 31 bytes tu STM32: Doc:-10.5|Ngang:-1.4|Cach:8888
+[0m
+[0;32mI (53338) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.0|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (53428) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-17.2|Ngang:0.4|Cach:8888
+[0m
+[0;32mI (53518) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.4|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (53608) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (53708) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.1|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (53798) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (53888) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.5|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (53978) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.7|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (54078) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.2|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (54168) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (54258) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.7|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (54358) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.9|Ngang:-1.5|Cach:8888
+[0m
+[0;32mI (54448) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.0|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (54538) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.8|Ngang:-1.0|Cach:8888
+[0m
+[0;32mI (54628) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-9.7|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (54728) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-1.8|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (54818) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-1.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (54908) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-1.1|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (54998) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-1.0|Ngang:0.8|Cach:8888
+[0m
+[0;32mI (55088) UART_APP: Nhan duoc 28 bytes tu STM32: Doc:0.6|Ngang:0.4|Cach:8888
+[0m
+[0;32mI (55178) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-1.1|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (55278) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.1|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (55368) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-1.7|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (55458) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.6|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (55548) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-1.4|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (55648) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-1.9|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (55728) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-0.7|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (55818) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-0.7|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (55918) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.1|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (56008) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.9|Ngang:-1.1|Cach:8888
+[0m
+[0;32mI (56098) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.2|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (56198) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.4|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (56288) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.5|Ngang:1.0|Cach:8888
+[0m
+[0;32mI (56378) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-2.9|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (56458) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.1|Ngang:0.4|Cach:8888
+[0m
+[0;32mI (56548) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.5|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (56638) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.4|Ngang:0.5|Cach:8888
+[0m
+[0;32mI (56728) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (56818) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.5|Ngang:0.5|Cach:8888
+[0m
+[0;32mI (56908) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.5|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (56998) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.0|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (57088) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.4|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (57178) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.8|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (57278) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.0|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (57368) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.3|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (57458) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-2.8|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (57548) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.9|Ngang:-0.8|Cach:8888
+[0m
+[0;32mI (57638) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.8|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (57728) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.5|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (57818) UART_APP: Nhan duoc 28 bytes tu STM32: Doc:2.1|Ngang:9.0|Cach:8888
+[0m
+[0;32mI (57908) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.0|Ngang:1.2|Cach:8888
+[0m
+[0;32mI (57998) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.2|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (58098) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-4.2|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (58178) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-1.6|Ngang:0.6|Cach:8888
+[0m
+[0;32mI (58268) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.4|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (58358) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.3|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (58448) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.0|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (58538) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (58628) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (58728) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.8|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (58818) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.6|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (58908) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.3|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (58998) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-2.2|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (59088) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.0|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (59178) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.9|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (59268) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.1|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (59358) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.8|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (59448) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-2.9|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (59538) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.6|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (59628) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.0|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (59718) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.1|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (59808) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.0|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (59908) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.4|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (59998) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.9|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (60088) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-1.7|Ngang:0.7|Cach:8888
+[0m
+[0;32mI (60178) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-2.8|Ngang:0.4|Cach:8888
+[0m
+[0;32mI (60268) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.5|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (60358) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.1|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (60448) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.6|Ngang:0.4|Cach:8888
+[0m
+[0;32mI (60538) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.4|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (60628) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.2|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (60718) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.3|Ngang:0.7|Cach:8888
+[0m
+[0;32mI (60808) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.9|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (60898) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.4|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (60988) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.1|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (61088) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.7|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (61178) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (61268) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.3|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (61358) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.3|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (61448) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.7|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (61548) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.3|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (61638) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.4|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (61728) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (61818) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.3|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (61918) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.0|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (62008) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.4|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (62098) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.2|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (62188) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.1|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (62288) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.6|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (62368) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-2.9|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (62458) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.8|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (62558) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-2.8|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (62648) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.9|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (62738) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (62828) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.3|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (62918) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.2|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (63008) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.6|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (63098) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-2.6|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (63188) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (63278) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-2.8|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (63368) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-3.4|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (63458) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.0|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (63548) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (63638) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-2.9|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (63728) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.1|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (63828) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.8|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (63918) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.9|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (64008) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-4.5|Ngang:0.4|Cach:8888
+[0m
+[0;32mI (64098) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.0|Ngang:0.5|Cach:8888
+[0m
+[0;32mI (64188) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-10.9|Ngang:0.6|Cach:8888
+[0m
+[0;32mI (64278) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.1|Ngang:0.7|Cach:8888
+[0m
+[0;32mI (64368) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (64458) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (64558) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.7|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (64638) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (64738) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (64828) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-8.2|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (64918) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.4|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (65008) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.0|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (65098) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.2|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (65188) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-3.2|Ngang:-1.2|Cach:8888
+[0m
+[0;32mI (65288) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (65378) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.4|Ngang:0.4|Cach:8888
+[0m
+[0;32mI (65468) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.1|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (65558) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.1|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (65648) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.9|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (65738) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.6|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (65828) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (65918) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.2|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (66008) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.6|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (66098) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (66188) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (66278) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.6|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (66368) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-8.2|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (66458) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-4.3|Ngang:-1.4|Cach:8888
+[0m
+[0;32mI (66558) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.7|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (66648) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.8|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (66738) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (66828) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (66928) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (67018) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.4|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (67108) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-2.8|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (67198) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.9|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (67288) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.0|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (67388) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (67478) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (67568) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.7|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (67658) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.4|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (67748) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.2|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (67838) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (67928) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (68028) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.7|Ngang:0.5|Cach:8888
+[0m
+[0;32mI (68118) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.8|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (68208) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (68298) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.3|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (68388) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.4|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (68478) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.0|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (68568) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.0|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (68658) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (68758) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-5.8|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (68848) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.1|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (68938) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.0|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (69028) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.6|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (69108) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.4|Ngang:0.6|Cach:8888
+[0m
+[0;32mI (69198) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.9|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (69298) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.9|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (69388) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (69478) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.4|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (69568) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.9|Ngang:0.4|Cach:8888
+[0m
+[0;32mI (69658) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (69748) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.7|Cach:8888
+[0m
+[0;32mI (69838) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.5|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (69928) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (70028) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.9|Ngang:0.6|Cach:8888
+[0m
+[0;32mI (70118) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-13.3|Ngang:1.0|Cach:8888
+[0m
+[0;32mI (70208) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.6|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (70298) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.2|Ngang:0.5|Cach:8888
+[0m
+[0;32mI (70388) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (70478) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (70568) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.9|Ngang:0.6|Cach:8888
+[0m
+[0;32mI (70658) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.4|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (70758) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.7|Ngang:0.5|Cach:8888
+[0m
+[0;32mI (70838) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.7|Ngang:0.7|Cach:8888
+[0m
+[0;32mI (70928) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (71028) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.8|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (71118) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.7|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (71208) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.4|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (71298) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.4|Cach:8888
+[0m
+[0;32mI (71388) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.3|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (71478) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.1|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (71568) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.7|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (71658) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.8|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (71748) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.3|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (71838) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.5|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (71928) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-7.0|Ngang:0.1|Cach:8888
+[0m
+[0;32mI (72018) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.1|Ngang:-0.1|Cach:8888
+[0m
+[0;32mI (72108) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-11.5|Ngang:0.8|Cach:8888
+[0m
+[0;32mI (72198) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.8|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (72298) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-9.1|Ngang:-1.0|Cach:8888
+[0m
+[0;32mI (72388) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.1|Ngang:0.7|Cach:8888
+[0m
+[0;32mI (72478) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (72568) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-8.8|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (72658) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.8|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (72748) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.6|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (72848) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.3|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (72938) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.3|Ngang:0.2|Cach:8888
+[0m
+[0;32mI (73028) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-7.1|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (73118) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-6.9|Cach:8888
+[0m
+[0;32mI (73208) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-4.2|Ngang:3.1|Cach:8888
+[0m
+[0;32mI (73298) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.2|Cach:8888
+[0m
+[0;32mI (73388) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.3|Ngang:0.4|Cach:8888
+[0m
+[0;32mI (73478) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.4|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (73578) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.4|Ngang:-0.9|Cach:8888
+[0m
+[0;32mI (73668) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.3|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (73758) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.2|Ngang:-0.5|Cach:8888
+[0m
+[0;32mI (73848) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.8|Ngang:-0.0|Cach:8888
+[0m
+[0;32mI (73948) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.5|Ngang:0.0|Cach:8888
+[0m
+[0;32mI (74038) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.5|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (74128) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-6.1|Ngang:-0.6|Cach:8888
+[0m
+[0;32mI (74218) UART_APP: Nhan duoc 30 bytes tu STM32: Doc:-5.8|Ngang:-0.3|Cach:8888
+[0m
+[0;32mI (74308) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.1|Ngang:0.3|Cach:8888
+[0m
+[0;32mI (74398) UART_APP: Nhan duoc 29 bytes tu STM32: Doc:-6.1|Ngang:0.3|Cach:8888
+[0m
