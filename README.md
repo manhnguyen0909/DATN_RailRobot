@@ -48,12 +48,11 @@ DATN_RailRobot/
 │   └── README.md
 ├── STM32_Robot_Firmware/        # Firmware cho robot STM32
 │   ├── README.md
-│   └── STM32_Robot_Firmware/
-│       ├── Core/
-│       ├── Drivers/
-│       ├── MDK-ARM/
-│       ├── Middlewares/
-│       └── STM32_Robot_Firmware.ioc
+│   ├── Core/
+│   ├── Drivers/
+│   ├── MDK-ARM/
+│   ├── Middlewares/
+│   └── STM32_Robot_Firmware.ioc
 ├── Web_Dashboard/               # Dashboard web giám sát
 │   ├── app.js
 │   ├── config.js
