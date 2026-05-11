@@ -1,4 +1,3 @@
-// Nhớ đổi tên include này thành đúng tên file .h của bạn nhé (ví dụ: "platform.h" hoặc "vl53l1_platform.h")
 #include "vl53l1_platform.h" 
 #include "i2c.h" 
 

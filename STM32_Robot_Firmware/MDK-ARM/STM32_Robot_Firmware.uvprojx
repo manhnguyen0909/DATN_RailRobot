@@ -391,11 +391,23 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>::CMSIS</GroupName>
-        </Group>
-        <Group>
           <GroupName>Application/User/Core</GroupName>
           <Files>
+            <File>
+              <FileName>MPU6050.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\MPU6050.c</FilePath>
+            </File>
+            <File>
+              <FileName>VL53L1X_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\VL53L1X_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>VL53L1X_calibration.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\VL53L1X_calibration.c</FilePath>
+            </File>
             <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
@@ -452,24 +464,9 @@
               <FilePath>../Core/Src/stm32f4xx_hal_timebase_tim.c</FilePath>
             </File>
             <File>
-              <FileName>MPU6050.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\MPU6050.c</FilePath>
-            </File>
-            <File>
               <FileName>vl53l1_platform.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Core\Src\vl53l1_platform.c</FilePath>
-            </File>
-            <File>
-              <FileName>VL53L1X_api.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\VL53L1X_api.c</FilePath>
-            </File>
-            <File>
-              <FileName>VL53L1X_calibration.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\VL53L1X_calibration.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -642,6 +639,9 @@
               <FilePath>../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c</FilePath>
             </File>
           </Files>
+        </Group>
+        <Group>
+          <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
     </Target>
