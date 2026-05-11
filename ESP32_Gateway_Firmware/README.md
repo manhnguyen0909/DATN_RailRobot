@@ -21,14 +21,17 @@ Sử dụng vi điều khiển **ESP32-C3** (RISC-V) với ưu thế về kích 
 
 ## 📂 Cấu trúc thư mục
 ```text
-ESP32C3_Gateway_Firmware/
+ESP32_Gateway_Firmware/
+├── .vscode/                   # Cấu hình VS Code (nếu có)
+├── build/                     # Thư mục build của ESP-IDF
 ├── main/
 │   ├── main.c                 # Khởi tạo hệ thống và điều phối Task
-│   ├── mqtt_app.c             # Xử lý kết nối và logic MQTT
-│   ├── uart_app.c             # Giao tiếp với module LoRa
-│   ├── led_app.c              # Điều khiển LED trạng thái
-│   └── config_mqtt_template.h # File mẫu cấu hình mật khẩu
-├── CMakeLists.txt             # File cấu hình build project
+│   └── CMakeLists.txt         # Cấu hình build cho thư mục main
+├── my_components/             # Các component tùy chỉnh
+├── partitions.csv             # Bảng phân vùng flash
+├── sdkconfig                  # Cấu hình ESP-IDF
+├── sdkconfig.old              # Bản sao cấu hình cũ
+├── CMakeLists.txt             # File cấu hình build project chính
 └── README.md                  # Tài liệu hướng dẫn
 ```
 ## ⚙️ Cấu hình hệ thống
