@@ -14,7 +14,6 @@
 #include "mqtt_app.h"
 #include "led_app.h"
 
-
 static const char *TAG = "MAIN_APP";
 
 void app_main(void)
@@ -31,8 +30,6 @@ void app_main(void)
     ESP_LOGI(TAG, "NVS initialized successfully.");
     wifi_manager_init(); // Kết nối WiFi
     ESP_LOGI(TAG, "WiFi initialized successfully.");
-    // wifi_init_softap();
-    // Đợi một chút cho mạng ổn định (Optional nhưng tốt)
     vTaskDelay(pdMS_TO_TICKS(100));
     
     start_ota_server(); // Bắt đầu server OTA
@@ -50,6 +47,4 @@ void app_main(void)
         vTaskDelay(pdMS_TO_TICKS(10));
         
     }
-    
-    
 }

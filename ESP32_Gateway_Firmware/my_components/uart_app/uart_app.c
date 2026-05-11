@@ -64,12 +64,7 @@ static void uart_event_task(void *pvParameters)
                             // Nếu hợp lệ: Cắt bỏ phần Token để lấy ruột (payload)
                             char *payload = rx_buffer + strlen(MY_TOKEN);
                             ESP_LOGI(TAG, "[HOP LE] Du lieu tu xe: %s", payload);
-
-                            // ---> TẠI ĐÂY: Parse các giá trị trong payload và đẩy lên MQTT
-                            // Đẩy toàn bộ cục dữ liệu "#15,120,120,11.5!" này lên Web Server
                             MQTT_Publish_Telemetry(payload);
-                            //vTaskDelay(pdMS_TO_TICKS(150)); // Delay nhẹ để tránh gửi quá nhanh
-                            // KHE HỞ VÀNG: STM32 VỪA GỬI XONG VÀ ĐANG RẢNH CHỜ NHẬN
                             // ==========================================================
                             if (has_pending_command == true)
                             {

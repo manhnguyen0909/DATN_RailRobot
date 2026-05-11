@@ -40,7 +40,7 @@ void LED_LoRa_Blink(void)
 {
     // Bật đèn
     gpio_set_level(LED_LORA_PIN, 1);
-    // Trễ một chút để mắt người kịp nhìn thấy (50ms - 100ms)
+    
     vTaskDelay(pdMS_TO_TICKS(50));
     // Tắt đèn
     gpio_set_level(LED_LORA_PIN, 0);
